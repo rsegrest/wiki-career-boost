@@ -1,0 +1,9 @@
+# Obsidian workspace state (machine-specific, not worth syncing)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/appearance.json
+
+# OS files
+.DS_Store
+*.swp
+*~

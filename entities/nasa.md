@@ -38,14 +38,36 @@ Varies by team and developer preference:
 - Rick's new team: Microsoft PowerApps (low-code/no-code)
 - Likely mix of legacy systems + modern cloud migration
 
+## Insourcing Initiative
+
+NASA is pushing an **insourcing initiative** to convert contractor positions to direct government hires. Key implications:
+
+- Rick does NOT want to work for NASA/government directly — believes it would be a bad career move (GS pay scale, less flexibility, slower advancement)
+- If NASA insources Rick's role, he could face pressure to convert or be displaced
+- This adds urgency to career planning — the current arrangement may not be stable long-term
+
+## Current Project (2026)
+
+Rick's new group is building a **proposal and budget planning app** that:
+- Centralizes proposal and budget data in one system
+- Prevents errors from multiple spreadsheet versions circulating
+- Eliminates duplicate entries that inaccurately exaggerate costs
+- NASA stakeholders say it could have measurable **"six-figure" impact** (cost savings)
+- **Tech stack:** Electron + React + TypeScript interfacing with Microsoft Dataverse via pacx
+- Uses persistent PowerShell worker pattern for Dataverse CRUD (Option A) until IT grants Azure portal access
+- Work env restricted: no Azure portal access, CodeApps not yet enabled
+- This builds **transferable skills** (React + TypeScript + Dataverse + Electron) unlike pure PowerApps work
+
 ## Future Questions
 
 - What specific NASA center? (Marshall Space Flight Center — Huntsville?)
 - What directorate or division?
-- What systems has Rick worked on?
+- What systems has Rick worked on previously?
 - What "legacy" systems has he modernized?
 - Any AI/ML initiatives at NASA he could pivot toward?
 - Internal mobility — can he move to an AI-forward team?
+- How does the insourcing initiative affect ESSCA contract renewal?
+- Timeline for insourcing decisions?
 
 ## Sources
 

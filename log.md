@@ -54,3 +54,105 @@
 - Recommendation: Pick ONE project to ship before June 5; 6 days = 12–24 hours available
 - Updated index.md — Total pages: 9
 
+## [2026-06-22] update | Compensation, position context, and organizational risks
+- Updated entities/rick-segrest-pro.md with full compensation/benefits table and current position context
+- Updated entities/amentum.md with ESSCA contract status, insourcing pressure, growth ceiling
+- Updated entities/nasa.md with insourcing initiative and current project details
+- Key facts added:
+  - Salary: $170K (from $135K in 2019), raises below inflation
+  - Leave: 172 hrs/yr, 401(k) ~50% of 6%, health via wife's plan
+  - Lateral move to new group — better environment, older/professional team
+  - Building proposal/budget planning app (potential "six-figure" impact)
+  - Previous group: stressful, lost both parents in 18 months, took 6mo leave, callous customer
+  - ESSCA contract up for re-bid — rate adjustment possible
+  - NASA insourcing initiative — Rick does NOT want gov employment
+  - Amentum growth ceiling — limited advancement opportunity
+- Preparation for comparisons/career-move-vs-side-hustle-vs-maximize-current.md
+
+## [2026-06-22] update | Salary correction, remote work, ESSCA timeline, benefits portability
+- Corrected starting salary: $130K + $5K signing bonus (not $135K)
+- Year 2: <3% raise, actually earned LESS after bonus
+- Annual bonuses: $200–300/yr pittance at contract year end (March)
+- 401(k) match confirmed at ~50% of 6% ≈ $5,100/yr; balance portable if leaving
+- Health insurance via wife's plan — portable, not tied to Amentum
+- Remote work: ~50%, non-negotiable for family; previous group pushed back illegally
+- ESSCA proposals due 11 March 2026 — award expected imminently
+- NASA insourcing: general initiative, no direct communication about Rick's position
+- Current app: Electron+React+TypeScript+Dataverse via pacx (transferable skills)
+- All three entity pages updated with refined details
+
+## [2026-06-22] create | Three-way career comparison page
+- Created comparisons/career-move-vs-side-hustle-vs-maximize-current.md
+- 18.7KB comprehensive analysis covering:
+  - Path A: Maximize Current (stay, ship app, leverage ESSCA II)
+  - Path B: Career Move (new employer, React+AI intersection)
+  - Path C: Side-Hustle (freelance while keeping $170K day job)
+  - ESSCA II award variable (3 scenarios)
+  - Risk matrix, income calculations, decision framework
+  - Recommended A+C hybrid strategy with B preparation
+  - 7 open questions for follow-up
+- Updated index.md — Total pages: 10
+- Added ESSCA II award date: 30 September 2026 (user confirmed)
+- Amentum likely to retain contract per Rick's assessment
+
+## [2026-06-22] ingest | ESSCA II RFP documents from SAM.gov
+- Source: /home/rick/essca_rfp/ (17 files — RFP sections, amendments, pricing model, Q&A)
+- Created queries/essca-ii-rfp-analysis.md
+- Key findings:
+  - Contract: $3.248B max, 8.5 years, single-award IDIQ
+  - ERI benchmark rates extracted for all ES levels at MSFC
+  - Rick at $81.42/hr vs ES-8 benchmark $84.46/hr — ~$6K below benchmark
+  - RFP includes escalation rates for CY2027-2035 (typically 3-4%/yr)
+  - RFP requires offerors to address compensation gaps for incumbent retention
+  - NASA evaluates workforce compensation as a proposal subfactor
+  - Incumbent rates (L-5-A) are controlled attachments — not downloaded
+- Updated index.md — Total pages: 11
+- This is a MAJOR data source for the career comparison page
+
+## [2026-06-22] ingest | Remote React+AI job market salary research
+- Created queries/react-ai-job-market-salary-2026.md
+- Sources: Levels.fyi, Glassdoor, Indeed, ZipRecruiter, Built In, Upwork, Toptal, Contra
+- Key findings:
+  - Rick is underpaid by $20K-$50K vs market for React+AI skills
+  - Senior Full-Stack + AI (remote): $180K-$220K base
+  - AI Engineer w/ full-stack (remote): $200K-$250K base
+  - Staff Engineer + AI (remote): $210K-$280K base, $280K-$450K TC
+  - Freelance React+AI: $120-$175/hr realistic for Rick
+  - "AI Engineer" title carries 15-25% premium over "Senior Full-Stack"
+  - NASA experience valued at defense-tech (Anduril, Palantir) — 10-15% premium
+  - 30+ companies hiring for React+AI intersection (listed in report)
+- Updated index.md — Total pages: 12
+
+## [2026-06-22] create | Freelance acquisition & portfolio strategy
+- Created concepts/freelance-portfolio-strategy.md
+- Key additions:
+  - UX team experience positioning (Full-Stack Product Engineer, AI UX Engineer)
+  - Toptal closed — Contra/Upwork/Wellfound/direct outreach ranked alternatives
+  - 4-week acquisition playbook (profiles, bids, outreach, momentum)
+  - Productized service packages ($3K-$25K fixed-price)
+  - Portfolio build priority: UX Critique Tool first, Resume Optimizer second
+  - Same portfolio serves both freelance AND salaried job applications
+  - Updated rick-segrest-pro.md — added UX team experience as differentiator
+## [2026-06-22] update | AI UX Critique Tool kanban board created in Hermes
+- Created 10 live Hermes Kanban tasks (t_e0339420 through t_069bff13)
+- Task graph: T1 scaffold -> T2 upload + T3 prompt (parallel) -> T4 API -> T5 UI -> T6 overlay -> T7 examples -> T8 deploy -> T9 README -> T10 LinkedIn
+- T1 (scaffold) immediately picked up by dispatcher — running
+- Updated wiki kanban page with live task IDs and refined plan
+- Added bounding box overlay as killer feature (not in original May plan)
+- Added Vercel AI SDK for model-agnostic support (OpenAI + Anthropic)
+- Updated index.md — Total pages: 13
+
+## [2026-06-23] ingest | NASA civil service GS pay research
+- Created queries/nasa-civil-service-gs-pay.md
+- Key findings:
+  - Rick would enter at GS-13 (Step 5-10) or GS-14 (Step 1-3)
+  - GS-13 Step 10: $153K — $17K below current $170K
+  - GS-14 Step 10: $181K — only $11K above, takes 10+ years to reach
+  - GS pay cap: ~$183K (2025), ~$192K (2026 projected)
+  - FERS pension requires 20+ years to be meaningful
+  - Rick is 49 — starting now means pension doesn't vest meaningfully until age 69
+  - 20 years x $25K/yr pay cut = $500K lost salary for $37K/yr pension starting at 69
+  - Break-even at age 82+ — terrible trade
+  - Confirmed: NASA civil service makes no sense for Rick
+- Updated index.md — Total pages: 14
+

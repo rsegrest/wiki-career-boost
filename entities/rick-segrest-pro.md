@@ -1,7 +1,7 @@
 ---
 title: Rick Segrest — Professional Profile
 created: 2026-05-30
-updated: 2026-05-30
+updated: 2026-06-22
 type: entity
 tags: [person, full-stack, frontend, react, ux-designer, ai-engineer, agent-developer, united-states]
 sources: []
@@ -26,6 +26,74 @@ sources: []
 - **Contractor:** [[amentum]]
 - **Clearance:** Previously held Secret (dormant, not renewed — 7+ years at NASA without need)
 - **Alma Mater:** [[uah]] (University of Alabama in Huntsville)
+
+## Compensation & Benefits
+
+| Component | Details |
+|---|---|
+| Current Salary | $170,000/year |
+| Starting Salary | $130,000 (early 2019) + $5,000 signing bonus |
+| Year 2 Salary | ~$133,900 (<3% raise, earned LESS year 2 after bonus) |
+| Salary Growth | +$40K over 7 years (but effectively flat adjusted for inflation) |
+| Annual Bonus | $200–300/yr (end of contract year, ~March) |
+| Leave | 172 hours/year (~21.5 days) |
+| Health Insurance | On wife's plan (portable — not tied to Amentum) |
+| 401(k) Match | ~50% of 6% contribution ≈ $5,100/yr |
+| 401(k) Vesting | Keeps balance if leaving Amentum |
+| Benefits Assessment | "Inline with other government contractors" |
+
+### Salary Context
+
+- Started at $130K + $5K signing bonus in early 2019, now at $170K
+- Year 2: <3% raise to ~$133.9K — actually earned LESS than year 1 (no signing bonus)
+- Annual bonuses since: $200–300/yr pittance at contract year end (March)
+- Raises have NOT kept up with inflation — more financial stress now than at start
+- $130K in 2019 dollars ≈ $164K+ in 2026 dollars (inflation erosion)
+- Real (inflation-adjusted) income has been flat or declining over 7 years
+- 401(k) match ≈ $5,100/yr — the only meaningful benefits lever beyond salary
+
+## Current Position — Detailed Context
+
+### Contract Structure
+- On the **ESSCA contract** (NASA engineering/science support)
+- **Proposals due:** 11 March 2026 — award expected soon
+- Contract is **up for re-bid** — potential rate adjustment closer to inflation
+- [[amentum]] is the current staffing contractor
+
+### Remote Work
+
+- Works remotely ~50% of the time (important for family pressures)
+- Previous group pushed back on remote work during family health crisis
+  - Asked Rick to get permission from customer lead — he balked
+  - Likely violates contractor protection rules (asking contractor to seek customer approval for accommodation during family medical crisis)
+- Current group is more accommodating
+- Remote flexibility is a **non-negotiable** for Rick going forward
+
+### Team History
+
+**Previous Group (pre-2026):**
+- Very stressful environment
+- Both parents passed away during an 18-month span while in this group
+- Took ~6 months off for mother's hospice and estate management
+- Customer (NASA stakeholder) made an "insulting and callous" statement showing zero empathy
+- This triggered the decision to leave the group
+
+**Current Group (2026 lateral move):**
+- Lateral move — no pay change, but better environment
+- More professional team, older colleagues
+- Working on a **proposal and budget planning app** — centralizes data to prevent:
+  - Errors from multiple spreadsheet versions circulating
+  - Duplicate entries that inaccurately exaggerate costs
+- Told the app could have measurable **"six-figure" impact** (cost savings/efficiency)
+- Rick likes this group better
+
+### Organizational Risks
+
+1. **ESSCA re-bid** — contract could change hands; rates may improve or destabilize
+2. **NASA insourcing initiative** — NASA pushing to hire contractors directly as government employees
+3. **Rick does NOT want to work for NASA/government directly** — believes it would be a bad career move
+4. **Amentum growth ceiling** — Rick sees limited advancement opportunity at Amentum
+5. **Insourcing risk** — if contractors are converted to gov employees, Rick may face pressure to convert or be displaced
 
 ### About Summary
 
@@ -77,6 +145,7 @@ This triad is rare. Most React devs lack systems background. Most M&S people lac
 - Prompt engineering and evaluation
 
 ### UX / Design
+- Former member of a UX team (NASA — significant differentiator for AI startup roles)
 - Figma workflows
 - Design systems (Radix, Shadcn, Storybook)
 - Accessibility (WCAG, axe-core, screen-reader testing)

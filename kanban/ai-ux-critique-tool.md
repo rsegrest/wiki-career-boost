@@ -1,67 +1,95 @@
 ---
 title: "Kanban: AI-Powered UX Critique Tool"
 created: 2026-05-30
+updated: 2026-06-22
 type: comparison
-tags: [kanban, portfolio, project-management]
+tags: [kanban, portfolio, project-management, hermes-dashboard]
+sources: [freelance-portfolio-strategy.md]
 ---
 
 # Kanban: AI-Powered UX Critique Tool
 
-**Goal:** Web app where you paste a UI screenshot and an LLM critiques it using Nielsen's 10 heuristics, WCAG guidelines, and Gestalt principles.
+**Goal:** Web app where you paste a UI screenshot and an LLM critiques it using Nielsen's 10 heuristics, WCAG guidelines, and Gestalt principles. Annotated image overlay with numbered markers.
 
-**Time Budget:** 1–2 weekends (8–16 hours)
-**Ship Date Target:** June 5, 2026 (before cruise)
-
----
-
-## Backlog
-
-| # | Task | Est. | Priority | Notes |
-|---|------|------|----------|-------|
-| 1 | Scaffold Next.js project with shadcn/ui | 30 min | P0 | `npx shadcn@latest init` |
-| 2 | Build image upload component (drag + drop, paste) | 1 hr | P0 | React Dropzone or native |
-| 3 | Integrate OpenAI Vision API (gpt-4o/gpt-4o-mini) | 1 hr | P0 | Image input + structured output |
-| 4 | Craft system prompt with Nielsen heuristics + WCAG | 1.5 hr | P0 | Need to nail this for quality |
-| 5 | Design critique output format (structured JSON) | 1 hr | P0 | Category, severity, suggestion, reference |
-| 6 | Build critique display UI (cards, severity colors) | 2 hr | P0 | shadcn Card, Badge, Collapsible |
-| 7 | Add "before/after" mockup suggestion feature | 2 hr | P1 | Use AI to suggest redesigns (harder) |
-| 8 | Add example screenshots (Dribbble, bad UI examples) | 30 min | P1 | Demo without uploading |
-| 9 | Deploy to Vercel | 30 min | P0 | Git push → Vercel auto-deploy |
-| 10 | Write README + add screenshot/GIF | 30 min | P1 | Show it critiquing a real UI |
-| 11 | Draft LinkedIn post | 30 min | P1 | "I built an AI UX reviewer" |
-| 12 | Share on LinkedIn + Designer News + Reddit | 15 min | P2 | r/webdev, r/userexperience |
-
-## In Progress
-
-| # | Task | Started | Notes |
-|---|------|---------|-------|
-| — | — | — | — |
-
-## Done
-
-| # | Task | Completed | Notes |
-|---|------|-----------|-------|
-| — | — | — | — |
+**Time Budget:** 2 weekends (16-20 hours)
+**Live Hermes Board:** `default` board (slug: default), 10/10 tasks done
+**Status:** Shipped — in testing & iteration mode
 
 ---
+
+## Live Hermes Kanban Tasks
+
+| ID | Task | Status | Depends On |
+|---|---|---|---|
+| t_e0339420 | Scaffold Next.js + shadcn/ui project | done | — |
+| t_1acea534 | Image upload + drop zone component | done | T1 |
+| t_324d3757 | Craft structured UX critique prompt | done | T1 |
+| t_38d3a25c | API route + vision model integration | done | T1, T3 |
+| t_1110294a | Critique display UI with severity badges | done | T2, T4 |
+| t_ba819091 | Annotated image overlay with bounding boxes | done | T5 |
+| t_a72bab0c | Example screenshots + demo mode | done | T6 |
+| t_f2c747da | Deploy to Vercel | done | T7 |
+| t_e6dbb8ad | README case study + GitHub repo polish | done | T8 |
+| t_069bff13 | LinkedIn post + social sharing | done | T9 |
+
+## Task Dependency Graph
+
+```
+T1 Scaffold ──┬──> T2 Image Upload ──┐
+              │                        ├──> T5 Critique UI ──> T6 Overlay ──> T7 Examples ──> T8 Deploy ──> T9 README ──> T10 LinkedIn
+              └──> T3 Prompt ──> T4 API ┘
+```
+
+T2 and T3 run in parallel after T1. T4 waits for T3 (needs the prompt). T5 waits for T2 + T4 (needs upload + API). Everything after T5 is sequential.
 
 ## Tech Stack
 
-- **Framework:** Next.js 15 (App Router)
-- **Styling:** Tailwind + shadcn/ui
-- **AI:** OpenAI GPT-4o Vision API
-- **State:** React hooks
+- **Framework:** Next.js 15 (App Router) + React 19 + TypeScript
+- **Styling:** Tailwind CSS + shadcn/ui (dark theme)
+- **AI:** OpenAI GPT-4o Vision (primary) or Anthropic Claude 3.5 Sonnet (alternative)
+- **Image Input:** react-dropzone (drag-drop + paste)
+- **Animation:** framer-motion
 - **Deploy:** Vercel
+- **API Keys:** Rick has OpenAI and Anthropic keys configured
 
-## Blockers / Risks
+## Key Architectural Decisions
 
-- Vision API cost — gpt-4o is cheaper, gpt-4o-mini even cheaper
-- Output quality depends heavily on prompt engineering
-- May need few-shot examples in prompt for consistent formatting
-- No offline — requires OpenAI API
+1. **Structured JSON output** — the prompt forces the vision model to return findings as JSON with bounding box coordinates, not freeform text
+2. **Bounding box overlay** — the killer feature. Numbered markers on the screenshot linked to critique cards. This is what makes the demo shareable.
+3. **Model-agnostic via Vercel AI SDK** — can swap between OpenAI and Anthropic without changing code
+4. **Usage limit** — 5 critiques per IP per day to prevent API credit burn on the free demo
+
+## The Prompt (The IP)
+
+The system prompt instructs the vision model to analyze against:
+1. **Nielsen's 10 Usability Heuristics** — visibility of system status, match real world, user control, consistency, error prevention, recognition over recall, flexibility/efficiency, aesthetic/minimalist, error recovery, help/docs
+2. **WCAG 2.1 AA** — color contrast (4.5:1), focus indicators, alt text inference, text spacing
+3. **Gestalt Principles** — proximity, similarity, continuity, closure, common region
+
+Output schema per finding:
+```json
+{
+  "finding": "Low contrast text on button",
+  "heuristic_violated": "WCAG 1.4.3 Contrast (Minimum)",
+  "severity": "serious",
+  "confidence": "high",
+  "recommendation": "Increase button text contrast to at least 4.5:1 ratio",
+  "bounding_box": {"x": 15.2, "y": 42.3, "width": 22.1, "height": 8.5}
+}
+```
 
 ## Success Criteria
 
 - [ ] Live demo that generates a critique I'd share with a designer
 - [ ] Catches at least 3 real issues on a known-bad UI screenshot
+- [ ] Bounding box annotations accurately point to problem areas
+- [ ] Polished dark theme UI that looks professional
 - [ ] 1 LinkedIn post with engagement from UX + AI communities
+- [ ] GitHub repo with stellar README
+
+## Blockers / Risks
+
+- Vision API cost — GPT-4o is ~$0.01-0.03 per image. Add usage limits.
+- Bounding box accuracy — vision models aren't perfect at spatial coordinates. May need to tolerate some imprecision.
+- Output quality depends heavily on prompt engineering — T3 is the most important task
+- No offline mode — requires API key (acceptable for demo)
