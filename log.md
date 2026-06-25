@@ -156,7 +156,13 @@
   - Confirmed: NASA civil service makes no sense for Rick
 - Updated index.md — Total pages: 14
 
-## [2026-06-24] update | Portfolio project ideas — Rounds 2 & 3 brainstorm
+## [2026-06-24] update | Portfolio project ideas — Round 4 brainstorm
+
+- Added 15 new ideas (35-49) to concepts/portfolio-project-ideas.md
+- Categories: Gov/Defense (35-37), Dev Infrastructure (38-40), Accessibility (41-43), Content/Knowledge (44-46), Education (47-49)
+- Updated idea index table — now 49 ideas total
+- Updated build priority list with all 49 ideas
+- All 4 rounds documented with sources
 
 - Updated concepts/portfolio-project-ideas.md with 25 new ideas (10-34)
 - Added linked idea index table at top of page (34 ideas, status, skills)

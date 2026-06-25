@@ -53,6 +53,21 @@ status: active
 | 32 | [AI-Powered Meal Planner](#32-ai-powered-meal-planner) | Life Tool | Available | Complex forms, AI planning, practical UX |
 | 33 | [ESA / Education Savings Tracker](#33-esa--education-savings-tracker) | Life Tool | Available | Financial tracking, regulatory logic, data viz |
 | 34 | [AI Family Calendar Optimizer](#34-ai-family-calendar-optimizer) | Life Tool | Available | Calendar integration, scheduling, iCal export |
+| 35 | [Proposal Win/Loss Analyzer](#35-proposal-winloss-analyzer) | Gov/Defense | Available | Proposal scoring, RFP eval rubric, radar chart |
+| 36 | [Contract Vehicle Comparison Tool](#36-contract-vehicle-comparison-tool) | Gov/Defense | Available | Gov contracting, comparison tables, regulatory |
+| 37 | [Security Clearance Eligibility Quiz](#37-security-clearance-eligibility-quiz) | Gov/Defense | Available | Clearance domain, multi-step wizard, progress viz |
+| 38 | [AI Agent Orchestrator Dashboard](#38-ai-agent-orchestrator-dashboard) | Dev Infra | Available | Real-time monitoring, queue mgmt, operational UX |
+| 39 | [Cron Job Visualizer & Health Monitor](#39-cron-job-visualizer--health-monitor) | Dev Infra | Available | System monitoring, timeline viz, failure analysis |
+| 40 | [Self-Hosted AI Dashboard (Home Lab Monitor)](#40-self-hosted-ai-dashboard-home-lab-monitor) | Dev Infra | Available | Hardware metrics, real-time dashboard, Ollama API |
+| 41 | [Accessible Color Contrast Simulator](#41-accessible-color-contrast-simulator) | Accessibility | Available | WCAG, Canvas image processing, inclusive design |
+| 42 | [Screen Reader Preview Tool](#42-screen-reader-preview-tool) | Accessibility | Available | Accessibility tree, DOM parsing, dev education |
+| 43 | [Form Accessibility Auditor](#43-form-accessibility-auditor) | Accessibility | Available | Form a11y, axe-core, automated testing |
+| 44 | [AI-Powered Link Preview Generator](#44-ai-powered-link-preview-generator) | Content | Available | HTML parsing, metadata extraction, card design |
+| 45 | [AI Knowledge Base Generator](#45-ai-knowledge-base-generator) | Content | Available | Document processing, embeddings, clustering |
+| 46 | [AI-Powered Changelog Generator](#46-ai-powered-changelog-generator) | Content | Available | Git parsing, release notes, dev tooling |
+| 47 | [AI-Powered Flashcard Generator](#47-ai-powered-flashcard-generator) | Education | Available | Content extraction, spaced repetition, Anki export |
+| 48 | [Interactive Regex Teacher](#48-interactive-regex-teacher) | Education | Available | Real-time text processing, educational UX |
+| 49 | [AI-Powered Code Snippet Explainer](#49-ai-powered-code-snippet-explainer) | Education | Available | Code comprehension, syntax highlighting, education |
 
 ---
 
@@ -323,6 +338,112 @@ For maximum career impact, package each project as:
 
 ---
 
+## Round 4 Brainstorm (June 2026)
+
+> 15 more ideas digging into government/defense domain experience, developer infrastructure from Hermes work, accessibility/WCAG depth, content/knowledge tools, and education/training.
+
+### Category 10: Government / Defense Domain
+
+#### 35. Proposal Win/Loss Analyzer
+**What:** Paste an RFP summary and your proposal response. AI scores the proposal against the RFP evaluation criteria, identifies weak sections, and suggests improvements. Based on publicly available RFP evaluation patterns from SAM.gov.
+**Stack:** Next.js + LLM + structured scoring rubric + radar chart
+**Why it's worth it:** Rick has been on the receiving end of the ESSCA II RFP. He understands how proposals are evaluated. This tool proves domain expertise without revealing anything sensitive. Defense contractors (Anduril, Palantir, Booz Allen) would immediately see the value.
+**Skills gap filled:** Government contracting domain, proposal evaluation, structured scoring UX.
+
+#### 36. Contract Vehicle Comparison Tool
+**What:** Compare government contract vehicles (IDIQ, GSA Schedule, BPA, OTA) side-by-side. Input requirements, get recommendations on which vehicle type fits. Show timelines, ceilings, competition requirements.
+**Stack:** Next.js + structured data + LLM + comparison tables
+**Why it's worth it:** Every gov-con employee struggles with "which contract vehicle should we use?" Rick has lived this with ESSCA. Shows deep government contracting knowledge — something almost no web developer understands.
+**Skills gap filled:** Government contracting, regulatory knowledge, comparison UX.
+
+#### 37. Security Clearance Eligibility Quiz
+**What:** Interactive quiz that walks through the SF-86 questionnaire categories (citizenship, financial, foreign contacts, etc.) and gives a rough eligibility self-assessment. Not legal advice — educational tool. "How clearance-ready are you?"
+**Stack:** Next.js + multi-step form wizard + LLM explanations + progress visualization
+**Why it's worth it:** Rick held a Secret clearance. Defense-tech companies need cleared workers. A tool that helps people understand clearance requirements is genuinely useful and positions him as someone who knows the system. The quiz format is inherently engaging.
+**Skills gap filled:** Security clearance domain, multi-step form wizard, progressive disclosure UX.
+
+### Category 11: Developer Infrastructure
+
+#### 38. AI Agent Orchestrator Dashboard
+**What:** A web UI for monitoring and controlling autonomous AI agents. See agent status, logs, outputs in real time. Start/stop/retry agents. Queue management. Think "Kubernetes dashboard for AI agents."
+**Stack:** Next.js + WebSocket + SQLite + agent status visualization
+**Why it's worth it:** Rick literally runs this with Hermes kanban workers. A clean, generic version of an agent orchestration dashboard is exactly what companies building agent platforms need. Shows: real-time monitoring, queue management, operational UX.
+**Skills gap filled:** Agent orchestration, real-time monitoring, operational tooling.
+
+#### 39. Cron Job Visualizer & Health Monitor
+**What:** Visual timeline of all scheduled jobs (cron, systemd timers, etc.) with health status, last run, next run, success rate, and output preview. Alert when jobs fail or drift. Like a "cron calendar" with AI-powered failure analysis.
+**Stack:** Next.js + SQLite + cron parsing + Gantt-style timeline + LLM failure analysis
+**Why it's worth it:** Rick has 15+ YouTube watchers, systemd services, heartbeat crons, and wiki sync jobs. He understands scheduled task pain. This is a tool he'd use. Shows: system monitoring, time-based visualization, failure analysis.
+**Skills gap filled:** System monitoring, timeline visualization, failure analysis UX.
+
+#### 40. Self-Hosted AI Dashboard (Home Lab Monitor)
+**What:** Monitor your local AI infrastructure — Ollama instances, GPU utilization, model cache sizes, request queues. Show which models are loaded, VRAM usage, inference speed benchmarks. "Mission control for your home AI lab."
+**Stack:** Next.js + Ollama API + system metrics + real-time charts + WebSocket
+**Why it's worth it:** Rick has Ollama on the NUC and BigRickPC with an RTX 5070 Ti. This is real infrastructure he manages. Shows: system monitoring, hardware awareness, real-time data. The "home lab" community on Reddit/YouTube is huge and would eat this up.
+**Skills gap filled:** System monitoring, hardware metrics, real-time dashboard UX.
+
+### Category 12: Accessibility & Inclusion
+
+#### 41. Accessible Color Contrast Simulator
+**What:** Input a URL or upload a screenshot. App simulates how the page looks with different visual impairments (protanopia, deuteranopia, tritanopia, cataracts, macular degeneration). Run WCAG contrast checks. AI suggests fixes.
+**Stack:** Next.js + Canvas API (filters) + WCAG contrast calculation + LLM fix suggestions
+**Why it's worth it:** Accessibility tools are increasingly mandated. Combines Rick's UX knowledge with practical WCAG implementation. Shows: accessibility expertise, Canvas image processing, inclusive design. Government and enterprise buyers care deeply about accessibility.
+**Skills gap filled:** Accessibility (WCAG), Canvas image processing, inclusive design UX.
+
+#### 42. Screen Reader Preview Tool
+**What:** Paste a URL. App renders the page and shows what a screen reader would announce — the "reading order," skipped headings, missing alt text, ambiguous link text. AI suggests fixes with code snippets.
+**Stack:** Next.js + Playwright (DOM extraction) + accessibility tree parser + LLM
+**Why it's worth it:** Most developers have never heard their site through a screen reader. This makes the invisible visible. Shows: accessibility tree understanding, DOM parsing, developer education UX. Pairs perfectly with the UX Critique Tool.
+**Skills gap filled:** Accessibility tree, DOM parsing, developer education UX.
+
+#### 43. Form Accessibility Auditor
+**What:** Paste a form URL or HTML. App checks for: label associations, fieldset/legend usage, ARIA roles, keyboard navigation, error identification, required field indication. Generates an accessibility report with fix recommendations.
+**Stack:** Next.js + Playwright + axe-core integration + LLM explanations
+**Why it's worth it:** Forms are the #1 accessibility failure point on the web. A focused tool for form accessibility is immediately useful. Shows: form UX, accessibility automation, focused tooling. Government Section 508 compliance market.
+**Skills gap filled:** Form accessibility, axe-core, automated testing UX.
+
+### Category 13: Content & Knowledge
+
+#### 44. AI-Powered Link Preview Generator
+**What:** Paste any URL. App generates a rich link preview card — title, description, key image, theme color, and AI-written summary. Like Slack/Twitter link previews but smarter. Export as HTML/OG tags.
+**Stack:** Next.js + Cheerio (HTML parsing) + Open Graph extraction + LLM summary
+**Why it's worth it:** Every social platform and chat app needs link previews. Building a better one with AI summaries is a real product. Shows: HTML parsing, metadata extraction, card design UX.
+**Skills gap filled:** HTML parsing, metadata extraction, card design UX.
+
+#### 45. AI Knowledge Base Generator
+**What:** Upload a set of documents (PDFs, markdown, text). App creates a searchable knowledge base with AI-generated summaries, topic clustering, and a visual concept map. Like a mini Notion AI or Glean.
+**Stack:** Next.js + LLM + embeddings + SQLite + concept map visualization
+**Why it's worth it:** Every team has scattered docs. A tool that organizes them into a searchable KB is valuable. Shows: document processing, embeddings, clustering, knowledge management. Rick already does this with his wikis.
+**Skills gap filled:** Document processing, clustering, knowledge management UX.
+
+#### 46. AI-Powered Changelog Generator
+**What:** Connect a GitHub repo. App reads commit history and generates a human-readable changelog — grouped by feature, bugfix, breaking change. AI writes release notes in plain English. Version-tag aware.
+**Stack:** Next.js + GitHub API + LLM + markdown export
+**Why it's worth it:** Every open-source project needs changelogs. Most are terrible. A tool that auto-generates good ones from commits is useful and shareable. Shows: Git history understanding, natural language generation, developer tooling.
+**Skills gap filled:** Git/commit parsing, release note generation, developer tooling.
+
+### Category 14: Education & Training
+
+#### 47. AI-Powered Flashcard Generator
+**What:** Paste text, upload a PDF, or provide a URL. AI extracts key concepts and generates spaced-repetition flashcards (Anki-compatible export). AI difficulty ratings, cloze deletions, and context snippets.
+**Stack:** Next.js + LLM + Anki .apkg export + card preview UI
+**Why it's worth it:** Students and professionals use flashcards for certifications, language learning, and skill building. AI-generated flashcards save hours. Shows: content extraction, spaced-repetition logic, file export.
+**Skills gap filled:** Content extraction, spaced repetition, file format export.
+
+#### 48. Interactive Regex Teacher
+**What:** A visual regex playground where AI explains each part of a pattern in plain English, highlights matches in real-time, and generates practice problems based on your skill level. "Learn regex by doing, with an AI tutor."
+**Stack:** Next.js + regex engine + LLM explanation + live match highlighting
+**Why it's worth it:** Regex is universally feared. An AI tutor that makes it visual and interactive is genuinely educational. Shows: real-time text processing, interactive education UX, progressive learning.
+**Skills gap filled:** Real-time text processing, educational UX, progressive disclosure.
+
+#### 49. AI-Powered Code Snippet Explainer
+**What:** Paste any code snippet. AI breaks it down line-by-line with plain English explanations, identifies the pattern/algorithm, suggests improvements, and finds related documentation. Language auto-detect.
+**Stack:** Next.js + syntax highlighting + LLM + language detection
+**Why it's worth it:** Every developer googles "what does this code do." A tool that explains code with context is useful for juniors and seniors alike. Shows: code understanding, syntax highlighting, educational UX.
+**Skills gap filled:** Code comprehension, syntax highlighting, educational tooling.
+
+---
+
 ## Build Priority (Revised June 2026)
 
 **Already shipped:**
@@ -357,6 +478,21 @@ For maximum career impact, package each project as:
 - AI-Powered Meal Planner (#32) — relatable, practical
 - ESA / Education Savings Tracker (#33) — personal utility
 - AI Family Calendar Optimizer (#34) — relatable, practical
+- Proposal Win/Loss Analyzer (#35) — gov/defense domain, strong for Anduril/Palantir
+- Contract Vehicle Comparison (#36) — niche gov-con knowledge, unique
+- Security Clearance Quiz (#37) — engaging format, clearance domain
+- AI Agent Orchestrator Dashboard (#38) — from Hermes experience, hot space
+- Cron Job Visualizer (#39) — personal utility, sysadmin audience
+- Self-Hosted AI Dashboard (#40) — home lab community, real infrastructure
+- Accessible Color Contrast Simulator (#41) — WCAG depth, gov/enterprise market
+- Screen Reader Preview Tool (#42) — pairs with UX Critique Tool, a11y depth
+- Form Accessibility Auditor (#43) — focused tool, Section 508 market
+- AI Link Preview Generator (#44) — practical, card design
+- AI Knowledge Base Generator (#45) — wiki experience, clustering
+- AI Changelog Generator (#46) — dev tooling, GitHub integration
+- AI Flashcard Generator (#47) — education, Anki export
+- Interactive Regex Teacher (#48) — educational, real-time UX
+- AI Code Snippet Explainer (#49) — code comprehension, broad appeal
 
 ---
 
@@ -365,3 +501,4 @@ For maximum career impact, package each project as:
 - Brainstorm session | 2026-05-30 — Round 1 ideas (1-9)
 - Brainstorm session | 2026-06-24 — Round 2 ideas (10-19) after shipping first 3 projects
 - Brainstorm session | 2026-06-24 — Round 3 ideas (20-34) pushing into M&S depth, AI safety, data+AI, creative, life tools
+- Brainstorm session | 2026-06-24 — Round 4 ideas (35-49) gov/defense, dev infra, accessibility, content, education
