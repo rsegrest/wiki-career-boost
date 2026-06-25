@@ -196,3 +196,12 @@
   - Added 3 new log entries (GitHub README shipped, Nomad Dashboard shipped, wiki pages synced)
 - Updated index.md — kanban board descriptions now show shipped status
 
+## [2026-06-25] create | Sabrina Ramonov AI business & career video summaries
+
+- Created concepts/sabrina-ramonov-ai-business-videos.md
+- Source: 41 career/business-focused videos from @sabrina_ramonov (Dec 2025 – Jun 2026)
+- Key themes: 1-person AI business models, income streams, personal branding (0→3M followers), AI skills for career advancement, industry commentary (AI layoffs, job market)
+- Cross-references: career-move-vs-side-hustle-vs-maximize-current, freelance-portfolio-strategy, react-ai-job-market-salary-2026
+- Companion tech wiki page: wiki-tech/concepts/sabrina-ramonov-ai-tools-videos.md
+- Updated index.md — Total pages: 15
+

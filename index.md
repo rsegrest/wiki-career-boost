@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-24 | Total pages: 14
+> Last updated: 2026-06-25 | Total pages: 15
 
 ## Entities
 
@@ -18,6 +18,7 @@
 
 - [[portfolio-project-ideas]] — Portfolio project ideas for career networking (React + M&S + AI)
 - [[freelance-portfolio-strategy]] — Freelance acquisition playbook, UX positioning, portfolio build plan
+- [[sabrina-ramonov-ai-business-videos]] — 41 AI business/career videos from Sabrina Ramonov: income streams, personal branding, AI skills, career strategy in AI era
 
 ## Kanban Boards
 
