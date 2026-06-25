@@ -1,11 +1,11 @@
 ---
 title: Portfolio Project Ideas for Career Networking
 created: 2026-05-30
-updated: 2026-05-30
+updated: 2026-06-24
 type: concept
 tags: [portfolio, side-project, career, react, ai, networking, open-source]
 sources: []
-status: draft
+status: active
 ---
 
 # Portfolio Project Ideas for Career Networking
@@ -15,33 +15,75 @@ status: draft
 
 ---
 
-## Quick Wins (1–3 weekends)
+## Idea Index
 
-These are small, highly shareable projects that demonstrate specific skills without massive time investment.
+| # | Idea | Category | Status | Skills |
+|---|------|----------|--------|--------|
+| 1 | [AI-Powered UX Critique Tool](#1-ai-powered-ux-critique-tool) | Quick Win | SHIPPED | Vision API, UX heuristics, overlay annotation |
+| 2 | [Nomad Cost-of-Living Dashboard](#2-nomad-cost-of-living-dashboard) | Quick Win | SHIPPED | Data viz, Recharts, filterable tables |
+| 3 | [GitHub Profile README Generator](#3-github-profile-readme-generator) | Quick Win | SHIPPED | GitHub API, LLM generation, copy UX |
+| 4 | [Digital Twin of a Simple System](#4-digital-twin-of-a-simple-system) | M&S | Available | Canvas/SVG, state machine, LLM advisor |
+| 5 | [AI Resume Optimizer](#5-ai-resume-optimizer) | Medium | Available | RAG, PDF parsing, vector DB |
+| 6 | [React + PowerApps Bridge Demo](#6-react--powerapps-bridge-demo) | Medium | Available | PCF, enterprise integration |
+| 7 | [Open-Source Agentic Development Toolkit](#7-open-source-agentic-development-toolkit) | Showcase | Available | Playwright, agent orchestration, npm |
+| 8 | [React Component Library for Simulation Viz](#8-react-component-library-for-simulation-visualizations) | Showcase | Available | D3, Storybook, npm |
+| 9 | [Personal "Operating System" Dashboard](#9-personal-operating-system-dashboard) | Showcase | Available | Multi-API, LLM insights, local storage |
+| 10 | [AI Meeting Transcript Analyzer](#10-ai-meeting-transcript-analyzer) | Practical | Available | Structured output, document processing |
+| 11 | [Local LLM Chat Interface](#11-local-llm-chat-interface) | Practical | Available | Streaming, Ollama, real-time UX |
+| 12 | [AI-Powered Obsidian Wiki Explorer](#12-ai-powered-obsidian-wiki-explorer) | Practical | Available | Graph viz, embeddings, vector search |
+| 13 | ["Roast My Landing Page"](#13-roast-my-landing-page) | Viral | Available | Browser automation, shareable cards |
+| 14 | [AI Agent Sandbox](#14-ai-agent-sandbox) | Viral | Available | Multi-agent, WebSocket, function calling |
+| 15 | [Interactive "Explain This Codebase" Explorer](#15-interactive-explain-this-codebase-explorer) | Viral | Available | Code analysis, graph viz, GitHub API |
+| 16 | [Budget Proposal Estimator](#16-budget-proposal-estimator-non-proprietary) | Career-Signal | Available | Complex forms, financial viz, domain expertise |
+| 17 | [Electron + AI Desktop App Template](#17-electron--ai-desktop-app-template) | Career-Signal | Available | Electron, desktop AI, system integration |
+| 18 | [AI Code Review Dashboard](#18-ai-code-review-dashboard) | Career-Signal | Available | GitHub API, code analysis, diff UX |
+| 19 | [Digital Twin of a Simple System](#19-digital-twin-of-a-simple-system) | M&S Anchor | Available | Canvas/SVG, simulation, LLM advisor |
+| 20 | [Monte Carlo Retirement Planner](#20-monte-carlo-retirement-planner) | M&S | Available | Statistical simulation, Web Workers, D3 |
+| 21 | [Agent-Based Epidemic Simulator](#21-agent-based-epidemic-simulator) | M&S | Available | SIR model, canvas animation, LLM advisor |
+| 22 | [Queueing Theory Visualizer](#22-queueing-theory-visualizer) | M&S | Available | Operations research, animated SVG, math viz |
+| 23 | [AI Hallucination Detector](#23-ai-hallucination-detector) | AI Safety | Available | RAG verification, text highlighting, grounding |
+| 24 | [LLM Prompt Version Control & A/B Tester](#24-llm-prompt-version-control--ab-tester) | AI Safety | Available | Eval methodology, dev tooling, diff viewer |
+| 25 | [AI Decision Audit Trail](#25-ai-decision-audit-trail) | AI Safety | Available | Logging architecture, monitoring, observability |
+| 26 | [Natural Language SQL Query Builder](#26-natural-language-sql-query-builder) | Data + AI | Available | NL-to-SQL, database, multi-turn conversation |
+| 27 | [AI-Powered API Explorer](#27-ai-powered-api-explorer--postman-alternative) | Data + AI | Available | HTTP protocol, API design, dev tooling |
+| 28 | [Spreadsheet AI Formulas Assistant](#28-spreadsheet-ai-formulas-assistant) | Data + AI | Available | Practical AI, spreadsheet UX, non-technical design |
+| 29 | [AI Storyboard Generator](#29-ai-storyboard-generator) | Creative | Available | Multi-modal AI, image gen, PDF export |
+| 30 | [AI Color Palette Generator from Images](#30-ai-color-palette-generator-from-images) | Creative | Available | Canvas API, color theory, design tooling |
+| 31 | [AI Music Mood Board](#31-ai-music-mood-board) | Creative | Available | Audio API, multi-modal, Spotify integration |
+| 32 | [AI-Powered Meal Planner](#32-ai-powered-meal-planner) | Life Tool | Available | Complex forms, AI planning, practical UX |
+| 33 | [ESA / Education Savings Tracker](#33-esa--education-savings-tracker) | Life Tool | Available | Financial tracking, regulatory logic, data viz |
+| 34 | [AI Family Calendar Optimizer](#34-ai-family-calendar-optimizer) | Life Tool | Available | Calendar integration, scheduling, iCal export |
+
+---
+
+## Round 1 — Original Ideas (May 2026)
+
+### Quick Wins (1-3 weekends)
 
 ### 1. AI-Powered UX Critique Tool
 **What:** A web app where you paste a screenshot of any UI and an LLM critiques it using Nielsen's 10 heuristics, WCAG guidelines, and Gestalt principles.
 **Stack:** React + OpenAI Vision API + shadcn/ui
 **Why it networks:** Combines your UX expertise + AI skills. Tweet/LinkedIn post: "I built an AI that critiques UX like a senior designer." Instant engagement from both UX and AI communities.
 **Shareable output:** Live demo + blog post on accuracy testing
+**Status:** SHIPPED — deployed to Vercel, GitHub repo at rsegrest/ux-critique-tool, 10/10 kanban tasks done
 
 ### 2. Nomad Cost-of-Living Dashboard
 **What:** Interactive dashboard using your travel wiki data — compare cities on cost, wifi, safety, family-friendliness.
 **Stack:** Next.js + Recharts + your wiki data
 **Why it networks:** Shows you "eat your own dog food" (using data you personally collected). Perfect for digital nomad/dev communities. Tangible proof of full-stack + data viz skills.
 **Shareable output:** Live site + case study on building with real data
+**Status:** SHIPPED — deployed to Vercel, 11/12 kanban tasks done, 1 archived
 
 ### 3. GitHub Profile README Generator
 **What:** An agentic tool that reads someone's GitHub repos, summarizes their tech stack, and generates a polished profile README with stats, badges, and project highlights.
 **Stack:** React frontend + Python FastAPI backend + GitHub API + LLM
 **Why it networks:** Solves a real problem every developer has. Easy for others to use and share. Network effect: every person who uses it sees your name.
 **Shareable output:** Live tool + "I built this in a weekend" thread
+**Status:** SHIPPED — deployed to Vercel, 11/12 kanban tasks done, 1 archived
 
 ---
 
-## Medium Projects (2–4 weeks)
-
-These demonstrate depth and can become cornerstone portfolio pieces.
+### Medium Projects (2-4 weeks)
 
 ### 4. Digital Twin of a Simple System
 **What:** A visual simulation of a real-world system (traffic flow, coffee shop queue, supply chain) where users can tweak parameters and watch emergent behavior. Add an AI agent that "optimizes" the system.
@@ -63,9 +105,7 @@ These demonstrate depth and can become cornerstone portfolio pieces.
 
 ---
 
-## Showcase Projects (Ongoing)
-
-These are long-term portfolio anchors that keep evolving.
+### Showcase Projects (Ongoing)
 
 ### 7. Open-Source Agentic Development Toolkit
 **What:** A lightweight library for building autonomous web agents (like a mini-Browserbase). Agents that can navigate sites, fill forms, extract data, and make decisions.
@@ -87,6 +127,186 @@ These are long-term portfolio anchors that keep evolving.
 
 ---
 
+## Round 2 Brainstorm (June 2026)
+
+> New ideas generated after shipping the first 3 portfolio projects (UX Critique Tool, GitHub README Generator, Nomad Cost Dashboard). Organized by what they demonstrate and what skills gaps they fill.
+
+### Category 1: Tools You'd Actually Use
+
+#### 10. AI Meeting Transcript Analyzer
+**What:** Upload a Teams/Zoom transcript or paste the text. AI extracts action items, decisions, risks, open questions, and generates a formatted summary + follow-up email draft.
+**Stack:** Next.js + OpenAI + structured JSON output + clipboard/copy UX
+**Why it's worth it:** Rick is on Teams calls all day at NASA. This is a tool he'd actually use. Shows RAG, NLP, and clean UX for structured output. The "I built this for my own meetings" story is gold on LinkedIn.
+**Skills gap filled:** None of the 3 shipped projects show structured document processing or email/template generation.
+
+#### 11. Local LLM Chat Interface
+**What:** A polished ChatGPT-style UI that connects to a local Ollama instance. Model picker, streaming responses, conversation history, system prompt presets.
+**Stack:** Next.js + Ollama API + streaming + localStorage
+**Why it's worth it:** Rick already has Ollama running on the NUC and BigRickPC. A privacy-first local chat UI is a real tool. Shows streaming (none of the shipped projects stream), model selection UX, and local AI integration. The "runs entirely on your hardware" angle is increasingly relevant.
+**Skills gap filled:** Streaming UI, local LLM integration, real-time UX.
+
+#### 12. AI-Powered Obsidian Wiki Explorer
+**What:** Visual graph of wiki pages with AI semantic search — "find pages about cost-of-living in Southeast Asia" returns results by meaning, not keyword. Plus "what should I read next" recommendations.
+**Stack:** React + D3/cytoscape graph + Ollama embeddings + SQLite
+**Why it's worth it:** Rick is already building wikis (3 vaults). This shows he can build tools around his own workflow. Graph visualization + semantic search is a rare combo. Nobody else has "AI-powered Obsidian explorer" in their portfolio.
+**Skills gap filled:** Graph/network visualization, embeddings, vector search.
+
+### Category 2: Viral / Attention-Getters
+
+#### 13. "Roast My Landing Page"
+**What:** Paste a URL, the app takes a screenshot, AI delivers a brutal-but-funny UX critique in the voice of a sarcastic design critic. Rate limit to prevent abuse. Shareable roast cards with the screenshot + top 3 burns.
+**Stack:** Next.js + Playwright (screenshot) + Vision API + shareable card generation
+**Why it's worth it:** The UX Critique Tool is professional and B2B. This is the viral B2C version. "My AI roasted your landing page" is inherently shareable. Shows browser automation + vision + personality-driven prompt engineering. Could go viral on X/Reddit.
+**Skills gap filled:** Browser automation, shareable content generation, humor in prompts.
+
+#### 14. AI Agent Sandbox
+**What:** A visual playground where you watch AI agents interact in real time. Agents navigate a simple web environment, solve puzzles, trade resources, or cooperate on tasks. You can tweak their system prompts and watch behavior change.
+**Stack:** React + WebSocket + LLM function calling + canvas/grid visualization
+**Why it's worth it:** Agent orchestration is the hottest space in AI right now. A visual, interactive agent simulator is rare — most agent demos are terminal-based and boring. This shows multi-agent coordination, real-time UI, and function calling. Defense-tech companies (Anduril, Palantir) would drool over this.
+**Skills gap filled:** Multi-agent orchestration, real-time UI, function calling, WebSocket streaming.
+
+#### 15. Interactive "Explain This Codebase" Explorer
+**What:** Paste a GitHub repo URL. AI reads the code, generates an interactive visual breakdown — architecture diagram, key files, data flow, entry points. Click any node to see AI explanation of that module.
+**Stack:** Next.js + GitHub API + LLM + interactive graph viz (react-flow or d3)
+**Why it's worth it:** Every developer has stared at an unfamiliar codebase wishing someone would explain it. This solves a real pain point. Network effect — people share it when their repo gets explained. Shows: code understanding, graph visualization, GitHub API.
+**Skills gap filled:** Code analysis, interactive graph UX, large-context LLM usage.
+
+### Category 3: Career-Signal Pieces
+
+#### 16. Budget Proposal Estimator (Non-Proprietary)
+**What:** Input project parameters (scope, team size, timeline, complexity), AI suggests cost breakdown, risk factors, and timeline with confidence intervals. Not the NASA app — a clean, public version.
+**Stack:** Next.js + shadcn forms + LLM + Recharts for cost visualization
+**Why it's worth it:** Rick is literally building a proposal/budget app at work with "potential six-figure savings." This lets him tell that story without revealing proprietary details. Shows: complex form UX, domain expertise, AI + finance. Hiring managers who see this will ask about the real version — and he can talk about the impact.
+**Skills gap filled:** Complex form UX, financial data visualization, domain expertise demonstration.
+
+#### 17. Electron + AI Desktop App Template
+**What:** Open-source starter template showing how to integrate AI into an Electron + React + TypeScript desktop app. Include streaming chat, system tray, local file access, and AI-powered search.
+**Stack:** Electron + React + TypeScript + Ollama/OpenAI + Tailwind
+**Why it's worth it:** Rick is building exactly this at work but can't show it. A clean open-source template version is shareable and proves the skill. Electron + AI is a niche almost nobody has portfolio pieces for. Enterprise companies building desktop AI tools would notice.
+**Skills gap filled:** Electron, desktop AI, system integration. Directly mirrors the current work project.
+
+#### 18. AI Code Review Dashboard
+**What:** Paste a GitHub PR URL or upload a diff. AI reviews the code with structured feedback: security issues, performance, style, bugs, suggestions. Interactive diff viewer with inline AI comments.
+**Stack:** Next.js + GitHub API + LLM + diff viewer (react-diff-viewer)
+**Why it's worth it:** Code review tooling is booming (CodeRabbit, etc.). Building your own shows deep understanding of code quality, security, and developer tooling. Useful for own repos. Shows: GitHub API, code analysis, diff UX.
+**Skills gap filled:** Code analysis, security awareness, developer tooling UX.
+
+### Category 4: The M&S Anchor
+
+#### 19. Digital Twin of a Simple System
+**What:** Interactive simulation of a real-world system (traffic flow, coffee shop queue, supply chain). Users tweak parameters and watch emergent behavior. An AI agent "optimizes" the system and explains its strategy.
+**Stack:** React canvas/SVG + state machine + LLM advisor
+**Why it's worth it:** The strongest M&S piece. Directly leverages Rick's Master's degree. "Digital twin" is defense-industry language. Bridges NASA world with React/AI world. No other web developer has an M&S degree — this is the moat.
+**Skills gap filled:** M&S demonstration, canvas/SVG animation, simulation visualization.
+
+---
+
+## Round 3 Brainstorm (June 2026)
+
+> 15 more ideas pushing into new territory: simulation/M&S depth, AI safety/observability, data+AI, creative/generative, and practical life tools.
+
+### Category 5: Simulation & M&S (your moat)
+
+#### 20. Monte Carlo Retirement Planner
+**What:** Input your salary, savings rate, investment mix, expected Social Security, and the simulator runs 10,000 trials with market volatility + inflation randomness. Visualize outcomes as a probability distribution — "87% chance you hit $2M by 65." Let users drag sliders and watch the distribution shift in real time.
+**Stack:** React + D3 histogram + Web Worker (for the Monte Carlo loop) + Tailwind
+**Why it's worth it:** Personal finance + simulation + interactive viz is a potent combo. Rick would actually use this for his own retirement planning. Every dev knows Monte Carlo conceptually but almost none can build an interactive one. Shows statistical thinking, Web Workers for performance, and data viz.
+**Skills gap filled:** Statistical simulation, probability distributions, Web Worker performance.
+
+#### 21. Agent-Based Epidemic Simulator
+**What:** A grid-based simulation where each cell is a person with health state (SIR model — Susceptible, Infected, Recovered). Users tweak transmission rate, recovery time, mobility. Watch waves propagate in real time. AI agent suggests intervention strategies ("lock down at 30% infection to flatten the curve").
+**Stack:** React canvas + state machine + LLM advisor + Recharts for time-series
+**Why it's worth it:** Directly uses M&S coursework. Epidemic modeling is universally understood post-COVID. The AI advisor layer turns it from a toy into an intelligent tool. Defense/government orgs (DARPA, BARDA, FEMA) use exactly this kind of modeling. Shows: agent-based modeling, real-time simulation, public health domain awareness.
+**Skills gap filled:** Agent-based modeling, SIR models, real-time canvas animation.
+
+#### 22. Queueing Theory Visualizer
+**What:** Visual simulation of different queue configurations — single server, multi-server, priority queue, round-robin. Show Little's Law in action. Users add/remove servers and watch wait times change. AI explains the math and recommends optimal configuration.
+**Stack:** React + animated SVG + state machine + LLM
+**Why it's worth it:** Queueing theory is used in everything from call centers to DevOps to ER triage. A visual, interactive tool for it doesn't exist as a polished web app. Niche but deeply useful. Shows: operations research, real-time animation, mathematical visualization.
+**Skills gap filled:** Operations research, animated SVG, mathematical UX.
+
+### Category 6: AI Safety / Trust / Observability
+
+#### 23. AI Hallucination Detector
+**What:** Paste text + a source document. AI checks each claim against the source and flags unsupported statements with confidence scores. Color-coded output: green (supported), yellow (partially supported), red (unsupported/hallucinated).
+**Stack:** Next.js + LLM + structured JSON output + highlighted text view
+**Why it's worth it:** "AI hallucination" is the #1 concern of every company adopting AI. A tool that detects it is immediately valuable. Shows: RAG, source verification, safety thinking. This is the kind of thing that makes hiring managers say "this person thinks about AI the right way."
+**Skills gap filled:** AI safety, verification/grounding, text highlighting UX.
+
+#### 24. LLM Prompt Version Control & A/B Tester
+**What:** A tool to manage different versions of prompts, test them against a dataset, and compare outputs side-by-side. Track which prompt version performs best on accuracy, tone, length. Like Git for prompts.
+**Stack:** Next.js + SQLite + LLM API + diff viewer
+**Why it's worth it:** Prompt engineering is becoming a discipline. No good open-source tool exists for versioning and testing prompts systematically. Shows: dev tooling, evaluation methodology, systematic AI thinking. This could become an actual product.
+**Skills gap filled:** AI evaluation, prompt engineering methodology, dev tooling.
+
+#### 25. AI Decision Audit Trail
+**What:** Log every AI call your app makes — the prompt, the response, the model, the token count, the latency, and the user's action afterward. Visualize decision trees and flag anomalous responses. Think "flight data recorder for AI."
+**Stack:** Next.js + SQLite + Recharts + WebSocket for real-time monitoring
+**Why it's worth it:** AI observability is an emerging field (LangSmith, Helicone). Building your own version shows you understand AI systems at an infrastructure level, not just "call the API and hope." Shows: logging architecture, monitoring UX, systems thinking.
+**Skills gap filled:** AI observability, logging architecture, infrastructure thinking.
+
+### Category 7: Data + AI
+
+#### 26. Natural Language SQL Query Builder
+**What:** Connect a SQLite database (or upload a CSV). Type questions in plain English: "Show me average cost by city for families of 4." AI translates to SQL, runs the query, and visualizes results. Users can refine with follow-up questions.
+**Stack:** Next.js + SQLite + LLM + Recharts
+**Why it's worth it:** Text-to-SQL is one of the highest-value AI applications. Every business has data locked behind SQL. Shows: database integration, NL-to-SQL, data viz, multi-turn conversation.
+**Skills gap filled:** SQL generation, database integration, multi-turn AI conversation.
+
+#### 27. AI-Powered API Explorer / Postman Alternative
+**What:** A web-based API client (like Postman) where you describe what you want in English and AI generates the request — method, URL, headers, body. Send the request and AI explains the response in plain language.
+**Stack:** Next.js + fetch API + LLM + syntax-highlighted response viewer
+**Why it's worth it:** Postman is bloated and annoying. A lightweight, AI-native API client is a fresh take. Shows: HTTP protocol knowledge, API design, developer tooling UX.
+**Skills gap filled:** API design, HTTP protocol, developer tooling.
+
+#### 28. Spreadsheet AI Formulas Assistant
+**What:** Upload a CSV or paste spreadsheet data. Describe what you want in English: "Calculate 3-month moving average of column C and flag rows where it drops below the 2-year mean." AI generates the formula, explains it, and applies it.
+**Stack:** Next.js + LLM + simple spreadsheet grid component (react-data-grid)
+**Why it's worth it:** Excel formulas are the world's most widely used programming language. AI-assisted formula generation is immediately useful to millions of people. Shows: practical AI, spreadsheet manipulation, UX for non-technical users.
+**Skills gap filled:** Practical AI, spreadsheet UX, non-technical user design.
+
+### Category 8: Creative / Generative
+
+#### 29. AI Storyboard Generator
+**What:** Describe a scene or short story. AI generates a visual storyboard — panel-by-panel descriptions with AI-generated images (via DALL-E or local Stable Diffusion) and camera angle suggestions. Export as PDF or shareable link.
+**Stack:** Next.js + OpenAI (text + image) + printable layout
+**Why it's worth it:** Bridges creative + AI + UX. Filmmakers, game designers, and marketers need storyboards. Nobody has a good AI storyboard tool that's also polished. Shows: multi-modal AI (text + image), creative UX, export functionality.
+**Skills gap filled:** Image generation, creative UX, PDF/print export.
+
+#### 30. AI Color Palette Generator from Images
+**What:** Upload any image. AI extracts the dominant color palette, suggests complementary colors, generates Tailwind/CSS variables, and shows mock UI previews using the palette. One-click copy.
+**Stack:** Next.js + Canvas API (color extraction) + LLM (naming + suggestions) + live UI preview
+**Why it's worth it:** Designers and developers both need color palettes. Image-based extraction + AI naming is a nice twist. Quick to build, visually satisfying, inherently shareable ("generate a palette from your photo").
+**Skills gap filled:** Canvas API, color theory, design tooling, live preview UX.
+
+#### 31. AI Music Mood Board
+**What:** Describe a vibe ("rainy day jazz for a noir film scene"). AI generates a mood board — color palette, descriptive text, Spotify track recommendations, and AI-generated ambient audio (using AudioCraft or similar).
+**Stack:** Next.js + LLM + Spotify API + Web Audio API
+**Why it's worth it:** Multi-modal creative AI is rare. Combines text, audio, visual, and API integration. Shows you can work across modalities. Niche audience (filmmakers, game devs, content creators) but deeply impressive when it works.
+**Skills gap filled:** Audio API, multi-modal integration, creative AI.
+
+### Category 9: Practical Life Tools
+
+#### 32. AI-Powered Meal Planner
+**What:** Input dietary preferences, family size, budget. AI generates a weekly meal plan, grocery list, and cost estimate. Can factor in what's in the pantry. Family of 5 in Huntsville — Rick would use this.
+**Stack:** Next.js + LLM + printable grocery list + cost charts
+**Why it's worth it:** Practical, uses Rick's own life context, and solves a real problem for families. "I built an AI meal planner for my family of 5" is a relatable LinkedIn post. Shows: complex form inputs, AI planning, practical UX.
+**Skills gap filled:** Practical AI, family/life context, form-heavy UX.
+
+#### 33. ESA / Education Savings Tracker
+**What:** Track ESA (Education Savings Account) contributions, spending, and remaining balance across school years. AI suggests budget allocation and flags potential shortfalls. Built around Alabama ESA rules.
+**Stack:** Next.js + SQLite + LLM + Recharts
+**Why it's worth it:** Rick is paying $30K+/yr for private school from ESA. A tool to track this is something he'd genuinely use. Shows: financial tracking, state-specific domain logic, data visualization.
+**Skills gap filled:** Financial domain, state/regulatory logic, tracking UX.
+
+#### 34. AI Family Calendar Optimizer
+**What:** Input everyone's schedules (school, work, activities, appointments). AI finds conflicts, suggests optimal times for family activities, and generates a shared calendar feed. "You haven't had a family dinner all together in 12 days — suggest 3 slots this week."
+**Stack:** Next.js + calendar API + LLM + iCal export
+**Why it's worth it:** Family of 5 with complex schedules. This is a real problem Rick lives with. Shows: calendar integration, scheduling algorithms, practical AI. Relatable to every working parent on LinkedIn.
+**Skills gap filled:** Calendar integration, scheduling optimization, iCal generation.
+
+---
+
 ## Networking-Optimized Share Formats
 
 For maximum career impact, package each project as:
@@ -103,19 +323,45 @@ For maximum career impact, package each project as:
 
 ---
 
-## Which Should Rick Build First?
+## Build Priority (Revised June 2026)
 
-**Recommended sequence:**
+**Already shipped:**
+1. AI UX Critique Tool (#1) — done
+2. GitHub README Generator (#3) — done
+3. Nomad Cost Dashboard (#2) — done
 
-1. **Start with #3 (GitHub README Generator)** — Quick win, immediate utility, network effect
-2. **Then #1 (AI UX Critique)** — Shows UX + AI intersection, highly visual and shareable
-3. **Then #4 (Digital Twin)** — Anchors the M&S + AI narrative for NASA/defense conversations
-4. **Then #7 or #8 (Open Source)** — Long-term credibility building
+**Next 3 recommended:**
+1. Local LLM Chat Interface (#11) — fills streaming gap, Rick has Ollama, quick to ship
+2. AI Agent Sandbox (#14) — hot space, visually stunning, defense-tech signal
+3. Budget Proposal Estimator (#16) — lets Rick tell the "six-figure savings" story publicly
 
-**Immediate action:** Pick one Quick Win, scope it to a single weekend, ship it, and post about it on LinkedIn within 48 hours of completion.
+**Lower priority but still strong:**
+- AI Meeting Transcript Analyzer (#10) — practical, but similar to other AI tools
+- "Roast My Landing Page" (#13) — viral potential but less career-signal
+- Interactive Codebase Explorer (#15) — great utility, complex to build well
+- Electron + AI Desktop App Template (#17) — strong signal, niche audience
+- AI Code Review Dashboard (#18) — solid, competitive space
+- Digital Twin (#19) — high value but higher time investment
+- Monte Carlo Retirement Planner (#20) — strong M&S + personal utility
+- Agent-Based Epidemic Simulator (#21) — strong M&S, post-COVID relevance
+- Queueing Theory Visualizer (#22) — niche OR, good for defense-tech
+- AI Hallucination Detector (#23) — signals senior AI thinking
+- LLM Prompt Version Control (#24) — could become a product
+- AI Decision Audit Trail (#25) — observability is emerging
+- Natural Language SQL Builder (#26) — high-value, competitive
+- AI-Powered API Explorer (#27) — Postman pain is real
+- Spreadsheet AI Formulas (#28) — broad appeal, practical
+- AI Storyboard Generator (#29) — creative, multi-modal
+- AI Color Palette Generator (#30) — quick, visual, shareable
+- AI Music Mood Board (#31) — multi-modal, niche
+- AI-Powered Meal Planner (#32) — relatable, practical
+- ESA / Education Savings Tracker (#33) — personal utility
+- AI Family Calendar Optimizer (#34) — relatable, practical
 
 ---
 
 ## Sources
 
-- Brainstorm session | 2026-05-30
+- Brainstorm session | 2026-05-30 — Round 1 ideas (1-9)
+- Brainstorm session | 2026-06-24 — Round 2 ideas (10-19) after shipping first 3 projects
+- Brainstorm session | 2026-06-24 — Round 3 ideas (20-34) pushing into M&S depth, AI safety, data+AI, creative, life tools

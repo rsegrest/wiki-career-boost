@@ -156,6 +156,16 @@
   - Confirmed: NASA civil service makes no sense for Rick
 - Updated index.md — Total pages: 14
 
+## [2026-06-24] update | Portfolio project ideas — Rounds 2 & 3 brainstorm
+
+- Updated concepts/portfolio-project-ideas.md with 25 new ideas (10-34)
+- Added linked idea index table at top of page (34 ideas, status, skills)
+- Marked ideas 1-3 as SHIPPED in the index
+- Round 2 (10-19): Tools you'd use, viral, career-signal, M&S anchor
+- Round 3 (20-34): M&S depth (Monte Carlo, epidemic sim, queueing), AI safety (hallucination detector, prompt versioning, audit trail), data+AI (NL-SQL, API explorer, spreadsheet formulas), creative (storyboard, color palette, music mood board), life tools (meal planner, ESA tracker, family calendar)
+- Updated build priority with all 34 ideas ranked
+- Updated index.md — Total pages: 14
+
 ## [2026-06-24] update | All kanban wiki pages synced to Hermes board state
 
 - All 3 portfolio projects now show as SHIPPED in the career wiki
