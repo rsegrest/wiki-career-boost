@@ -1,8 +1,9 @@
 ---
 title: "Kanban: GitHub Profile README Generator"
 created: 2026-05-30
+updated: 2026-06-24
 type: comparison
-tags: [kanban, portfolio, project-management]
+tags: [kanban, portfolio, project-management, hermes-dashboard]
 ---
 
 # Kanban: GitHub Profile README Generator
@@ -10,38 +11,29 @@ tags: [kanban, portfolio, project-management]
 **Goal:** Build a web app that reads a GitHub user's repos and generates a polished profile README with stats, badges, and highlights.
 
 **Time Budget:** 1–2 weekends (8–16 hours)
-**Ship Date Target:** June 5, 2026 (before cruise)
+**Live Hermes Board:** `github-readme-generator` board — 11/12 done, 1 archived
+**Status:** Shipped — deployed to Vercel, README written, LinkedIn post drafted. Social sharing task archived (per Rick's no-auto-post rule).
 
 ---
 
-## Backlog
+## Live Hermes Kanban Tasks
 
-| # | Task | Est. | Priority | Notes |
-|---|------|------|----------|-------|
-| 1 | Scaffold Next.js project with shadcn/ui | 30 min | P0 | `npx shadcn@latest init` |
-| 2 | Set up GitHub API integration (REST + GraphQL) | 1 hr | P0 | PAT token, rate limit handling |
-| 3 | Fetch user profile + top repos + language stats | 1 hr | P0 | `/users/{user}`, `/users/{user}/repos` |
-| 4 | Design README template structure | 1 hr | P0 | Header, stats, top repos, skills, social |
-| 5 | Build LLM prompt for README generation | 1 hr | P0 | OpenAI API, gpt-4o-mini is fine |
-| 6 | Build UI: username input + preview panel | 2 hr | P0 | Form + split-pane preview |
-| 7 | Generate markdown output with copy button | 30 min | P0 | `react-markdown` or raw string |
-| 8 | Add GitHub stats cards (generated badges) | 1 hr | P1 | github-readme-stats or custom |
-| 9 | Deploy to Vercel | 30 min | P0 | Git push → Vercel auto-deploy |
-| 10 | Write README + add screenshot/GIF | 30 min | P1 | Good README = more stars |
-| 11 | Draft LinkedIn post | 30 min | P1 | Ship together with code |
-| 12 | Share on LinkedIn + relevant subreddits | 15 min | P2 | r/webdev, r/reactjs, r/cscareerquestions |
+| ID | Task | Status | Original # |
+|---|---|---|---|
+| t_9d15bbcf | Scaffold Next.js project with shadcn/ui | done | 1 |
+| t_a2a4c58b | Set up GitHub API integration (REST + GraphQL) | done | 2 |
+| t_9f078750 | Fetch user profile + top repos + language stats | done | 3 |
+| t_f3959327 | Design README template structure | done | 4 |
+| t_ac4ced0c | Build LLM prompt for README generation | done | 5 |
+| t_5282ff23 | Build UI - username input + preview panel | done | 6 |
+| t_a6d6d45b | Generate markdown output with copy button | done | 7 |
+| t_f1e629ce | Add GitHub stats cards (generated badges) | done | 8 |
+| t_75717a7f | Deploy to Vercel | done | 9 |
+| t_ded4b72b | Write project README + add screenshot/GIF | done | 10 |
+| t_66f4bc17 | Draft LinkedIn post | done | 11 |
+| t_a35d9a79 | Share on LinkedIn + relevant subreddits | archived | 12 |
 
-## In Progress
-
-| # | Task | Started | Notes |
-|---|------|---------|-------|
-| — | — | — | — |
-
-## Done
-
-| # | Task | Completed | Notes |
-|---|------|-----------|-------|
-| — | — | — | — |
+**Note:** Task 12 (social sharing) was archived per Rick's standing rule: no social media posting without explicit approval. LinkedIn post draft exists and is ready to post when Rick gives the go-ahead.
 
 ---
 
@@ -49,18 +41,24 @@ tags: [kanban, portfolio, project-management]
 
 - **Framework:** Next.js 15 (App Router)
 - **Styling:** Tailwind + shadcn/ui
-- **APIs:** GitHub REST API, OpenAI API
+- **APIs:** GitHub REST API, OpenAI API (gpt-4o-mini)
 - **State:** React hooks (no state library needed)
 - **Deploy:** Vercel (free tier)
 
-## Blockers / Risks
-
-- GitHub API rate limits (60 req/hr unauthenticated, 5000 with PAT)
-- LLM output inconsistency — may need prompt iteration
-- No offline capability — requires GitHub API + OpenAI API
-
 ## Success Criteria
 
-- [ ] Live demo at `ricksegrest.com` or Vercel subdomain
-- [ ] Generates a README I'd actually use on my own profile
-- [ ] 1 LinkedIn post published with engagement
+- [x] Live demo deployed to Vercel
+- [x] Generates a README I'd actually use on my own profile
+- [ ] LinkedIn post published with engagement (drafted, pending Rick's approval to post)
+
+## Blockers / Risks
+
+- GitHub API rate limits (60 req/hr unauthenticated, 5000 with PAT) — handled with PAT
+- LLM output inconsistency — addressed through prompt iteration
+- No offline capability — requires GitHub API + OpenAI API (acceptable for demo)
+
+## Next Steps
+
+1. Rick reviews the live demo and LinkedIn draft
+2. If approved, un-archive task 12 and post
+3. Add to portfolio site when rebuilt

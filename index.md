@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-23 | Total pages: 14 (updated board structure)
+> Last updated: 2026-06-24 | Total pages: 14
 
 ## Entities
 
@@ -21,10 +21,10 @@
 
 ## Kanban Boards
 
-- [[kanban/portfolio-kanban-hub]] — Portfolio project hub (3 Hermes boards, 1 shipped, 2 active)
+- [[kanban/portfolio-kanban-hub]] — Portfolio project hub (3 Hermes boards, all shipped)
 - [[kanban/ai-ux-critique-tool]] — AI UX Critique Tool (shipped, in testing/iteration)
-- [[kanban/github-readme-generator]] — GitHub README Generator (active, 12 tasks queued)
-- [[kanban/nomad-cost-dashboard]] — Nomad Cost Dashboard (active, 12 tasks queued)
+- [[kanban/github-readme-generator]] — GitHub README Generator (shipped, 11/12 done, 1 archived)
+- [[kanban/nomad-cost-dashboard]] — Nomad Cost Dashboard (shipped, 11/12 done, 1 archived)
 
 ## Comparisons
 

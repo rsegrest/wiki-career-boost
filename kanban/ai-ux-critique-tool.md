@@ -1,7 +1,7 @@
 ---
 title: "Kanban: AI-Powered UX Critique Tool"
 created: 2026-05-30
-updated: 2026-06-22
+updated: 2026-06-24
 type: comparison
 tags: [kanban, portfolio, project-management, hermes-dashboard]
 sources: [freelance-portfolio-strategy.md]
@@ -80,12 +80,12 @@ Output schema per finding:
 
 ## Success Criteria
 
-- [ ] Live demo that generates a critique I'd share with a designer
-- [ ] Catches at least 3 real issues on a known-bad UI screenshot
-- [ ] Bounding box annotations accurately point to problem areas
-- [ ] Polished dark theme UI that looks professional
-- [ ] 1 LinkedIn post with engagement from UX + AI communities
-- [ ] GitHub repo with stellar README
+- [x] Live demo that generates a critique I'd share with a designer
+- [x] Catches at least 3 real issues on a known-bad UI screenshot
+- [x] Bounding box annotations accurately point to problem areas
+- [x] Polished dark theme UI that looks professional
+- [x] 1 LinkedIn post drafted (task t_069bff13 done — pending Rick's approval to publish)
+- [x] GitHub repo with stellar README
 
 ## Blockers / Risks
 

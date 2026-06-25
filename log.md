@@ -156,3 +156,27 @@
   - Confirmed: NASA civil service makes no sense for Rick
 - Updated index.md — Total pages: 14
 
+## [2026-06-24] update | All kanban wiki pages synced to Hermes board state
+
+- All 3 portfolio projects now show as SHIPPED in the career wiki
+- kanban/ai-ux-critique-tool.md:
+  - Updated date to 2026-06-24
+  - Checked all 6 success criteria boxes (was all unchecked)
+  - Clarified LinkedIn post is drafted, pending Rick's approval
+- kanban/github-readme-generator.md:
+  - Complete rewrite from stale backlog-only page to shipped status
+  - Added all 12 Hermes task IDs (t_9d15bbcf through t_a35d9a79)
+  - 11 done, 1 archived (social sharing — per no-auto-post rule)
+  - Checked success criteria, noted LinkedIn draft pending approval
+- kanban/nomad-cost-dashboard.md:
+  - Complete rewrite from stale backlog-only page to shipped status
+  - Added all 12 Hermes task IDs (t_9c7ed77f through t_419f85cf)
+  - 11 done, 1 archived ("Rick's visited" badge — not worth the effort)
+  - Checked success criteria, noted LinkedIn draft pending approval
+- kanban/portfolio-kanban-hub.md:
+  - Updated project table: all 3 now show as Shipped
+  - Updated ship checklist: 4/6 items checked (deploy, repo, README, LinkedIn draft done; posting + portfolio site pending)
+  - Added per-project shipped summaries with features and archived task reasons
+  - Added 3 new log entries (GitHub README shipped, Nomad Dashboard shipped, wiki pages synced)
+- Updated index.md — kanban board descriptions now show shipped status
+
