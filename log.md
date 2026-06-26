@@ -205,3 +205,19 @@
 - Companion tech wiki page: wiki-tech/concepts/sabrina-ramonov-ai-tools-videos.md
 - Updated index.md — Total pages: 15
 
+## [2026-06-26] create | Wife's SLP compensation analysis and career options
+
+- Created entities/wife-slp-profile.md — CCC-SLP profile, compensation, benefits, work environment
+- Created entities/restore-therapy-services.md — Company profile, ratings, compensation patterns, PTO/scheduling issues
+- Created queries/slp-compensation-analysis-2026.md — Full market research: pay comparison, leave comparison, 6 career options ranked
+- Key findings:
+  - Wife at $35/hr is $7-8/hr below Huntsville/Madison market avg ($42-43/hr)
+  - $15-35K below national medians (ASHA SNF $105.5K, BLS $95.4K)
+  - Expected ~20% CCC raise did not materialize — consistent with Restore's no-raise pattern (8+ yrs per reviews)
+  - 80 hrs PTO/yr below market (typical 10-15 days + separate sick)
+  - Restore forces PTO for census gaps, only 4 paid holidays
+  - Top options: teletherapy ($45-52/hr remote), hospital ($100K+), competing offer to negotiate, PRN side work, school system
+  - Teletherapy confirmed viable in AL: 37 remote openings, VocoVision/Soliant actively recruiting
+- Updated index.md — Total pages: 18
+- Email with full analysis sent to rsegrest77@gmail.com
+

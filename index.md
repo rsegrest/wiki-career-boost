@@ -2,17 +2,19 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-25 | Total pages: 15
+> Last updated: 2026-06-26 | Total pages: 18
 
 ## Entities
 
 ### People
 - [[rick-segrest-pro]] — Rick Segrest, Full-Stack Web Developer (React, UX, AI, M&S)
+- [[wife-slp-profile]] — Rick's wife, CCC-SLP at Restore Therapy Services (Madison, AL)
 
 ### Organizations
 - [[nasa]] — Space agency (7+ years, current assignment)
 - [[amentum]] — Staffing contractor (supports NASA assignment)
 - [[uah]] — University of Alabama in Huntsville (M.S. M&S)
+- [[restore-therapy-services]] — AL therapy services provider, wife's current employer
 
 ## Concepts
 
@@ -36,3 +38,4 @@
 - [[essca-ii-rfp-analysis]] — ESSCA II RFP rate benchmarks, contract structure, and salary positioning
 - [[react-ai-job-market-salary-2026]] — Remote React+AI job market: salary data, freelance rates, company targets
 - [[nasa-civil-service-gs-pay]] — NASA civil service GS pay, FERS pension, and why it doesn't work at age 49
+- [[slp-compensation-analysis-2026]] — Wife's SLP salary vs market, leave comparison, and 6 career options ranked
