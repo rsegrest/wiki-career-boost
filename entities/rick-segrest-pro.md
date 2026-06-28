@@ -1,7 +1,7 @@
 ---
 title: Rick Segrest — Professional Profile
 created: 2026-05-30
-updated: 2026-06-22
+updated: 2026-06-26
 type: entity
 tags: [person, full-stack, frontend, react, ux-designer, ai-engineer, agent-developer, united-states]
 sources: []
@@ -165,7 +165,7 @@ This triad is rare. Most React devs lack systems background. Most M&S people lac
 |---|---|---|---|
 | GitHub Profile | Active | github.com/ricksegrest | Repos, contributions, green squares |
 | LinkedIn | Active | linkedin.com/in/ricksegrest | Posts, recommendations, endorsements |
-| Resume | Draft | — | Target: 2 pages, achievement-focused |
+| Resume | v2026 (integrated) | [[rick-segrest-resume-v2026]] | Detailed professional experience, awards (Dyreqt 2025 Innovation Award, Digital Twin 2024 Group Award), Power Apps project details; public version omits contact for posting |
 | LinkedIn Profile | Active | linkedin.com/in/ricksegrest | 376 followers, 377 connections |
 | Certifications (4) | Completed | LinkedIn Learning | AI, XAI, Python DS (2020) |
 | Publications (6) | Published | IEEE, Linux Mag, etc. | Game engines, VoIP, journalism |
