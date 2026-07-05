@@ -1,7 +1,7 @@
 ---
 title: Portfolio Project Ideas for Career Networking
 created: 2026-05-30
-updated: 2026-06-24
+updated: 2026-07-02
 type: concept
 tags: [portfolio, side-project, career, react, ai, networking, open-source]
 sources: []
@@ -69,6 +69,11 @@ status: active
 | 47 | [AI-Powered Flashcard Generator](#47-ai-powered-flashcard-generator) | Education | Available | Content extraction, spaced repetition, Anki export |
 | 48 | [Interactive Regex Teacher](#48-interactive-regex-teacher) | Education | Available | Real-time text processing, educational UX |
 | 49 | [AI-Powered Code Snippet Explainer](#49-ai-powered-code-snippet-explainer) | Education | Available | Code comprehension, syntax highlighting, education |
+| 50 | [Agent Memory Browser](#50-agent-memory-browser) | Agent OS | Available | SQLite CRUD, graph viz, file watching, admin UX |
+| 51 | [Agent Tool Execution Visualizer](#51-agent-tool-execution-visualizer) | Agent OS | Available | WebSocket streaming, real-time UI, JSON viewer |
+| 52 | [Agent Cron Timeline & Health Monitor](#52-agent-cron-timeline--health-monitor) | Agent OS | Available | System monitoring, cron parsing, timeline viz |
+| 53 | [Agent Session History Browser](#53-agent-session-history-browser) | Agent OS | Available | FTS5 search, conversation tree, export UX |
+| 54 | [Agent Skill/Plugin Manager](#54-agent-skillplugin-manager) | Agent OS | Available | File CRUD, YAML parsing, admin panel UX |
 
 ---
 
@@ -564,3 +569,4 @@ For maximum career impact, package each project as:
 - Brainstorm session | 2026-06-24 — Round 2 ideas (10-19) after shipping first 3 projects
 - Brainstorm session | 2026-06-24 — Round 3 ideas (20-34) pushing into M&S depth, AI safety, data+AI, creative, life tools
 - Brainstorm session | 2026-06-24 — Round 4 ideas (35-49) gov/defense, dev infra, accessibility, content, education
+- Brainstorm session | 2026-07-02 — Round 5 ideas (9a, 50-54) Agent OS MVP series, reframed #9

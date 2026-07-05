@@ -221,3 +221,10 @@
 - Updated index.md — Total pages: 18
 - Email with full analysis sent to rsegrest77@gmail.com
 
+## [2026-07-02] update | Portfolio project ideas — Round 5 (Agent OS MVP series)
+
+- Reframed #9: kept Personal OS Dashboard, added #9a Agent OS Mission Control as separate idea
+- Added 5 new Agent OS MVP ideas (#50-54): Memory Browser, Tool Execution Visualizer, Cron Timeline, Session History Browser, Skill/Plugin Manager
+- Each MVP ships independently, composes into #9a Agent OS dashboard later
+- Updated idea index (now 54+9a ideas), build priority, sources
+- File: wiki-career/concepts/portfolio-project-ideas.md
