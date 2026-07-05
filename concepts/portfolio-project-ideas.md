@@ -17,24 +17,26 @@ status: active
 
 ## Idea Index
 
+> **⭐ July 2 picks:** #4 (Digital Twin — traffic flow), #5 (Resume Optimizer), #9 (Personal OS Dashboard), #9a (Agent OS Mission Control), #11 (Local LLM Chat), #15 (Codebase Explorer), #50-54 (Agent OS MVP series)
+
 | # | Idea | Category | Status | Skills |
 |---|------|----------|--------|--------|
 | 1 | [AI-Powered UX Critique Tool](#1-ai-powered-ux-critique-tool) | Quick Win | SHIPPED | Vision API, UX heuristics, overlay annotation |
 | 2 | [Nomad Cost-of-Living Dashboard](#2-nomad-cost-of-living-dashboard) | Quick Win | SHIPPED | Data viz, Recharts, filterable tables |
 | 3 | [GitHub Profile README Generator](#3-github-profile-readme-generator) | Quick Win | SHIPPED | GitHub API, LLM generation, copy UX |
-| 4 | [Digital Twin of a Simple System](#4-digital-twin-of-a-simple-system) | M&S | Available | Canvas/SVG, state machine, LLM advisor |
-| 5 | [AI Resume Optimizer](#5-ai-resume-optimizer) | Medium | Available | RAG, PDF parsing, vector DB |
+| ⭐4 | [Digital Twin of a Simple System](#4-digital-twin-of-a-simple-system) | M&S | Available | Canvas/SVG, state machine, LLM advisor |
+| ⭐5 | [AI Resume Optimizer](#5-ai-resume-optimizer) | Medium | Available | RAG, PDF parsing, vector DB |
 | 6 | [React + PowerApps Bridge Demo](#6-react--powerapps-bridge-demo) | Medium | Available | PCF, enterprise integration |
 | 7 | [Open-Source Agentic Development Toolkit](#7-open-source-agentic-development-toolkit) | Showcase | Available | Playwright, agent orchestration, npm |
 | 8 | [React Component Library for Simulation Viz](#8-react-component-library-for-simulation-visualizations) | Showcase | Available | D3, Storybook, npm |
-| 9 | [Personal "Operating System" Dashboard](#9-personal-operating-system-dashboard) | Showcase | Available | Multi-API, LLM insights, local storage |
-| 9a | [Agent OS — Mission Control for Hermes](#9a-agent-os--mission-control-for-hermes-new-july-2026) | Showcase | Available | WebSocket, SQLite, Recharts, agent infra |
+| ⭐9 | [Personal "Operating System" Dashboard](#9-personal-operating-system-dashboard) | Showcase | Available | Multi-API, LLM insights, local storage |
+| ⭐9a | [Agent OS — Mission Control for Hermes](#9a-agent-os--mission-control-for-hermes-new-july-2026) | Showcase | Available | WebSocket, SQLite, Recharts, agent infra |
 | 10 | [AI Meeting Transcript Analyzer](#10-ai-meeting-transcript-analyzer) | Practical | Available | Structured output, document processing |
-| 11 | [Local LLM Chat Interface](#11-local-llm-chat-interface) | Practical | Available | Streaming, Ollama, real-time UX |
+| ⭐11 | [Local LLM Chat Interface](#11-local-llm-chat-interface) | Practical | Available | Streaming, Ollama, real-time UX |
 | 12 | [AI-Powered Obsidian Wiki Explorer](#12-ai-powered-obsidian-wiki-explorer) | Practical | Available | Graph viz, embeddings, vector search |
 | 13 | ["Roast My Landing Page"](#13-roast-my-landing-page) | Viral | Available | Browser automation, shareable cards |
 | 14 | [AI Agent Sandbox](#14-ai-agent-sandbox) | Viral | Available | Multi-agent, WebSocket, function calling |
-| 15 | [Interactive "Explain This Codebase" Explorer](#15-interactive-explain-this-codebase-explorer) | Viral | Available | Code analysis, graph viz, GitHub API |
+| ⭐15 | [Interactive "Explain This Codebase" Explorer](#15-interactive-explain-this-codebase-explorer) | Viral | Available | Code analysis, graph viz, GitHub API |
 | 16 | [Budget Proposal Estimator](#16-budget-proposal-estimator-non-proprietary) | Career-Signal | Available | Complex forms, financial viz, domain expertise |
 | 17 | [Electron + AI Desktop App Template](#17-electron--ai-desktop-app-template) | Career-Signal | Available | Electron, desktop AI, system integration |
 | 18 | [AI Code Review Dashboard](#18-ai-code-review-dashboard) | Career-Signal | Available | GitHub API, code analysis, diff UX |
@@ -69,11 +71,11 @@ status: active
 | 47 | [AI-Powered Flashcard Generator](#47-ai-powered-flashcard-generator) | Education | Available | Content extraction, spaced repetition, Anki export |
 | 48 | [Interactive Regex Teacher](#48-interactive-regex-teacher) | Education | Available | Real-time text processing, educational UX |
 | 49 | [AI-Powered Code Snippet Explainer](#49-ai-powered-code-snippet-explainer) | Education | Available | Code comprehension, syntax highlighting, education |
-| 50 | [Agent Memory Browser](#50-agent-memory-browser) | Agent OS | Available | SQLite CRUD, graph viz, file watching, admin UX |
-| 51 | [Agent Tool Execution Visualizer](#51-agent-tool-execution-visualizer) | Agent OS | Available | WebSocket streaming, real-time UI, JSON viewer |
-| 52 | [Agent Cron Timeline & Health Monitor](#52-agent-cron-timeline--health-monitor) | Agent OS | Available | System monitoring, cron parsing, timeline viz |
-| 53 | [Agent Session History Browser](#53-agent-session-history-browser) | Agent OS | Available | FTS5 search, conversation tree, export UX |
-| 54 | [Agent Skill/Plugin Manager](#54-agent-skillplugin-manager) | Agent OS | Available | File CRUD, YAML parsing, admin panel UX |
+| ⭐50 | [Agent Memory Browser](#50-agent-memory-browser) | Agent OS | Available | SQLite CRUD, graph viz, file watching, admin UX |
+| ⭐51 | [Agent Tool Execution Visualizer](#51-agent-tool-execution-visualizer) | Agent OS | Available | WebSocket streaming, real-time UI, JSON viewer |
+| ⭐52 | [Agent Cron Timeline & Health Monitor](#52-agent-cron-timeline--health-monitor) | Agent OS | Available | System monitoring, cron parsing, timeline viz |
+| ⭐53 | [Agent Session History Browser](#53-agent-session-history-browser) | Agent OS | Available | FTS5 search, conversation tree, export UX |
+| ⭐54 | [Agent Skill/Plugin Manager](#54-agent-skillplugin-manager) | Agent OS | Available | File CRUD, YAML parsing, admin panel UX |
 
 ---
 
@@ -457,7 +459,16 @@ For maximum career impact, package each project as:
 
 ---
 
-## Build Priority (Revised June 2026)
+## Build Priority (Revised July 2026)
+
+> **⭐ Rick's July 2 picks (shortlist for next builds):**
+> - #4 Digital Twin (traffic flow) — M&S moat, visually compelling
+> - #5 AI Resume Optimizer — meta career tool, RAG showcase
+> - #9 Personal OS Dashboard — quantified self, life integration
+> - #9a Agent OS Mission Control — composed from #50-54, hot agent-infra space
+> - #11 Local LLM Chat Interface — fills streaming gap, has Ollama
+> - #15 Interactive Codebase Explorer — viral utility, graph viz
+> - #50-54 Agent OS MVP series — ship individually, compose into #9a
 
 **Already shipped:**
 1. AI UX Critique Tool (#1) — done
