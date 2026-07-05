@@ -28,6 +28,7 @@ status: active
 | 7 | [Open-Source Agentic Development Toolkit](#7-open-source-agentic-development-toolkit) | Showcase | Available | Playwright, agent orchestration, npm |
 | 8 | [React Component Library for Simulation Viz](#8-react-component-library-for-simulation-visualizations) | Showcase | Available | D3, Storybook, npm |
 | 9 | [Personal "Operating System" Dashboard](#9-personal-operating-system-dashboard) | Showcase | Available | Multi-API, LLM insights, local storage |
+| 9a | [Agent OS — Mission Control for Hermes](#9a-agent-os--mission-control-for-hermes-new-july-2026) | Showcase | Available | WebSocket, SQLite, Recharts, agent infra |
 | 10 | [AI Meeting Transcript Analyzer](#10-ai-meeting-transcript-analyzer) | Practical | Available | Structured output, document processing |
 | 11 | [Local LLM Chat Interface](#11-local-llm-chat-interface) | Practical | Available | Streaming, Ollama, real-time UX |
 | 12 | [AI-Powered Obsidian Wiki Explorer](#12-ai-powered-obsidian-wiki-explorer) | Practical | Available | Graph viz, embeddings, vector search |
@@ -139,6 +140,13 @@ status: active
 **Stack:** Next.js + various APIs + LLM + local-first storage
 **Why it networks:** Shows you build tools for your own life. The "quantified self" + "personal AI" angle is trendy. You can share sanitized screenshots and architecture decisions without exposing proprietary work.
 **Shareable output:** Architecture blog post + "How I built my own AI assistant" thread
+
+### 9a. Agent OS — Mission Control for Hermes (NEW — July 2026)
+**What:** A visual cockpit / agent harness GUI that wraps Hermes Agent with real-time observability and control. Distinct from #9 (which is personal life data) — this is agent infrastructure monitoring. The full vision is a composed dashboard of discrete MVP pieces (see #50-54 below) that can each ship independently and later tie together into a unified mission control interface.
+**Stack:** Next.js or Electron + WebSocket + SQLite + Recharts + Hermes APIs
+**Why it networks:** Agent observability/management is exploding (LangSmith, Helicone, Langfuse) but nobody has a self-hosted, local-first agent OS dashboard. You've been running Hermes for months with real infrastructure (cron, skills, memory, kanban) — this shows you understand agent systems at the infrastructure level, not just API-calling. The "I built mission control for my AI agent" story is compelling for hiring managers at any AI-focused company.
+**Shareable output:** Live demo + "How I built an Agent OS" architecture series + screenshots of the dashboard in action
+**Composes from:** #50 (Memory Browser), #51 (Tool Execution Visualizer), #52 (Cron Timeline & Health Monitor), #53 (Session History Browser), #54 (Skill/Plugin Manager)
 
 ---
 
@@ -493,6 +501,60 @@ For maximum career impact, package each project as:
 - AI Flashcard Generator (#47) — education, Anki export
 - Interactive Regex Teacher (#48) — educational, real-time UX
 - AI Code Snippet Explainer (#49) — code comprehension, broad appeal
+
+**Agent OS MVP Series (NEW — July 2026):**
+- Agent Memory Browser (#50) — inspect/edit fact_store + MEMORY.md, strongest first MVP
+- Agent Tool Execution Visualizer (#51) — real-time WebSocket feed of tool calls
+- Agent Cron Timeline & Health Monitor (#52) — visual schedule + failure alerts
+- Agent Session History Browser (#53) — searchable conversation archive with FTS5
+- Agent Skill/Plugin Manager (#54) — toggle skills, view plugins, manage cron
+
+---
+
+## Round 5 Brainstorm (July 2026) — Agent OS MVP Series
+
+> 5 discrete MVP pieces that each ship as a standalone portfolio project,
+> then compose into the Agent OS Mission Control dashboard (#9a).
+> Silicon Valley agile approach: ship the smallest useful piece first,
+> iterate, tie together later. Each piece fills a real gap in the current
+> Hermes infrastructure — no simulated demos, all wire into real systems.
+
+### Category 10: Agent OS Components
+
+#### 50. Agent Memory Browser
+**What:** A web GUI to browse, search, edit, and visualize the agent's persistent memory layers. Three tabs: (1) MEMORY.md / USER.md — editable text with live diff preview, (2) Holographic memory (fact_store.db) — searchable fact list with trust scores, retrieval counts, entity links shown as a force-directed graph, edit/delete/add with trust score sliders, (3) Session memory — browse recent sessions and see what was remembered. All changes write back to the real files/db. Search across all memory layers with a unified query bar.
+**Stack:** Next.js + SQLite (fact_store.db) + Recharts (trust score viz) + cytoscape.js (entity graph) + file watchers
+**Why it's worth it:** You literally just looked at your memory_store.db and wanted to clean it up — this tool is the GUI for that. Memory management is the foundation of any agent OS. Shows: SQLite integration, graph visualization, real-time file editing, CRUD with trust scoring. First MVP to build because it's immediately useful and self-contained.
+**Skills gap filled:** SQLite CRUD, graph visualization (cytoscape/D3), real-time file watching, admin dashboard UX.
+**Composes into:** #9a as the "Memory" tab of the Agent OS dashboard.
+
+#### 51. Agent Tool Execution Visualizer
+**What:** A real-time WebSocket-connected feed showing every tool call the agent makes as it works. Each call renders as a card: tool name, arguments (collapsed JSON), result (collapsible), duration, status (pending/success/error). Timeline view shows the sequence of calls in a conversation. Filter by tool type, search by content. Replay mode lets you scrub through a past session's tool calls step by step. Optional: "watch mode" that streams a live agent session in real time.
+**Stack:** Next.js + WebSocket + SQLite (session db) + Recharts (latency charts) + virtual scrolling list
+**Why it's worth it:** Tool execution is the heartbeat of an agent. Making it visible is the core value proposition of agent observability. Shows: WebSocket streaming, real-time UI, JSON rendering, virtual scrolling for performance. LangSmith charges for this — you'd have a self-hosted version.
+**Skills gap filled:** WebSocket streaming, real-time UI performance, JSON viewer UX, observability dashboard.
+**Composes into:** #9a as the "Activity" / "Live Monitor" tab.
+
+#### 52. Agent Cron Timeline & Health Monitor
+**What:** A visual timeline of all cron jobs (the 19 YT watchers, heartbeat, email-to-wiki pipeline) with health status, last run time, next run time, and failure alerts. Gantt-style timeline showing overlapping schedules. Each job has a detail view: recent run history, output log, success/failure rate over time, and a "run now" button. Color-coded health: green (recent success), yellow (stale >2x interval), red (failed). Email/Telegram alert toggle per job.
+**Stack:** Next.js + crontab parser + SQLite (run history) + Recharts (success rate) + D3 (timeline)
+**Why it's worth it:** You have 21+ cron jobs running — a visual monitor is genuinely needed. Shows: system monitoring, cron parsing, timeline visualization, alerting UX. The "I monitor my own infrastructure" angle signals ops/SRE thinking that defense and enterprise companies value.
+**Skills gap filled:** System monitoring, cron parsing, timeline/Gantt visualization, alerting UX.
+**Composes into:** #9a as the "Schedule" / "Ops" tab.
+
+#### 53. Agent Session History Browser
+**What:** A searchable, filterable browser for the Hermes session database (SQLite + FTS5). List sessions with title, date, model, message count, source platform. Click a session to expand the conversation tree with collapsible turns. Full-text search across all sessions with highlighted matches. Filter by date range, model, source (CLI, Telegram, TUI). Export a session as markdown or JSON. "Bookmarks" for sessions you want to find again.
+**Stack:** Next.js + SQLite FTS5 + React conversation tree component + syntax highlighting
+**Why it's worth it:** You already use session_search from the terminal — this is the GUI version. Conversation history is the narrative spine of an agent. Shows: full-text search, tree/accordion UX, database querying, export functionality. Every agent platform needs this; nobody has a polished self-hosted one.
+**Skills gap filled:** FTS5 search, conversation tree rendering, database querying, export UX.
+**Composes into:** #9a as the "History" / "Sessions" tab.
+
+#### 54. Agent Skill/Plugin Manager
+**What:** A management interface for Hermes skills and plugins. List all installed skills with name, version, category, description, and enable/disable toggles. View skill content (SKILL.md) with markdown rendering. Install new skills from the skills directory. Plugin list with status, config, and dependency view. Cron job management: list, create, edit, delete, pause/resume with a visual schedule builder. Integration with #52 for health status display.
+**Stack:** Next.js + file system watchers + YAML parser + cron CRUD + markdown rendering
+**Why it's worth it:** Skills and plugins are the extension model for Hermes. A visual manager makes the agent's capabilities browseable and controllable. Shows: file system operations, YAML parsing, CRUD interface, markdown rendering. Pairs naturally with #52 (cron) and #50 (memory) to form the "admin panel" of the Agent OS.
+**Skills gap filled:** File system CRUD, YAML parsing, admin panel UX, plugin/skill lifecycle management.
+**Composes into:** #9a as the "Skills" / "Plugins" / "Admin" tab.
 
 ---
 
