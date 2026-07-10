@@ -406,7 +406,7 @@ All endpoints use the OpenAI-compatible API format (`/v1/chat/completions`, `/v1
 
 ### LinkedIn Post Angle
 
-"I built a local AI personality manager. Instead of rewriting system prompts every time I wanted a different AI persona — code reviewer, writing coach, devil's advocate — I built a chat UI that lets me switch personalities with a dropdown. Runs entirely on my own hardware via Ollama. No API keys, no monthly fees, no data leaving my network. Open source — try it with your own local model."
+"I built a local AI personality manager. Instead of rewriting system prompts every time I wanted a different AI persona — code reviewer, writing coach, devil's advocate — I built a chat UI that lets me switch personalities with a dropdown. It talks to any OpenAI-compatible backend — Ollama, LM Studio, vLLM, cloud APIs — so I can point it at any of my GPU PCs or cloud endpoints. Runs entirely on my own hardware. No API keys, no monthly fees, no data leaving my network. Open source — try it with your own local model."
 
 #### 12. AI-Powered Obsidian Wiki Explorer
 **What:** Visual graph of wiki pages with AI semantic search — "find pages about cost-of-living in Southeast Asia" returns results by meaning, not keyword. Plus "what should I read next" recommendations.
