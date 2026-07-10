@@ -169,11 +169,199 @@ status: active
 **Why it's worth it:** Rick is on Teams calls all day at NASA. This is a tool he'd actually use. Shows RAG, NLP, and clean UX for structured output. The "I built this for my own meetings" story is gold on LinkedIn.
 **Skills gap filled:** None of the 3 shipped projects show structured document processing or email/template generation.
 
-#### 11. Local LLM Chat Interface
-**What:** A polished ChatGPT-style UI that connects to a local Ollama instance. Model picker, streaming responses, conversation history, system prompt presets.
-**Stack:** Next.js + Ollama API + streaming + localStorage
-**Why it's worth it:** Rick already has Ollama running on the NUC and BigRickPC. A privacy-first local chat UI is a real tool. Shows streaming (none of the shipped projects stream), model selection UX, and local AI integration. The "runs entirely on your hardware" angle is increasingly relevant.
-**Skills gap filled:** Streaming UI, local LLM integration, real-time UX.
+#### 11. Local LLM Chat Interface (Personality Switcher)
+**What:** A polished ChatGPT-style UI that connects to a local Ollama instance. Model picker, streaming responses, conversation history, and a personality/system-preset system that lets users switch between AI personalities (e.g. "Code Reviewer", "Writing Coach", "Devil's Advocate", "Simulation Advisor") — each with its own system prompt, default model, and temperature. Users can create, edit, and save their own personality presets.
+**Stack:** Next.js 15 + Ollama API + streaming (SSE) + localStorage
+**Why it's worth it:** Rick already has Ollama running on the NUC and BigRickPC. A privacy-first local chat UI is a real tool. Shows streaming (none of the shipped projects stream), model selection UX, and local AI integration. The "runs entirely on your hardware" angle is increasingly relevant. The personality switcher differentiates it from every bootcamp chat clone — mirrors Hermes persona/system-prompt tuning and makes a compelling LinkedIn story: "I built a local AI personality manager because I got tired of rewriting system prompts."
+**Skills gap filled:** Streaming UI, local LLM integration, real-time UX, system-prompt management UX.
+**Status:** Spec written — see kanban/local-llm-chat-spec.md
+
+---
+
+## Implementation Spec: Local LLM Chat Interface (#11)
+
+> Full build spec for the next portfolio project. Designed to be loaded into a fresh Hermes session with the kanban skill for task decomposition and worker dispatch.
+
+### Project: local-llm-chat
+
+**Repo:** rsegrest/local-llm-chat
+**Deploy:** Vercel (works with local Ollama via dev proxy; production needs Ollama exposed or a cloud model fallback)
+**Local dev:** Ollama on localhost:11434 (NUC) or 192.168.1.157:11434 (BigRickPC)
+
+### Architecture Overview
+
+```
+local-llm-chat/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx              # Root layout, dark theme, fonts
+│   │   ├── page.tsx                # Main chat view
+│   │   └── api/
+│   │       ├── chat/route.ts       # Ollama /api/chat proxy with SSE streaming
+│   │       └── models/route.ts     # Ollama /api/tags proxy (lists available models)
+│   ├── components/
+│   │   ├── ChatWindow.tsx          # Message list + scroll behavior + streaming display
+│   │   ├── ChatInput.tsx           # Text input + send button + keyboard shortcuts
+│   │   ├── MessageBubble.tsx       # Individual message (user vs assistant styling)
+│   │   ├── ModelPicker.tsx          # Dropdown of available Ollama models
+│   │   ├── PersonalityPicker.tsx   # Dropdown/sidebar of personality presets
+│   │   ├── PersonalityEditor.tsx    # Modal for creating/editing personality presets
+│   │   ├── ConversationSidebar.tsx  # Conversation list (new, rename, delete)
+│   │   ├── SettingsBar.tsx          # Temperature slider, model picker, personality picker
+│   │   └── EmptyState.tsx           # Welcome screen with preset suggestions
+│   ├── lib/
+│   │   ├── ollama.ts               # Ollama API client (fetch wrappers, type defs)
+│   │   ├── storage.ts              # localStorage CRUD for conversations + presets
+│   │   ├── types.ts                # TypeScript interfaces (see below)
+│   │   └── defaultPresets.ts       # 4 built-in personality presets
+│   └── hooks/
+│       ├── useChat.ts              # Chat state + streaming logic
+│       ├── useConversations.ts     # Conversation list management
+│       └── usePersonalities.ts     # Personality preset management
+├── next.config.ts
+├── tailwind.config.ts
+├── package.json
+└── README.md
+```
+
+### TypeScript Types (src/lib/types.ts)
+
+```typescript
+export interface Message {
+  role: 'user' | 'assistant' | 'system';
+  content: string;
+  timestamp: number;
+  model?: string;           // which model generated this (for assistant messages)
+  personality?: string;    // which personality was active
+}
+
+export interface Conversation {
+  id: string;
+  title: string;
+  messages: Message[];
+  createdAt: number;
+  updatedAt: number;
+  model: string;            // last-used model for this conversation
+  personalityId: string;   // active personality
+  temperature: number;
+}
+
+export interface Personality {
+  id: string;
+  name: string;
+  emoji: string;            // avatar emoji (simple, no image assets needed)
+  systemPrompt: string;
+  defaultModel?: string;    // optional model override
+  defaultTemperature?: number;
+  description: string;      // one-liner shown in picker
+  isBuiltIn: boolean;       // built-in vs user-created
+}
+
+export interface OllamaModel {
+  name: string;
+  size: number;
+  modified_at: string;
+}
+```
+
+### API Routes
+
+**POST /api/chat** (src/app/api/chat/route.ts)
+- Accepts: `{ model, messages, stream, options: { temperature } }`
+- Proxies to Ollama `POST /api/chat` at the configured base URL
+- Streams the response back via SSE (Server-Sent Events) — pass through Ollama's JSON stream chunks, converting to SSE format
+- Ollama base URL from env var `OLLAMA_BASE_URL` (default `http://localhost:11434`)
+- No API key needed — local Ollama doesn't auth
+
+**GET /api/models** (src/app/api/models/route.ts)
+- Proxies Ollama `GET /api/tags`
+- Returns simplified `{ models: OllamaModel[] }`
+- Caches for 60 seconds (models don't change often)
+
+### Core Hooks
+
+**useChat** (src/hooks/useChat.ts)
+- Manages active conversation messages
+- `sendMessage(content: string)` — appends user message, calls /api/chat, streams assistant response token-by-token into state
+- `isStreaming` state for UI feedback (typing indicator, disable send button)
+- `abortController` ref to allow "Stop generating" button
+- Error handling: if Ollama is unreachable, show friendly error in chat (not a crash)
+
+**useConversations** (src/hooks/useConversations.ts)
+- Load/save conversation list from localStorage
+- `createConversation(personalityId, model)`, `deleteConversation(id)`, `renameConversation(id, title)`
+- Auto-title: first 50 chars of first user message
+- Persists on every message append
+
+**usePersonalities** (src/hooks/usePersonalities.ts)
+- Load/save personality presets from localStorage
+- Built-in presets (isBuiltIn=true) are seeded on first run, user can clone but not delete
+- `createPersonality()`, `updatePersonality(id, patch)`, `deletePersonality(id)`
+- `clonePersonality(id)` — duplicate a built-in to customize
+
+### Built-in Personality Presets (src/lib/defaultPresets.ts)
+
+1. **General Assistant** 🤖 — Default. No system prompt (or minimal "You are a helpful assistant.")
+2. **Code Reviewer** 🔍 — "You are a senior code reviewer. Be direct, cite line numbers, flag security issues first. Prefer concise feedback over praise. Use bullet points."
+3. **Writing Coach** ✍️ — "You are a supportive writing coach. Suggest specific alternatives rather than just pointing out problems. Explain why a change improves the text. Maintain the author's voice."
+4. **Devil's Advocate** 😈 — "You are a rigorous intellectual adversary. Challenge every assumption the user makes. Force them to defend their position. Be respectful but relentless. End with one question they haven't considered."
+5. **Simulation Advisor** 📊 — "You are a modeling and simulation expert with a Master's in M&S. Help design simulations: suggest parameters, identify emergent behaviors to watch, recommend visualization approaches. Reference domain concepts (state machines, Monte Carlo, agent-based modeling)."
+
+### UI Layout
+
+- **Left sidebar** (260px, collapsible): Conversation list with active highlight, "New Chat" button at top
+- **Main area**: Chat window (scrollable message bubbles, user right-aligned, assistant left-aligned)
+- **Top bar**: Personality picker (dropdown with emoji + name), model picker (dropdown), temperature slider (collapsible settings)
+- **Bottom**: Chat input (auto-growing textarea, Enter to send, Shift+Enter for newline, Stop button while streaming)
+- **Dark theme**: bg #1a1a2e, text #e0e0e0, accent #00d4aa (matches shipped projects and email preferences)
+- **Responsive**: Sidebar collapses on mobile, chat fills screen
+
+### Key Behaviors
+
+1. **Streaming**: Ollama returns JSON-line stream. API route converts to SSE. useChat hook parses SSE events and appends tokens to the current assistant message in real-time.
+2. **Personality switching**: Changing personality mid-conversation injects the new system prompt for the NEXT message (doesn't retroactively change history). Show a subtle divider in the chat ("Switched to Code Reviewer").
+3. **Model switching**: Changing model updates the conversation's model. Different models can be used within the same conversation.
+4. **Persistence**: All conversations and personalities in localStorage. No backend database — this is a local-first tool. Export/import as JSON for backup.
+5. **No-auth**: Local tool, no login. If deployed to Vercel, it needs OLLAMA_BASE_URL env var pointing to an accessible Ollama instance (or a cloud model proxy).
+6. **Markdown rendering**: Assistant messages render markdown (code blocks with syntax highlighting, lists, bold, headers). Use react-markdown + rehype-highlight.
+7. **Code copy buttons**: Each code block gets a "Copy" button in the top-right corner.
+
+### Kanban Task Breakdown (12 tasks)
+
+| # | Task | Depends On | Notes |
+|---|------|-------------|-------|
+| 1 | Scaffold Next.js 15 + shadcn/ui + Tailwind | — | App Router, TypeScript, dark theme |
+| 2 | Ollama API client + types (ollama.ts, types.ts) | 1 | Fetch wrappers, type defs, env var for base URL |
+| 3 | /api/models route + ModelPicker component | 2 | Dropdown populated from Ollama /api/tags |
+| 4 | /api/chat route with SSE streaming | 2 | Proxy to Ollama /api/chat, stream back as SSE |
+| 5 | useChat hook + ChatWindow + MessageBubble | 3,4 | Streaming display, scroll-to-bottom, typing indicator |
+| 6 | ChatInput component + keyboard shortcuts | 5 | Auto-grow textarea, Enter to send, Stop button |
+| 7 | defaultPresets.ts + usePersonalities hook + PersonalityPicker | 2 | 5 built-in presets, localStorage CRUD, dropdown UI |
+| 8 | PersonalityEditor modal | 7 | Create/edit/clone/delete presets, system prompt textarea, model override, temperature |
+| 9 | useConversations hook + ConversationSidebar | 5 | Conversation list, new/rename/delete, localStorage persistence, auto-title |
+| 10 | SettingsBar (temperature slider, model/personality integration) | 3,7 | Collapsible settings, reflects active conversation state |
+| 11 | Markdown rendering + code copy buttons | 5 | react-markdown + rehype-highlight, per-code-block Copy button |
+| 12 | README + deploy to Vercel + GitHub repo | 11 | Screenshots, architecture diagram, setup instructions |
+
+### Dependencies (package.json)
+
+- next ^15
+- react ^19, react-dom ^19
+- tailwindcss ^4
+- @shadcn/ui (component lib — use CLI to add components)
+- react-markdown + rehype-highlight (markdown rendering)
+- lucide-react (icons — comes with shadcn)
+
+### Environment
+
+- `OLLAMA_BASE_URL` — Ollama server URL (default: `http://localhost:11434`)
+  - NUC: `http://localhost:11434`
+  - BigRickPC: `http://192.168.1.157:11434`
+  - Vercel production: needs an accessible Ollama endpoint or cloud model proxy
+
+### LinkedIn Post Angle
+
+"I built a local AI personality manager. Instead of rewriting system prompts every time I wanted a different AI persona — code reviewer, writing coach, devil's advocate — I built a chat UI that lets me switch personalities with a dropdown. Runs entirely on my own hardware via Ollama. No API keys, no monthly fees, no data leaving my network. Open source — try it with your own local model."
 
 #### 12. AI-Powered Obsidian Wiki Explorer
 **What:** Visual graph of wiki pages with AI semantic search — "find pages about cost-of-living in Southeast Asia" returns results by meaning, not keyword. Plus "what should I read next" recommendations.
