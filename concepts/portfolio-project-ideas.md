@@ -201,27 +201,30 @@ local-llm-chat/
 │   │   ├── layout.tsx              # Root layout, dark theme, fonts
 │   │   ├── page.tsx                # Main chat view
 │   │   └── api/
-│   │       ├── chat/route.ts       # Ollama /api/chat proxy with SSE streaming
-│   │       └── models/route.ts     # Ollama /api/tags proxy (lists available models)
+│   │       ├── chat/route.ts       # OpenAI-compatible /v1/chat/completions proxy with SSE streaming
+│   │       └── models/route.ts     # OpenAI-compatible /v1/models proxy (lists available models)
 │   ├── components/
 │   │   ├── ChatWindow.tsx          # Message list + scroll behavior + streaming display
 │   │   ├── ChatInput.tsx           # Text input + send button + keyboard shortcuts
 │   │   ├── MessageBubble.tsx       # Individual message (user vs assistant styling)
-│   │   ├── ModelPicker.tsx          # Dropdown of available Ollama models
+│   │   ├── ModelPicker.tsx          # Dropdown of available models (fetched from active endpoint)
+│   │   ├── EndpointPicker.tsx      # Dropdown of configured endpoints (NUC Ollama, BigRickPC LM Studio, etc.)
+│   │   ├── EndpointEditor.tsx      # Modal for adding/editing/deleting endpoint configs
 │   │   ├── PersonalityPicker.tsx   # Dropdown/sidebar of personality presets
 │   │   ├── PersonalityEditor.tsx    # Modal for creating/editing personality presets
 │   │   ├── ConversationSidebar.tsx  # Conversation list (new, rename, delete)
-│   │   ├── SettingsBar.tsx          # Temperature slider, model picker, personality picker
+│   │   ├── SettingsBar.tsx          # Temperature slider, endpoint/model/personality pickers
 │   │   └── EmptyState.tsx           # Welcome screen with preset suggestions
 │   ├── lib/
-│   │   ├── ollama.ts               # Ollama API client (fetch wrappers, type defs)
-│   │   ├── storage.ts              # localStorage CRUD for conversations + presets
+│   │   ├── llmClient.ts           # OpenAI-compatible API client (fetch wrappers, type defs)
+│   │   ├── storage.ts              # localStorage CRUD for conversations + presets + endpoints
 │   │   ├── types.ts                # TypeScript interfaces (see below)
-│   │   └── defaultPresets.ts       # 4 built-in personality presets
+│   │   └── defaultPresets.ts       # 5 built-in personality presets + 2 default endpoints
 │   └── hooks/
 │       ├── useChat.ts              # Chat state + streaming logic
 │       ├── useConversations.ts     # Conversation list management
-│       └── usePersonalities.ts     # Personality preset management
+│       ├── usePersonalities.ts     # Personality preset management
+│       └── useEndpoints.ts        # Endpoint config management (CRUD, active endpoint)
 ├── next.config.ts
 ├── tailwind.config.ts
 ├── package.json
@@ -237,6 +240,7 @@ export interface Message {
   timestamp: number;
   model?: string;           // which model generated this (for assistant messages)
   personality?: string;    // which personality was active
+  endpointId?: string;      // which endpoint was used (for assistant messages)
 }
 
 export interface Conversation {
@@ -246,6 +250,7 @@ export interface Conversation {
   createdAt: number;
   updatedAt: number;
   model: string;            // last-used model for this conversation
+  endpointId: string;       // which endpoint this conversation uses
   personalityId: string;   // active personality
   temperature: number;
 }
@@ -261,39 +266,51 @@ export interface Personality {
   isBuiltIn: boolean;       // built-in vs user-created
 }
 
-export interface OllamaModel {
-  name: string;
-  size: number;
-  modified_at: string;
+export interface LLMEndpoint {
+  id: string;
+  name: string;             // display name (e.g. "NUC Ollama", "BigRickPC LM Studio")
+  baseUrl: string;          // e.g. http://localhost:11434/v1, http://192.168.1.157:1234/v1
+  apiKey?: string;          // optional — most local servers don't need it
+  type: 'ollama' | 'lmstudio' | 'vllm' | 'llamacpp' | 'openai-compatible';  // for UI label/icon
+  isDefault: boolean;       // one endpoint is default for new conversations
+  isBuiltIn: boolean;       // built-in vs user-created
+}
+
+export interface LLMModel {
+  id: string;               // model identifier (e.g. "glm-5.2", "qwen3.5-9b")
+  name?: string;            // display name if different from id
 }
 ```
 
 ### API Routes
 
+> All routes accept an `endpointId` in the request body (or query param) to select which configured endpoint to proxy to. The endpoint's `baseUrl` and optional `apiKey` are looked up from the endpoint config (passed from client localStorage).
+
 **POST /api/chat** (src/app/api/chat/route.ts)
-- Accepts: `{ model, messages, stream, options: { temperature } }`
-- Proxies to Ollama `POST /api/chat` at the configured base URL
-- Streams the response back via SSE (Server-Sent Events) — pass through Ollama's JSON stream chunks, converting to SSE format
-- Ollama base URL from env var `OLLAMA_BASE_URL` (default `http://localhost:11434`)
-- No API key needed — local Ollama doesn't auth
+- Accepts: `{ endpointId, model, messages, stream, options: { temperature } }`
+- Looks up the endpoint config (baseUrl + apiKey) from the request body
+- Proxies to `{endpoint.baseUrl}/chat/completions` (OpenAI-compatible)
+- Streams the response back via SSE — pass through the OpenAI SSE stream natively (no format conversion needed)
+- Error handling: if endpoint is unreachable, return friendly error JSON
 
 **GET /api/models** (src/app/api/models/route.ts)
-- Proxies Ollama `GET /api/tags`
-- Returns simplified `{ models: OllamaModel[] }`
-- Caches for 60 seconds (models don't change often)
+- Accepts: `?endpointId=<id>&baseUrl=<url>&apiKey=<key>` (endpoint config passed from client)
+- Proxies to `{endpoint.baseUrl}/models` (OpenAI-compatible)
+- Returns simplified `{ models: LLMModel[] }`
+- Caches for 60 seconds per endpoint (models don't change often)
 
 ### Core Hooks
 
 **useChat** (src/hooks/useChat.ts)
 - Manages active conversation messages
-- `sendMessage(content: string)` — appends user message, calls /api/chat, streams assistant response token-by-token into state
+- `sendMessage(content: string)` — appends user message, calls /api/chat with the conversation's endpointId + model, streams assistant response token-by-token into state
 - `isStreaming` state for UI feedback (typing indicator, disable send button)
 - `abortController` ref to allow "Stop generating" button
-- Error handling: if Ollama is unreachable, show friendly error in chat (not a crash)
+- Error handling: if endpoint is unreachable, show friendly error in chat (not a crash)
 
 **useConversations** (src/hooks/useConversations.ts)
 - Load/save conversation list from localStorage
-- `createConversation(personalityId, model)`, `deleteConversation(id)`, `renameConversation(id, title)`
+- `createConversation(personalityId, endpointId, model)`, `deleteConversation(id)`, `renameConversation(id, title)`
 - Auto-title: first 50 chars of first user message
 - Persists on every message append
 
@@ -303,6 +320,15 @@ export interface OllamaModel {
 - `createPersonality()`, `updatePersonality(id, patch)`, `deletePersonality(id)`
 - `clonePersonality(id)` — duplicate a built-in to customize
 
+**useEndpoints** (src/hooks/useEndpoints.ts)
+- Load/save endpoint configs from localStorage
+- Built-in endpoints seeded on first run (see Default Endpoints below)
+- `createEndpoint()`, `updateEndpoint(id, patch)`, `deleteEndpoint(id)`
+- `getActiveEndpoint()` — returns the currently-selected endpoint
+- `setActiveEndpoint(id)` — switch the active endpoint (affects new messages)
+- Cannot delete built-in endpoints (but can edit their URLs)
+- Endpoint configs include: name, baseUrl, apiKey (optional), type (ollama/lmstudio/vllm/llamacpp/openai-compatible)
+
 ### Built-in Personality Presets (src/lib/defaultPresets.ts)
 
 1. **General Assistant** 🤖 — Default. No system prompt (or minimal "You are a helpful assistant.")
@@ -311,39 +337,50 @@ export interface OllamaModel {
 4. **Devil's Advocate** 😈 — "You are a rigorous intellectual adversary. Challenge every assumption the user makes. Force them to defend their position. Be respectful but relentless. End with one question they haven't considered."
 5. **Simulation Advisor** 📊 — "You are a modeling and simulation expert with a Master's in M&S. Help design simulations: suggest parameters, identify emergent behaviors to watch, recommend visualization approaches. Reference domain concepts (state machines, Monte Carlo, agent-based modeling)."
 
+### Default Endpoints (src/lib/defaultPresets.ts)
+
+Seeded on first run (isBuiltIn=true, editable but not deletable):
+
+1. **NUC Ollama** — `http://localhost:11434/v1` — type: ollama — no API key
+2. **BigRickPC Ollama** — `http://192.168.1.157:11434/v1` — type: ollama — no API key
+
+Users add their own endpoints (e.g. LM Studio on GPU PCs, cloud APIs) via the EndpointEditor modal.
+
 ### UI Layout
 
 - **Left sidebar** (260px, collapsible): Conversation list with active highlight, "New Chat" button at top
 - **Main area**: Chat window (scrollable message bubbles, user right-aligned, assistant left-aligned)
-- **Top bar**: Personality picker (dropdown with emoji + name), model picker (dropdown), temperature slider (collapsible settings)
+- **Top bar**: Endpoint picker (dropdown), personality picker (dropdown with emoji + name), model picker (dropdown — models fetched from active endpoint), temperature slider (collapsible settings)
 - **Bottom**: Chat input (auto-growing textarea, Enter to send, Shift+Enter for newline, Stop button while streaming)
 - **Dark theme**: bg #1a1a2e, text #e0e0e0, accent #00d4aa (matches shipped projects and email preferences)
 - **Responsive**: Sidebar collapses on mobile, chat fills screen
 
 ### Key Behaviors
 
-1. **Streaming**: Ollama returns JSON-line stream. API route converts to SSE. useChat hook parses SSE events and appends tokens to the current assistant message in real-time.
-2. **Personality switching**: Changing personality mid-conversation injects the new system prompt for the NEXT message (doesn't retroactively change history). Show a subtle divider in the chat ("Switched to Code Reviewer").
-3. **Model switching**: Changing model updates the conversation's model. Different models can be used within the same conversation.
-4. **Persistence**: All conversations and personalities in localStorage. No backend database — this is a local-first tool. Export/import as JSON for backup.
-5. **No-auth**: Local tool, no login. If deployed to Vercel, it needs OLLAMA_BASE_URL env var pointing to an accessible Ollama instance (or a cloud model proxy).
-6. **Markdown rendering**: Assistant messages render markdown (code blocks with syntax highlighting, lists, bold, headers). Use react-markdown + rehype-highlight.
-7. **Code copy buttons**: Each code block gets a "Copy" button in the top-right corner.
+1. **Streaming**: OpenAI-compatible SSE stream from /v1/chat/completions. API route passes it through natively. useChat hook parses SSE events and appends tokens to the current assistant message in real-time.
+2. **Endpoint switching**: Changing endpoint updates the conversation's endpointId. Model picker refreshes to show models available on the new endpoint. Show a subtle divider ("Switched to BigRickPC LM Studio").
+3. **Personality switching**: Changing personality mid-conversation injects the new system prompt for the NEXT message (doesn't retroactively change history). Show a subtle divider in the chat ("Switched to Code Reviewer").
+4. **Model switching**: Changing model updates the conversation's model. Different models (from the same or different endpoints) can be used within the same conversation.
+5. **Persistence**: All conversations, personalities, and endpoints in localStorage. No backend database — this is a local-first tool. Export/import as JSON for backup.
+6. **No-auth**: Local tool, no login. If deployed to Vercel, it needs at least one accessible LLM endpoint (cloud API or exposed local server).
+7. **Markdown rendering**: Assistant messages render markdown (code blocks with syntax highlighting, lists, bold, headers). Use react-markdown + rehype-highlight.
+8. **Code copy buttons**: Each code block gets a "Copy" button in the top-right corner.
 
-### Kanban Task Breakdown (12 tasks)
+### Kanban Task Breakdown (13 tasks)
 
 | # | Task | Depends On | Notes |
 |---|------|-------------|-------|
 | 1 | Scaffold Next.js 15 + shadcn/ui + Tailwind | — | App Router, TypeScript, dark theme |
-| 2 | Ollama API client + types (ollama.ts, types.ts) | 1 | Fetch wrappers, type defs, env var for base URL |
-| 3 | /api/models route + ModelPicker component | 2 | Dropdown populated from Ollama /api/tags |
-| 4 | /api/chat route with SSE streaming | 2 | Proxy to Ollama /api/chat, stream back as SSE |
+| 2 | OpenAI-compatible API client + types (llmClient.ts, types.ts) | 1 | Fetch wrappers for /v1/chat/completions + /v1/models, type defs, LLMEndpoint type |
+| 3 | /api/models route + ModelPicker + EndpointPicker | 2 | Proxy to /v1/models, endpoint-aware model listing, endpoint dropdown |
+| 4 | /api/chat route with SSE streaming | 2 | Proxy to /v1/chat/completions, pass through OpenAI SSE natively |
 | 5 | useChat hook + ChatWindow + MessageBubble | 3,4 | Streaming display, scroll-to-bottom, typing indicator |
 | 6 | ChatInput component + keyboard shortcuts | 5 | Auto-grow textarea, Enter to send, Stop button |
 | 7 | defaultPresets.ts + usePersonalities hook + PersonalityPicker | 2 | 5 built-in presets, localStorage CRUD, dropdown UI |
+| 7a | defaultEndpoints + useEndpoints hook + EndpointEditor modal | 2 | 2 built-in endpoints, localStorage CRUD, endpoint config UI |
 | 8 | PersonalityEditor modal | 7 | Create/edit/clone/delete presets, system prompt textarea, model override, temperature |
 | 9 | useConversations hook + ConversationSidebar | 5 | Conversation list, new/rename/delete, localStorage persistence, auto-title |
-| 10 | SettingsBar (temperature slider, model/personality integration) | 3,7 | Collapsible settings, reflects active conversation state |
+| 10 | SettingsBar (endpoint/model/personality pickers, temperature) | 3,7,7a | Collapsible settings, reflects active conversation state |
 | 11 | Markdown rendering + code copy buttons | 5 | react-markdown + rehype-highlight, per-code-block Copy button |
 | 12 | README + deploy to Vercel + GitHub repo | 11 | Screenshots, architecture diagram, setup instructions |
 
@@ -358,10 +395,14 @@ export interface OllamaModel {
 
 ### Environment
 
-- `OLLAMA_BASE_URL` — Ollama server URL (default: `http://localhost:11434`)
-  - NUC: `http://localhost:11434`
-  - BigRickPC: `http://192.168.1.157:11434`
-  - Vercel production: needs an accessible Ollama endpoint or cloud model proxy
+Endpoints are configured in the UI (stored in localStorage), not env vars. For development/seed purposes:
+
+- **NUC Ollama**: `http://localhost:11434/v1` (no API key)
+- **BigRickPC Ollama**: `http://192.168.1.157:11434/v1` (no API key)
+- **LM Studio (any GPU PC)**: `http://192.168.1.XXX:1234/v1` (no API key)
+- **Cloud APIs**: `https://api.example.com/v1` (with API key)
+
+All endpoints use the OpenAI-compatible API format (`/v1/chat/completions`, `/v1/models`).
 
 ### LinkedIn Post Angle
 
