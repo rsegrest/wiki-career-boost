@@ -185,8 +185,12 @@ status: active
 ### Project: local-llm-chat
 
 **Repo:** rsegrest/local-llm-chat
-**Deploy:** Vercel (works with local Ollama via dev proxy; production needs Ollama exposed or a cloud model fallback)
-**Local dev:** Ollama on localhost:11434 (NUC) or 192.168.1.157:11434 (BigRickPC)
+**Deploy:** Vercel (works with any OpenAI-compatible endpoint via dev proxy; production needs an accessible LLM endpoint)
+**Local dev:** Any OpenAI-compatible server — Ollama (localhost:11434, 192.168.1.157:11434), LM Studio (192.168.1.XXX:1234), vLLM, llama.cpp, cloud APIs
+
+> **Architecture decision: OpenAI-compatible API (Option B).** The chat client targets the OpenAI chat completions format (`/v1/chat/completions`, `/v1/models`). This works with Ollama (which exposes `/v1/` alongside its native API), LM Studio, vLLM, llama.cpp server, and any OpenAI-compatible cloud API. One codebase, every backend. No Ollama-specific endpoints — no `/api/chat`, no `/api/tags`, no JSON-line stream conversion. Native SSE throughout.
+
+> **Multi-endpoint support.** Users configure named endpoints (e.g. "NUC Ollama", "BigRickPC LM Studio", "Cloud GLM") with base URL + optional API key. Endpoints are stored in localStorage and selectable from the UI. Each conversation remembers which endpoint it used. This supports Rick's setup: multiple LM Studio instances on different GPU PCs, Ollama on the NUC, and cloud endpoints.
 
 ### Architecture Overview
 
