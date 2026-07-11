@@ -71,10 +71,10 @@ status: active
 | 47 | [AI-Powered Flashcard Generator](#47-ai-powered-flashcard-generator) | Education | Available | Content extraction, spaced repetition, Anki export |
 | 48 | [Interactive Regex Teacher](#48-interactive-regex-teacher) | Education | Available | Real-time text processing, educational UX |
 | 49 | [AI-Powered Code Snippet Explainer](#49-ai-powered-code-snippet-explainer) | Education | Available | Code comprehension, syntax highlighting, education |
-| ⭐50 | [Agent Memory Browser](#50-agent-memory-browser) | Agent OS | Available | SQLite CRUD, graph viz, file watching, admin UX |
-| ⭐51 | [Agent Tool Execution Visualizer](#51-agent-tool-execution-visualizer) | Agent OS | Available | WebSocket streaming, real-time UI, JSON viewer |
-| ⭐52 | [Agent Cron Timeline & Health Monitor](#52-agent-cron-timeline--health-monitor) | Agent OS | Available | System monitoring, cron parsing, timeline viz |
-| ⭐53 | [Agent Session History Browser](#53-agent-session-history-browser) | Agent OS | Available | FTS5 search, conversation tree, export UX |
+| ⭐50 | [Agent Memory Browser](#50-agent-memory-browser) | Agent OS | ✅ DONE :3001 | SQLite CRUD, graph viz, file watching, admin UX |
+| ⭐51 | [Agent Tool Execution Visualizer](#51-agent-tool-execution-visualizer) | Agent OS | ✅ DONE :3004 | Polling feed, real-time UI, JSON viewer, replay |
+| ⭐52 | [Agent Cron Timeline & Health Monitor](#52-agent-cron-timeline--health-monitor) | Agent OS | ✅ DONE :3002 | System monitoring, cron parsing, timeline viz, job CRUD |
+| ⭐53 | [Agent Session History Browser](#53-agent-session-history-browser) | Agent OS | ✅ DONE :3003 | FTS5 search, conversation tree, export UX |
 | ⭐54 | [Agent Skill/Plugin Manager](#54-agent-skillplugin-manager) | Agent OS | Available | File CRUD, YAML parsing, admin panel UX |
 
 ---
@@ -707,9 +707,15 @@ For maximum career impact, package each project as:
 1. AI UX Critique Tool (#1) — done
 2. GitHub README Generator (#3) — done
 3. Nomad Cost Dashboard (#2) — done
+4. Local LLM Chat Interface (#11) — done, port 3000
+5. Agent Memory Browser (#50) — done, port 3001
+6. Agent Cron Monitor (#52) — done, port 3002
+7. Agent Session Browser (#53) — done, port 3003
+8. Agent Tool Visualizer (#51) — done, port 3004
 
-**Next 3 recommended:**
-1. Local LLM Chat Interface (#11) — fills streaming gap, Rick has Ollama, quick to ship
+**Next recommended:**
+1. Agent Skill/Plugin Manager (#54) — last MVP piece before Mission Control
+2. Mission Control Dashboard (#9a) — compose #50-54 as unified dashboard
 2. AI Agent Sandbox (#14) — hot space, visually stunning, defense-tech signal
 3. Budget Proposal Estimator (#16) — lets Rick tell the "six-figure savings" story publicly
 
@@ -751,12 +757,15 @@ For maximum career impact, package each project as:
 - Interactive Regex Teacher (#48) — educational, real-time UX
 - AI Code Snippet Explainer (#49) — code comprehension, broad appeal
 
-**Agent OS MVP Series (NEW — July 2026):**
-- Agent Memory Browser (#50) — inspect/edit fact_store + MEMORY.md, strongest first MVP
-- Agent Tool Execution Visualizer (#51) — real-time WebSocket feed of tool calls
-- Agent Cron Timeline & Health Monitor (#52) — visual schedule + failure alerts
-- Agent Session History Browser (#53) — searchable conversation archive with FTS5
-- Agent Skill/Plugin Manager (#54) — toggle skills, view plugins, manage cron
+**Agent OS MVP Series (NEW — July 2026, UPDATED Jul 11):**
+- ✅ Agent Memory Browser (#50) — DONE, port 3001, github:rsegrest/agent-memory-browser
+- ✅ Agent Tool Execution Visualizer (#51) — DONE, port 3004, github:rsegrest/agent-tool-visualizer (polling, not WS)
+- ✅ Agent Cron Timeline & Health Monitor (#52) — DONE, port 3002, github:rsegrest/agent-cron-monitor (+ job CRUD)
+- ✅ Agent Session History Browser (#53) — DONE, port 3003, github:rsegrest/agent-session-browser (FTS5 search)
+- ⬜ Agent Skill/Plugin Manager (#54) — NOT STARTED
+- ⬜ Mission Control Dashboard (#9a) — compose #50-54 as tabs, NOT STARTED
+
+**Build pattern:** Hermes scaffolds + writes CLAUDE.md → Claude Code (sonnet/medium) builds UI → Hermes verifies + deploys. Stack: Next.js 16 + Tailwind v4 + shadcn/ui + better-sqlite3. All on NUC, dark theme, Geist+system-ui font.
 
 ---
 

@@ -228,3 +228,15 @@
 - Each MVP ships independently, composes into #9a Agent OS dashboard later
 - Updated idea index (now 54+9a ideas), build priority, sources
 - File: wiki-career/concepts/portfolio-project-ideas.md
+
+
+## [2026-07-11] update | Agent OS portfolio status
+- Updated portfolio-project-ideas.md with current build status
+- #50 Memory Browser: DONE (port 3001)
+- #51 Tool Visualizer: DONE (port 3004, polling)
+- #52 Cron Monitor: DONE (port 3002, + job CRUD)
+- #53 Session Browser: DONE (port 3003, FTS5)
+- #54 Skill/Plugin Manager: NOT STARTED
+- #9a Mission Control: NOT STARTED
+- Build pattern documented: Hermes scaffolds + CLAUDE.md -> Claude Code sonnet builds -> Hermes verifies
+- Font updated across all 5 projects: Geist + system-ui sans-serif
