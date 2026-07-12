@@ -76,6 +76,7 @@ status: active
 | ⭐52 | [Agent Cron Timeline & Health Monitor](#52-agent-cron-timeline--health-monitor) | Agent OS | ✅ DONE :3002 | System monitoring, cron parsing, timeline viz, job CRUD |
 | ⭐53 | [Agent Session History Browser](#53-agent-session-history-browser) | Agent OS | ✅ DONE :3003 | FTS5 search, conversation tree, export UX |
 | ⭐54 | [Agent Skill/Plugin Manager](#54-agent-skillplugin-manager) | Agent OS | Available | File CRUD, YAML parsing, admin panel UX |
+| ⭐55 | [Hyperfocus Planner](#55-hyperfocus-planner-arcday) | Productivity | ✅ IN PROGRESS | AI planning, calendar integration, goal decomposition |
 
 ---
 
