@@ -174,7 +174,12 @@ status: active
 **Stack:** Next.js 15 + Ollama API + streaming (SSE) + localStorage
 **Why it's worth it:** Rick already has Ollama running on the NUC and BigRickPC. A privacy-first local chat UI is a real tool. Shows streaming (none of the shipped projects stream), model selection UX, and local AI integration. The "runs entirely on your hardware" angle is increasingly relevant. The personality switcher differentiates it from every bootcamp chat clone — mirrors Hermes persona/system-prompt tuning and makes a compelling LinkedIn story: "I built a local AI personality manager because I got tired of rewriting system prompts."
 **Skills gap filled:** Streaming UI, local LLM integration, real-time UX, system-prompt management UX.
-**Status:** Spec written — see kanban/local-llm-chat-spec.md
+**Status:** In development — Phase 1: OpenAI planning integration, Google Calendar OAuth
+
+---
+
+### ⭐55 | [Hyperfocus Planner](#55-hyperfocus-planner-arcday) | Productivity | ✅ IN PROGRESS | AI TO-DO list, goal breakdown, daily planning
+
 
 ---
 
