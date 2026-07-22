@@ -240,3 +240,16 @@
 - #9a Mission Control: NOT STARTED
 - Build pattern documented: Hermes scaffolds + CLAUDE.md -> Claude Code sonnet builds -> Hermes verifies
 - Font updated across all 5 projects: Geist + system-ui sans-serif
+
+## [2026-07-20] update | Active build models + status on portfolio master list
+- Added section **Active build status & models used** to concepts/portfolio-project-ideas.md
+- Audited Hermes state.db + git attributions for Personal Site and Mission Control
+- #9a Mission Control: IN PROGRESS :3006 — T1/T2 done, T3 hold; models: Claude Opus 4.8, Sonnet 5, glm-5.2, DeepSeek V4 Flash/Pro
+- #56 Personal Site (agent-portfolio-gallery): added to index — IN PROGRESS :3010; models: DeepSeek V4 Pro/Flash, early HY3 (+ Gemini Flash)
+- Documented Tier 3 hold + Kanban/TODO + wiki viewer tied to Mission Control
+- Cross-linked day-to-day plans at ~/wiki-personal/concepts/project-plans-index.md
+
+## [2026-07-20] update | Writing stack + Phase 1 model map on master list
+- Extended portfolio-project-ideas.md models section: Phase 1 leftovers → model table; writing/editing stack (GLM-5.2, Grok 4.5, humanizer)
+- Linked personal wiki concepts/writing-voice-and-models.md for gold-sample voice calibration
+- Note: Gemini not for this work; Flash not for publishable prose; don't pinch pennies on launch copy

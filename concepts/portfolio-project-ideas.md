@@ -1,7 +1,7 @@
 ---
 title: Portfolio Project Ideas for Career Networking
 created: 2026-05-30
-updated: 2026-07-11
+updated: 2026-07-20
 type: concept
 tags: [portfolio, side-project, career, react, ai, networking, open-source]
 sources: []
@@ -30,7 +30,7 @@ status: active
 | 7 | [Open-Source Agentic Development Toolkit](#7-open-source-agentic-development-toolkit) | Showcase | Available | Playwright, agent orchestration, npm |
 | 8 | [React Component Library for Simulation Viz](#8-react-component-library-for-simulation-visualizations) | Showcase | Available | D3, Storybook, npm |
 | ⭐9 | [Personal "Operating System" Dashboard](#9-personal-operating-system-dashboard) | Showcase | Available | Multi-API, LLM insights, local storage |
-| ⭐9a | [Agent OS — Mission Control for Hermes](#9a-agent-os--mission-control-for-hermes-new-july-2026) | Showcase | Available | WebSocket, SQLite, Recharts, agent infra |
+| ⭐9a | [Agent OS — Mission Control for Hermes](#9a-agent-os--mission-control-for-hermes-new-july-2026) | Showcase | ✅ IN PROGRESS :3006 (T1/T2 done; T3 hold) | WebSocket, SQLite, Recharts, agent infra |
 | 10 | [AI Meeting Transcript Analyzer](#10-ai-meeting-transcript-analyzer) | Practical | Available | Structured output, document processing |
 | ⭐11 | [Local LLM Chat Interface](#11-local-llm-chat-interface) | Practical | Available | Streaming, Ollama, real-time UX |
 | 12 | [AI-Powered Obsidian Wiki Explorer](#12-ai-powered-obsidian-wiki-explorer) | Practical | Available | Graph viz, embeddings, vector search |
@@ -77,6 +77,106 @@ status: active
 | ⭐53 | [Agent Session History Browser](#53-agent-session-history-browser) | Agent OS | ✅ DONE :3003 | FTS5 search, conversation tree, export UX |
 | ⭐54 | [Agent Skill/Plugin Manager](#54-agent-skillplugin-manager) | Agent OS | Available | File CRUD, YAML parsing, admin panel UX |
 | ⭐55 | [Hyperfocus Planner](#55-hyperfocus-planner-arcday) | Productivity | ✅ IN PROGRESS | AI planning, calendar integration, goal decomposition |
+| ⭐56 | [Personal Site — agent-portfolio-gallery](#56-personal-site--agent-portfolio-gallery) | Showcase | ✅ IN PROGRESS :3010 | Vite+React portfolio, blog, CTA, travel-map link |
+
+---
+
+## Active build status & models used (Jul 2026)
+
+> Companion to the idea index above. Paths live under `~/code/2026/` (NVMe). Day-to-day priority order: `~/wiki-personal/concepts/project-plans-index.md`.
+>
+> **Sources:** Hermes `state.db` session_model_usage + git commit attributions (queried 2026-07-20).
+
+### Current active apps
+
+| # | App | Path | Port | Status | Primary models used to build |
+|---|-----|------|------|--------|------------------------------|
+| 9a | **Mission Control** | `~/code/2026/mission-control` | 3006 | Tier 1 ✅ Tier 2 ✅; **Tier 3 on hold** (Kanban/TODO + wiki viewer planned) | **Claude Code Opus 4.8** (core merge), **Claude Code Sonnet 5** (adapter), Hermes **glm-5.2** (orchestration), Hermes **DeepSeek V4 Flash/Pro** (Tier 1–2 UX) |
+| 56 | **Personal Site** | `~/code/2026/agent-portfolio-gallery` | 3010 | Blog scaffold ✅; still need hero/CTA/resume/layout polish + real posts | Hermes **DeepSeek V4 Pro** (main coding), **DeepSeek V4 Flash** (blog/polish), early **Tencent HY3** design (+ a little **Gemini 3.5 Flash**) |
+| — | **Travel Map** | `~/code/2026/travel-map` | 3007 | Separate app; multi-year years UX + dark theme still open | (not fully audited 2026-07-20) |
+| 55 | **Hyperfocus Planner** | `~/projects/hyperfocus-planner` | — | Phase 1: OpenAI planning + Google Calendar OAuth | (not audited 2026-07-20) |
+| 50–53 | Agent OS MVPs | `~/code/2026/` siblings | 3001–3004 | DONE (composed into Mission Control) | Hermes scaffold + **Claude Code** pattern (see Jul 11 log) |
+
+### Personal Site — models in detail
+
+Main window: **2026-07-13 → 2026-07-14**
+
+| Role | Model(s) | Session / notes |
+|------|----------|-----------------|
+| Initial design / scaffold | **tencent/hy3:free**, **tencent/hy3** (OpenRouter); some **google/gemini-3.5-flash**; light **deepseek-v4-flash** | Jul 13 — `Project Showcase Gallery Design Request` |
+| Primary coding | **deepseek-v4-pro:cloud** | Jul 13 — `personal-site-development` (~117 API calls) |
+| Blog, Travel nav, layout polish, plans | **deepseek-v4-flash:cloud** (primary) + **deepseek-v4-pro:cloud** | Jul 14 — `app-list-add-writing-app`, `app-capture`, etc. |
+
+Git: blog feature, Travel Map nav link, compact layout, light-mode experiment then **dark-only revert** (Jul 14). **No Claude Code attribution** in portfolio commits.
+
+**Commits that wrote the code → Hermes DeepSeek V4 Pro/Flash** (after HY3 design pass).
+
+### Mission Control — models in detail
+
+| Role | Model(s) | Evidence |
+|------|----------|----------|
+| Unified dashboard #9a | **Claude Code Opus 4.8** (high effort, ~35 turns) | commit `410d8bc` |
+| Full 6-app feature merge | **Claude Code Opus 4.8** (high effort, ~40 turns) | commit `026835c` |
+| Multi-agent adapter refactor | **Claude Code Sonnet 5** (medium, ~20 turns) | commit `370a60a` |
+| Specs / status / subagents | **glm-5.2** (Ollama Cloud / Nous) | Jul 10–11 Hermes (`App Development Status Review` + subagents) |
+| Tier 1 + Tier 2 UX polish | **deepseek-v4-flash:cloud** + some **deepseek-v4-pro:cloud** | Jul 14–15 commits `dde07a2`, `19d3756` |
+
+**Tier 3 hold (user direction Jul 2026):** pause deep Tier 3 work. Planned additions tied to Mission Control: **improved Kanban board and/or TODO list**, and a **wiki viewer** (possible edit). Tracked in `~/wiki-personal/concepts/plan-mission-control.md`.
+
+**Build pattern (documented Jul 11):** Hermes scaffolds + `CLAUDE.md` → Claude Code builds → Hermes verifies.
+
+### Model selection pattern (working default)
+
+| Use case | Prefer |
+|----------|--------|
+| Bulk / analysis / UX iteration | **DeepSeek V4 Flash** (cloud) |
+| Heavier coding in Hermes | **DeepSeek V4 Pro** (cloud) |
+| Large greenfield app build via delegation | **Claude Code Opus 4.8** |
+| Focused medium coding delegation | **Claude Code Sonnet 5** |
+| Earlier Agent OS orchestration | **glm-5.2** |
+| Exploratory UI design | HY3 / Gemini (used once on portfolio; **do not use** — Gemini was a mistake; HY3 not default) |
+| Complex coding (user pref) | **glm-5.2** on Ollama Cloud when Pro/Flash aren't enough |
+
+Revert to Flash after heavy coding sessions (cost preference). **Do not use DeepSeek-3.2.**
+
+### Personal Site Phase 1 — remaining work → model map
+
+Blog scaffold is done. Remaining launch work and preferred models (Flash-first for code; spend on writing):
+
+| Remaining work | Model | Notes |
+|----------------|-------|-------|
+| Hero positioning copy | **glm-5.2** draft → **Grok 4.5** + humanizer | High-impact words; not Flash |
+| “Work with me” / CTA section | **glm-5.2** / **Grok** for copy; **Flash** for component | |
+| Downloadable resume | **Flash** (wire PDF/link); **GLM** if rewriting bullets | |
+| Layout crowding polish | **deepseek-v4-flash** | CSS/layout |
+| Dark-only / responsive / link QA | **deepseek-v4-flash** | |
+| Blog posts (outline + draft) | **glm-5.2:cloud** | Don't pinch pennies |
+| Blog posts (voice edit) | **Grok 4.5** + `humanizer` skill | Anti-slop |
+| Put finished copy into `blog-seed.ts` | **deepseek-v4-flash** | Mechanical |
+| Escalate stuck multi-file code | **deepseek-v4-pro** or **glm-5.2** | Only after Flash fails twice |
+
+### Writing, editing, outlining (high-impact content)
+
+Flash is weak at natural prose. Prefer:
+
+| Task | Model |
+|------|--------|
+| Outline | **glm-5.2:cloud** (Ollama Cloud) |
+| Full draft | **glm-5.2:cloud** |
+| Make it sound human / less AI | **Grok 4.5** (xAI) + Hermes **humanizer** skill |
+| Tech/fact sanity check | **glm-5.2** or DeepSeek V4 Pro |
+| Site wiring after words are done | **deepseek-v4-flash** |
+
+**Single-model fallback:** GLM-5.2 + humanizer skill; bring Grok only if still plastic after one edit.
+
+**Workflow per post/hero block:**
+1. Outline — GLM-5.2 (concrete claims, metrics, failure stories; no “in today’s world”)
+2. Draft — GLM-5.2 with voice samples attached (see voice calibration below)
+3. Edit — Grok 4.5 + humanizer
+4. Human — 10-min pass: one detail only you know
+5. Wire — Flash into site
+
+Full voice-calibration process: `~/wiki-personal/concepts/writing-voice-and-models.md`
 
 ---
 
@@ -151,10 +251,20 @@ status: active
 
 ### 9a. Agent OS — Mission Control for Hermes (NEW — July 2026)
 **What:** A visual cockpit / agent harness GUI that wraps Hermes Agent with real-time observability and control. Distinct from #9 (which is personal life data) — this is agent infrastructure monitoring. The full vision is a composed dashboard of discrete MVP pieces (see #50-54 below) that can each ship independently and later tie together into a unified mission control interface.
-**Stack:** Next.js or Electron + WebSocket + SQLite + Recharts + Hermes APIs
+**Stack:** Next.js + SQLite + Recharts + Hermes APIs (path: `~/code/2026/mission-control`, port **3006**)
 **Why it networks:** Agent observability/management is exploding (LangSmith, Helicone, Langfuse) but nobody has a self-hosted, local-first agent OS dashboard. You've been running Hermes for months with real infrastructure (cron, skills, memory, kanban) — this shows you understand agent systems at the infrastructure level, not just API-calling. The "I built mission control for my AI agent" story is compelling for hiring managers at any AI-focused company.
 **Shareable output:** Live demo + "How I built an Agent OS" architecture series + screenshots of the dashboard in action
 **Composes from:** #50 (Memory Browser), #51 (Tool Execution Visualizer), #52 (Cron Timeline & Health Monitor), #53 (Session History Browser), #54 (Skill/Plugin Manager)
+**Status (2026-07-20):** IN PROGRESS — Tier 1 UX ✅, Tier 2 UX ✅. **Tier 3 on hold** per user direction. Planned Tier 3 / new tabs: improved **Kanban board and/or TODO list**, **wiki viewer** (possible edit), plus earlier plan items SSE live feed and session replay. Implementation plan: `~/wiki-personal/concepts/plan-mission-control.md`.
+**Models used to build:** Claude Code **Opus 4.8** (dashboard + full feature merge); Claude Code **Sonnet 5** (multi-agent adapter); Hermes **glm-5.2** (Jul 10–11 specs/subagents); Hermes **DeepSeek V4 Flash/Pro** (Tier 1–2 polish). See [Active build status & models used](#active-build-status--models-used-jul-2026).
+
+### 56. Personal Site — agent-portfolio-gallery
+**What:** Dark-only personal portfolio (Vite + React + TypeScript + Tailwind v4 + Framer Motion) with project gallery, resume page, blog list/post routes, and nav link toward Travel Map. Career surface for case studies + long-form writing + CTA.
+**Stack:** Vite + React + TS + Tailwind v4; path `~/code/2026/agent-portfolio-gallery`, port **3010**
+**Why it networks:** The hire-me front door. Blog + case studies + clear CTA convert better than a bare project grid.
+**Shareable output:** Live site + technical blog posts + case-study project pages
+**Status (2026-07-20):** IN PROGRESS — blog feature + 4 seed posts + Travel nav link shipped; still open: hero positioning, Work-with-me CTA, downloadable resume, layout crowding polish, real long-form posts, case-study rewrite. Plans: `~/wiki-personal/concepts/plan-personal-site.md` + `plan-portfolio-strategy.md`.
+**Models used to build:** Hermes **DeepSeek V4 Pro** (primary coding Jul 13); **DeepSeek V4 Flash** (blog/polish Jul 14); early design **Tencent HY3** (+ some **Gemini 3.5 Flash**). No Claude Code on this repo. See [Active build status & models used](#active-build-status--models-used-jul-2026).
 
 ---
 
