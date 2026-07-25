@@ -42,10 +42,10 @@ confidence: high
 
 | ID | Project | Description | Status | Models Used | Last Worked |
 |----|---------|-------------|--------|-------------|-------------|
-| IG | **Image Gen Composer** | Flask app — CivitAI collection browser + ComfyUI image gen. Port 7777. | 🔧 Running, occasional use | DeepSeek V4 Flash | 2026-04-27 |
-| GC | **Game Clawtroller** | Casino games with agent interface. | 🔧 Experimental | DeepSeek V4 Flash | 2026-04-06 |
-| AP | **Agentic Patterns MVPs** | Collection of agent design pattern MVPs. | 🔧 Experimental | DeepSeek V4 Flash | 2026-06-29 |
-| 8B | **8-Bit Game Dev Resources** | Downloaded reference library from awesome-8bitgamedev. | 📦 Reference archive | DeepSeek V4 Flash | 2026-07-17 |
+| IG  | **Image Gen Composer**       | Flask app — CivitAI collection browser + ComfyUI image gen. Port 7777.             | 🔧 Running, occasional use | Local LM Studio (OpenAI-compatible) | 2026-04-27  |
+| GC  | **Game Clawtroller**         | 2-player game server supporting Board games and Casino games with agent interface. | 🔧 Experimental            | None (no LLM integration)           | 2026-04-06  |
+| AP  | **Agentic Patterns MVPs**    | Collection of agent design pattern MVPs.                                           | 🔧 Experimental            | GPT-4o-mini (via OpenAI)            | 2026-06-29  |
+| 8B  | **8-Bit Game Dev Resources** | Downloaded reference library from awesome-8bitgamedev.                             | 📦 Reference archive       | None (reference archive)            | 2026-07-17  |
 
 ## Planned / Spec'd
 
