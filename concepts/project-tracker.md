@@ -30,7 +30,7 @@ confidence: high
 
 | ID | Project | Description | Status | Models Used | Last Worked |
 |----|---------|-------------|--------|-------------|-------------|
-| UX | **UX Critique Tool** | AI-powered UX critique using Vision API + Nielsen heuristics. Vercel. | ✅ SHIPPED — **needs further testing** before promotion | DeepSeek V4 Flash | 2026-06-22 |
+| UX | **UX Critique Tool** | AI-powered UX critique using Vision API + Nielsen heuristics. Vercel. | ✅ SHIPPED — **needs further testing** before promotion | GPT-4o (primary), Claude 3.5 Sonnet (fallback) | 2026-06-22 |
 | ND | **Nomad Cost Dashboard** | Cost-of-living comparison dashboard with Recharts. Vercel. | ✅ SHIPPED — **needs more data sets** to be useful; 11/12 tasks done, 1 archived | DeepSeek V4 Flash | 2026-06 |
 | GR | **GitHub README Generator** | Agentic tool that reads repos and generates polished READMEs. Vercel. | ✅ SHIPPED — **needs further testing** before promotion; 11/12 tasks done, 1 archived | DeepSeek V4 Flash | 2026-06 |
 | MB | **Agent Memory Browser** | SQLite CRUD + graph viz for Hermes agent memory. Port 3001. | ✅ DONE — composed into Mission Control; **needs further testing** | Hermes scaffold + Claude Code | 2026-07-11 |
