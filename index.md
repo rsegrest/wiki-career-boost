@@ -22,6 +22,7 @@
 - [[project-tracker]] — Full project tracker: all projects, statuses, models used, and last-worked dates
 - [[freelance-portfolio-strategy]] — Freelance acquisition playbook, UX positioning, portfolio build plan
 - [[sabrina-ramonov-ai-business-videos]] — 41 AI business/career videos from Sabrina Ramonov: income streams, personal branding, AI skills, career strategy in AI era
+- [[../../wiki-personal/concepts/goals-pay-debt-house-remote-abroad]] — **Top-level goals (personal vault)** — why the portfolio/freelance work exists: debt payoff → location-independent income → move abroad (~2030). The bridge page between this vault's portfolio work and the personal vault's plans
 
 ## Kanban Boards
 

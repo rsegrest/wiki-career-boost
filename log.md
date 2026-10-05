@@ -253,3 +253,7 @@
 - Extended portfolio-project-ideas.md models section: Phase 1 leftovers → model table; writing/editing stack (GLM-5.2, Grok 4.5, humanizer)
 - Linked personal wiki concepts/writing-voice-and-models.md for gold-sample voice calibration
 - Note: Gemini not for this work; Flash not for publishable prose; don't pinch pennies on launch copy
+- 2026-10-04: Added a cross-vault Goals pointer to index.md → personal vault concepts/goals-pay-debt-house-remote-abroad.
+  Reframes this vault portfolio/freelance work as the instrument for goal 3a (location-independent income):
+  contract income needs no employer permission, so it is the version of work-from-anywhere that does not
+  depend on the ~50%-remote day job or the unresolved NASA/ITAR foreign-work-location question.
