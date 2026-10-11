@@ -572,3 +572,23 @@ rather than the first module, because the product is one records layer with per-
 **GrowerLedger.com** as the umbrella ("GrowerLedger — Spray Records"), or **SprayRegister.com** if naming the
 first product tightly. Advised against splitting brand from domain. Flagged that registry WHOIS is not a
 purchase guarantee.
+
+## [2026-10-11] naming | The Stokes umbrella — available, with one caution and one word to drop
+
+Rick proposed **stokesagtech.com** as an umbrella brand under which individual apps are routed, using his
+mother's maiden name: his grandfather **John D. Stokes was a farmer**. Checked availability — `stokesagtech`,
+`stokesag`, `stokesagriculture`, `stokesagservices`, `stokesagtechgroup`, `stokesfarmtech`, `stokesagtools`
+and `jdstokesag` are **all available** (only `stokesfarm.com` is taken), a far better field than the five of
+thirty-four generic descriptors.
+
+Verified the collision risk rather than assuming one: **Stokes Seeds** (founded 1881, 140+ years, Thorold ON
+plus four US locations including LaBelle FL, selling into the Southeast) already owns the "Stokes" ear in
+vegetable growing; **Stokes Agricultural Services Ltd** (UK) holds that company name; and **Stocks Ag** (UK)
+is one letter away. Different product classes make legal risk low, but a formal USPTO search in the
+software/records classes is the right next step before buying.
+
+Recorded in `concepts/demand-test-playbook.md` §8: keep the surname (it passes the phone test and the
+grandfather story is a credibility asset in a vendor-sceptical market), **drop "AgTech"** (venture vocabulary,
+and the wrong signal on a truck door), and recommend the umbrella **StokesAg.com** with modules reading
+"Stokes Ag — Spray Register" — plus the routing plan (paths first, subdomains later, a small module registry
+in the app when the second module arrives).

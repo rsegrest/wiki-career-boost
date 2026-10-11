@@ -208,3 +208,45 @@ the `.com` ones and must be confirmed at a registrar.
 
 **Confirm at a registrar before buying** — registry `WHOIS` says "available" but reserved, premium and
 pending-delete states exist, and the `.farm`/`.ag` results above used looser matching than the `.com` ones.
+
+### The Stokes option (2026-10-11)
+
+Rick's own idea, and it beats the generic list on the criterion that matters most: **the phone test.** "Stokes"
+is one syllable and spelled exactly as it sounds, where "Segrest" needs spelling twice. It is also his
+mother's maiden name — his grandfather **John D. Stokes was a farmer** — which is a *credibility asset* in a
+market that distrusts vendors: multi-generational family framing is respected in agriculture, and "named for
+my grandfather, who farmed" answers "who are you?" in one line.
+
+**Availability (Verisign registry, checked 2026-10-11):** `stokesagtech.com` (his pick), `stokesag.com`,
+`stokesagriculture.com`, `stokesagservices.com`, `stokesagtechgroup.com`, `stokesfarmtech.com`,
+`stokesagtools.com`, `jdstokesag.com` — all **available**; only `stokesfarm.com` is taken. That is a far
+better field than the five-of-thirty-four result for generic descriptors.
+
+**The caution, verified:** "Stokes" is **not a blank slate in agriculture** —
+
+- **Stokes Seeds** — founded 1881, 140+ years, one of North America's largest vegetable-seed distributors,
+  headquartered in Thorold, Ontario with four U.S. locations including **LaBelle, Florida**, and sales up the
+  Southeast. Different product class (seeds vs software), so legal risk is low, but vegetable growers will
+  already hear a seed company.
+- **Stokes Agricultural Services Ltd** — a live UK firm (Derbyshire, machinery repair). So that *name* is
+  taken even though the domain is free.
+- **Stocks Ag** — a UK applicator/wheel manufacturer. One letter apart, in the same industry.
+- **Recommended before buying:** run a formal **USPTO** search for STOKES in the software/records classes
+  rather than relying on a web search. Different trademark classes make conflict unlikely; confirm it.
+
+**The one word I would drop: "AgTech."** It is the industry's own venture-capital vocabulary — farmers say
+"the co-op", "the farm", "the seed guy", never "agtech" — and for a buyer who is tired of vendors it quietly
+says *startup that may not exist next year*. Fine as a legal holding name; the wrong thing on a truck door.
+
+**Recommendation:** umbrella **`StokesAg.com`** (short, sayable, region-appropriate, available), with modules
+reading plainly underneath — **"Stokes Ag — Spray Register"**. Own `stokesag.com` *and* `stokesagtech.com`
+(cheap), redirecting one. Name the module with the regulator's word rather than the invented one, and retire
+"Sprayproof" now that its .com is gone.
+
+**Routing for the umbrella (his "individual apps under the brand" idea):**
+- **v1 — one domain, path per module:** `/spray` now; `/maintenance`, `/herd`, `/mileage` later. Simplest on
+  Vercel, consolidates brand and search authority, and the app already serves one page at `/`.
+- **Later — promote a module to a subdomain** (`spray.stokesag.com`) only once it earns its own traffic;
+  exact-match module domains can simply redirect to it.
+- On the app side that means a small **module registry** (route -> app) rather than a rewrite, which is the
+  right time to add it: when the second module arrives, not before.
