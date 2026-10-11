@@ -146,3 +146,22 @@ The service funds the product; the product is what the service keeps repeating.
 page plus the API, wire the form to collect **records** rather than emails, and add **photo capture of a
 handwritten log** — that last one is what the research says farmers actually need and what no competitor
 offers.
+
+### Design direction (settled 2026-10-11)
+
+The first build was dark with neon accents — a developer's aesthetic and the wrong signal for an agriculture
+product. Replaced with a **printed-almanac** treatment, in Rick's words: wheat-coloured background, grassy
+green and sky-blue accents, traditional and conservative layout, serif type, cues from the Farmers' Almanac.
+
+- **Palette:** wheat paper `#f7f1e1`, panel `#fffdf6`, warm ink `#2f2a1e`, grass `#3f6f2a`, sky `#3d7ba1`,
+  brick `#9c4227` for anything needing attention. No dark mode, no gradients, no glow.
+- **Type:** **Bitter** (slab serif) for the masthead and headings, **Source Serif 4** for body text,
+  small-caps letterspaced labels — with Georgia/Times fallbacks so it reads correctly even without webfonts.
+- **Layout:** centred masthead between double rules, Roman-numeral section heads, boxed panels, a ruled ledger
+  table (zebra rows, `†` beside each cell needing attention), figure boxes for the counts, a "seal" badge.
+- **A print stylesheet, deliberately:** the input area, tier chooser and footer are hidden when printing and the
+  ledger prints clean — because **printing the record is the product**. Verified: the print media query is
+  present and four elements carry `no-print`.
+- **Two visual languages, on purpose:** the product's own site speaks almanac; the agriculture landing page on
+  ricksegrest.com stays in that site's existing language, because it is a portfolio page in a personal brand,
+  not the product.

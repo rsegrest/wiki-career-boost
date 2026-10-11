@@ -539,3 +539,18 @@ function in `app/tiers.py`.
 page renders six sample applications (4 complete, 2 incomplete, 151 acres, four highlighted cells, two gaps)
 with the export locked and the paywall shown, and choosing $79 enables the export and clears the paywall.
 `BUILD_LOG.md` was carried from the first line of code with the RED -> GREEN sequence recorded.
+
+## [2026-10-11] design | sprayproof restyled as a printed almanac (dark neon theme retired)
+
+Rick: the dark/neon theme was inappropriate for an agriculture application. Direction given: wheat background,
+grassy green and sky blue accents, traditional conservative layout, serif fonts, cues from the Farmers'
+Almanac. Rewrote `static/index.html` — palette (wheat paper, grass, sky, brick for flags), type (Bitter slab
+serif masthead + Source Serif 4 body, small-caps labels, system fallbacks), layout (double-ruled centred
+masthead, Roman-numeral sections, boxed panels, ruled ledger with a `†` on cells needing attention, figure
+boxes, seal badge) and a **print stylesheet** so the ledger prints clean — printing the record is the product.
+
+Element ids and the JS contract were preserved, and the behaviour was re-verified against the running service:
+6 applications, 4 complete, 2 needing attention, 151 acres, 4 flagged cells, 2 gaps, document locked on Free
+and unlocked on the $79 tier. Computed styles confirm wheat `rgb(247,241,225)`, Bitter 62px masthead, Source
+Serif body, and no dark-mode leak. Committed and pushed to `rsegrest/sprayproof` (private); the design
+direction is recorded in `concepts/demand-test-playbook.md`.
