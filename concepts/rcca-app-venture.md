@@ -123,6 +123,23 @@ instead — which is the larger market anyway).
 | **This tool's opening** | RCCA-only, guided reasoning | **~$100–300/mo/site** — sits *under* the incumbent floor |
 
 The incumbents sell **recordkeeping**: modules, workflows, audit trails. The prototype's own
+
+### A second vertical, at zero extra build cost: food and feed manufacturing (found 2026-10-11)
+
+The same product solves a *mandatory* compliance problem in a different industry. **SQF Code clause 2.5.3**
+requires a documented correction / corrective action / preventive action (CAPA) programme — root cause,
+verification of effectiveness, audit-ready records — and BRC-adjacent standards run the same spine. SQFI
+publishes its own CAPA guidance document.
+
+So the food/feed processing industry is RCCA's second vertical, and it is served thinly: a few small-plant
+vendors exist (Qualitronyx pitches "pass your SQF/BRC audit without the Excel chaos"; SafetyChain sells SQF
+management), which proves the market rather than closing it — plenty of small and mid-size plants still run
+CAPA in spreadsheets. This is the **same reasoning problem the prototype already solves**, with no new build.
+
+**And it has a warm door:** Alabama Farmers Cooperative's feed and processing operations sit inside the
+network of Rick's brother-in-law (general counsel there), in a region where poultry integrators, feed mills
+and processors are dense. See [[concepts/freelance-outreach-targets]] for the ag channel and its cautions.
+
 thesis is the gap — a tool that **helps you reason to a verified root cause** (proposed → testing →
 supported → confirmed, with evidence attached, and a report that proves it) rather than a form that
 files one. Small aerospace/defense suppliers are the plausible buyer: they must close RCCAs to

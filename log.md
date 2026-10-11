@@ -379,3 +379,22 @@ Unum ~$13.3B + BCBST ~$6.2B; freight: Kenco, U.S. Xpress, Covenant), **F3 Future
 **Cross-link worth chasing:** an advanced-manufacturing research park full of supplier-quality workflows is
 exactly where the RCCA product wants design partners — Auburn's new district is a candidate for both the
 freelance offer and the venture ([[concepts/rcca-app-venture]]).
+
+## [2026-10-11] update | Ag / co-op channel added, and a second vertical for the RCCA product
+
+Rick raised his brother-in-law, **general counsel at Alabama Farmers Cooperative (Decatur)**, as a market:
+an industry slow to adopt technology, therefore full of unharvested low-hanging fruit. Verified rather than
+assumed — AFC is ~37 member associations, ~90 retail locations, 2,300+ employees (revenue estimates vary,
+~$698M per RocketReach); and the sector literature says the same thing in print (Springer Jan 2026 on
+cooperatives' digital-transformation barriers; legacy-ERP-in-agriculture work describing "paper records,
+spreadsheets and disconnected systems"). **No IA problem — it is a private commercial co-op.**
+
+Added to [[concepts/freelance-outreach-targets]] as **the warmest door on the list**, with the traps stated
+plainly (family risk; a GC opens doors but signs no POs; 6-18 month governance; harvest vs the Dec-Feb budget
+window; the ERP vendor may claim the space; keep the family relationship out of public material) and the
+wedge — **an AI assistant over the co-op's contracts, sold to the pain the general counsel personally owns**.
+
+**Bonus finding, recorded on [[concepts/rcca-app-venture]]:** **SQF code clause 2.5.3 mandates a CAPA
+programme** in food and feed manufacturing, so the RCCA product has a **second vertical at zero extra build
+cost** with a warm door into it (AFC's feed/processing operations; poultry integrators and feed mills are
+dense in the region). Thinly served by small-plant vendors, which proves the market.

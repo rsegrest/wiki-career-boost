@@ -160,6 +160,66 @@ where his offer is differentiated, published by a company headquartered in his c
 **The credibility bridge.** The NASA/TBE pedigree is the *hook*, but the *buyer* has to be commercial:
 aerospace-grade rigor applied to commercial document workflows. Sell the discipline, not the sector.
 
+## The ag / co-op channel — the warmest door on the list (2026-10-11)
+
+**Rick's idea, and the literature backs it.** His brother-in-law is **general counsel at Alabama
+Farmers Cooperative** (Decatur, AL), which makes ag co-ops an unusually good target: a sector with
+document-heavy operations that has *not* modernised, reached through a senior family contact.
+
+### Is the "slow to adopt" premise true? Verified — it is not folklore
+
+- AFC itself: founded 1936, HQ Decatur, **~37 member associations, ~90 retail locations, 2,300+ employees**
+  through joint ventures, one of the largest farmer-owned ag businesses in the Southeast.
+  *(Revenue estimates vary by source — RocketReach reports ~$698M; treat the figure as approximate.)*
+  Scale check: big enough to buy, and 90 locations is a lot of distributed document chaos.
+- Sector research says the same thing in print: agricultural cooperatives' digital transformation is
+  constrained by **economic barriers and cooperative characteristics** (Springer, Jan 2026; ScienceDirect,
+  agri-food cooperatives); and on legacy ERP in agriculture — "**paper records, spreadsheets and
+  disconnected systems** often lead to incomplete farmer information, delayed reporting, poor
+  communication and limited visibility" (Oct 2025). That is Rick's hypothesis, in a journal.
+- **Zero IA problem:** a private commercial co-op is not a government network. No CUI, no accreditation,
+  no egress review.
+
+### The traps, stated plainly
+
+1. **It's family.** If this goes badly it is not a lost lead, it is Thanksgiving. So: ask for *insight and
+   an introduction*, never a favour-deal; never ask him to stake his reputation on a first step he cannot
+   defend internally; and say out loud that walking away cleanly is an acceptable outcome.
+2. **A general counsel opens doors; he does not sign POs.** Ask him for the *problem* and the *right
+   person* — not the deal.
+3. **Co-op governance is slow by design.** The same slowness that creates the opportunity means a 6-18
+   month cycle with committees and a board. **This is a medium-term / asset track, not the next-90-days
+   money.** Do not let it consume the freelance hours (see [[../../wiki-personal/concepts/near-term-income-plan]]).
+4. **The ag calendar decides the timing.** Harvest (Sept-Nov) means nobody has time to talk; the budget
+   and planning window is **Dec-Feb**. Right now is the moment to *have the conversation*, with the pilot
+   proposed for the winter window.
+5. **Their ERP or IT provider may claim the space.** Enter through work that lives *outside* the ERP —
+   contracts, compliance records, correspondence — rather than asking to integrate with it.
+6. **Privacy:** this is a family relationship. Keep it out of public or promotional material.
+
+### The wedge: sell to the pain he owns
+
+The **general counsel's own function is the most document-burdened part of a co-op** — contracts
+(grain marketing, patronage, supplier agreements), obligations, renewals, correspondence. An **AI
+assistant over the co-op's contracts** is personally valuable to him, low-risk, and championable without
+a committee. Start there, not with a company-wide pitch.
+
+### What one case study opens
+
+The vertical generalises: other Southern co-ops, **Farm Credit** associations, ag retailers and
+dealers, **poultry integrators** (Alabama is a poultry state, and they run enormous contract-grower
+document and quality workflows), feed mills and food processors.
+
+### First three moves
+
+1. **One insight conversation, not a pitch:** "who in the co-op is drowning in documents right now, and
+   would you introduce me to them for 30 minutes?"
+2. **Ask the governance question** — "how does the co-op buy software: who signs, and what's the budget
+   cycle?" That single answer makes the entire vertical reachable.
+3. **Offer the contracts assistant as a small paid pilot** in the Dec-Feb window, priced as a one-day
+   audit or a two-week feature.
+
+
 ## Do not spend hours here
 
 - **Government/defence networks as AI buyers** — IA review, no external model calls, no data egress.
