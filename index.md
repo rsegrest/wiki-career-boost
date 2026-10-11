@@ -27,6 +27,7 @@
 - [[concepts/freelance-outreach-targets]] — **Who to actually contact** for the first paid hour: 10 targets ordered by conversion x rate, verified local contacts, and the platform-rate reality ($27-30/hr medians vs the $120+ direct band)
 - [[concepts/side-income-map]] — **Start here for the money thread**: every income/venture thread, where its detail lives, time to first dollar, and the ideas already ruled out with reasons
 - [[concepts/ag-market-intelligence]] — **Where ag conversations happen and what they say**: AgTalk/Reddit map, verbatim farmer complaints about records software, and the positioning consequences
+- [[concepts/demand-test-playbook]] — **Test demand before building**: splash page + interactive demo, what to measure (behaviour beats emails), the module ranking, and why spray records are the place to start
 - [[concepts/services-page-copy]] — **The sales asset**: publication-ready copy for a business page on ricksegrest.com that shows applications and outcomes for non-technical buyers (six scenarios, pricing, safety answers, build notes)
 
 ## Kanban Boards

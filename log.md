@@ -500,3 +500,25 @@ Verified in a browser against a production build: both routes render (general pa
 the ag variant; ag page: 6 farm jobs, "What this is not", both price points, link back). Committed on the
 branch (**not** master, so nothing deploys); branch pushed, master untouched. Editorial rule recorded on the
 copy page: never lift a named forum user's words onto a commercial page — paraphrase the themes.
+
+## [2026-10-11] create | concepts/demand-test-playbook.md — validated the smoke test, corrected the starting point
+
+Rick proposed the YC-style splash-page/email-capture test with a modern upgrade (an interactive demo of one
+real feature), plus a possible á la carte product suite sharing data, and asked where to start.
+
+**Recorded:** the approach is right, and in this business the door need not be fake — the "send me one
+season's records, I'll send back the audit view" promise is deliverable by hand today, making it a concierge
+MVP with revenue attached. Behaviour (records actually sent) beats emails as a signal; benchmarks ~11% median
+waitlist conversion, so ~200 qualified visitors is the minimum honest sample, and 0 visitors is not a test.
+
+**Correction found while checking the competition:** landlord/custom-work billing — my first instinct for the
+starting point — is **already contested** (Traction Ag invoices sharecrop/custom work automatically on its Pro
+tier; Agnomy does ag invoicing + payments at 1%; nxtAcre bundles invoicing, imports and roles), and farm
+accounting is contested and partly free (Farm-Ledger free tier). **Do not start there.**
+
+**Where to start instead: spray/application records → the compliance view.** Four reasons: 40 CFR 170.311
+legally requires the application record be retained for two years; the market leader is criticised precisely
+for failing at audit *output*; the current workaround is a homemade Excel workbook and handwriting; and the
+deliverable is a document, so the demo and the manual service are the same thing. Suite framing recorded as
+**one records layer with per-job output modules**, and naming candidates listed (descriptive beats clever for
+this audience).
