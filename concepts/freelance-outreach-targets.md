@@ -147,6 +147,33 @@ FreightTech Awards dinner. One drivable event with the entire freight-tech ecosy
 100 named freight and supply-chain technology companies. A target list that already exists, in a sector
 where his offer is differentiated, published by a company headquartered in his chosen market.
 
+
+### The message to the brother-in-law — insights only, no pitch (2026-10-11)
+
+Rick's framing: use him to gather insight, not to sell. The message therefore asks for
+**understanding, an introduction and the buying process** — and offers a clean exit.
+
+> Hey — I need thirty minutes of your brain, not a favour.
+>
+> I'm building a small practice helping businesses put AI to work on the documents they already have —
+> contracts, invoices, forms, compliance records. Not a product pitch: I'm trying to learn where the real
+> pain sits in industries that don't have a hundred tech vendors knocking.
+>
+> You're the closest thing I have to an inside view of a business like that. Three questions and I'll
+> leave you alone:
+>
+> 1. Who inside a co-op is drowning in documents right now, and what does their week actually look like?
+> 2. Would you introduce me to that person for half an hour? I'd come as a learner, not a vendor.
+> 3. How does the co-op actually buy software — who signs, and what's the budget cycle?
+>
+> If any of that is "not interested" or "not appropriate", that's a completely fine answer and it changes
+> nothing between us. I'd rather ask and hear no than guess.
+>
+> *Optional line, delete if it feels like a pitch:* the one thing I'd try first in your seat is something
+> that reads every contract and tells you what's renewing and what you've just agreed to. But that's a
+> hypothesis — tell me if it's wrong.
+
+
 ### First three moves
 
 1. **Attend one ChaTech or Chamber event before joining anything** — confirm the room matches the pitch.

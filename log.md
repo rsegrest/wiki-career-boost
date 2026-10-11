@@ -398,3 +398,23 @@ wedge — **an AI assistant over the co-op's contracts, sold to the pain the gen
 programme** in food and feed manufacturing, so the RCCA product has a **second vertical at zero extra build
 cost** with a warm door into it (AFC's feed/processing operations; poultry integrators and feed mills are
 dense in the region). Thinly served by small-plant vendors, which proves the market.
+
+## [2026-10-11] create | concepts/services-page-copy.md + the ag insight message
+
+Rick's direction: for any of these markets, build a **professional business page showing sample
+applications** — demonstrating real value to potential customers, especially non-technical ones, with
+ideas they may not know exist.
+
+- `concepts/services-page-copy.md` — publication-ready copy for a **Services** page: hero, **six
+  role-based scenarios** in before/after form (the contract pile, the invoice pile, the forms nobody
+  types, the repeating emails, the audit binder, the thirty-year veteran's head), the safety answers
+  (runs on your network / you approve what goes out / your systems stay / you can walk away), the
+  $750 assessment -> $3,500 two-week build ladder, who he works with, and an about paragraph.
+  **Rule recorded:** show what it does, never name the machinery — no model names or AI-vocabulary words
+  for this reader.
+- Build notes captured: site is `~/code/2026/portfolio-gallery` (**rsegrest/ricksegrest.com**, `master`,
+  Vite+React+TS, Vercel) -> add `src/pages/ServicesPage.tsx`, a route, and a NavBar link; phase 2 is an
+  interactive demo served from `public/demos/` following the existing pattern.
+- The outreach page gained the **insight-only message to Rick's brother-in-law** (three questions: who is
+  drowning in documents, an introduction, and how the co-op buys software) with an explicit clean exit and
+  an optional, clearly-labelled hypothesis line.
