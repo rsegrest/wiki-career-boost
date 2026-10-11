@@ -24,6 +24,7 @@
 - [[concepts/sabrina-ramonov-ai-business-videos]] — 41 AI business/career videos from Sabrina Ramonov: income streams, personal branding, AI skills, career strategy in AI era
 - [[../wiki-personal/concepts/goals-pay-debt-house-remote-abroad|../../wiki-personal/concepts/goals-pay-debt-house-remote-abroad]] — **Top-level goals (personal vault)** — why the portfolio/freelance work exists: debt payoff → location-independent income → move abroad (~2030). The bridge page between this vault's portfolio work and the personal vault's plans
 - [[concepts/rcca-app-venture]] — **RCCA app venture assessment** — a Teledyne Brown friend's Root Cause Corrective Action idea, prototyped by Rick. Public methodology (DO IT²/ASQ), the CMMC/DFARS no-CUI posture, four monetization paths ranked by time-to-first-dollar, and the document-ownership question that gates the whole thing
+- [[concepts/freelance-outreach-targets]] — **Who to actually contact** for the first paid hour: 10 targets ordered by conversion x rate, verified local contacts, and the platform-rate reality ($27-30/hr medians vs the $120+ direct band)
 
 ## Kanban Boards
 

@@ -145,6 +145,13 @@ Toptal screening is brutal (3-part: language/personality, coding algorithm, live
 | **Toptal** | CLOSED | — | — | Cannot retry |
 | **Direct outreach** | High | $120-$250/hr, 0% fee | Premium clients, long-term | HIGHEST reward, most effort |
 
+**⚠️ Rate correction (2026-10-11):** the rates in this table are the *reachable ceiling* for good
+freelancers, not what marketplaces pay. Platform medians for AI/automation work run **~$27-30/hr**, and
+Upwork's fee is now a 0-15% variable rate. Demand is real (AI skills +109% YoY, AI-enabled freelancers
++~40% per hour) but the premium attaches to **relationships, not bids**. Treat Contra/Upwork/Wellfound as
+*discovery and credibility*, and the direct-outreach row as the only path to $120+. Details and the
+target list: [[concepts/freelance-outreach-targets]].
+
 ### The Acquisition Playbook (Phase 1: Weeks 1-4)
 
 #### Week 1: Setup
@@ -159,7 +166,7 @@ Toptal screening is brutal (3-part: language/personality, coding algorithm, live
 - [ ] Apply to 5 Upwork jobs for React + AI integration (filter: $5K+ budget, US/UK clients)
 - [ ] Post 2 Contra project offerings ("I'll add AI features to your React app", "I'll build a RAG chatbot for your docs")
 - [ ] Write LinkedIn post about AI UX Critique Tool with demo link
-- [ ] Identify 10 local/regional companies (Huntsville/Alabama tech scene) that might need AI integration
+- [x] ~~Identify 10 local/regional companies~~ — **done 2026-10-11:** [[concepts/freelance-outreach-targets]] — 10 targets ordered by conversion x rate, with verified contacts (Chamber, Catalyst Center, UAH I2C, UAH SBDC) and the buyer-qualification rule
 
 #### Week 3: Direct Outreach
 - [ ] Reach out to 5 small SaaS companies on LinkedIn that have React frontends but no AI features

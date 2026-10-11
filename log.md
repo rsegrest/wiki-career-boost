@@ -331,3 +331,17 @@ revenue until a sale); §8 gating questions; open questions marked answered/adde
 - Remaining dangling links are **pre-existing** and need a content decision, not a form fix:
   ~229 point at pages that exist nowhere (tool names, dated cross-references in the auto-generated
   x-monitor pages). The x-monitor ones will recur unless the generator emits explicit links.
+
+## [2026-10-11] create | concepts/freelance-outreach-targets.md
+
+Fulfils the Path C checklist item "identify 10 local/regional companies" (now checked off on
+[[concepts/freelance-portfolio-strategy]]). Ten targets ordered by **conversion x rate**, in three tiers:
+warm network (the LinkedIn "moved commercial" sweep, ex-colleagues with budgets, referral partners incl.
+MSPs), the verified local SMB ecosystem (Huntsville/Madison Chamber — Ashley Engles-Ross 256-535-2043;
+Catalyst Center 256-428-8190; UAH I2C 256.824.6058; UAH SBDC 256-824-7232), and product companies plus
+the AI/agent community where the arcade-skill launch does the persuading.
+
+**Rate correction recorded on the strategy page too:** marketplace medians for AI/automation work are
+**~$27-30/hr** with Upwork now charging a 0-15% variable fee, so platforms are discovery/credibility and
+the $120-175/hr band only exists in direct relationships. That reorders the plan: the outreach list is the
+rate-critical path, not an optional extra.
