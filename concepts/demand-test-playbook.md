@@ -330,3 +330,44 @@ books" works as a product-family label — spelled out, no monogram.
 
 *(A clearance search for "J.D. Stokes" as an existing business returned nothing, but the search backend was
 flaky on that call — treat it as inconclusive, not clear.)*
+
+### Decision lean: the full name, "John D. Stokes" (2026-10-11)
+
+Rick moved toward the **full name**, on his own reasoning that his grandfather never went by "JD" and that the
+initials are a John Deere branding element. That instinct is better than he realised: **spelling the name out
+avoids the exact element Deere claims** (the initials), so this structure carries less risk than "J.D. Stokes"
+and far less than "JD".
+
+**Domain availability (Verisign, checked 2026-10-11):**
+
+| Domain | Status |
+|---|---|
+| **johndstokes.com** | ✅ **available** — the clean primary |
+| johndstokes.net · johndstokesag.com/.net · johndstokesagtech.com/.net · johnstokesag.com/.net · johndstokesrecords.com/.net | ✅ all available |
+| johndstokes.farm · johndstokes.ag · johndstokesag.ag | ✅ available (looser check — confirm at a registrar) |
+| johnstokes.com · johnstokes.net | taken (someone else's site — a typo'd visitor lands there) |
+
+**Clearance (existing uses of the name):** no software or agriculture collision. What exists is a
+**John D Stokes & Associates Inc** (Alpharetta GA, home remodelling, since 1979), a sole-practitioner
+**CPA in Ozona, Texas**, some Florida corporate officer filings, and a **John D. Stokes Jr.** in financial
+services. All different industries. A full personal name is also a more distinctive identifier than a bare
+surname, and his use is **truthful** — it is his grandfather's actual name — which is the best possible
+footing if it is ever questioned.
+
+**The structure this settles into:**
+
+| Layer | Name |
+|---|---|
+| Brand / wordmark | **John D. Stokes** — with a descriptor in the lockup ("Agricultural Records"), so the brand carries the trust and the descriptor carries the job |
+| Domain (umbrella) | **johndstokes.com**, modules at paths: `/spray` · later `/maintenance`, `/herd`, `/mileage` |
+| Products | **Spray Register** · Maintenance Records · Herd Records · Mileage Log |
+| Legal entity (when needed) | carries the descriptive words — "John D. Stokes Ag Tech LLC" — while the brand stays the name |
+| Story | *"Named for John D. Stokes, who farmed."* — About paragraph and footer |
+
+**Standing palette rule from the Deere analysis:** no **green-and-yellow signature**. Make **wheat + brick +
+sky** the identity, keep green for rules and body text only, and drop mustard from the masthead. (The name no
+longer carries the initials, so this is now cheap insurance rather than a live concern — but it costs nothing.)
+Also keep avoiding equipment imagery and Deere product names for modules.
+
+**Rename cost when he says go:** the brand string appears in four places — the project directory, the page
+`<title>`, the masthead, and the FastAPI title — so it is a five-minute change plus a commit and a redeploy.

@@ -637,3 +637,24 @@ to Deere's dress, so make wheat/brick/sky the identity if a Stokes name is used*
 like Operations Center/GreenStar for modules). Recommendation given the three accumulated collisions: brand =
 **Stokes AgTech**, story = "Named for John D. Stokes, who farmed", products = Spray Register etc. — the
 personal name as story, not logo.
+
+## [2026-10-11] naming | John D. Stokes — available, clear, and lower-risk than the initials
+
+Rick leaned toward the **full name** ("John D. Stokes"), reasoning that his grandfather never went by JD and
+that JD is a Deere branding element. Confirmed the availability and ran the clearance:
+
+- **`johndstokes.com` is available** (also .net, `johndstokesag.com/.net`, `johndstokesagtech.com/.net`,
+  `johnstokesag.com/.net`, and the .farm/.ag variants). Only `johnstokes.com`/`.net` are taken — someone else's
+  site, so a typo lands elsewhere; noted as minor friction.
+- **No software or agriculture collision:** the existing "John D. Stokes" uses are a Georgia home-remodelling
+  firm (John D Stokes & Associates Inc, since 1979), a sole-practitioner CPA in Ozona TX, Florida corporate
+  officer filings, and a John D. Stokes Jr. in financial services. Different industries throughout.
+- **Legal upside noted:** a full personal name is a more distinctive identifier than a bare surname, and the
+  use is truthful (his grandfather's actual name) — the best footing available if questioned.
+- **Bonus:** spelling it out avoids the *initials*, which is the element Deere actually claims, so this
+  structure is lower-risk than "J.D. Stokes" — and the standing palette rule (no green-and-yellow signature;
+  wheat/brick/sky identity) becomes cheap insurance rather than a live concern.
+
+Structure recorded in `concepts/demand-test-playbook.md` §8: brand **John D. Stokes** with an "Agricultural
+Records" descriptor, umbrella domain **johndstokes.com** with modules at paths, plain product names (Spray
+Register first), the grandfather line as the story, and the rename cost noted as four strings / five minutes.
