@@ -32,6 +32,8 @@
 - Added clearance status: Previously Secret, now dormant (not needed at NASA)
 - Added current team tech: Microsoft PowerApps (new stack, just started)
 - Added low-code/no-code to skills and target markets
+  - ⚠️ **Corrected 2026-10-11:** low-code/Power Apps is **capability, not a target market** —
+    Rick dislikes the work, gov tenants limit it, and AI features there raise IA problems. Never pitch it.
 - Corrected NASA entity: entities/nasa.md created
 - Updated entities/amentum.md: staffing contractor, not direct employer
 - User noted: VoIP publications are an interesting branding angle

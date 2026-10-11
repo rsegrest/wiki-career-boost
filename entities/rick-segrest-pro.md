@@ -207,7 +207,7 @@ This triad is rare. Most React devs lack systems background. Most M&S people lac
 2. **NASA/Space/Defense Ecosystem** — 7+ years at NASA, Huntsville adjacency, M&S + simulation + AI for digital twins
 3. **UX-Forward Agencies** — Value the React + design intersection
 4. **Developer Tools / Infrastructure** — React expertise + systems thinking for devtools
-5. **Low-Code/No-Code Platforms** — PowerApps experience opens enterprise consulting opportunities
+5. **Low-Code/No-Code Platforms** — Power Apps/Dataverse experience exists and is enterprise-grade, but **Rick does not want to sell it**: he dislikes the work, government tenants limit it heavily, and it is not a consulting offer (corrected 2026-10-11). Keep it on the resume as capability, not as a market.
 
 ---
 

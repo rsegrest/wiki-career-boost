@@ -1,7 +1,7 @@
 ---
 title: "Freelance Acquisition & Portfolio Strategy"
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-10-11
 type: concept
 tags: [freelance, portfolio, job-search, ux, react, ai, side-hustle, acquisition]
 sources: [react-ai-job-market-salary-2026.md, portfolio-project-ideas.md]
@@ -11,6 +11,29 @@ confidence: high
 # Freelance Acquisition & Portfolio Strategy
 
 ## Problem Statement
+## Qualify the client: commercial only for AI work (2026-10-11)
+
+**Government and defence networks are the worst buyer for AI features, not the best.** Rick's own
+correction: on gov networks Power Apps is heavily limited, and AI features raise information-assurance
+(IA) problems — external model calls, data egress, and an accreditation review before anything ships.
+A defence employer's own environment is exactly where an AI feature is hardest to deploy and slowest
+to get paid for.
+
+So the offer targets the **commercial** side:
+
+- **Screen out up front:** no CUI, ITAR/export-controlled data, no gov cloud, no accreditation
+  requirement. One sentence in the first call: *"I build this on your commercial network; if it needs
+  to touch controlled data, that's a separate, larger engagement."*
+- **Best-fit buyers:** agencies, professional services (legal, clinics, staffing, real estate),
+  manufacturing/industrial SMBs, and startups that ship weekly.
+- **What it is:** AI features wired into tools they already use — assistants over their own documents,
+  extraction from forms and spreadsheets, and workflow automation.
+- **The AI/agent community is the outreach list**, not the gov contracting network: X/LinkedIn AI
+  builders, local Huntsville commercial tech, and the freelance platforms already mapped in Path C.
+
+**Power Apps/Dataverse is NOT an offer.** Capability on the resume; not a market. See
+[[entities/rick-segrest-pro]].
+
 
 Rick's NASA work is sensitive/proprietary — he can't show it in interviews or on GitHub. He needs public, accessible portfolio pieces that demonstrate his React + AI + UX skills. He also needs a freelance client acquisition pipeline since he has limited recent freelancing experience and failed Toptal screening (1/3 parts completed in time limit, cannot retry).
 

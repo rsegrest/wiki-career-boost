@@ -224,7 +224,10 @@ Full voice-calibration process: `~/wiki-personal/concepts/writing-voice-and-mode
 ### 6. React + PowerApps Bridge Demo
 **What:** Show how to extend PowerApps with custom React components. A tutorial + working example of a complex component (e.g., interactive map, data viz) embedded in PowerApps.
 **Stack:** React + PowerApps Component Framework (PCF)
-**Why it networks:** Positions you as someone who bridges low-code and pro-code. Huge enterprise market (every company using Microsoft 365). You already have the PowerApps context.
+**Why it networks:** Positions you as someone who bridges low-code and pro-code.
+
+> ⚠️ **Deprioritised 2026-10-11:** Power Apps is capability, not an offer — Rick dislikes it,
+> government tenants constrain it, and it is not a market he wants. Do not pitch it.
 **Shareable output:** YouTube tutorial + GitHub template repo
 
 ---
