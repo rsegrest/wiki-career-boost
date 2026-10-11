@@ -1,7 +1,7 @@
 ---
 title: "Career Move vs Side-Hustle vs Maximize Current Position"
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-10-11
 type: comparison
 tags: [job-search, pivot, freelance, consulting, promotion, remote, salary-negotiation, side-project]
 sources: [entities/rick-segrest-pro.md, entities/nasa.md, entities/amentum.md, concepts/portfolio-project-ideas.md]
@@ -9,6 +9,14 @@ confidence: medium
 ---
 
 # Career Move vs Side-Hustle vs Maximize Current Position
+
+> ⚠️ **Revised 2026-10-11 — the ESSCA II timetable this page is built around has moved.**
+> Rick's information (2026-10-11): **the contract's performance start is delayed to ~May 2027, and
+> ESSCA I has been extended to fill the gap.** The "Sept 30, 2026 award" used throughout this page was
+> the RFP's *expected* award date, not a confirmed one, and the phase-in it anchors moves with the new
+> start. Read every date below as **superseded**; the strategy (A+C hybrid with B ready) is unaffected,
+> but its *timing* is: the rate-adjustment moment is now ~May 2027, and the displacement risk from the
+> re-compete is pushed out a further ~8 months rather than being imminent.
 
 ## The Decision
 
@@ -44,7 +52,7 @@ Stay at Amentum/NASA, ship the proposal/budget planning app, and leverage the ES
 
 - $170K salary, $5,100 401k match, 172 hours leave
 - ~50% remote work (non-negotiable for family)
-- Stability through ESSCA II (Amentum likely retains — Sept 30, 2026 award)
+- Stability through ESSCA II (Amentum likely retains; **start delayed to ~May 2027, ESSCA I extended to bridge** — Sept 30, 2026 was an *expected* award date, not confirmed)
 - Current group is professional and accommodating
 - Building transferable skills (Electron + React + TypeScript + Dataverse via pacx)
 
@@ -66,10 +74,10 @@ Stay at Amentum/NASA, ship the proposal/budget planning app, and leverage the ES
 ### Key Actions (If You Choose This Path)
 
 1. **Ship the app and document everything** — architecture decisions, tech choices, user impact metrics, before/after cost savings. This is your portfolio's crown jewel.
-2. **Push for rate adjustment at ESSCA II award** (Sept 30) — come with inflation data, market comp data, and your app's impact. Ask for $180K–$185K minimum.
+2. **Push for rate adjustment at the ESSCA II start** (~May 2027, after the delay) — come with inflation data, market comp data, and your app's impact. Ask for $180K–$185K minimum. *(Confirm the ES-8 labor classification first: at ES-7 the ERI gap argument disappears.)*
 3. **Use evenings/weekends for portfolio + LinkedIn** — the calm group gives you mental bandwidth. Post 2–3x/week. Build the [[portfolio-project-ideas|portfolio projects]] from the wiki.
 4. **Monitor insourcing closely** — if NASA announces position conversions, be ready to pivot to Path B quickly
-5. **Set a deadline**: If no rate improvement by Jan 2027 (3 months post-award), activate Path B
+5. **Set a deadline**: If no rate improvement within ~3 months of the new contract start (~Aug 2027), activate Path B
 
 ### Best Case Outcome
 
@@ -124,7 +132,7 @@ Based on market research in [[react-ai-job-market-salary-2026]]:
 - **Losing 401(k) match**: $5,100/yr gone (but salary increase should more than cover)
 - **Remote uncertainty**: Must negotiate hard for remote-first. Some "remote" jobs drift hybrid.
 - **Resume gap narrative**: If it doesn't work out, explaining "left NASA contractor for startup that didn't pan out" is harder than "left NASA for a better opportunity"
-- **Timing risk**: ESSCA II award is Sept 30 — if you leave before the award, you forgo any rate adjustment. If you leave after and Amentum loses, you might have been displaced anyway.
+- **Timing risk**: the ESSCA II start is now **~May 2027** (delayed; ESSCA I extended). Leaving before it forgoes any rate adjustment, but the delay also pushes the displacement risk out — the near-term risk is *stagnation*, not losing the seat.
 - **Current app unfinished**: If you leave before the budget app ships, you lose the case study and the "six-figure impact" metric
 
 ### Known Gaps to Address Before Interviews
@@ -247,13 +255,15 @@ Start SMALL. One client, 5 hrs/week. If that's sustainable for 60 days, scale to
 
 ## The ESSCA II Variable
 
-**Award date: 30 September 2026**
+**Schedule status (revised 2026-10-11):** the RFP's *expected* award of 30 September 2026 is
+**unconfirmed** — and per Rick, the performance start has been **delayed to ~May 2027** with
+**ESSCA I extended to fill the gap.** The dates below are the RFP's original plan, which now shifts.
 
 RFP data extracted and analyzed in [[essca-ii-rfp-analysis]]. Key facts:
 
 - **Contract value:** $3.248B max, 8.5-year IDIQ (single award)
-- **Phase-in:** Oct 2026 – Jan 2027 (rate adjustments likely here)
-- **Base period:** Feb 2027 – Jan 2032 (5 years)
+- **Phase-in:** RFP planned Oct 2026 – Jan 2027 → **now ~May 2027 onward** (rate adjustments happen here)
+- **Base period:** RFP planned Feb 2027 – Jan 2032 (5 years) → shifts with the new start
 - **Escalation:** RFP includes annual escalation rates for CY2027-2035 (typically 3-4%/yr)
 - **ERI benchmark rates:** Government-published market rates for each labor category
 - **Rick's positioning:** $81.42/hr vs ES-8 benchmark $84.46/hr = ~$6K below market
@@ -276,7 +286,7 @@ This is the pivotal near-term event. Three scenarios:
 ### Scenario 1: Amentum retains ESSCA II, rates improve
 - Path A becomes much more attractive — push for $185K+ (ES-8 benchmark + escalation)
 - The RFP's compensation gap requirement gives Rick leverage: "I'm $6K below ERI benchmark for my level"
-- Phase-in period (Oct-Jan) is when rate adjustments happen
+- Phase-in period (**now ~May 2027 onward**, after the delay) is when rate adjustments happen
 - Path B becomes less urgent but still valid if ceiling is capped
 - Path C is the safest play — keep the raised day job + side income
 
@@ -300,14 +310,14 @@ This is the pivotal near-term event. Three scenarios:
 
 The optimal play given your constraints:
 
-**Phase 1: Now through Sept 30, 2026 (3 months)**
+**Phase 1: Oct 2026 through the ESSCA II start (~May 2027)**
 - Stay at Amentum. Ship the budget app. Document the case study.
 - Update resume, rebuild portfolio site, ramp LinkedIn to 3 posts/week.
 - Check Amentum moonlighting policy.
 - Start ONE small side project (5 hrs/week max) to test the freelance waters.
 - Begin casual job browsing — don't apply yet, but identify 10–20 target companies.
 
-**Phase 2: Sept 30 – Dec 31, 2026 (ESSCA II award + 3 months)**
+**Phase 2: ~May 2027 – Aug 2027 (ESSCA II start + 3 months)**
 - If Amentum retains and rates improve: negotiate hard for $185K+. Continue Path A+C.
 - If Amentum retains but rates flat: activate Path B applications. Use the app case study.
 - If Amentum loses: Path B is now emergency mode. You have the case study and resume ready.
@@ -339,7 +349,7 @@ This strategy preserves optionality at every branch. You never foreclose a path 
 
 - [x] What is Amentum's moonlighting policy? — No problem as long as it doesn't interfere or compete. Path C is cleared.
 - [x] Does the ESSCA II contract include rate adjustments? — YES. RFP includes annual escalation rates for CY2027-2035 (typically 3-4%/yr). ERI benchmark rates published. Compensation gap retention is an evaluated subfactor. See [[essca-ii-rfp-analysis]].
-- [ ] How long after Sept 30 before new contract terms take effect? (Transition window)
+- [ ] Does the ~May 2027 start hold, and how long after it before new contract terms take effect? (Transition window — the delay was announced to Rick, not documented on this page)
 - [ ] Has NASA published an insourcing timeline? (Risk clock for Path A)
 - [ ] What rate could Rick command on Upwork/Contra for React+AI work? (Market test for Path C)
 - [ ] Would Amentum allow reduced hours (32/week) if side income grows? (Path A+C scaling)

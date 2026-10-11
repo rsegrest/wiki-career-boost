@@ -93,6 +93,9 @@
   - 7 open questions for follow-up
 - Updated index.md — Total pages: 10
 - Added ESSCA II award date: 30 September 2026 (user confirmed)
+  - ⚠️ **Corrected 2026-10-11:** that was the RFP's *expected* award date. The performance
+    start has since slipped to **~May 2027** with **ESSCA I extended** to bridge the gap —
+    see `queries/essca-ii-rfp-analysis.md` and the banner on the career comparison page.
 - Amentum likely to retain contract per Rick's assessment
 
 ## [2026-06-22] ingest | ESSCA II RFP documents from SAM.gov
@@ -289,3 +292,32 @@
   stranger could buy.
 - Cross-linked: personal vault `concepts/near-term-income-plan`, Path C comparison, and the
   $120–175/hr band from `queries/react-ai-job-market-salary-2026`.
+
+## [2026-10-11] correction | ESSCA II schedule superseded — the raise lever re-derived
+
+**Rick's direct input: the ESSCA II performance start is delayed to ~May 2027, and ESSCA I has been
+extended to fill the gap.** The "phase-in window Oct 2026 – Jan 2027" this vault had been planning
+against was the RFP's *planned* schedule (captured 2026-06-22), and the 30 Sep 2026 award date was an
+*expected* date that later pages — including a wiki-personal page written today — hardened into fact.
+
+Swept and corrected in one pass:
+- `queries/essca-ii-rfp-analysis.md` — schedule-status block; timeline, insourcing context, sources
+- `comparisons/career-move-vs-side-hustle-vs-maximize-current.md` — revision banner + 10 date fixes
+  (Key Actions, timing risk, the ESSCA II Variable, recommended-strategy phases, open questions)
+- `wiki-personal/concepts/near-term-income-plan.md` — lever re-ranked #1 → #4; "this lever expires"
+  retracted; ES-8-vs-ES-7 classification called out as the contingency it is
+- `wiki-personal/concepts/goals-pay-debt-house-remote-abroad.md` + `long-term-projects-tracker.md` (FI-005)
+- **New open question:** whether the award itself has been made — unconfirmed as of 2026-10-11
+
+Also fixed a derived-figure inconsistency on the RFP page: the annual ERI delta appears as $6,165
+(rounded annuals), $6,323 (3.04 × 2,080) or $6,352 (2,088). The page now says to quote the **hourly**
+delta and state the hours basis.
+
+## [2026-10-11] update | RCCA is a partnership — the gate moves to the friend's employment agreement
+
+Rick: **he and the friend are starting a business together; both own the requirements and the
+prototype; the plan is to build on spec.** `concepts/rcca-app-venture.md` revised accordingly —
+§1 structure + co-founder row; **§3 rewritten** (the live legal question is now the *friend's*
+employment agreement, not ownership between the partners); §6 split arithmetic ($10–25K pilot →
+$5–12.5K to Rick at 50/50) and on-spec economics; §7 risk rows (employment agreement; on-spec, no
+revenue until a sale); §8 gating questions; open questions marked answered/added.

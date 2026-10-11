@@ -3,15 +3,17 @@ title: RCCA App — Venture Assessment (Teledyne Brown friend's idea)
 created: 2026-10-11
 updated: 2026-10-11
 type: concept
-tags: [venture, app, defense, quality, rcca, income, side-hustle, product]
-sources: [local prototype ~/code/rcca, DoW CIO 2026-07-13, DFARS 252.204-7012, ASQ / Duke Okes 2009, Curtiss-Wright supplier guideline]
+tags: [venture, app, defense, quality, rcca, income, side-hustle, product, partnership]
+sources: [local prototype ~/code/rcca, user direct input 2026-10-11 (partnership + on-spec), DoW CIO 2026-07-13, DFARS 252.204-7012, ASQ / Duke Okes 2009, Curtiss-Wright supplier guideline]
 confidence: medium
 ---
 
 # RCCA App — Venture Assessment
 
-> **Why this page exists:** to decide whether the Root Cause Corrective Action app becomes a
-> product/business or stays a favor for a friend — and to name the next three moves either way.
+> **Why this page exists:** to decide whether the Root Cause Corrective Action app becomes a real
+> business — and it has moved past "favour": as of 2026-10-11 Rick and the friend are **starting a
+> business together, co-owning the requirements and the prototype, built on spec.** This page now
+> answers a different question: *what does that partnership have to settle before a dollar arrives?*
 > Companion to [[comparisons/career-move-vs-side-hustle-vs-maximize-current]] (Path C) and
 > [[../../wiki-personal/concepts/near-term-income-plan]] (where it sits among the income options).
 
@@ -23,6 +25,12 @@ A friend who works as a **defense contractor at Teledyne Brown Engineering (Hunt
 tool to **document and resolve Root Cause Corrective Actions (RCCA)** in his job. He wrote the
 requirements; Rick built the prototype.
 
+**Structure (per Rick, 2026-10-11): a partnership, not a favour.** The two are **starting a business
+together and both own the requirements and the prototype** — the friend is the domain author, Rick is
+the product. The intent is to build **on spec** and sell afterwards. That settles the ownership
+question *between them*; it does not touch the employer-context question, which is now a question
+about the **friend's** employment agreement (§3 and §7).
+
 **The warm network runs deeper than one friend.** Rick was at **Teledyne Brown Engineering
 himself, 2006–2011**, as a software developer ([[entities/rick-segrest-resume-v2026]]) — and one of
 the things he built there was *"a modular database web portal that allowed users to track system
@@ -33,7 +41,7 @@ pitch, and it is true.
 | Field | Value |
 |---|---|
 | Requirements author | the friend (`msjohnson` on the document), 30 Sep 2026 |
-| Rick's relationship | former TBE developer (2006–2011); friend is the domain expert and internal champion |
+| Rick's relationship | former TBE developer (2006–2011); **co-founder** — the friend is the domain expert and internal champion |
 | Rick's domain credibility | built a TBE anomaly-tracking portal for the Boeing GMD program |
 | Product thesis (from the spec) | **guided RCCA *reasoning*, not CAPA recordkeeping** |
 
@@ -89,9 +97,20 @@ to build. It cuts both ways — it also means *the method is not the moat*. The 
 **UX of thinking through a cause tree under evidence**, which is exactly what the prototype does and
 what a QMS suite does badly.
 
-**Still a live legal question:** the v0.3 *document* was written by the friend **inside an employer
-context**. Document ownership, and any employer process material inside it, needs a straight answer
-in writing before this is sold to anyone. Ask first, build second.
+**The live legal question has moved, and it is not between the two partners.** Co-ownership settles
+who holds the work *between them*. What remains is the **friend's employment relationship with TBE**:
+requirements written by a quality engineer *about his employer's process*, plus an invention-assignment
+or confidentiality clause, is the classic fact pattern for an employer claim — and moonlighting rules
+are the employer's, not the partnership's, to decide. **He should read his own agreement before
+contributing more**, and the two of them should put the ownership split in writing while it is still
+easy to do.
+
+**And the buyer is that same employer.** The highest-value path on this page is a **paid pilot at
+TBE** — so the employment question and the sales question point at one organisation and should be
+resolved together, deliberately, rather than one surprising the other. Selling to your own employer
+while employed by them is a conflict-of-interest question **for the friend**, and it is his to clear
+(disclosure, a side-letter, or simply not selling to TBE at all and going to small AS9100 suppliers
+instead — which is the larger market anyway).
 
 ---
 
@@ -145,7 +164,7 @@ $200/mo product and a compliance programme.
 
 | # | Path | First money | Time to first $ | Effort | Risk |
 |---|---|---|---|---|---|
-| 1 | **Paid pilot at the friend's org** (friend = champion + named domain reviewer) | **$10–25K** (100–200 hrs @ $100–125) | weeks, if he says yes | medium | needs the written IP answer; **disclose to Amentum** |
+| 1 | **Paid pilot at the friend's org** (friend = champion + named domain reviewer) | **$10–25K**, **split with the partner → $5–12.5K to Rick** (100–200 hrs @ $100–125) | weeks, if he says yes | medium | needs the friend's employment position cleared first, and TBE is both his employer and the buyer |
 | 2 | **Productized RCCA engagement** for small AS9100 suppliers — "I'll stand up your RCCA process and leave you the tool" | **$15–50K** per project | 1–3 months | high | needs a case study to sell |
 | 3 | **RCCA workshop / method training** (public method + the friend's handbook as the case material) | **$2–8K** per cohort | 1–2 months | low capital | caps out; training is a job |
 | 4 | **SaaS at ~$199/mo/site** | ~**$2K/mo at 20 sites** | **12–24 months** | very high | support, hosting posture, sales motion, compliance creep |
@@ -154,6 +173,18 @@ $200/mo product and a compliance programme.
 matter ([[../../wiki-personal/concepts/near-term-income-plan]]). Path 4 is the real business, but it
 is the slowest thing on this page and should not be attempted until **one paying pilot exists**.
 
+**Two corrections that "on spec" forces, and they are arithmetic, not sentiment:**
+
+1. **Revenue is split.** A $10–25K pilot is **$5–12.5K to Rick** under a 50/50 split, which is the
+   number that matters against [[../../wiki-personal/concepts/near-term-income-plan]], not the gross.
+   Fix the split in writing before the first invoice, not after.
+2. **On spec means months of unpaid hours before the first dollar.** That is a legitimate way to build
+   an asset — and it competes directly with the freelance hours that actually retire the debt. So the
+   honest framing is: **on-spec is fine for the product, but the first money must come from a paid
+   pilot or a services engagement, not from finishing the app.** Cap the on-spec hours at a number
+   both partners agree on, and review it against the pilot's progress rather than against how close
+   v1 feels.
+
 **Employment constraints, already checked:** the career vault's own open questions record that
 Amentum's moonlighting position is *"no problem as long as it doesn't interfere or compete"* and the
 non-compete is *"standard … can't compete directly"*. RCCA software is not Amentum's NASA business,
@@ -161,16 +192,22 @@ so it does not compete — but a **sale to a defense contractor** is exactly the
 disclosing before it happens rather than after. Rick's clearance is **dormant** and the app needs no
 clearance (and no CUI, per §5).
 
+**Rick's side is the clearer side; the friend's is the binding one.** Rick has already answered the
+moonlighting and non-compete questions for himself. The partner is a *current TBE employee whose
+employer is the target customer* — so the gating constraint on the whole venture is **his** agreement,
+not Rick's, and it is the first thing to resolve (§8).
+
 ---
 
 ## 7. Risk register
 
 | Risk | Why it bites | Mitigation |
 |---|---|---|
-| **The v0.3 document's ownership** | written by the friend in an employer context; selling around it invites a claim | written permission / ownership answer **before** any sale |
+| **The friend's employment agreement** | the requirements describe his employer's process; invention-assignment and moonlighting clauses are the employer's to invoke, and TBE is also the buyer | **he reads his own agreement first**; put the partnership split in writing; be ready to sell to small AS9100 suppliers instead of TBE |
 | **Conflict-of-interest optics** | selling into defense while on a NASA contract | disclose; keep it clearly non-competing; no employer resources or time |
 | **Single point of failure** | the friend leaves TBE → champion, domain expertise and the pilot lead all evaporate | get a second domain reference early; document the method rather than relying on him |
 | **Compliance scope creep** | an RCCA tool becomes part of someone's audit evidence, so its own defects become their findings | no-CUI posture; explicit "decision-support, not a record of authority" statement |
+| **On-spec, no revenue until a sale** | two people funding a product with unpaid nights; it competes with the freelance hours that retire the debt | agree and cap the on-spec hours; require the first money to be a **paid pilot/service**, never a finished product |
 | **Rick's hours** | it competes with freelance hours that pay 3–10× faster | treat as an **asset-building** bet with a hard time cap, not as this quarter's income |
 
 ---
@@ -179,18 +216,29 @@ clearance (and no CUI, per §5).
 
 1. ~~**`git init` the repo and commit**~~ ✅ **done 2026-10-11** (99 files, commit `6731b5d`, no
    remote yet).
-2. **Three questions in writing to the friend** — (a) who owns v0.3 and may it be used commercially?
-   (b) would TBE run this as a **paid pilot**, and who signs? (c) will he be the named domain
-   reviewer? Everything else waits on these.
+2. **The gating questions, in writing** — the ownership one is now *answered between the partners*,
+   so the three that remain are: (a) **has the friend read his own employment agreement**, and does it
+   let him contribute this (invention assignment / confidentiality / moonlighting)? (b) would TBE run
+   this as a **paid pilot**, who signs, and does his conflict-of-interest position allow it? (c) will
+   he be the named domain reviewer? Everything else waits on (a) and (b).
 3. **Decide the wedge in one sentence, and price it** — "weeks of guided root-cause work, not a
-   CAPA module" at $X for Y weeks. A pilot needs a number before it needs a demo.
+   CAPA module" at $X for Y weeks. A pilot needs a number before it needs a demo — and the number
+   should be quoted **gross, with the split stated**, so both partners are pricing the same deal.
 4. **Only then** consider SaaS, and only after a pilot pays.
 
 ---
 
 ## Open questions
 
-- [ ] Who owns the v0.3 requirements document, and is commercial use permitted?
+- [x] ~~Who owns the v0.3 requirements document?~~ **Answered 2026-10-11:** the two partners
+      co-own the requirements and the prototype (he authored, Rick built) — the remaining exposure is
+      **his employer's** claim, not a dispute between them. See the new questions below.
+- [ ] **Has the friend's own employment agreement been read?** (invention assignment, confidentiality,
+      moonlighting) — the binding constraint on the whole venture, and the partner's to resolve.
+- [ ] **What is the ownership split in writing?** Equity, IP, who can leave with what, and how pilot
+      revenue is divided (the income plan quotes $5–12.5K to Rick on a $10–25K pilot at 50/50).
+- [ ] **How many on-spec hours, capped, before a paid pilot exists?** Two people's unpaid evenings are
+      the real cost of "on spec" — and they compete with Rick's fastest-paying lever.
 - [ ] Would the friend's employer actually **buy** this, or does he want it as an internal tool he
       never has to pay for? *(These lead to very different projects.)*
 - [ ] Is the friend willing to be named publicly as domain expert, or does his employer's policy
