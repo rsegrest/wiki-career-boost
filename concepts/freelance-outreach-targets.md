@@ -79,6 +79,44 @@ and the offer is literally "AI features wired into the tool you already have."
 it is **the arcade-skill launch as public proof of work**, which converts attention into inbound DMs.
 That credibility engine is what makes 1-9 land instead of bounce.
 
+## Beyond Huntsville: which metros, and why (2026-10-11)
+
+**The frame first.** Delivery is remote, so distance does not gate *doing* the work — it gates
+*relationship range*. A metro he can drive to in ~2 hours is one he can attend events in, buy lunch in,
+and get introduced in. A metro 3.5 hours away is a conference or a day trip. So the tiers below are
+relationship tiers, not delivery tiers.
+
+**And the defence problem is sector-shaped, not city-shaped.** Every metro's defence employers are the
+same bad buyer for AI features (IA review, no external model calls, no data egress). What actually varies
+is the **ratio of commercial, document-heavy employers** — healthcare, insurance, financial services,
+logistics, professional services. That ratio, plus competition and drivability, is what ranks these.
+
+| Metro | ~Distance | Commercial sector fit | Competition | Verdict |
+|---|---|---|---|---|
+| **Birmingham** | ~100 mi (1.5 h) | **Strongest fit:** UAB is Alabama's largest single employer (~$12.1B impact) plus Fortune-500 financial HQs (Regions Financial, Protective Life) and biomed. Document-heavy, commercial, non-defence. | Lower than Nashville/Atlanta | **Primary out-of-town market** |
+| **Chattanooga** | ~100 mi (1.5-2 h) | Logistics and freight at three interstates, insurance, manufacturing, plus a real startup scene (municipal gigabit network; quantum-computing hub push). Chamber publishes a major-employers list. | Low | **Second target — best effort-to-reward ratio** |
+| **Nashville** | ~100 mi (2 h) | Big and rich: 900+ healthcare companies, corporate HQs, #2 of the 100 largest US metros for job growth and income (median household income $77,371). | **High** — and state/US government are among its largest employers | Best reached **via associations and conferences**, not cold outreach |
+| **Atlanta** | ~250 mi (3.5 h) | Enormous commercial market. | **Deepest** — a large senior freelance pool sets the going rate | Only with a warm contact or a conference |
+| **Memphis** | ~250 mi | Logistics (FedEx), major health systems, finance. 700+ employers, 262k local jobs. | Lower — a secondary market | One conference; the FedEx/logistics angle is the specific play |
+| **Louisville** | ~250 mi | Healthcare (Humana), logistics (UPS Worldport), food/agri brands. | Lower | One conference |
+| **Knoxville** | ~250 mi | UT, healthcare, manufacturing — but ORNL is DOE, i.e. the government buyer problem again. | Moderate | Skip absent a specific contact |
+| **Montgomery** | ~250 mi | State government. | — | **Skip for AI work** — state government is the same buyer problem in a different suit |
+| **Auburn** | ~150 mi | Small college town plus auto suppliers. | — | Not a market; a **warm channel** (he lived there 1996-2001) |
+
+*Sector data verified by search 2026-10-11: Nashville 900+ healthcare companies, #2 for job growth;
+Birmingham UAB ~$12.1B impact plus Regions and Protective Life HQs; Chattanooga $34B economy, municipal
+gigabit, three interstates; Memphis 700+ employers including FedEx. Knoxville/ORNL, Montgomery
+state-government dominance and Auburn's size are general knowledge, not verified in this pass.*
+
+**The multiplier that beats city-by-city prospecting: join two regional industry associations, not ten
+cities' worth of directories.** One healthcare, insurance, legal or staffing association membership in
+Birmingham or Nashville puts him in front of dozens of commercial buyers in the right sector at once —
+and associations are where SMB owners already gather. Conferences in Birmingham, Nashville or Chattanooga
+are the cheapest way to meet many commercial buyers in a single day.
+
+**The credibility bridge.** The NASA/TBE pedigree is the *hook*, but the *buyer* has to be commercial:
+aerospace-grade rigor applied to commercial document workflows. Sell the discipline, not the sector.
+
 ## Do not spend hours here
 
 - **Government/defence networks as AI buyers** — IA review, no external model calls, no data egress.

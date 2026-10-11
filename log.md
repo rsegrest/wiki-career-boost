@@ -345,3 +345,19 @@ the AI/agent community where the arcade-skill launch does the persuading.
 **~$27-30/hr** with Upwork now charging a 0-15% variable fee, so platforms are discovery/credibility and
 the $120-175/hr band only exists in direct relationships. That reorders the plan: the outreach list is the
 rate-critical path, not an optional extra.
+
+## [2026-10-11] update | Metro analysis added to the outreach page
+
+Rick asked whether the ~100-mile metros (Nashville, Birmingham, Chattanooga) and ~250-mile metros
+(Atlanta, Memphis, Knoxville, Louisville, Montgomery, Auburn) are better markets than defence-heavy
+Huntsville. Analysis added to [[concepts/freelance-outreach-targets]]:
+
+- **The defence problem is sector-shaped, not city-shaped** — what varies by metro is the ratio of
+  commercial, document-heavy employers, so the selection criterion is sector density x competition x
+  drivability, not distance.
+- **Ranked:** Birmingham primary (UAB ~$12.1B impact, Regions/Protective HQs, lower competition);
+  Chattanooga second (logistics + insurance + gigabit/quantum startup scene, low competition);
+  Nashville rich but competitive and best reached via associations; Atlanta deepest competition;
+  Memphis/Louisville worth one conference each; **Knoxville (ORNL = DOE) and Montgomery (state gov)
+  skipped as the same government-buyer problem**; Auburn is a warm channel, not a market.
+- **Multiplier:** two regional industry-association memberships beat ten cities of directory prospecting.
