@@ -115,3 +115,34 @@ The service funds the product; the product is what the service keeps repeating.
 - [ ] Where does the first 200 qualified visitors come from — extension services, ag retailers, co-op
       networks, or the ag forums (read-only until standing is earned)?
 - [ ] What token price makes the first paid step easy without being free? ($50 audit view? $250?)
+
+---
+
+## 7. What was built (2026-10-11)
+
+**`~/code/2026/sprayproof`** — a new project with its own git repo, **local only** (no remote, nothing deployed).
+
+- **Stack:** FastAPI + one static page, no build step. The domain core (`app/records.py`, `app/tiers.py`,
+  `app/ingest.py`) is TDD'd — **14 tests passing** — and contains no framework code.
+- **The pricing model, implemented exactly as decided:** free means importing records *and* seeing the whole
+  compliance view on screen; **the exported document is the paid artifact**, tiered by **applications per
+  year** (placeholders: $79 up to 250, $149 unlimited). The gate lives in one function (`app/tiers.py`) so the
+  model cannot leak into the UI by accident.
+- **Ingestion is permissive on purpose:** header synonyms ("Chem" -> product, "EPA Reg. No." -> EPA number,
+  "Applied by" -> applicator), any common delimiter, unknown columns ignored, empty rows dropped, and nothing
+  raises. A partially mapped row still teaches the user something, with the missing elements highlighted —
+  because the customer will not retype data for anyone.
+
+**Verified end-to-end, not just unit-tested:**
+- `/api/view` on a three-row sample: 3 records, 2 complete, 1 incomplete, 96 acres, correct date range,
+  `missing_fields_by_record={'3': ['product','epa_reg']}`.
+- `/api/export` on free -> **HTTP 402** with the paywall reason; on $79 -> **HTTP 200** and a 955-byte document
+  with the applications table and the incomplete-records section.
+- The page itself: six sample applications -> 4 complete / 2 incomplete / 151 acres, four cells highlighted,
+  two gaps listed, export locked and the paywall shown; selecting **$79/yr** enabled the export and cleared
+  the paywall. Tiers render Free / $79 / $149.
+
+**If this thread continues:** pick the name and domain (the placeholder appears in four places), deploy the
+page plus the API, wire the form to collect **records** rather than emails, and add **photo capture of a
+handwritten log** — that last one is what the research says farmers actually need and what no competitor
+offers.

@@ -33,7 +33,7 @@ every thread below is judged on **time to first dollar**.
 | 7 | **The ESSCA II raise** | ~May 2027, contingent | [[../../wiki-personal/concepts/near-term-income-plan]] §3 | Confirm the ES-8/ES-7 classification in writing |
 | 8 | **Visibility engine** — the arcade skill, the writing | indirect: it makes 1-4 work | [[../../wiki-personal/concepts/arcade-skill-launch-plan]] | Publish. This is marketing, not an income line |
 | 9 | **Referral partners** — accountants, bankers, MSPs | 1-6 months | [[concepts/freelance-outreach-targets]] (Tier 1) | One coffee with an accountant |
-| 11 | **Product track** — demand-tested records modules (spray → compliance view first) | tested in weeks; revenue only if it converts | [[concepts/demand-test-playbook]], [[concepts/ag-market-intelligence]] | Put up the splash page + the one-feature demo; fulfil the first few by hand |
+| 11 | **Product track** — demand-tested records modules (spray → compliance view first) | tested in weeks; revenue only if it converts | [[concepts/demand-test-playbook]], [[concepts/ag-market-intelligence]] | **MVP built locally 2026-10-11** (`~/code/2026/sprayproof`, 14 tests, paywall verified) — next: name, domain, deploy, then collect records instead of emails |
 | 10 | **The house sale** — clears the debt stack | one event, at any split | [[../../wiki-personal/concepts/parents-house-sale]] | Separate track: it is the debt plan, not the income plan |
 
 ## Ruled out, with the reasons (so they do not come back)

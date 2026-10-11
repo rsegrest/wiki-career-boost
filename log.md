@@ -522,3 +522,20 @@ for failing at audit *output*; the current workaround is a homemade Excel workbo
 deliverable is a document, so the demo and the manual service are the same thing. Suite framing recorded as
 **one records layer with per-job output modules**, and naming candidates listed (descriptive beats clever for
 this audience).
+
+## [2026-10-11] build | sprayproof MVP — the demand test, built and verified
+
+Rick confirmed the model (gate the artifact, not the data entry) and asked for it as a new site. Built
+`~/code/2026/sprayproof`: FastAPI + one static page, no build step, own git repo, **local only** (no remote,
+nothing deployed). Domain core TDD'd — **14 tests passing** — covering record completeness against the
+40 CFR 170.311 field set, the compliance view, export tiers, and permissive CSV ingestion (header synonyms,
+any delimiter, junk ignored).
+
+**Pricing implemented as decided:** free = import records and see the whole view; **export is the paid
+artifact**, tiered by applications per year ($79 up to 250, $149 unlimited — placeholders). The gate is one
+function in `app/tiers.py`.
+
+**Verified end-to-end:** `/api/export` returns **402** on free and **200 + a 955-byte document** on $79; the
+page renders six sample applications (4 complete, 2 incomplete, 151 acres, four highlighted cells, two gaps)
+with the export locked and the paywall shown, and choosing $79 enables the export and clears the paywall.
+`BUILD_LOG.md` was carried from the first line of code with the RED -> GREEN sequence recorded.
