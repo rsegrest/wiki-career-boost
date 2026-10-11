@@ -140,6 +140,27 @@ CAPA in spreadsheets. This is the **same reasoning problem the prototype already
 network of Rick's brother-in-law (general counsel there), in a region where poultry integrators, feed mills
 and processors are dense. See [[concepts/freelance-outreach-targets]] for the ag channel and its cautions.
 
+### The same problem has four names — which is the market map
+
+**CAPA = Corrective And Preventive Action.** It is the *same process* as RCCA, wearing the vocabulary the
+food-safety and medical-device industries use. "Run CAPA in Excel" means the plant tracks those corrective
+actions in a spreadsheet or a binder: no workflow, no evidence attached to each cause, no
+verification-of-effectiveness step, and audit preparation turns into a scavenger hunt. That is precisely
+the pain the prototype addresses — in another industry's words.
+
+| Industry | The process is called | Mandated by | The paperwork |
+|---|---|---|---|
+| Aerospace & defence | **RCCA** — Root Cause Corrective Action | AS9100 / AS9110 | CAR (corrective action request), NCR (nonconformance report) |
+| Food & feed manufacturing | **CAPA** — Corrective And Preventive Action | SQF Code 2.5.3, BRC | Nonconformance and corrective-action records |
+| Medical devices | **CAPA** | FDA 21 CFR 820, ISO 13485 | CAPA record, NCR |
+| Automotive | **8D** — Eight Disciplines | IATF 16949 | D1-D8 problem-solving report |
+
+One product, four regulated industries, each of which **mandates** the process, each of which has small
+suppliers who struggle to comply, and the reasoning engine is identical in all four: find the cause, fix
+it, prove the fix stuck. **Use the buyer's word for it in the buyer's industry** — RCCA in aerospace,
+CAPA in food and medical, 8D in automotive, CAR/NCR everywhere.
+
+
 thesis is the gap — a tool that **helps you reason to a verified root cause** (proposed → testing →
 supported → confirmed, with evidence attached, and a report that proves it) rather than a form that
 files one. Small aerospace/defense suppliers are the plausible buyer: they must close RCCAs to

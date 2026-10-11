@@ -418,3 +418,18 @@ ideas they may not know exist.
 - The outreach page gained the **insight-only message to Rick's brother-in-law** (three questions: who is
   drowning in documents, an introduction, and how the co-op buys software) with an explicit clean exit and
   an optional, clearly-labelled hypothesis line.
+
+## [2026-10-11] create | concepts/side-income-map.md + the corrective-action glossary
+
+Rick asked that all of these ideas be documented in the wiki. Added:
+
+- `concepts/side-income-map.md` — **the single entry point** for the money thread: 10 threads with time to
+  first dollar and the page each lives on (freelance services, warm outreach, Chattanooga, the ag/co-op
+  channel, the RCCA venture, RCCA's food/feed CAPA vertical, the deferred ESSCA II raise, the visibility
+  engine, referral partners, the house sale) plus a **ruled-out table with reasons** (investing, reselling,
+  Power Apps, gov/defence AI, marketplace bidding, Toptal) so none of them get re-proposed.
+- `concepts/rcca-app-venture.md` — new section **"The same problem has four names — which is the market
+  map."** CAPA = Corrective And Preventive Action, the food/medical name for the process aerospace calls
+  RCCA and automotive calls 8D. AS9100/AS9110, SQF 2.5.3, BRC, FDA 21 CFR 820, ISO 13485 and IATF 16949 all
+  *mandate* it. One engine, four regulated industries, and the advice is to **use the buyer's word for it
+  in the buyer's industry**.
