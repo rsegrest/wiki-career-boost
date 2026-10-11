@@ -10,7 +10,6 @@ confidence: high
 
 # Freelance Acquisition & Portfolio Strategy
 
-## Problem Statement
 ## Qualify the client: commercial only for AI work (2026-10-11)
 
 **Government and defence networks are the worst buyer for AI features, not the best.** Rick's own
@@ -39,6 +38,7 @@ Rick's NASA work is sensitive/proprietary — he can't show it in interviews or 
 
 ---
 
+## Problem Statement
 ## Part 1: UX as a Differentiator
 
 Rick's UX team experience at NASA is a **significant competitive asset** that most full-stack developers don't have. Here's why it matters and how to leverage it:
