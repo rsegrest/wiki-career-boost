@@ -481,3 +481,22 @@ Four repeatable patterns documented in `concepts/ag-market-intelligence.md` §5:
 program"; "better than an Excel spreadsheet"; **the audit-output gap**; and integration/adoption failure.
 Offer consequence recorded: in this market the **audit binder is the headline scenario**, not one of six, and
 two new scenarios (pesticide application records; custom-work/landlord billing) were added.
+
+## [2026-10-11] create | Services page, agriculture variant (branch `services-page`, `/services/agriculture`)
+
+Rick asked for a second services page on the secondary branch. Built
+`src/pages/ServicesAgriculturePage.tsx` (route `/services/agriculture`) beside the general page, cross-linked
+both ways, nav unchanged.
+
+It leads with the **audit-output** wedge the AgTalk mining produced: "Your records already exist. Make them
+answer the auditor." — six farm jobs (spray records, GAP/third-party audit binder, landlord and custom-work
+billing, equipment maintenance, herd/treatment records, per-state mileage for fuel-tax filings), four answers
+for the sceptical buyer (nothing leaves your network; works with no signal; your stack stays; you own the
+output), a "what this is not" list, and three starts ending in the **free one-season "send me your records,
+I'll send back the audit view"** offer — recorded as the reusable conversion device because it is the demo,
+the qualification and a zero-risk first step at once.
+
+Verified in a browser against a production build: both routes render (general page: 6 scenarios + a link to
+the ag variant; ag page: 6 farm jobs, "What this is not", both price points, link back). Committed on the
+branch (**not** master, so nothing deploys); branch pushed, master untouched. Editorial rule recorded on the
+copy page: never lift a named forum user's words onto a commercial page — paraphrase the themes.

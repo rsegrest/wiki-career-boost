@@ -132,3 +132,50 @@ first — and if the honest answer is "nothing here is worth it", I will say tha
 - [ ] Does the page lead with the assessment price ($750) or leave pricing to the conversation?
 - [ ] Add a one-line case study once the first pilot ships? *(Nothing to show yet — do not invent one.)*
 - [ ] Should the six scenarios be reordered by industry for the ag/co-op conversation specifically?
+
+---
+
+## The agriculture variant — second page, same branch (2026-10-11)
+
+**Built:** `src/pages/ServicesAgriculturePage.tsx`, route **`/services/agriculture`**, on branch
+`services-page` alongside the general page at `/services`. The two pages cross-link both ways; the nav keeps
+a single **Services** item.
+
+**Why a separate page rather than editing the first one.** The ag research (see
+[[concepts/ag-market-intelligence]] §5) says the wedge in that market is not capture, it is **output** — the
+incumbent leader "has all of the data you need to be compliant" but cannot produce the report that gets you
+through an audit. And the underserved segment says so out loud: *"we don't raise enough cattle to worth
+buying an expensive program."* A general services page cannot lead with either of those; an agriculture page
+can.
+
+### Structure of the ag page
+
+1. **Hero:** *"Your records already exist. Make them answer the auditor."* — then the honest setup: the data
+   is already in FieldView, Granular, Excel or a notebook; the missing part is the report the auditor,
+   regulator, lender or landlord asks for.
+2. **"The part nobody sells you"** — the capture-vs-output thesis, stated plainly.
+3. **Six farm jobs:** spray/application records (state and federal requirements); the audit binder (GAP and
+   third-party, including corrective actions); billing landlords and custom work (four notebooks → invoices);
+   equipment maintenance off the spreadsheet; herd and treatment records including drug use; mileage by state
+   for fuel-tax filings.
+4. **Four answers for the sceptical buyer:** nothing leaves your network; it has to work with no signal; your
+   stack stays; you own the output as files.
+5. **"What this is not"** — not an ERP, not a per-user cloud subscription, not a farm-wide reorganisation, not
+   government/ITAR work.
+6. **Three starts, smallest first** — see the lead magnet below.
+7. **Who this is for** — row crop, hay, commercial cow/calf, custom work, ag retail and co-ops, "and the
+   office that keeps the books for them".
+
+### The conversion device worth reusing (all markets)
+
+**"Send me one season's records and I'll send back the audit view — no charge."** It is simultaneously the
+demo, the qualification, and the price-of-admission of zero. It also fits the plan's constraint: producing
+one audit view is hours, not weeks, and it is the most persuasive artifact available for a buyer who has been
+burned by a big system before.
+
+### Editorial rule recorded
+
+**Do not put forum users' words on a commercial page.** The AgTalk quotes are public, but lifting a named
+farmer's post into sales copy is bad form in a trust-poor market. Paraphrase the *themes* (the audit-output
+gap, the "too small for Farm Works" segment, no-signal working) and keep the verbatim material inside the
+research page where it belongs.
