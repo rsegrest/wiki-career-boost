@@ -9,8 +9,8 @@ sources: [ASHA-2025-survey, BLS-OOH-2024, Indeed, Glassdoor, ZipRecruiter, Vivia
 
 # SLP Compensation & Career Options Analysis
 
-> Research conducted June 26, 2026 for Rick's wife (CCC-SLP, [[restore-therapy-services]], Madison AL)
-> See also: [[wife-slp-profile]], [[restore-therapy-services]]
+> Research conducted June 26, 2026 for Rick's wife (CCC-SLP, [[entities/restore-therapy-services]], Madison AL)
+> See also: [[entities/wife-slp-profile]], [[entities/restore-therapy-services]]
 
 ## A. Is Her Pay and Leave Competitive?
 

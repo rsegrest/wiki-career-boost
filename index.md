@@ -7,21 +7,21 @@
 ## Entities
 
 ### People
-- [[rick-segrest-pro]] — Rick Segrest, Full-Stack Web Developer (React, UX, AI, M&S)
-- [[wife-slp-profile]] — Rick's wife, CCC-SLP at Restore Therapy Services (Madison, AL)
+- [[entities/rick-segrest-pro]] — Rick Segrest, Full-Stack Web Developer (React, UX, AI, M&S)
+- [[entities/wife-slp-profile]] — Rick's wife, CCC-SLP at Restore Therapy Services (Madison, AL)
 
 ### Organizations
-- [[nasa]] — Space agency (7+ years, current assignment)
-- [[amentum]] — Staffing contractor (supports NASA assignment)
-- [[uah]] — University of Alabama in Huntsville (M.S. M&S)
-- [[restore-therapy-services]] — AL therapy services provider, wife's current employer
+- [[entities/nasa]] — Space agency (7+ years, current assignment)
+- [[entities/amentum]] — Staffing contractor (supports NASA assignment)
+- [[entities/uah]] — University of Alabama in Huntsville (M.S. M&S)
+- [[entities/restore-therapy-services]] — AL therapy services provider, wife's current employer
 
 ## Concepts
 
-- [[portfolio-project-ideas]] — Portfolio project ideas for career networking (React + M&S + AI); includes active build status & models used (Personal Site, Mission Control, …)
-- [[project-tracker]] — Full project tracker: all projects, statuses, models used, and last-worked dates
-- [[freelance-portfolio-strategy]] — Freelance acquisition playbook, UX positioning, portfolio build plan
-- [[sabrina-ramonov-ai-business-videos]] — 41 AI business/career videos from Sabrina Ramonov: income streams, personal branding, AI skills, career strategy in AI era
+- [[concepts/portfolio-project-ideas]] — Portfolio project ideas for career networking (React + M&S + AI); includes active build status & models used (Personal Site, Mission Control, …)
+- [[concepts/project-tracker]] — Full project tracker: all projects, statuses, models used, and last-worked dates
+- [[concepts/freelance-portfolio-strategy]] — Freelance acquisition playbook, UX positioning, portfolio build plan
+- [[concepts/sabrina-ramonov-ai-business-videos]] — 41 AI business/career videos from Sabrina Ramonov: income streams, personal branding, AI skills, career strategy in AI era
 - [[../../wiki-personal/concepts/goals-pay-debt-house-remote-abroad]] — **Top-level goals (personal vault)** — why the portfolio/freelance work exists: debt payoff → location-independent income → move abroad (~2030). The bridge page between this vault's portfolio work and the personal vault's plans
 - [[concepts/rcca-app-venture]] — **RCCA app venture assessment** — a Teledyne Brown friend's Root Cause Corrective Action idea, prototyped by Rick. Public methodology (DO IT²/ASQ), the CMMC/DFARS no-CUI posture, four monetization paths ranked by time-to-first-dollar, and the document-ownership question that gates the whole thing
 
@@ -34,11 +34,11 @@
 
 ## Comparisons
 
-- [[career-move-vs-side-hustle-vs-maximize-current]] — Three-way career decision analysis (stay, leave, side-hustle)
+- [[comparisons/career-move-vs-side-hustle-vs-maximize-current]] — Three-way career decision analysis (stay, leave, side-hustle)
 
 ## Queries
 
-- [[essca-ii-rfp-analysis]] — ESSCA II RFP rate benchmarks, contract structure, and salary positioning
-- [[react-ai-job-market-salary-2026]] — Remote React+AI job market: salary data, freelance rates, company targets
-- [[nasa-civil-service-gs-pay]] — NASA civil service GS pay, FERS pension, and why it doesn't work at age 49
-- [[slp-compensation-analysis-2026]] — Wife's SLP salary vs market, leave comparison, and 6 career options ranked
+- [[queries/essca-ii-rfp-analysis]] — ESSCA II RFP rate benchmarks, contract structure, and salary positioning
+- [[queries/react-ai-job-market-salary-2026]] — Remote React+AI job market: salary data, freelance rates, company targets
+- [[queries/nasa-civil-service-gs-pay]] — NASA civil service GS pay, FERS pension, and why it doesn't work at age 49
+- [[queries/slp-compensation-analysis-2026]] — Wife's SLP salary vs market, leave comparison, and 6 career options ranked

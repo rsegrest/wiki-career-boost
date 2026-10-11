@@ -17,8 +17,8 @@ National Aeronautics and Space Administration. Primary US government agency resp
 
 ## Rick's Role
 
-- **Employer:** [[nasa]] (direct employment)
-- **Contractor support:** [[amentum]] provides staffing/contracting services
+- **Employer:** [[entities/nasa]] (direct employment)
+- **Contractor support:** [[entities/amentum]] provides staffing/contracting services
 - **Tenure:** 7+ years
 - **Title:** Full-stack Cloud-based Web Application Architect
 - **Clearance:** Previously held Secret (not renewed — no active need at NASA)

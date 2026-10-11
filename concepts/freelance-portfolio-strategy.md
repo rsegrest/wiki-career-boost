@@ -58,7 +58,7 @@ NASA work = classified/proprietary. Rick needs **3-4 public projects** that demo
 
 ### Prioritized Build List
 
-Based on existing portfolio ideas in [[portfolio-project-ideas]], reordered for maximum freelance-relevance:
+Based on existing portfolio ideas in [[concepts/portfolio-project-ideas]], reordered for maximum freelance-relevance:
 
 #### Tier 1: Ship First (1-2 weekends each, immediate freelance credibility)
 
@@ -224,6 +224,6 @@ The portfolio isn't just for freelancing — it's the same evidence you'll use f
 
 ## Sources
 
-- [[portfolio-project-ideas]] — Original 9 project ideas (May 2026 brainstorm)
-- [[react-ai-job-market-salary-2026]] — Market salary data and company target list
+- [[concepts/portfolio-project-ideas]] — Original 9 project ideas (May 2026 brainstorm)
+- [[queries/react-ai-job-market-salary-2026]] — Market salary data and company target list
 - User input | 2026-06-22 — UX team experience, Toptal failure, portfolio needs

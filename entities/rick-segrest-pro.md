@@ -22,10 +22,10 @@ sources: []
 - **Location:** Huntsville, Alabama, United States
 - **Followers:** 376
 - **Connections:** 377
-- **Current Employer:** [[nasa]] (via [[amentum]] contract)
-- **Contractor:** [[amentum]]
+- **Current Employer:** [[entities/nasa]] (via [[entities/amentum]] contract)
+- **Contractor:** [[entities/amentum]]
 - **Clearance:** Previously held Secret (dormant, not renewed — 7+ years at NASA without need)
-- **Alma Mater:** [[uah]] (University of Alabama in Huntsville)
+- **Alma Mater:** [[entities/uah]] (University of Alabama in Huntsville)
 
 ## Compensation & Benefits
 
@@ -58,7 +58,7 @@ sources: []
 - On the **ESSCA contract** (NASA engineering/science support)
 - **Proposals due:** 11 March 2026 — award expected soon
 - Contract is **up for re-bid** — potential rate adjustment closer to inflation
-- [[amentum]] is the current staffing contractor
+- [[entities/amentum]] is the current staffing contractor
 
 ### Remote Work
 
@@ -165,7 +165,7 @@ This triad is rare. Most React devs lack systems background. Most M&S people lac
 |---|---|---|---|
 | GitHub Profile | Active | github.com/ricksegrest | Repos, contributions, green squares |
 | LinkedIn | Active | linkedin.com/in/ricksegrest | Posts, recommendations, endorsements |
-| Resume | v2026 (integrated) | [[rick-segrest-resume-v2026]] | Detailed professional experience, awards (Dyreqt 2025 Innovation Award, Digital Twin 2024 Group Award), Power Apps project details; public version omits contact for posting |
+| Resume | v2026 (integrated) | [[entities/rick-segrest-resume-v2026]] | Detailed professional experience, awards (Dyreqt 2025 Innovation Award, Digital Twin 2024 Group Award), Power Apps project details; public version omits contact for posting |
 | LinkedIn Profile | Active | linkedin.com/in/ricksegrest | 376 followers, 377 connections |
 | Certifications (4) | Completed | LinkedIn Learning | AI, XAI, Python DS (2020) |
 | Publications (6) | Published | IEEE, Linux Mag, etc. | Game engines, VoIP, journalism |

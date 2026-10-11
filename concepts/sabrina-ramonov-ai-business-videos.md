@@ -125,10 +125,10 @@ Sabrina identifies specific skills that separate winners from losers in the AI e
 ## Cross-References
 
 - Sabrina's technical tutorials are in the wiki-tech vault: `wiki-tech/concepts/sabrina-ramonov-ai-tools-videos.md`
-- Career decision analysis: [[career-move-vs-side-hustle-vs-maximize-current]]
-- Salary positioning: [[react-ai-job-market-salary-2026]]
-- Freelance strategy: [[freelance-portfolio-strategy]]
-- Portfolio ideas: [[portfolio-project-ideas]]
+- Career decision analysis: [[comparisons/career-move-vs-side-hustle-vs-maximize-current]]
+- Salary positioning: [[queries/react-ai-job-market-salary-2026]]
+- Freelance strategy: [[concepts/freelance-portfolio-strategy]]
+- Portfolio ideas: [[concepts/portfolio-project-ideas]]
 
 ## Provenance
 
@@ -137,7 +137,7 @@ Full video index: `wiki-tech/raw/articles/sabrina-ramonov-videos.md`
 
 ## Related Pages
 
-- [[rick-segrest-pro]] — Rick's career profile
-- [[career-move-vs-side-hustle-vs-maximize-current]] — career decision analysis
-- [[freelance-portfolio-strategy]] — freelance acquisition playbook
-- [[react-ai-job-market-salary-2026]] — job market data
+- [[entities/rick-segrest-pro]] — Rick's career profile
+- [[comparisons/career-move-vs-side-hustle-vs-maximize-current]] — career decision analysis
+- [[concepts/freelance-portfolio-strategy]] — freelance acquisition playbook
+- [[queries/react-ai-job-market-salary-2026]] — job market data

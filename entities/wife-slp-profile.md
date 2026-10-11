@@ -11,7 +11,7 @@ sources: [user-input, web-research-2026-06-26]
 
 **Credential:** CCC-SLP (Certificate of Clinical Competence in Speech-Language Pathology)  
 **Education:** M.S. Speech-Language Pathology, Alabama A&M University  
-**Current Employer:** [[restore-therapy-services]]  
+**Current Employer:** [[entities/restore-therapy-services]]  
 **Location:** Madison, AL  
 **Prior Career:** Education (significant experience)  
 
@@ -42,7 +42,7 @@ sources: [user-input, web-research-2026-06-26]
 - Industry standard: $3–7/hr bump (10–20%) upon completing Clinical Fellowship and earning CCC
 - Going from $35 → $42/hr would be exactly 20% — and would merely bring her TO market rate
 - Restore did not deliver this raise
-- This is consistent with Restore's company-wide pattern (see [[restore-therapy-services]])
+- This is consistent with Restore's company-wide pattern (see [[entities/restore-therapy-services]])
 
 ### Leave Context
 
@@ -65,4 +65,4 @@ sources: [user-input, web-research-2026-06-26]
 
 - User input | 2026-06-26
 - Web research | 2026-06-26 — Indeed, Glassdoor, ZipRecruiter, Vivian, ASHA 2025 Survey, BLS OOH
-- See [[slp-compensation-analysis-2026]] for full research details
+- See [[queries/slp-compensation-analysis-2026]] for full research details

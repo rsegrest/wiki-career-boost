@@ -17,7 +17,7 @@ Amentum provides staffing, engineering, and program management services to gover
 
 ## Rick's Role
 
-Amentum is Rick's **staffing contractor**, not his direct employer. Rick is currently on assignment at [[nasa]] via Amentum contract.
+Amentum is Rick's **staffing contractor**, not his direct employer. Rick is currently on assignment at [[entities/nasa]] via Amentum contract.
 
 - **Contract:** ESSCA (NASA engineering/science support)
 - **Salary:** $170,000 (started at $135,000 in early 2019)

@@ -62,7 +62,7 @@ sources: [web-research-2026-06-26]
 ## Relevance to Family
 
 - Rick's wife works here as CCC-SLP at Madison, AL facility
-- She is underpaid vs market by $7–8/hr — see [[wife-slp-profile]] and [[slp-compensation-analysis-2026]]
+- She is underpaid vs market by $7–8/hr — see [[entities/wife-slp-profile]] and [[queries/slp-compensation-analysis-2026]]
 - Health insurance through Restore covers the family
 - Her departure would need to account for insurance transition
 

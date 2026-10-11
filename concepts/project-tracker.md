@@ -16,7 +16,7 @@ confidence: high
 > Maintained tracker: `~/wiki-personal/concepts/project-tracker.md`
 > At-a-glance: `~/wiki-personal/concepts/projects-at-a-glance.md`
 > Priority order: `~/wiki-personal/concepts/project-plans-index.md`
-> Idea catalog (this wiki): [[portfolio-project-ideas]]
+> Idea catalog (this wiki): [[concepts/portfolio-project-ideas]]
 
 ## Why the duplicate was retired (2026-10-04)
 
@@ -34,6 +34,6 @@ of truth is the personal wiki; this page stays only so inbound links and the
 
 ## What still lives here
 
-- [[portfolio-project-ideas]] — the full career idea catalog (#1–56+) **including
+- [[concepts/portfolio-project-ideas]] — the full career idea catalog (#1–56+) **including
   active build status and models used**. Kept in this wiki; the personal-wiki
   trackers link back to it rather than duplicating it.
