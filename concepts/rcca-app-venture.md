@@ -53,13 +53,22 @@ Not a deck. A working, tested, running application.
 | Build ledger | **21 defects, 0 open**; ~135 min total across T1–T3; deepseek-v4.1-flash 100% |
 | Documentation | `BUILD_LOG.md` (task ledger + review report), `docs/CONVERSION-NOTES.md` (incl. **defects found in the source document**), captioned desktop + phone screenshots |
 
-### ⚠️ The one urgent gap: it is not in git
+### ✅ Closed 2026-10-11: it is now under version control
 
-`~/code/rcca` is **not a git repository** and has never been committed. The entire artifact — the
-converted 279-row baseline, the converter, the validator, the app, the tests — lives in a single
-working tree with no history and no remote. One bad `rm`, one disk event, and it is gone. This is a
-**five-minute fix and it is the highest-value five minutes available on the project**. Add
-`.gitignore` for `node_modules/` first, then commit locally; publishing is a separate decision.
+`~/code/rcca` was **not** a git repository and had never been committed — the entire artifact (the
+converted 279-row baseline, the converter, the validator, the app, the tests) lived in a single
+working tree with no history. **Fixed:** `git init` + a `.gitignore` for `node_modules/`, `dist/`,
+`coverage/` and editor files, then an initial commit.
+
+| | |
+|---|---|
+| Commit | `6731b5d` on branch `main` |
+| Tracked files | **99** (zero `node_modules` — 92 MB of dependencies stay out) |
+| History size | 3.9 MB |
+| Remote | **none** — publishing is a separate decision, because the v0.3 document is employer-context material authored by the domain expert |
+
+The ownership question in §3 is answered **before** anything leaves this machine; that ordering is
+deliberate.
 
 ---
 
@@ -168,8 +177,8 @@ clearance (and no CUI, per §5).
 
 ## 8. Next steps (in order — the first one is free)
 
-1. **`git init` the repo and commit.** 5 minutes. `.gitignore` `node_modules/` and `dist/` first. The
-   only copy of 135 minutes of gated work is currently unprotected.
+1. ~~**`git init` the repo and commit**~~ ✅ **done 2026-10-11** (99 files, commit `6731b5d`, no
+   remote yet).
 2. **Three questions in writing to the friend** — (a) who owns v0.3 and may it be used commercially?
    (b) would TBE run this as a **paid pilot**, and who signs? (c) will he be the named domain
    reviewer? Everything else waits on these.
