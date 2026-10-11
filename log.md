@@ -325,7 +325,7 @@ revenue until a sale); §8 gating questions; open questions marked answered/adde
 ## [2026-10-11] maintenance | normalized bare wikilinks to explicit `[[dir/page]]` form
 - Sweep across all four vaults: **45 links** rewritten from bare names (which resolve only by
   Obsidian name-matching) to explicit paths. Form-only change; display text unchanged.
-- Also made **0 directory-index links** resolvable (`[[hermes-agent]]` → `[[hermes-agent/index|hermes-agent]]`).
+- Also made **0 directory-index links** resolvable (`[[wiki-tech/hermes-agent/index|hermes-agent]]` → `[[hermes-agent/index|hermes-agent]]`).
 - Remaining dangling links are **pre-existing** and need a content decision, not a form fix:
   ~229 point at pages that exist nowhere (tool names, dated cross-references in the auto-generated
   x-monitor pages). The x-monitor ones will recur unless the generator emits explicit links.
