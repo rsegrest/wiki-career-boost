@@ -592,3 +592,24 @@ grandfather story is a credibility asset in a vendor-sceptical market), **drop "
 and the wrong signal on a truck door), and recommend the umbrella **StokesAg.com** with modules reading
 "Stokes Ag — Spray Register" — plus the routing plan (paths first, subdomains later, a small module registry
 in the app when the second module arrives).
+
+## [2026-10-11] naming | Registry facts on STOKES — and one earlier recommendation reversed
+
+Checked TSDR rather than guessing. **"STOKES" is a live registered US trademark of Stokes Seeds, Limited**:
+Reg. 2,962,111 (standard-character claim — the word in any style) and Reg. 3,040,436, both LIVE, both renewed
+in 2025, both claiming acquired distinctiveness in whole, counsel of record Barclay Damon LLP. **Goods are
+"vegetable seeds and flower seeds", International Class 031 only** — software is Class 9/42, so the
+registration does not cover the product Rick would sell.
+
+The nuance is that the industries are identical and the customers overlap (Stokes Seeds sells to commercial
+growers from four US locations including LaBelle, Florida). Same field, different goods, same buyers is the
+shape of a confusion argument; the wide goods gap is what keeps it a judgment call rather than a blocker.
+Also noted: **Stokes Agricultural Services Ltd** (UK, live) and **Stocks Ag** (UK, one letter away).
+
+**Reversed one piece of my own earlier advice:** keep **"AgTech"** in the umbrella. I had argued to drop it
+because farmers do not say "agtech" — but it is now the *distinguishing* word that keeps "Stokes AgTech" from
+reading as a seed company or as the UK machinery firm. The recommendation is therefore: umbrella **Stokes
+AgTech** (`stokesagtech.com`, available) for differentiation, plain product names underneath ("Spray
+Register") where the farmer's trust decision actually happens, and the grandfather line in the About/footer.
+Alternative if the surname feels too close: **J.D. Stokes Ag** (`jdstokesag.com`, available). Recorded in
+`concepts/demand-test-playbook.md` §8 with the registry detail, flagged as research rather than legal advice.

@@ -222,17 +222,41 @@ my grandfather, who farmed" answers "who are you?" in one line.
 `stokesagtools.com`, `jdstokesag.com` — all **available**; only `stokesfarm.com` is taken. That is a far
 better field than the five-of-thirty-four result for generic descriptors.
 
-**The caution, verified:** "Stokes" is **not a blank slate in agriculture** —
+**The caution, verified at the registry (TSDR, 2026-10-11) — and it is sharper than I first thought:**
 
-- **Stokes Seeds** — founded 1881, 140+ years, one of North America's largest vegetable-seed distributors,
-  headquartered in Thorold, Ontario with four U.S. locations including **LaBelle, Florida**, and sales up the
-  Southeast. Different product class (seeds vs software), so legal risk is low, but vegetable growers will
-  already hear a seed company.
-- **Stokes Agricultural Services Ltd** — a live UK firm (Derbyshire, machinery repair). So that *name* is
-  taken even though the domain is free.
-- **Stocks Ag** — a UK applicator/wheel manufacturer. One letter apart, in the same industry.
-- **Recommended before buying:** run a formal **USPTO** search for STOKES in the software/records classes
-  rather than relying on a web search. Different trademark classes make conflict unlikely; confirm it.
+- **"STOKES" is a LIVE, registered US trademark held by Stokes Seeds, Limited** (Thorold, Ontario):
+  **Reg. 2,962,111** (filed Aug 2003, registered Jun 2005, **standard-character claim — the word itself in
+  any font/style**) and **Reg. 3,040,436** (registered Jan 2006, a stylised/underlined-letter version). Both
+  show **LIVE/REGISTRATION/Issued and Active**, both **renewed** (status dates Mar 2025 and Sep 2025), and
+  both claim **acquired distinctiveness in whole** — i.e. the owner had to *prove* the mark is distinctive,
+  which makes it a strong one. They have **counsel of record** (Barclay Damon LLP, Boston).
+- **The scope that matters:** the goods/services are **"vegetable seeds and flower seeds", International
+  Class 031 only.** Software is Class 9/42. So the registration does **not** cover what Rick would sell — the
+  goods gap is wide.
+- **But the industries are the same, and the customers overlap.** Stokes Seeds sells vegetable seed to
+  commercial growers with four US locations including **LaBelle, Florida** and distribution up the Southeast.
+  "Same field, different goods, same buyers" is exactly the shape of a confusion argument, and a mark this
+  well maintained is one a lawyer would take seriously. Enforcement appetite against a one-person records app
+  is very likely nil — but this is now a **judgment call with facts attached**, not a blank slate.
+- Also in the same ear-space: **Stokes Agricultural Services Ltd** (UK, live company — so that *name* is
+  taken even though the domain is free) and **Stocks Ag** (UK, one letter away).
+
+**Recommended structure given all of that — and it reverses my earlier advice on one word:**
+
+| Layer | Name | Why |
+|---|---|---|
+| Legal / umbrella | **Stokes AgTech** (`stokesagtech.com` ✅ available) | **"AgTech" is the distinguishing word.** It keeps the brand from reading as a seed company or as "Stokes Agricultural Services" — which is precisely the differentiation that matters now. My earlier instinct to drop it was about the *farmer's ear*; the trademark facts cut the other way. |
+| Product | **Spray Register** (then Maintenance Records, Herd Records, Mileage Log) | Plainness belongs on the product name, where the farmer is deciding whether to trust it. "Register" is also the regulator's own word. |
+| Story line | *"Named for John D. Stokes, who farmed."* | True, warm, and it answers "who are you?" in a market that asks. Keep it in the About/footer, not the logo. |
+
+**A more conservative alternative if the surname in the brand feels too close:** **J.D. Stokes Ag**
+(`jdstokesag.com` ✅ available) — the full personal name is a different source identifier from the bare
+surname, and it tells the story harder.
+
+**Buying:** own `stokesagtech.com` and, if it feels right, `jdstokesag.com` defensively with one redirecting.
+Do not buy the six-variant set — that is $60/year for nothing. Confirm at a registrar (registry WHOIS is not a
+purchase guarantee), and treat this page as research, not legal advice: an attorney's hour is the only real
+answer, and that hour is not affordable this quarter.
 
 **The one word I would drop: "AgTech."** It is the industry's own venture-capital vocabulary — farmers say
 "the co-op", "the farm", "the seed guy", never "agtech" — and for a buyer who is tired of vendors it quietly
