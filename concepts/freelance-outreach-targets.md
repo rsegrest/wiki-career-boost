@@ -86,6 +86,10 @@ That credibility engine is what makes 1-9 land instead of bounce.
 and get introduced in. A metro 3.5 hours away is a conference or a day trip. So the tiers below are
 relationship tiers, not delivery tiers.
 
+**And a third criterion, added by Rick 2026-10-11: will he actually go?** A market he does not
+want to travel to is a market he will not travel to, however good its sector mix. Travel appetite is a
+real input to market selection, not a soft preference.
+
 **And the defence problem is sector-shaped, not city-shaped.** Every metro's defence employers are the
 same bad buyer for AI features (IA review, no external model calls, no data egress). What actually varies
 is the **ratio of commercial, document-heavy employers** — healthcare, insurance, financial services,
@@ -93,15 +97,15 @@ logistics, professional services. That ratio, plus competition and drivability, 
 
 | Metro | ~Distance | Commercial sector fit | Competition | Verdict |
 |---|---|---|---|---|
-| **Birmingham** | ~100 mi (1.5 h) | **Strongest fit:** UAB is Alabama's largest single employer (~$12.1B impact) plus Fortune-500 financial HQs (Regions Financial, Protective Life) and biomed. Document-heavy, commercial, non-defence. | Lower than Nashville/Atlanta | **Primary out-of-town market** |
-| **Chattanooga** | ~100 mi (1.5-2 h) | Logistics and freight at three interstates, insurance, manufacturing, plus a real startup scene (municipal gigabit network; quantum-computing hub push). Chamber publishes a major-employers list. | Low | **Second target — best effort-to-reward ratio** |
+| **Birmingham** | ~100 mi (1.5 h) | Sector fit is real: UAB is Alabama's largest single employer (~$12.1B impact), plus Regions Financial and Protective Life HQs, plus biomed. | Lower than Nashville/Atlanta | **Demoted by choice (2026-10-11)** — best fit on paper, but Rick has never found Birmingham attractive to visit, and travel appetite decides whether outreach actually happens. Fallback, not the plan. |
+| **Chattanooga** | ~100 mi (1.5-2 h) | **Insurance + freight, both document-heavy:** Unum (~$13.3B revenue) and BlueCross BlueShield of Tennessee (~$6.2B) are the two largest companies; Kenco, U.S. Xpress and Covenant Logistics anchor freight; plus a genuine tech community and municipal gigabit. | Low | **★ PRIMARY market (Rick's choice, 2026-10-11)** — tech-oriented, high-growth, and he actually wants to go there. |
 | **Nashville** | ~100 mi (2 h) | Big and rich: 900+ healthcare companies, corporate HQs, #2 of the 100 largest US metros for job growth and income (median household income $77,371). | **High** — and state/US government are among its largest employers | Best reached **via associations and conferences**, not cold outreach |
 | **Atlanta** | ~250 mi (3.5 h) | Enormous commercial market. | **Deepest** — a large senior freelance pool sets the going rate | Only with a warm contact or a conference |
 | **Memphis** | ~250 mi | Logistics (FedEx), major health systems, finance. 700+ employers, 262k local jobs. | Lower — a secondary market | One conference; the FedEx/logistics angle is the specific play |
 | **Louisville** | ~250 mi | Healthcare (Humana), logistics (UPS Worldport), food/agri brands. | Lower | One conference |
 | **Knoxville** | ~250 mi | UT, healthcare, manufacturing — but ORNL is DOE, i.e. the government buyer problem again. | Moderate | Skip absent a specific contact |
 | **Montgomery** | ~250 mi | State government. | — | **Skip for AI work** — state government is the same buyer problem in a different suit |
-| **Auburn** | ~150 mi | Small college town plus auto suppliers. | — | Not a market; a **warm channel** (he lived there 1996-2001) |
+| **Auburn** | ~150 mi | **Growing fast, and Rick was right:** the Auburn Research Park took a **77-acre expansion approved June 2026** (total now 240+ acres), and a **45-acre Advanced Manufacturing Research District** was announced 28 Apr 2026, anchored by Auburn's RFID Lab. | Low | **Upgraded — real target:** a research park full of co-located manufacturers and tech firms, ~2.5 h away, in a town he knows from 1996-2001. |
 
 *Sector data verified by search 2026-10-11: Nashville 900+ healthcare companies, #2 for job growth;
 Birmingham UAB ~$12.1B impact plus Regions and Protective Life HQs; Chattanooga $34B economy, municipal
@@ -113,6 +117,45 @@ cities' worth of directories.** One healthcare, insurance, legal or staffing ass
 Birmingham or Nashville puts him in front of dozens of commercial buyers in the right sector at once —
 and associations are where SMB owners already gather. Conferences in Birmingham, Nashville or Chattanooga
 are the cheapest way to meet many commercial buyers in a single day.
+## Chattanooga: the shortlist (primary market, 2026-10-11)
+
+### The channels, with contacts
+
+| Channel | What it is | How in |
+|---|---|---|
+| **ChaTech — Chattanooga Technology Council** (chatech.org) | The tech community's membership org: exclusive events, member directory, sponsorship, member-only community. | Melissa for membership (melissa@chatech.org); **Austin Corcoran for sponsorship/engagement (austin@chatech.org)** |
+| **Chattanooga Area Chamber of Commerce** (chattanoogachamber.com) | Business association chartered 1887, **200+ events a year**, membership tiered by full-time headcount, plus area Councils and an International Business Council. | Business Membership, then attend the councils |
+| **CO.LAB — The Company Lab** (a Chamber program) | Non-profit startup accelerator; **Office Hours: a free consultation service connecting founders with professionals.** | **Apply to the Office Hours expert roster as the AI person.** Highest-leverage single move in this market: it puts him in front of founders repeatedly as an expert rather than a vendor. |
+| **The INCubator** | 127,000 sq ft of startup support on the North Shore (Hamilton County Business Development Center). | Programmes and co-working; same ecosystem as CO.LAB |
+
+### The two sector plays
+
+1. **Insurance document workflows.** Unum (~$13.3B revenue) and BlueCross BlueShield of Tennessee
+   (~$6.2B) are Chattanooga's two largest companies, and insurance is the archetypal document-heavy,
+   commercial, non-defence buyer: claims, policy documents, intake, correspondence.
+2. **Freight and logistics operations.** Kenco, U.S. Xpress and Covenant Logistics locally — and the
+   sector is document-saturated: bills of lading, rate confirmations, claims, customs paperwork, driver
+   documents. Extraction and assistant work is a natural fit, and every buyer is commercial.
+
+### The event that matters
+
+**F3: Future of Freight Festival — September 15-17, 2027, Chattanooga** (FreightWaves), culminating in the
+FreightTech Awards dinner. One drivable event with the entire freight-tech ecosystem in his chosen city.
+*(Dates from a third-party event listing — verify with FreightWaves before booking.)*
+
+**And a pre-built prospect list:** FreightWaves publishes the **FreightTech100** (announced Sept 2026) —
+100 named freight and supply-chain technology companies. A target list that already exists, in a sector
+where his offer is differentiated, published by a company headquartered in his chosen market.
+
+### First three moves
+
+1. **Attend one ChaTech or Chamber event before joining anything** — confirm the room matches the pitch.
+2. **Apply to CO.LAB Office Hours as the AI expert** — recurring, low effort, expert-positioned, and it
+   generates inbound founder referrals.
+3. **Pick one sector and write one offer for it** — insurance document workflows *or* freight document
+   workflows — then use the FreightTech100 for names.
+
+
 
 **The credibility bridge.** The NASA/TBE pedigree is the *hook*, but the *buyer* has to be commercial:
 aerospace-grade rigor applied to commercial document workflows. Sell the discipline, not the sector.

@@ -361,3 +361,21 @@ Huntsville. Analysis added to [[concepts/freelance-outreach-targets]]:
   Memphis/Louisville worth one conference each; **Knoxville (ORNL = DOE) and Montgomery (state gov)
   skipped as the same government-buyer problem**; Auburn is a warm channel, not a market.
 - **Multiplier:** two regional industry-association memberships beat ten cities of directory prospecting.
+
+## [2026-10-11] update | Market choice: Chattanooga primary; Auburn upgraded; Birmingham demoted
+
+Rick picked **Chattanooga** (tech-oriented, high-growth, and he wants to visit), and corrected the Auburn
+assessment — verified: Auburn Research Park's **77-acre expansion was approved June 2026** (240+ acres total)
+with a **45-acre Advanced Manufacturing Research District** announced 28 Apr 2026 anchored by the RFID Lab.
+Birmingham is demoted *by choice*: the sector fit is best on paper, but he has never found it attractive to
+visit — and travel appetite is now recorded as a real selection criterion.
+
+Added to [[concepts/freelance-outreach-targets]]: the Chattanooga shortlist — ChaTech (melissa@chatech.org;
+sponsorship via austin@chatech.org), the Chamber (200+ events/yr), **CO.LAB Office Hours** (join the expert
+roster as the AI person — the highest-leverage move), the INCubator — plus the two sector plays (insurance:
+Unum ~$13.3B + BCBST ~$6.2B; freight: Kenco, U.S. Xpress, Covenant), **F3 Future of Freight, Sept 15-17
+2027 in Chattanooga**, and FreightWaves' pre-built **FreightTech100** target list.
+
+**Cross-link worth chasing:** an advanced-manufacturing research park full of supplier-quality workflows is
+exactly where the RCCA product wants design partners — Auburn's new district is a candidate for both the
+freelance offer and the venture ([[concepts/rcca-app-venture]]).
