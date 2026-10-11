@@ -1,7 +1,7 @@
 ---
 title: "ESSCA II RFP Analysis — Rate Benchmarks and Contract Structure"
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-10-11
 type: query
 tags: [job-search, salary-negotiation, govcon, defense, contract, nasa, amentum]
 sources: [/home/rick/essca_rfp/]
@@ -24,6 +24,14 @@ confidence: high
 | Award Date | Expected by 30 September 2026 |
 | Proposals Due | 11 March 2026 (passed) |
 
+> ⚠️ **This table is the RFP's ORIGINAL plan (captured 2026-06-22), and the schedule has since
+> slipped.** Per Rick (2026-10-11): **ESSCA II performance start is delayed to ~May 2027, and
+> ESSCA I has been extended to bridge the gap.** The phase-in below therefore is *not* a live
+> window — it moves with the new start, and the base period shifts with it. Read every date in
+> this page as the document's plan, never as the current schedule. The award date was an
+> *expected* date in the RFP; whether the award has actually been made is an **open question**
+> as of 2026-10-11.
+
 ## ERI Benchmark Direct Labor Rates (Unburdened, Hourly) — MSFC
 
 These are the Government's benchmark rates based on Economic Research Institute data. Offerors use these to understand anticipated compensation levels. **Rick's actual rate is $170K/yr ÷ 2088 hrs = $81.42/hr unburdened.**
@@ -42,9 +50,18 @@ These are the Government's benchmark rates based on Economic Research Institute 
 | ES-2 | $44.48/hr ($92,782/yr) | — | — |
 | ES-1 | $41.23/hr ($86,004/yr) | — | — |
 
+**Basis note:** the annual figures above are the RFP's own rounded annuals, which imply ~2,085 hrs —
+not the 2,088 hrs used to derive Rick's $81.42/hr. So the annual delta differs by basis: **$6,165**
+from the rounded annuals, **$6,323** at 3.04 × 2,080, **$6,352** at 2,088. Quote the **hourly** delta
+($3.04/hr) and state the hours basis rather than repeating one annual figure as if it were exact.
+
 ### Key Insight
 
 If Rick is classified as ES-8 (highly proficient engineer, BS + ~10 years experience, typical titles: Senior Engineer/Chief Engineer), the ESSCA II benchmark for MSFC is **$84.46/hr = ~$176K/yr**. Rick is at $81.42/hr = $170K. He's **$6K below benchmark** for his level.
+
+> **Everything downstream is contingent on that classification.** The raise case is a ~$3.04/hr ask
+> *only* if he is ES-8. At ES-7 ($78.38/hr) he is already **above** benchmark and there is no gap to
+> cite. Confirm the classification before building an ask on it — the entire lever depends on it.
 
 If Rick is classified as ES-7 (BS + ~8 years, Team Lead/Supervisor), benchmark is $78.38/hr = ~$163.5K. Rick at $170K would be **$6.5K ABOVE benchmark** — meaning Amentum is paying above market for ES-7 but below market for ES-8.
 
@@ -79,7 +96,7 @@ Rick's M.S. counts as +2 years experience. With 7+ years at NASA + M.S. = ~9 yea
 The RFP is a **single-award IDIQ** — meaning one contractor wins the entire contract. This is relevant because:
 
 1. If NASA insources certain roles, they reduce the contract's WYE count (work year equivalents)
-2. The RFP includes a phase-in period (Oct 2026 – Jan 2027) for transition
+2. The RFP includes a phase-in period (plan: Oct 2026 – Jan 2027; **now ~May 2027 onward** after the delay) for transition
 3. The incumbent compensation data package (DRD 1839MA-004) requires Amentum to disclose current rates — meaning NASA already knows what Rick makes
 
 ## Contract Structure Details
@@ -118,9 +135,10 @@ The incumbent WYE and average unburdened hourly direct labor rates (Attachment L
 5. Rick's budget planning app (six-figure impact) strengthens his case for ES-8 classification
 
 ### Contract Timeline
-- Award: ~Sept 30, 2026
-- Phase-in: Oct 2026 – Jan 2027 (transition period — rate adjustments likely here)
-- Base period: Feb 2027 – Jan 2032 (5-year base)
+- **Schedule revised 2026-10-11 (Rick):** performance start **~May 2027**; ESSCA I extended to bridge the gap
+- Award: expected 30 Sept 2026 — *whether it has been made is unconfirmed*
+- Phase-in: RFP planned Oct 2026 – Jan 2027 → **now ~May 2027 onward** (this is where rate adjustments happen)
+- Base period: RFP planned Feb 2027 – Jan 2032 → shifts with the new start
 - This is a **long-term contract** — 8.5 years total with options
 
 ## Sources
@@ -129,3 +147,4 @@ The incumbent WYE and average unburdened hourly direct labor rates (Attachment L
 - ESSCA II RFP Sections J-M (DOCX, Amendment 00002, 4612 paragraphs, 101 tables)
 - Attachment L-1 Excel Pricing Model (Amendment 00002)
 - Controlled Attachments list (SAM.gov)
+- **Schedule revision — performance start ~May 2027, ESSCA I extended to fill the gap: user direct input, 2026-10-11** (supersedes the RFP's planned phase-in and base-period dates above)
