@@ -554,3 +554,21 @@ Element ids and the JS contract were preserved, and the behaviour was re-verifie
 and unlocked on the $79 tier. Computed styles confirm wheat `rgb(247,241,225)`, Bitter 62px masthead, Source
 Serif body, and no dark-mode leak. Committed and pushed to `rsegrest/sprayproof` (private); the design
 direction is recorded in `concepts/demand-test-playbook.md`.
+
+## [2026-10-11] research | Domain naming — what is actually available, and the layer-vs-module question
+
+Rick found `sprayproof.com` unavailable and asked for the other ideas. Rather than paste a list, checked
+**34 candidates against the Verisign registry**: eighteen plain descriptors and sixteen compounds, plus six
+alternative-TLD variants. **Taken:** sprayproof, sprayledger, sprayrecord(s), spraylog, applicationrecords,
+fieldledger, fieldrecords, rowrecords, recordrow, cropledger, fieldbook, recordbinder, farmpaper,
+quietrecords, recordlayer, spraybook, cropbook, rowbook, tankbook, ledgerbook, sprayjournal, cropjournal,
+fieldjournal, growerrecords, spraypaper, cropnotes, spraynotes, farmrecords, growerbook, ledgerrow.
+**Available .com:** **growerledger**, **furrowrecords**, **sprayregister**, **applicationledger**,
+**applicatorrecords**. (`sprayproof.farm` and `sprayproof.ag` also came back available, but those checks were
+looser and need registrar confirmation.)
+
+Recorded the naming criteria and a recommendation in `concepts/demand-test-playbook.md` §8: name the **layer**
+rather than the first module, because the product is one records layer with per-job outputs — so
+**GrowerLedger.com** as the umbrella ("GrowerLedger — Spray Records"), or **SprayRegister.com** if naming the
+first product tightly. Advised against splitting brand from domain. Flagged that registry WHOIS is not a
+purchase guarantee.

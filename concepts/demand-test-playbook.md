@@ -165,3 +165,46 @@ green and sky-blue accents, traditional and conservative layout, serif type, cue
 - **Two visual languages, on purpose:** the product's own site speaks almanac; the agriculture landing page on
   ricksegrest.com stays in that site's existing language, because it is a portfolio page in a personal brand,
   not the product.
+
+## 8. Naming (checked 2026-10-11)
+
+**The problem:** `sprayproof.com` is taken. Almost every plain two-word descriptor is gone. Eighteen
+candidates were checked against the Verisign registry for `.com`:
+
+| Candidate | Status |
+|---|---|
+| sprayproof · sprayledger · sprayrecord · sprayrecords · spraylog · applicationrecords · fieldledger · fieldrecords · rowrecords · recordrow · cropledger · fieldbook · recordbinder · farmpaper · quietrecords · recordlayer | **taken** |
+| spraybook · cropbook · rowbook · tankbook · ledgerbook · sprayjournal · cropjournal · fieldjournal · growerrecords · spraypaper · cropnotes · spraynotes · farmrecords · growerbook · ledgerrow · applicatorrecords (batch 2: all) | **taken** |
+| **growerledger.com** | ✅ available |
+| **furrowrecords.com** | ✅ available |
+| **sprayregister.com** | ✅ available |
+| **applicationledger.com** | ✅ available |
+| **applicatorrecords.com** | ✅ available |
+
+Alternative TLDs came back available for several strong names (`sprayproof.farm`, `sprayproof.ag`,
+`growerledger.farm`, `sprayledger.farm`, `sprayledger.ag`) — but those checks are **less authoritative** than
+the `.com` ones and must be confirmed at a registrar.
+
+### Criteria that matter for this buyer
+
+1. **Sayable on the phone** to a co-op or extension buyer, first try, no spelling out.
+2. **No SaaS tells** — no `-ly`, `-io`, `-ify`, no dropped vowels, no hyphen or digit.
+3. **Sounds like an object on a desk** — a ledger, a register, a book — not a platform.
+4. **Generalises across the suite.** The product is one records layer with per-job outputs (spray,
+   maintenance, herd, mileage). Naming it after spray boxes it in; naming it after the *record book* does not.
+5. **A `.com` still earns its keep here** — this buyer types the address off a business card or a truck door.
+
+### Recommendation
+
+- **If naming the layer (recommended): `GrowerLedger.com`** — generalises to every module, farm-authentic
+  wording, available. The module then reads as "GrowerLedger — Spray Records", and the page hero keeps
+  naming the *job* rather than the brand (farmers search the job).
+- **If naming the first product tightly: `SprayRegister.com`** — "register" is the word the regulation and the
+  inspector actually use, so the name carries the compliance promise.
+- `ApplicatorRecords.com` / `ApplicationLedger.com` are accurate but long: better as secondary domains that
+  redirect than as the brand.
+- **Not recommended:** splitting the brand from the domain (`Sprayproof` at `sprayproof.farm`). Two names for
+  one small product is a cost with no upside for a conservative buyer.
+
+**Confirm at a registrar before buying** — registry `WHOIS` says "available" but reserved, premium and
+pending-delete states exist, and the `.farm`/`.ag` results above used looser matching than the `.com` ones.
