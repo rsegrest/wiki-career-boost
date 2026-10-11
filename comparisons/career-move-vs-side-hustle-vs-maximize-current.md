@@ -20,7 +20,7 @@ confidence: medium
 
 ## The Decision
 
-Rick is at a crossroads. 7 years at [[nasa]] via [[amentum]] on the ESSCA contract. $170K salary that hasn't kept pace with inflation. New group is better but it was a lateral move. ESSCA II contract award expected **30 September 2026** — Amentum likely to retain. NASA insourcing initiative is a background risk. The question: stay and maximize, leave for a new role, or build a side income while keeping the day job.
+Rick is at a crossroads. 7 years at [[entities/nasa]] via [[entities/amentum]] on the ESSCA contract. $170K salary that hasn't kept pace with inflation. New group is better but it was a lateral move. ESSCA II contract award expected **30 September 2026** — Amentum likely to retain. NASA insourcing initiative is a background risk. The question: stay and maximize, leave for a new role, or build a side income while keeping the day job.
 
 ---
 
@@ -75,7 +75,7 @@ Stay at Amentum/NASA, ship the proposal/budget planning app, and leverage the ES
 
 1. **Ship the app and document everything** — architecture decisions, tech choices, user impact metrics, before/after cost savings. This is your portfolio's crown jewel.
 2. **Push for rate adjustment at the ESSCA II start** (~May 2027, after the delay) — come with inflation data, market comp data, and your app's impact. Ask for $180K–$185K minimum. *(Confirm the ES-8 labor classification first: at ES-7 the ERI gap argument disappears.)*
-3. **Use evenings/weekends for portfolio + LinkedIn** — the calm group gives you mental bandwidth. Post 2–3x/week. Build the [[portfolio-project-ideas|portfolio projects]] from the wiki.
+3. **Use evenings/weekends for portfolio + LinkedIn** — the calm group gives you mental bandwidth. Post 2–3x/week. Build the [[concepts/portfolio-project-ideas|portfolio projects]] from the wiki.
 4. **Monitor insourcing closely** — if NASA announces position conversions, be ready to pivot to Path B quickly
 5. **Set a deadline**: If no rate improvement within ~3 months of the new contract start (~Aug 2027), activate Path B
 
@@ -97,7 +97,7 @@ Leave Amentum/NASA for a role at the intersection of React + AI — targeting AI
 
 ### Target Roles
 
-Based on market research in [[react-ai-job-market-salary-2026]]:
+Based on market research in [[queries/react-ai-job-market-salary-2026]]:
 
 | Role Type | Market Base Salary | Total Comp | Remote | Companies |
 |---|---|---|---|---|
@@ -137,7 +137,7 @@ Based on market research in [[react-ai-job-market-salary-2026]]:
 
 ### Known Gaps to Address Before Interviews
 
-From [[rick-segrest-pro|profile]]:
+From [[entities/rick-segrest-pro|profile]]:
 - **System design at scale** — haven't built for >10k concurrent users. Study: designing data-intensive applications, distributed systems primer.
 - **AI production experience** — intense learning but limited deployed LLM features. Ship a demo first.
 - **Team leadership** — IC track, limited formal management. Position as "tech lead" not "manager" if aiming staff.
@@ -147,7 +147,7 @@ From [[rick-segrest-pro|profile]]:
 
 1. **Ship the budget app first** (or at least get it to a demoable state) — the case study is your strongest interview asset
 2. **Update resume** — achievement-focused, 2 pages. Lead with: "7 years NASA, built budget app saving six figures, React+TypeScript+AI"
-3. **Rebuild portfolio site** — Next.js, case studies, the budget app, the [[portfolio-project-ideas|portfolio projects]]
+3. **Rebuild portfolio site** — Next.js, case studies, the budget app, the [[concepts/portfolio-project-ideas|portfolio projects]]
 4. **Start applying Sept 1** — 30 days before ESSCA II award gives you optionality
 5. **Target 5–10 applications/week** to remote-first AI startups and devtools companies
 6. **LinkedIn ramp** — 3 posts/week for 60 days before applying. Build the "AI-powered UI" narrative.
@@ -202,7 +202,7 @@ Keep the $170K day job. Use evenings, weekends, and the ~50% remote days to buil
 
 ### Realistic Income Calculation
 
-Based on freelance market data in [[react-ai-job-market-salary-2026]]:
+Based on freelance market data in [[queries/react-ai-job-market-salary-2026]]:
 
 | Scenario | Rate | Hours/Week | Weeks/Year | Gross | SE Tax (15.3%) | Net |
 |---|---|---|---|---|---|---|
@@ -259,7 +259,7 @@ Start SMALL. One client, 5 hrs/week. If that's sustainable for 60 days, scale to
 **unconfirmed** — and per Rick, the performance start has been **delayed to ~May 2027** with
 **ESSCA I extended to fill the gap.** The dates below are the RFP's original plan, which now shifts.
 
-RFP data extracted and analyzed in [[essca-ii-rfp-analysis]]. Key facts:
+RFP data extracted and analyzed in [[queries/essca-ii-rfp-analysis]]. Key facts:
 
 - **Contract value:** $3.248B max, 8.5-year IDIQ (single award)
 - **Phase-in:** RFP planned Oct 2026 – Jan 2027 → **now ~May 2027 onward** (rate adjustments happen here)
@@ -348,7 +348,7 @@ This strategy preserves optionality at every branch. You never foreclose a path 
 ## Open Questions
 
 - [x] What is Amentum's moonlighting policy? — No problem as long as it doesn't interfere or compete. Path C is cleared.
-- [x] Does the ESSCA II contract include rate adjustments? — YES. RFP includes annual escalation rates for CY2027-2035 (typically 3-4%/yr). ERI benchmark rates published. Compensation gap retention is an evaluated subfactor. See [[essca-ii-rfp-analysis]].
+- [x] Does the ESSCA II contract include rate adjustments? — YES. RFP includes annual escalation rates for CY2027-2035 (typically 3-4%/yr). ERI benchmark rates published. Compensation gap retention is an evaluated subfactor. See [[queries/essca-ii-rfp-analysis]].
 - [ ] Does the ~May 2027 start hold, and how long after it before new contract terms take effect? (Transition window — the delay was announced to Rick, not documented on this page)
 - [ ] Has NASA published an insourcing timeline? (Risk clock for Path A)
 - [ ] What rate could Rick command on Upwork/Contra for React+AI work? (Market test for Path C)
@@ -364,11 +364,11 @@ This strategy preserves optionality at every branch. You never foreclose a path 
 
 ## Sources
 
-- [[rick-segrest-pro]] — Compensation, skills, goals, known gaps
-- [[nasa]] — Insourcing initiative, current project, ESSCA context
-- [[amentum]] — Contract structure, growth ceiling, 401k details
-- [[portfolio-project-ideas]] — Portfolio building strategy
-- [[essca-ii-rfp-analysis]] — RFP rate benchmarks, contract structure, salary positioning
+- [[entities/rick-segrest-pro]] — Compensation, skills, goals, known gaps
+- [[entities/nasa]] — Insourcing initiative, current project, ESSCA context
+- [[entities/amentum]] — Contract structure, growth ceiling, 401k details
+- [[concepts/portfolio-project-ideas]] — Portfolio building strategy
+- [[queries/essca-ii-rfp-analysis]] — RFP rate benchmarks, contract structure, salary positioning
 - [[concepts/rcca-app-venture]] — the RCCA app as a **Path C asset** (vs. selling hours): public methodology, compliance posture, monetization ranked by time-to-first-dollar
 - [[../../wiki-personal/concepts/near-term-income-plan]] — the personal-vault money math this path feeds: gaps, hours/week, the ESSCA II raise window
 - User direct input | 2026-06-22
