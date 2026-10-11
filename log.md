@@ -433,3 +433,26 @@ Rick asked that all of these ideas be documented in the wiki. Added:
   RCCA and automotive calls 8D. AS9100/AS9110, SQF 2.5.3, BRC, FDA 21 CFR 820, ISO 13485 and IATF 16949 all
   *mandate* it. One engine, four regulated industries, and the advice is to **use the buyer's word for it
   in the buyer's industry**.
+
+## [2026-10-11] research | Ag market intelligence — the community map and what they actually say
+
+Rick asked whether agriculture has discussion boards or whether that market is "too high-tech". It is the
+opposite: **AgTalk/NewAgTalk has run since the early 2000s** (Machinery Talk alone: 533,907 threads /
+4.45M posts; **Computer Talk** — software Q&A — 15,285 threads / 84,500 posts), alongside r/farming (~219K),
+r/Agriculture, Agrivillage, Agriculture Information and country boards.
+
+Read two r/farming threads via the **reddit-reading** skill (anonymous backend, one 429 sleep each):
+1. *"For those thinking I'll just write some software to help farmers"* — "Ag software is mostly in 2004";
+   nothing interoperates; "the secrecy of each software"; support calls as a negative revenue model; the
+   EMR comparison including a $7M hospital system that still required paper charting as well. **A co-op
+   employee** describes being "the in-between guy" as service spreads thin.
+2. *"What software is missing in farming?"* — **"right now I use Excel"** for equipment maintenance; a farm
+   with no irrigation records despite a five-year legal requirement; herd-health/drug logs stuck in software
+   "that can't link to phones"; hay direct-sales needing inventory + bookkeeping + **offline**; and a grower
+   furious that a $120K vendor also harvests their data.
+
+Documented as `concepts/ag-market-intelligence.md` with the buyer-side layer too (**NGFA** — ~700 companies
+incl. farmer-owned co-ops, Model Feed Quality Assurance Program since 1994; **AFIA** — Quality and Animal
+Food Safety Committee, Safe Feed/Safe Food), the four positioning consequences for the offer, and the
+**listening plan** (read, don't post; collect verbatim complaints; the "what should I build?" opener is worn
+out). Etiquette note recorded: farmers are sceptical of vendors, not of technology.
