@@ -456,3 +456,28 @@ incl. farmer-owned co-ops, Model Feed Quality Assurance Program since 1994; **AF
 Food Safety Committee, Safe Feed/Safe Food), the four positioning consequences for the offer, and the
 **listening plan** (read, don't post; collect verbatim complaints; the "what should I build?" opener is worn
 out). Etiquette note recorded: farmers are sceptical of vendors, not of technology.
+
+## [2026-10-11] research | AgTalk Computer Talk mined — the audit-output gap is the finding
+
+Worked through AgTalk as requested. **Cloudflare blocks my browser on the site root** (there is even a Sept
+2026 support thread about it), but **individual thread URLs render through `web_extract`** and the search
+endpoint is GET-able — so the board is repeatably mineable with no login. Recorded the recipe.
+
+Best finds, in the farmers' own words:
+- **"Been searching for the farm 'brain' that ties everything together for years but it does not exist"** —
+  plus a stack of Granular + Fieldnet + QuickBooks + "lot's of spreadsheets: I don't think they're
+  replaceable", a custom ERP attempt that "failed expensively", and a maintenance tool killed by "not enough
+  buy-in from the guy I put in charge of it".
+- **"What is the best farm record keeping"**: wants field records + machinery maintenance + GAP records
+  "that will be 3rd party audited".
+- **The wedge:** "Fieldview... has all of the data that you need to be compliant. But Fieldview is TERRIBLE
+  for any other report format, and unless you print off every application for every field **you will not pass
+  an audit**." The market leader is good at capture and bad at output.
+- A farmer who **built his own Excel workbook for state/federal pesticide records and gives it away free**;
+  notebooks for custom-work/landlord billing; and repeated "**we don't raise enough cattle to worth buying an
+  expensive program**".
+
+Four repeatable patterns documented in `concepts/ag-market-intelligence.md` §5: "too small for the expensive
+program"; "better than an Excel spreadsheet"; **the audit-output gap**; and integration/adoption failure.
+Offer consequence recorded: in this market the **audit binder is the headline scenario**, not one of six, and
+two new scenarios (pesticide application records; custom-work/landlord billing) were added.

@@ -104,9 +104,69 @@ to fix it either wants to replace everything or harvest the data. That is precis
 5. **Route the buyer-side layer separately**: NGFA and AFIA are where the feed and food quality people are —
    a conference or a committee membership reaches the CAPA buyer better than a farmer forum does.
 
+---
+
+## 5. AgTalk mined — what Computer Talk actually asks for (read 2026-10-11)
+
+**How I got in:** the site's root is behind a Cloudflare bot check that my browser cannot pass (there is even
+an AgTalk support thread from Sept 2026 titled "RE: Cloudfare Verification"). But **individual thread URLs
+render fine through `web_extract`**, and their search endpoint is GET-able:
+
+```
+https://talk.newagtalk.com/search/query.asp?action=search&collapsethreads=1&searchforumid=all&keywords=TERM
+```
+
+That makes this board **repeatably mineable** without a login. Forum list: Machinery Talk (fid 2, 536,949
+threads / 4.48M messages and posting today), Crop Talk (fid 3), Stock Talk, AgTalk Cafe, Kitchen Table,
+Precision Talk, Drone Talk, **Computer Talk**, Market Talk (fid 7), FAQ & Support (fid 11).
+
+### The threads, and what each one asks for
+
+| Thread | In their words |
+|---|---|
+| [Record Keeping Software/App Recommendation](https://talk.newagtalk.com/forums/thread-view.asp?tid=958904) (Nov 2020) | *"Been searching for the farm **"brain" that ties everything together** for years but it **does not exist**."* Stack: Granular + Fieldnet + QuickBooks + *"lot's of spreadsheets: **I don't think they're replaceable**."* Also: *"we tried to build our own farm ERP using Sage Intacct, but **we failed expensively**"*, and *"for maintenance I tried UpKeep but **didn't have enough buy-in from the guy I put in charge of it**."* |
+| [What is the best farm record keeping for 2018?](https://talk.newagtalk.com/forums/thread-view.asp?tid=753640) | *"cloud based... multiple users... do all **field records, machinery maintenance**, and be able to tie it all into **GAP records that will be 3rd party audited**."* |
+| [Spray record keeping](https://talk.newagtalk.com/forums/thread-view.asp?tid=985289) (NE Colorado) | *"Fieldview is great... it has all of the data that you need to be compliant. But **Fieldview is TERRIBLE for any other report format, and unless you print off every application for every field you will not pass an audit.**"* |
+| [Excel workbook for pesticide application records](https://talk.newagtalk.com/forums/thread-view.asp?tid=1159203) (May 2024) | Took spraying back in-house; his record system *"would be more like writing notes in a diary"*. **Paper records for state/federal pesticide requirements "look like a lot of work and a lot of handwriting."** So he built his own Excel workbook (dropdowns, macros, per-acre cost calcs, batch mix tickets) and **publishes it free**. |
+| [billing out landlords and custom work, how to make it easier?](https://talk.newagtalk.com/forums/thread-view.asp?tid=342567) (KS) | *"detailed **hand written** planting records in a notebook. Drilling records in a notebook. Spraying records in several chronological application record books, and dry spreading records in a notebook. So I have the information. I also sell seed. I have very litt[le time]."* |
+| [How do you actually track field records - spreadsheet, notebook, software?](https://talk.newagtalk.com/forums/thread-view.asp?tid=1245248) (**Aug 16, 2026**) | Live thread; the recurring axis is **financial picture vs field-by-field operational records** ("what got applied, when, on which pass"). |
+| [Cattle Record Keeping Software](https://talk.newagtalk.com/forums/thread-view.asp?tid=196265) / [Cattle management spreadsheet](https://talk.newagtalk.com/forums/thread-view.asp?tid=687467) | *"something better than an **Excel spreadsheet**"*; and *"**We don't raise enough cattle to worth buying an expensive program** like Farm Works or similar"*. |
+| [Mobile/Online Cattle Records](https://talk.newagtalk.com/forums/thread-view.asp?tid=1187821) (Jan 2025) | *"I currently manage all of it **through paper**"*; wants phone access. |
+| [Free Farm Management / Traceability / FSMA software](https://talk.newagtalk.com/forums/thread-view.asp?tid=617995) (Computer Talk) | FSMA traceability demand is strong enough that vendors give software away to win it. |
+| [Logging miles for IRP/IFTA audit](https://talk.newagtalk.com/forums/thread-view.asp?tid=70476) | Mileage-by-state records for fuel-tax audits — a money-bearing compliance chore nobody enjoys. |
+
+### The four patterns that repeat across every thread
+
+1. **"Too small to buy the expensive program."** Small and commercial operators are *explicitly excluded* by
+   incumbent pricing (Farm Works, cattleMAX). That is the underserved segment, stated in their own words.
+2. **"Better than an Excel spreadsheet."** It appears in cattle, field records, grain sales and maintenance
+   threads. **Excel and paper notebooks are the incumbent**, not the software vendors.
+3. **The audit-output gap — the single most valuable finding.** Incumbents are good at *capture* and bad at
+   *output*: FieldView "has all of the data you need to be compliant" but "unless you print off every
+   application for every field you will not pass an audit." Add GAP third-party audits, FSMA traceability,
+   state/federal pesticide records, and IFTA mileage. **The unmet need is turning records that already exist
+   into audit-ready answers** — not another capture app.
+4. **Integration and adoption fail before the software does.** The farm "brain" does not exist; a custom ERP
+   attempt "failed expensively"; the maintenance tool failed on *buy-in from the person put in charge* of it.
+
+### What this changes for the offer
+
+- **Lead with audit-ready output, not capture.** "The records already exist somewhere — FieldView, Excel,
+  notebooks, QuickBooks. I make them answer the auditor's, the regulator's, the lender's or the landlord's
+  question, on your own network." The "audit binder" scenario in [[concepts/services-page-copy]] is not one of
+  six in this market; **it is the headline.**
+- **Price for the operator who is "too small for Farm Works."** This is the fixed-fee, two-week model's natural
+  home; it is also a segment the incumbents actively decline to serve.
+- **Never propose replacing the stack.** They have Granular + Fieldnet + QuickBooks + spreadsheets and one of
+  them is still angry about a failed ERP migration.
+- **Add two scenarios the research surfaced:** *spray/pesticide application records* (legally required,
+  minimal-typing capture + audit-ready reports) and *custom-work / landlord billing* (notebooks → invoices and
+  share reports).
+- **Offline and phone are requirements, not features.** "There isn't always a signal where farmers are."
+
 ## Open questions
 
-- [ ] Does AgTalk's Computer Talk board already discuss document/records software? *(Firecrawl failed on the
-      site; needs the browser tool or a direct fetch to mine it.)*
+- [ ] Does AgTalk's Computer Talk board already discuss document/records software? *(Answered: yes — see §5;
+      the board is mineable via `web_extract` on thread URLs plus the GET-able search endpoint.)*
 - [ ] Is there an Alabama-specific farmer Facebook group or co-op group that would be more representative?
 - [ ] Which NGFA/AFIA event is drivable, and does it accept non-member attendees?
