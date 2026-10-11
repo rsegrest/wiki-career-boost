@@ -257,3 +257,35 @@
   Reframes this vault portfolio/freelance work as the instrument for goal 3a (location-independent income):
   contract income needs no employer permission, so it is the version of work-from-anywhere that does not
   depend on the ~50%-remote day job or the unresolved NASA/ITAR foreign-work-location question.
+
+## [2026-10-11] create | concepts/rcca-app-venture.md — the RCCA app assessed as a venture
+
+- **New page** `concepts/rcca-app-venture.md`: a **Teledyne Brown** friend's **Root Cause Corrective
+  Action** tool, already prototyped by Rick — assessed as a money-making asset rather than only a
+  build. Companion to Path C and to the personal vault's near-term income plan.
+- **Methodology is public, not proprietary** — DO IT² is published (Duke Okes, *Root Cause Analysis*,
+  ASQ Quality Press 2009, Appendix B guide + worksheet) and Curtiss-Wright publishes an RCCA supplier
+  guideline with the same spine. **No licence needed, but also no moat in the method** — the moat has
+  to be the guided cause-tree reasoning UX the prototype already implements.
+- **⚠️ Gating legal question:** the v0.3 requirements *document* was written by the friend inside an
+  employer context → **written ownership/permission answer required before any commercial use**.
+- **Compliance gate checked 2026-10-11:** **CMMC Phase 2 suspended 13 July 2026** (DoW CIO, 60-day
+  review of structure/cost/assessment model; the C3PAO L2 and DIBCAC L3 assessments had been due to
+  take effect **10 Nov 2026**) — while **Level 1/2 self-assessments and the whole of DFARS
+  252.204-7012 / NIST SP 800-171 Rev 2 / SPRS still stand**. The binding requirement for a hosted app
+  is **DFARS 7012 (D): an external cloud service provider needs FedRAMP-Moderate-equivalent security**
+  → the cheap viable posture is a **no-CUI deployment**, which keeps FedRAMP off the critical path.
+  The spec's own **CMP-006** already refuses to claim CUI hosting just because STIG-style config is
+  supported; hold that line.
+- **Monetization ranked by time-to-first-dollar:** paid pilot at the friend's org ($10–25K) →
+  productized RCCA engagement ($15–50K) → workshop/training ($2–8K) → SaaS at ~$199/mo/site
+  (12–24 months; **do not start before a pilot pays**).
+- **Prototype verified on disk:** 279-row converted baseline (270 reqs: Must 212/Should 57/Could 1),
+  62 source files ~9,500 lines, **114 tests, 0 type errors, 21 defects / 0 open**, running under
+  systemd user units on port 4180 + cloudflared tunnel. Not in version control.
+- **Open questions recorded:** document ownership; whether the friend's employer would actually *buy*
+  it; whether the friend can be publicly named; the no-CUI assumption itself (does a quality org want
+  nonconformance reports attached to technical drawings?); and how far the prototype is from a v1 a
+  stranger could buy.
+- Cross-linked: personal vault `concepts/near-term-income-plan`, Path C comparison, and the
+  $120–175/hr band from `queries/react-ai-job-market-salary-2026`.

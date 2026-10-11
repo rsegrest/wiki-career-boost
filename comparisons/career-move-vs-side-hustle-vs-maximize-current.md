@@ -359,4 +359,6 @@ This strategy preserves optionality at every branch. You never foreclose a path 
 - [[amentum]] — Contract structure, growth ceiling, 401k details
 - [[portfolio-project-ideas]] — Portfolio building strategy
 - [[essca-ii-rfp-analysis]] — RFP rate benchmarks, contract structure, salary positioning
+- [[concepts/rcca-app-venture]] — the RCCA app as a **Path C asset** (vs. selling hours): public methodology, compliance posture, monetization ranked by time-to-first-dollar
+- [[../../wiki-personal/concepts/near-term-income-plan]] — the personal-vault money math this path feeds: gaps, hours/week, the ESSCA II raise window
 - User direct input | 2026-06-22
