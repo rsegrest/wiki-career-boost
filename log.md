@@ -613,3 +613,27 @@ AgTech** (`stokesagtech.com`, available) for differentiation, plain product name
 Register") where the farmer's trust decision actually happens, and the grandfather line in the About/footer.
 Alternative if the surname feels too close: **J.D. Stokes Ag** (`jdstokesag.com`, available). Recorded in
 `concepts/demand-test-playbook.md` §8 with the registry detail, flagged as research rather than legal advice.
+
+## [2026-10-11] naming | John Deere checked — one assumption was wrong in Rick's favour
+
+Rick worried that "John D. Stokes" / "J.D. Stokes" would attract John Deere's lawyers, and had already decided
+to avoid their green/yellow. Checked the registry instead of guessing:
+
+- **The "JD" registration (Reg. 1,062,200, filed 1975, typeset word mark, Deere & Company) is DEAD — expired
+  5 Jan 2008.** Deere filed a **new "JD" application on 31 Aug 2026** (pending; goods/services unverified
+  behind a paywall at the aggregator that surfaced it). So they are actively claiming the initials again, but
+  no live registration is known to cover software.
+- **What they enforce is the green-and-yellow trade dress:** a 2017 Kentucky decision held FIMCO's green and
+  yellow on **sprayers and wheeled ag equipment** infringed and diluted Deere's marks, with the colours found
+  "famous" since the late 1960s.
+- **Reading the marks as wholes:** "J.D. Stokes" and "John Deere" share only a common given-name initial; the
+  dominant element is the surname Stokes. Different dominant element, different goods — confusion unlikely,
+  and a dilution claim over a records app named for a grandfather is a stretch. Worst realistic case is a
+  letter.
+
+Recorded in `concepts/demand-test-playbook.md` §8 with three cheap rules (never render it as "JD"; **no
+green-and-yellow signature — which touches our own palette: brand green #3f6f2a + mustard #c1912a sits close
+to Deere's dress, so make wheat/brick/sky the identity if a Stokes name is used**; avoid Deere product names
+like Operations Center/GreenStar for modules). Recommendation given the three accumulated collisions: brand =
+**Stokes AgTech**, story = "Named for John D. Stokes, who farmed", products = Spray Register etc. — the
+personal name as story, not logo.

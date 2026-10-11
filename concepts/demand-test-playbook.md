@@ -274,3 +274,59 @@ reading plainly underneath — **"Stokes Ag — Spray Register"**. Own `stokesag
   exact-match module domains can simply redirect to it.
 - On the app side that means a small **module registry** (route -> app) rather than a rewrite, which is the
   right time to add it: when the second module arrives, not before.
+
+### The John Deere question (2026-10-11)
+
+Rick's hesitation about "John D. Stokes" / "J.D. Stokes": fear of John Deere's legal team. Two precision
+points and one finding that cuts his way.
+
+**Terminology matters here:** this is **trademark**, not copyright. Trademark asks whether two marks, taken
+*as wholes*, are likely to be confused for the same source of goods — not whether one copied the other.
+
+**What Deere actually owns (checked 2026-10-11):**
+- **"JD" — Reg. 1,062,200**, owned by Deere & Company, a typeset word mark filed 7 Jan 1975, registered 1977,
+  **status: DEAD / expired as of 5 Jan 2008.** That registration has lapsed.
+- **A new "JD" application was filed by Deere on 31 Aug 2026** — pending, and the aggregator that surfaced it
+  gates the goods/services behind a subscription, so the classes are **unverified**. The takeaway is that they
+  are actively filing for the initials again, not that a live registration covers software.
+
+**What Deere actually litigates:** the **green-and-yellow trade dress.** In 2017 a Kentucky federal court
+held that FIMCO's use of green and yellow on **sprayers and wheeled agricultural equipment** infringed and
+diluted Deere's marks, finding the colour combination "famous" since the late 1960s. Note the adjacency: the
+loser made **sprayers**.
+
+**Reading it as a mark:** "J.D. Stokes" and "JOHN DEERE / DEERE / JD" share only a common given-name initial,
+which is not itself protectable; the dominant, distinctive element of Rick's name is the surname **Stokes**,
+which has no relation to Deere. Different dominant element plus different goods (records software, not
+equipment) makes confusion unlikely, and a *dilution* claim over a records app named for someone's
+grandfather is a stretch. Deere's enforcement energy goes at equipment makers, counterfeit parts, and use of
+the deer logo or the green-yellow dress — not at a one-person software product. Realistic worst case is a
+letter, not a lawsuit.
+
+**But three cheap rules if he uses the name:**
+
+1. **Never render it as "JD."** Always spelled out — "J.D. Stokes" — and no block-letter monogram. The
+   initials alone are the element Deere claims.
+2. **No green-and-yellow signature.** This one touches *our own palette*: brand green `#3f6f2a` paired with
+   mustard `#c1912a` sits in the neighbourhood of Deere green/yellow. Recommendation if a Stokes/J.D. name is
+   used: make **wheat + brick + sky** the identity, keep green for rules and text, and drop mustard from the
+   masthead. (For software the trade-dress risk is much lower than it was for a sprayer manufacturer — but the
+   fix costs nothing.)
+3. **Avoid Deere product names for modules** — not "Operations Center", "GreenStar", "AutoTrac", "StarFire".
+
+**The structure this now points to.** Three separate collisions have accumulated around the surname — Stokes
+Seeds holds a live Class-31 STOKES mark in the same industry as the buyers; "Stokes Agricultural Services Ltd"
+takes that company name; Deere claims the JD initials and polices green-and-yellow. So:
+
+| Layer | Name |
+|---|---|
+| **Brand / wordmark** | **Stokes AgTech** — distinctive composite, no initials, no colour claim |
+| **Story (About + footer)** | *"Named for John D. Stokes, who farmed."* |
+| **Products** | Spray Register · Maintenance Records · Herd Records · Mileage Log |
+
+Using the personal name as a **story** rather than a **logo** preserves the family meaning, drops both risks
+to near zero, and requires no colour gymnastics. If he wants it more visible, "the J.D. Stokes line of record
+books" works as a product-family label — spelled out, no monogram.
+
+*(A clearance search for "J.D. Stokes" as an existing business returned nothing, but the search backend was
+flaky on that call — treat it as inconclusive, not clear.)*
