@@ -708,3 +708,25 @@ blocks and invoice footers, and descriptor-beneath-the-name ("Ag Tech · Agricul
 **size-degradation strip** stating the rule: drop the descriptor before it becomes unreadable (full lockup
 ≥48px → tightened 24-48px → name only 16-24px → mark alone as the favicon/app icon). Recorded on
 `concepts/john-d-stokes-brand.md`; committed and pushed.
+
+## [2026-10-11] brand | Palette locked from the brand sheet; blueberry retired to the writing
+
+Rick's decisions: keep **one green and one tan**, **drop blueberry**, the **reversed logo on navy** is his
+preferred treatment, and the wordmark is closest to **Bookmania**.
+
+Sampled the sheet for real values and locked the palette: denim blue `#0a2136` (crest field) with `#1c4a70`
+for links, cream `#f9f7f0` on navy, warm cream `#f6f1e6` paper, peanut tan `#988c72` for rules and ornament
+only, cane green `#405830` as the single green, watermelon `#b84040` for attention, hay gold `#e4b472` for the
+crest trim and the tally row. **All ten body-text pairs clear 4.5:1** (lowest 4.85) — peanut tan failed as a
+text colour at 2.95 and is therefore restricted to surfaces and rules. Applied to the app and re-verified
+rendering and behaviour.
+
+**Blueberry is retired from the palette with a note**: he grew blueberries in the garden for the family and it
+is a significant memory — which is why it belongs in the writing (the memoir chapter about summers at
+Granddaddy's farm) rather than in a swatch.
+
+**Type:** Bookmania needs a web licence (Mark Simonson Studio self-hosted, or Adobe Fonts with a CC plan). Rick
+suggested **Rye** (free, wood-type western) — a strong match for the crest, but one weight with no italic, so a
+second face is still needed for descriptors and tables. **Vollkorn** (free) is the closest match to Bookmania at
+82% and does everything. Recommended split: **Rye for the wordmark, Vollkorn or Source Serif for the rest.**
+Four candidates are rendered head-to-head in the lockup at both masthead and small size on the design page.

@@ -104,3 +104,52 @@ A generated raster mark goes mushy when scaled. So: generate candidates with an 
 first** (if it does not read there it does not work), then **redraw the winner as a hand-coded inline SVG** —
 crisp at every size, locked to the palette, with a one-colour version for print, a stamp or a fax header, plus
 a favicon. That is a small job and it is the difference between a logo and a picture of one.
+
+---
+
+## Locked palette (2026-10-11) — from the brand sheet
+
+The identity sheet Rick commissioned (ChatGPT, filed in the project at `brand/`) is now the source of record.
+Its swatches are labelled by name and *meaning*, not by hex, so these values were **sampled from the artwork**:
+
+| Role | Colour | Value | Where it came from / how it is used |
+|---|---|---|---|
+| **Anchor** | Denim Blue | **`#0a2136`** | The crest field — deepest navy on the sheet. Masthead band, headings. |
+| └ secondary | Denim Blue (light) | `#1c4a70` | Links, hover, the lighter navy of the wordmark (`#132c3a` sampled from the lettering) |
+| **Ground** | Cream | **`#f9f7f0`** | Text on navy (15.3:1), panels |
+| └ paper | Warm cream | `#f6f1e6` | The page itself |
+| **Ground / ornament** | Peanut Tan | **`#988c72`** | Rules, borders, ornament — never body text (2.95:1, so it fails for text and is used only as surface and rule) |
+| **The single green** | Cane Green | **`#405830`** | The one green of the set: "complete" state, the wordmark's *AgTech*, rule accents (7.0:1 as text) |
+| **Attention** | Watermelon Red | **`#b84040`** | Cells needing attention, the inspector's flags, errors (4.85:1) |
+| **Trim / tally** | Hay Gold | **`#e4b472`** | The crest's trim and stitch (8.6:1 on navy), and the ledger's totals row as a tint `#faf0dd` |
+
+**Every body-text pair clears 4.5:1** — lowest is watermelon at 4.85, then greens at 7.0, links at 8.9, body
+text at 13.9, cream on navy at 15.3.
+
+**Blueberry is retired from the palette.** Rick's own note: his grandfather grew blueberries in the garden for
+the family, and it is a significant memory — which is precisely why it belongs in the *writing* rather than in
+a swatch. The recollection already lives in the memoir chapter about summers at Granddaddy's farm outside
+Andalusia; a colour chip in a style guide is a poor place to keep it. *(If a fifth accent is ever needed, it
+can come back as a small non-brand tint — but not now, and not as brand.)*
+
+**The reversed logo on navy is the primary treatment** (Rick's preference), and the app's masthead already is a
+deep-navy band, so the crest slots straight in with no redesign. The positive version on cream remains for
+print, where a wall of navy would be expensive ink.
+
+## Wordmark type
+
+The sheet's wordmark is closest to **Bookmania** (Mark Simonson Studio) — a commercial family with 20 styles,
+available as a self-hosted **web licence** from the studio or through **Adobe Fonts**, which includes it with a
+Creative Cloud plan. For a product that has not earned a dollar yet, the free routes are:
+
+| Font | Licence | Note |
+|---|---|---|
+| **Rye** | Free (OFL, Google Fonts) | Rick's suggestion. Wood-type western — spurs and slab serifs, the barn-sign/feed-store flavour the crest already speaks. Best marriage with the crest; **one weight, no italic**, and decorative rather than quiet at small sizes. |
+| **Vollkorn** | Free (OFL, Google Fonts) | The closest free match to Bookmania (**82%** per font-alternatives), and it does everything: wordmark, descriptor, tagline, table headings, real italics. |
+| **Bitter** | Free (already in the app) | Clean slab serif, least characterful, and what the current lockups and tables were built around. |
+
+**Recommended split:** **Rye for the wordmark, Vollkorn (or Source Serif) for everything else** — character where
+it is wanted, quietness where legibility matters. If Bookmania is licensed later, Vollkorn is a straight swap
+and almost nothing else changes. All four candidates are rendered head-to-head in the lockup at masthead size
+*and* at the small size on the design page (`/static/design/logo-options.html`), because a display face has to
+survive the small lockup, not just the big one.
