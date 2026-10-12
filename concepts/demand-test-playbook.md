@@ -371,3 +371,31 @@ Also keep avoiding equipment imagery and Deere product names for modules.
 
 **Rename cost when he says go:** the brand string appears in four places — the project directory, the page
 `<title>`, the masthead, and the FastAPI title — so it is a five-minute change plus a commit and a redeploy.
+
+### The Stokes farm palette (settled 2026-10-11)
+
+The visual identity comes from Rick's grandfather's farm outside Andalusia, Alabama — his overalls and the
+crops he remembers from those summers. It is the rare palette that is both personally true and legally
+convenient: **denim blue as the anchor is nowhere near Deere's green-and-yellow trade dress.**
+
+| Role | Colour | Hex | Why |
+|---|---|---|---|
+| **Anchor** | Denim blue (overalls) | `#2f4a6b`, light `#3f6489` | Masthead band with a fine cotton-twill weave, the primary button, the ledger header row, all headings. "He usually wore overalls." |
+| **Ground** | Boiled-peanut tan | `#ece0c8`, panels `#fbf6ea` | The paper. Warm, printed, not white-office. |
+| **Attention** | Watermelon red | `#b8393d`, tint `#f8e5e4` | **Semantic only** — cells needing attention, the inspector's flags, errors |
+| **Tally** | Sugarcane yellow | `#d3b055`, tint `#faf2da` | The ledger's totals row — the one "gold" moment on the page |
+| **Complete** | Butterbean green | `#557033`, tint `#eef3e2` | **Semantic only** — the "complete" figure, the middle plan tier |
+
+**Role discipline is the rule:** red and green mean something and are never decoration. That also prevents
+green and yellow from ever pairing as a *signature* — the specific combination Deere litigated in 2017.
+
+**Contrast verified in code, not by eye — all body-text pairs ≥4.5:1.** Two failed the first pass and were
+darkened automatically: muted label text `#857c66` → `#6f6655` (3.84 → 5.25) and green text `#6b8b47` →
+`#557033` (3.43 → 4.95). Body text on paper 11.0:1, ecru on denim 8.05:1, melon on its tint 4.69:1.
+
+**Brand applied** as **John D. Stokes — Agricultural Records**, module **Spray Register**, with the story
+line in the footer: *"Named for John D. Stokes, who farmed."*
+
+**Deferred on purpose:** the project directory, the git repo and the systemd unit still carry the old
+`sprayproof` slug. Renaming those touches the service unit path, the GitHub remote and the clone on the other
+machine — a separate, announced step rather than a surprise.

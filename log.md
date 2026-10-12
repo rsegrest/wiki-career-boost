@@ -658,3 +658,22 @@ that JD is a Deere branding element. Confirmed the availability and ran the clea
 Structure recorded in `concepts/demand-test-playbook.md` §8: brand **John D. Stokes** with an "Agricultural
 Records" descriptor, umbrella domain **johndstokes.com** with modules at paths, plain product names (Spray
 Register first), the grandfather line as the story, and the rename cost noted as four strings / five minutes.
+
+## [2026-10-11] design | Brand and palette: John D. Stokes — Agricultural Records
+
+Applied the brand and the new visual identity. **Brand:** *John D. Stokes — Agricultural Records*, module
+*Spray Register* (page title, masthead, FastAPI title, plus the footer line "Named for John D. Stokes, who
+farmed"). **Palette, drawn from his grandfather's farm outside Andalusia**: denim blue `#2f4a6b` as the
+anchor (overalls — with a cotton-twill weave texture), boiled-peanut tan `#ece0c8` as the paper, watermelon
+red `#b8393d` for attention, sugarcane yellow `#d3b055` for the tally, butterbean green `#557033` for complete.
+Red and green are **semantic only**, never decoration — which also guarantees green and yellow never pair as
+a *signature*, the combination Deere successfully litigated in 2017.
+
+**Contrast checked in code:** two pairs failed the first pass and were darkened automatically — muted labels
+3.84→5.25, green text 3.43→4.95. Every body-text pair is now ≥4.5:1 (body on paper 11.0, ecru on denim 8.05).
+
+Functionality re-verified on the served page after a service restart: 6 applications, 4 complete, 2 needing
+attention, 151 acres, watermelon-flagged cells, cane totals row, export locked on Free and unlocked on the
+$79 tier. Committed and pushed. **Directory, repo and systemd unit keep the old `sprayproof` slug
+deliberately** — that rename touches the unit path, the remote and the other machine's clone, so it waits for
+an explicit go.
