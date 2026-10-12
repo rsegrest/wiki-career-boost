@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-10-04 | Total pages: 18
+> Last updated: 2026-10-12 | Catalogued pages: 28 (6 entities + 13 concepts + 4 kanban + 1 comparison + 4 queries)
 
 ## Entities
 
@@ -30,6 +30,7 @@
 - [[concepts/demand-test-playbook]] — **Test demand before building**: splash page + interactive demo, what to measure (behaviour beats emails), the module ranking, and why spray records are the place to start
 - [[concepts/john-d-stokes-brand]] — **The brand**: John D. Stokes — Agricultural Records. Name and story, the Stokes farm palette with each colour's meaning, type, five logo marks rendered at real sizes, and the no-text-in-generated-marks rule
 - [[concepts/services-page-copy]] — **The sales asset**: publication-ready copy for a business page on ricksegrest.com that shows applications and outcomes for non-technical buyers (six scenarios, pricing, safety answers, build notes)
+- [[concepts/open-source-business-model]] — **Open the code, sell the service**: AGPL-3.0 + a CLA for the app, Apache-2.0 for the record format, fiscal-host donations instead of a nonprofit, the verified 501(c)(3) costs, and why the licence decision is safe to defer
 
 ## Kanban Boards
 

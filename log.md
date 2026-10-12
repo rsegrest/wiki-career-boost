@@ -854,3 +854,28 @@ build-variants.py so every variant carries it.
 was actually single-quoted — the stylesheet gained a rule nothing used and the build still reported success. The
 tell was counting the emitted elements (0, expected 2). Assert anchors before replacing, and check the artefact
 contains what you meant to add. Committed and pushed.
+
+## [2026-10-12] business | Open-source business model decision page
+
+Rick asked how to start an impact-driven software company that sustains itself, proposing open code with paid
+implementation and hosting, and worrying that donations would force a nonprofit. Wrote
+`concepts/open-source-business-model.md`: **open source and tax status are independent decisions** (almost every
+OSS business is a for-profit; Mozilla is the heavy exception), and **donations do not require a nonprofit**
+either - a for-profit takes them as taxable income, and a fiscal host provides deductible rails without an
+entity.
+
+Recorded the verified figures: Form 1023-EZ is $275, the full Form 1023 is $600, first-year government fees total
+$283-500 or $608-825, and the genuine ongoing burden is multi-state charitable solicitation registration. The
+decisive point is not the fees but that a nonprofit has no owners - no equity, no sale, no investment - so it is
+ruled out with its reason, alongside the Mozilla-style foundation path. Recommendation: for-profit + a Delaware
+PBC clause, AGPL-3.0 with a CLA for the app, Apache-2.0 for the record format, and the closest precedent is
+farmOS/Farmier - the same plan, already running in agriculture, started by farmOS's own creator.
+
+Licence choice left **deferred at Rick's own request** ("sounds good, but I don't know enough to commit") and
+recorded as safe to defer while he is the sole copyright holder; the deadline is the first public push or the
+first outside contribution. The one irreversible mistake named explicitly: contributions without a CLA.
+
+**Recount found pre-existing drift.** The index header claimed 18 pages; the actual catalogued count is 28
+(6 entities + 13 concepts + 4 kanban + 1 comparison + 4 queries). Also unregistered and left alone pending a
+decision: `concepts/agent-memory-browser-spec.md`, `concepts/agent-cron-monitor-spec.md` and
+`entities/rick-segrest-resume-v2026.md` exist but appear in no index section.

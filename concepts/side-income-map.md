@@ -1,10 +1,10 @@
 ---
 title: Side-Income Map — every thread, where it lives, and what is next
 created: 2026-10-11
-updated: 2026-10-11
+updated: 2026-10-12
 type: concept
 tags: [income, side-hustle, freelance, venture, map, index]
-sources: [concepts/freelance-portfolio-strategy.md, concepts/freelance-outreach-targets.md, concepts/services-page-copy.md, concepts/rcca-app-venture.md, ../../wiki-personal/concepts/near-term-income-plan.md]
+sources: [concepts/freelance-portfolio-strategy.md, concepts/freelance-outreach-targets.md, concepts/services-page-copy.md, concepts/rcca-app-venture.md, concepts/open-source-business-model.md, ../../wiki-personal/concepts/near-term-income-plan.md]
 confidence: high
 ---
 
@@ -35,6 +35,7 @@ every thread below is judged on **time to first dollar**.
 | 9 | **Referral partners** — accountants, bankers, MSPs | 1-6 months | [[concepts/freelance-outreach-targets]] (Tier 1) | One coffee with an accountant |
 | 11 | **Product track** — demand-tested records modules (spray → compliance view first) | tested in weeks; revenue only if it converts | [[concepts/demand-test-playbook]], [[concepts/ag-market-intelligence]] | **MVP built locally 2026-10-11** (`~/code/2026/sprayproof`, 14 tests, paywall verified) — next: name, domain, deploy, then collect records instead of emails |
 | 10 | **The house sale** — clears the debt stack | one event, at any split | [[../../wiki-personal/concepts/parents-house-sale]] | Separate track: it is the debt plan, not the income plan |
+| 12 | **Licence & entity structure** — gates any public code release | not a revenue line; a gate | [[concepts/open-source-business-model]] | Decide the licence and put a CLA in place before the first public push |
 
 ## Ruled out, with the reasons (so they do not come back)
 
@@ -46,6 +47,7 @@ every thread below is judged on **time to first dollar**.
 | **AI work for government or defence networks** | IA review, no external model calls, no data egress - the slowest possible first dollar |
 | **Bidding on freelance marketplaces** | Medians run ~$27-30/hr, a quarter of the target rate. Platforms are discovery, not the rate |
 | **Toptal** | One failed screen, no retry |
+| **Forming a 501(c)(3), or a foundation-owned subsidiary** | The $283-825 first-year fees are trivial; the real cost is forfeiting ownership permanently, plus 990s, state charitable registrations and a board. Not required in order to accept donations - see [[concepts/open-source-business-model]] |
 
 ## The rule that keeps this honest
 
