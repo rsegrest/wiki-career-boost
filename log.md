@@ -765,3 +765,17 @@ intrinsic width/height.
 
 The masthead now shows Rick's actual lockup with a visually-hidden h1 for search and screen readers, printing
 swaps to the light version, and the crest remains available alone for app icons. Committed and pushed.
+
+## [2026-10-11] brand | Type decision settled: outline wordmark, Vollkorn for supporting text
+
+Rick confirmed the wordmark came from no specific font (Bookmania and Rye were merely similar), which removes
+the licence question entirely: a logo shipped as outlines needs no font licence and can't be re-rendered
+wrongly. The outlines in `logotype.svg` are the definitive mark.
+
+Supporting type decided: **Vollkorn** for display/headings/figures, **Source Serif 4** for body, and **Rye
+dropped** — it only ever existed to imitate the wordmark, and would now clash. Bookmania stays optional and only
+if the wordmark is ever needed as live text.
+
+A screenshot review of the app caught two genuine defects: the drop cap's float box was only one line tall (the
+second line ran to the margin) — fixed at 52.7px against a 27px line so it spans two lines; and the masthead was
+too tall — lockup 330→252px with reduced band padding. Committed and pushed.

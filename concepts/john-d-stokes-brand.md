@@ -221,3 +221,35 @@ logo: a variant is a stylesheet edit, not a shape edit.
 **In the app:** the masthead now shows the real lockup — crest, wordmark, *AgTech*, gold rules and the tagline,
 all from the artwork — with a visually-hidden `<h1>` carrying the words for search engines and screen readers,
 and the print stylesheet swapping to the light lockup. The crest alone stays available for app icons.
+
+---
+
+## Type: the wordmark is outlines, so the font question changes (2026-10-11)
+
+Rick confirmed the wordmark was **not generated from a specific font** — Bookmania and Rye were *similar*, not
+sources. That settles the licensing question in the best possible way: **a logo shipped as outlines needs no
+font licence at all**, and it can never be re-rendered wrongly by a system that lacks the face. The outlines in
+`logotype.svg` are the definitive wordmark.
+
+What the font question actually reduces to is the **supporting type** — the text set *around* the mark, which
+still needs a face for headings, descriptors, tables, email signatures and invoice footers. Decision:
+
+- **Vollkorn** (free, Google Fonts) — supporting display face: headings, buttons, table figures, descriptors. It
+  is the closest free relative of the bookish, high-contrast, swashy lettering in the mark, so the page and the
+  logo read as one family without a licence.
+- **Source Serif 4** (free) — body text.
+- **Rye is dropped.** It was only ever a candidate for *imitating* the wordmark; with the wordmark fixed as
+  outlines, Rye has no job, and as a western wood-type it would clash rather than harmonise.
+- **Bookmania remains optional**, and only if Rick ever wants the exact wordmark as *live text* (a typed
+  signature, a one-colour fax, editable collateral). Until then, outlines cost nothing.
+
+**Design review of the app after the change** (screenshot read against the brief) caught two real defects:
+
+1. **The drop cap was broken** — the initial letter was enlarged but its float box was only one line tall, so the
+   second line still started at the left margin. Fixed with an em-based size and a float box measured to span
+   two body lines (52.7 px glyph against a 27 px line).
+2. **The masthead was too tall.** The lockup is now 252 px (was 330) with the band's padding reduced, bringing
+   the content up ~60 px.
+
+Also tightened the space under the section rules. Verified: the lockup loads, Vollkorn is live on headings and
+buttons while body text stays Source Serif, and the app still returns 6 applications / 2 flagged.
