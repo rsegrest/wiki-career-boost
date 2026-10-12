@@ -695,3 +695,16 @@ B carries farm plus data, C is unbeatable at 16px and prints like a stamp. All v
 home. Created `concepts/john-d-stokes-brand.md` as the single source of truth for the brand, registered in the
 index. Production path recorded: pick the winner at 16px, then redraw it as a hand-coded SVG with a one-colour
 and favicon version.
+
+## [2026-10-11] design | The descriptor: how the logo says "Ag Tech"
+
+Rick clarified the requirement — seeing the logo should show what the company is ("Ag Tech"), while the mark
+stays non-tech-themed. Right requirement, and it belongs in the **lockup**: the category goes in *type* beside
+the mark, never baked into generated artwork (image models mangle letterforms).
+
+Drew four lockup variants on the design page (`/static/design/logo-options.html`) — horizontal for the
+masthead, stacked for a stamp or sign, a company-style one-liner ("John D. Stokes Ag Tech") for signature
+blocks and invoice footers, and descriptor-beneath-the-name ("Ag Tech · Agricultural Records") — plus a
+**size-degradation strip** stating the rule: drop the descriptor before it becomes unreadable (full lockup
+≥48px → tightened 24-48px → name only 16-24px → mark alone as the favicon/app icon). Recorded on
+`concepts/john-d-stokes-brand.md`; committed and pushed.

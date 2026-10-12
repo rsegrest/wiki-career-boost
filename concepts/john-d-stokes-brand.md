@@ -80,6 +80,24 @@ Five marks are drawn and rendered at real sizes (96 / 48 / 24 / 16 px plus one-c
 **Recommended for the masthead: B or C.** B carries the farm and the data; C is unbeatable small and prints
 like a stamp. Both are one-colour safe.
 
+### The descriptor carries the category — in type, not in artwork
+
+Rick's requirement: seeing the logo should show what the company *is* ("Ag Tech"), while the mark itself stays
+non-tech-themed. That is a **lockup** job, not a mark job — and it is the right split. Four variants are drawn
+on the design page:
+
+1. **Horizontal** — mark · `John D. Stokes` · sugarcane hairline · `AG TECH`. For the masthead and letterhead.
+2. **Stacked** — mark above `John D. Stokes` above a sugarcane rule above `AG TECH`. For a stamp, a seal, a sign.
+3. **Company style** — one line, `John D. Stokes` with `AG TECH` as a letterspaced suffix. Reads as a firm name;
+   right for a signature block, an invoice footer, an email sign-off.
+4. **Descriptor beneath the name** — `Ag Tech · Agricultural Records`: category *and* function. Worth the width
+   on a landing page, too long for a business card.
+
+**The degradation rule, fixed:** the descriptor is **dropped before it becomes unreadable**, never squeezed
+until it is. Full lockup at 48px and up → tightened (name + small descriptor) at 24-48px → name only at
+16-24px → **mark alone** for the favicon and app icon. The design page shows all four steps side by side so the
+hand-off is unambiguous.
+
 ## Production path
 
 A generated raster mark goes mushy when scaled. So: generate candidates with an image model, pick at **16px
