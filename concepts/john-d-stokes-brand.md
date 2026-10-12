@@ -321,3 +321,42 @@ leave every other colour alone. An image-wide inversion is not the same operatio
 meaning in its colours — a denim pocket, a cream leaf — it destroys the meaning while still looking
 "reversed" and plausible. When the elements are already separated into files, the swap should be applied per
 element, never to the composition as a whole.
+
+---
+
+## Pocket on the left, and a solid rule around the stitching (2026-10-11)
+
+Two changes Rick asked for, and both turned on geometry worth recording.
+
+### How the solid outline is built
+
+The stitching is **not a dashed stroke** — `cls-8` is two filled paths (d = 9,551 and 2,369) made of
+individually drawn dashes, traced along the pocket's seam. Measured, the pocket's own edge (`cls-1`, the path
+enclosing the stitch contour) is **446 × 409**, and the dashes sit **~13 units inside it**. So a solid line
+around the stitching is simply the pocket's edge path, duplicated, `fill:none`, stroked in the chosen tan/gold
+(`stroke-width 3.2`) — placed last so nothing can cover it. It lands about 13 units outside the dashes, with no
+offset maths and no hand-tracing. **Stitching that is drawn as dashes can always be outlined by stroking the
+contour the dashes follow.**
+
+Two traps, both caught before shipping:
+
+1. **An outward-offset element is clipped by a tight viewBox.** The crest had been tightened to its ink bounds,
+   so the version whose line sat *outside* the edge had only 1–2 px visible at the artboard boundary. Any variant
+   that adds ink outside the existing bounds needs the viewBox padded first (now 6 units on every side).
+2. **Namespacing classes twice kills the stylesheet.** Composing the crest and the wordmark namespaces each
+   file's `cls-N` classes so their palettes cannot collide — but applied twice it produces `wd-mk-cls-1`, which
+   matches no rule, so the fills fall back to the SVG default: **the wordmark rendered black on navy**, i.e.
+   invisible. Namespace exactly once, at extraction, with the prefix chosen there. Verify by colour census
+   (cream 14,172 px + green 5,009 px, zero black), not by eye.
+
+### The horizontal lockup
+
+The pocket goes left of the logotype, and it is centred on the **name + AgTech block**, not on the whole
+wordmark: measured, the wordmark's ink splits at viewBox rows `2–208` and `215–229`, so the descriptor is its own
+small block below. Centring the pocket on everything drags it down and leaves the mark sitting low; centring it
+on the main block lets the descriptor hang beneath, which is how a horizontal lockup normally reads.
+
+Result: the masthead is now **187 px** tall instead of 266 — the horizontal lockup solved the height problem as a
+side effect. Print uses the horizontal light lockup with the outline deepened to `#9a7328` so it carries on
+cream. Files: `lockup-horizontal-{gold,tan,peanut}.svg`, `lockup-horizontal-light.svg`,
+`crest-outline-{gold,tan,peanut,light}.svg`.

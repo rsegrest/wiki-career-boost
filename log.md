@@ -811,3 +811,19 @@ contrast. The app's masthead weave is that same ground. Do not "fix" the merge.
 
 **Lesson:** a swap names its targets. Exchange those two and leave the rest alone; an image-wide inversion is a
 different operation and it destroys meaning on a mark whose colours carry it. Committed and pushed.
+
+## [2026-10-11] brand | Pocket moved left; solid rule around the stitched edge
+
+Two requests. **The solid outline:** the stitching turned out to be two *filled* paths of individually drawn
+dashes (d = 9,551 / 2,369), inset ~13 units inside the pocket's own edge (446x409) — so duplicating the edge
+path, stroking it 3.2 units wide and drawing it last puts a solid tan/gold line around the dashes with no offset
+maths. Built in three colours plus a print version deepened to #9a7328 for a cream ground.
+
+**Two traps caught:** an outward-offset line was being clipped by the tight viewBox (padded 6 units now), and
+composing the crest with the wordmark had namespaced the CSS classes *twice*, producing `wd-mk-cls-1` which
+matched no rule — the wordmark rendered **black on navy**. Fixed, and verified by colour census (cream 14,172 px
++ green 5,009 px, zero black) rather than by eye.
+
+**The horizontal lockup:** pocket left, centred on the name + AgTech block (the wordmark's ink splits at rows
+2-208 and 215-229, so the descriptor is its own block below). Masthead height dropped 266 -> 187 px as a side
+effect. Committed and pushed.
