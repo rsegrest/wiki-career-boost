@@ -730,3 +730,21 @@ suggested **Rye** (free, wood-type western) — a strong match for the crest, bu
 second face is still needed for descriptors and tables. **Vollkorn** (free) is the closest match to Bookmania at
 82% and does everything. Recommended split: **Rye for the wordmark, Vollkorn or Source Serif for the rest.**
 Four candidates are rendered head-to-head in the lockup at both masthead and small size on the design page.
+
+## [2026-10-11] brand | Logo reversed, wired into the app, and the crest set as the favicon
+
+Rick delivered the logo as **SVG** and split the composite into PSDs (logo-on-dark, palette, secondary icons)
+plus GIF previews — all filed under `brand/` (PSDs gitignored: 20 MB of binary). His SVG is the **full lockup**
+on an opaque cream panel, which is exactly why it tiled on navy; the tagline inside it is **"AGRICULTURAL
+SOFTWARE & TECHNOLOGY"** (read from the SVG's text node — a vision read of the raster guessed "Innovation" and
+was wrong, a good reminder that the file beats the picture).
+
+Built the variants: light (his original), on-navy (reversed — cream badge, navy internals), crest-only mark in
+both polarities, and a favicon tile. **Two lessons recorded in the brand README:** inverting the badge kills the
+gold stitch unless the gold deepens with it (gold on cream measured 1.78:1 → deepened to #9a7328 at 4.03:1,
+while the gold rules on navy stay bright at 7.7:1); and a navy badge on a navy panel depends entirely on its
+outline, so the cream-badge version won as the primary dark treatment.
+
+Wired into the app: reversed crest in the navy masthead above the live-type wordmark, descriptor updated to the
+brand's line, favicon serving as valid SVG, print swapping to the light crest. App re-verified: artwork loads,
+14 tests still pass, sample still returns 6 applications / 2 needing attention.

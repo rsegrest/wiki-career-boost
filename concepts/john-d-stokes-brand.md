@@ -153,3 +153,37 @@ it is wanted, quietness where legibility matters. If Bookmania is licensed later
 and almost nothing else changes. All four candidates are rendered head-to-head in the lockup at masthead size
 *and* at the small size on the design page (`/static/design/logo-options.html`), because a display face has to
 survive the small lockup, not just the big one.
+
+---
+
+## Logo files and the reversal (2026-10-11)
+
+Rick produced the logo as **SVG** and separated the composite (PSDs for the palette, the secondary icons and
+the dark-background logo, plus GIF previews) — all filed in the project under `brand/`. His SVG is not just the
+crest: it is the **full lockup** — shield, `JOHN D. STOKES`, `AgTech`, and the tagline **"AGRICULTURAL SOFTWARE
+& TECHNOLOGY"** *(verified from the SVG's own text node; a vision read of the raster said "Innovation" and was
+wrong)* — sitting on an opaque cream panel, which is why it read as a cream tile when dropped on navy.
+
+**Built four variants from his artwork:**
+
+| File | What | Use |
+|---|---|---|
+| `johndstokes_logo-light.svg` | his original — cream panel, navy ink, green *AgTech*, navy shield with cream/green/gold internals | print, letterhead, invoices |
+| `johndstokes_logo-on-navy.svg` | reversed — navy panel, cream lettering, and the shield becomes a **cream badge** with navy/green/deep-gold internals | the primary dark treatment; the masthead |
+| `mark.svg` / `mark-light.svg` | crest only, no lettering, no panel (reversed / positive) | the masthead band, app icons / print |
+| `static/favicon.svg` | navy tile + shield silhouette + stitch | the browser tab |
+
+**Two lessons worth keeping:**
+
+1. **Inverting a badge kills its gold trim unless the gold moves with it.** The first pass flipped the shield to
+   cream but left the stitch at `#e2b561` — gold on cream is **1.78:1** and effectively disappears. The fix is
+   context-aware: the crest's golds deepen to **`#9a7328`** (4.03:1 on cream), while the rules flanking *AgTech*,
+   which sit on navy, stay bright at `#e2b561` (7.7:1). Same family, two values, chosen by background.
+2. **A navy badge on a navy panel survives only on its outline** — the first alternative relied on a 1.1px cream
+   outline and would fail at small sizes, so the cream-badge version won.
+
+**Wired into the app:** the reversed crest sits in the navy masthead above the live-type wordmark, the
+descriptor now reads the brand's own line (*Agricultural Software & Technology*), a `favicon.svg` carries the
+shield and stitch at tab size — the full crest is too dense at 16px, so only the two elements that survive are
+in it — and the print stylesheet swaps to the light crest. Verified in the browser: the artwork loads, serves
+200 as valid SVG, the light variant is hidden on screen and shown in print, and the app still works.
