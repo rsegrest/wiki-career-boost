@@ -277,3 +277,47 @@ readout. Verified end-to-end by feeding a real CSV through the control (3 rows �
 **The rule:** a vision model is worth consulting for *composition and hierarchy*, where it is genuinely useful,
 and not for *measurements* — spacing, contrast ratios, line wrapping — where it will state a number-shaped
 opinion with total confidence. Measure the DOM, or don't claim it.
+
+---
+
+## CORRECTION — what "swap the background and logotype colours" actually means (2026-10-11)
+
+Rick's correction, and it was a real error on my part: **the crest is also an overalls pocket.** Its field is
+denim blue on purpose, so turning that field cream destroys the association. And the crest's **leaf is cream** —
+which my inversion turned navy, i.e. a blue leaf, which is not a colour a leaf can be.
+
+**Read the instruction literally. It names two things:**
+
+1. the **background** — the cream panel becomes navy;
+2. the **logotype** — the navy lettering becomes cream.
+
+**Nothing else.** The crest keeps every colour it has: denim pocket field, cream leaf, green and tan field rows,
+gold stitch. Flipping the crest was never asked for, and it was my mapping that did it — I inverted navy↔cream
+*across the whole composition* instead of applying the swap to the two named elements.
+
+### The reference, measured
+
+The composite Rick likes (`source-art/logo-dark-bg.gif`) was sampled on a 14×10 median-colour grid rather than
+described:
+
+| Region | Measured | Reading |
+|---|---|---|
+| Shield field | `#051b32`, `#072137`, `#051e32` | **navy denim — essentially the same value as its background** |
+| Leaf and rows | `#5c7843` → `#93a961` | a mid-to-light green, lighter than the greens in the SVG |
+| Field rows, trim | `#a97c4b`, `#c99e5b`, `#b3945b` | tan / gold |
+| Lettering | `#dbd7c7`, `#f0e7d0` | cream |
+| Background | `#082138`, `#0d263a`, `#072137` … many near-identical navies | **a woven denim texture**, not a flat fill |
+
+**The consequence is the design rule worth keeping: the pocket does not read by contrasting its field against
+the background — it cannot, they are the same navy. It reads on its stitched border, its rivets and its interior
+motifs, over a woven ground.** So do not try to "fix" that merge with a lighter pocket; the weave and the stitch
+are doing the work. The app's masthead already carries a `repeating-linear-gradient(45deg, rgba(255,255,255,.05))`
+weave, which is exactly that ground.
+
+### Lesson for any logo work from a written brief
+
+**A swap names its targets.** When an instruction says to exchange two things, exchange those two things and
+leave every other colour alone. An image-wide inversion is not the same operation, and on a mark that carries
+meaning in its colours — a denim pocket, a cream leaf — it destroys the meaning while still looking
+"reversed" and plausible. When the elements are already separated into files, the swap should be applied per
+element, never to the composition as a whole.

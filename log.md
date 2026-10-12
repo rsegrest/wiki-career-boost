@@ -794,3 +794,20 @@ through the control in the DOM (3 rows imported, 3 applications, 0 flagged).
 
 **Lesson:** vision is useful for composition and hierarchy, not for measurements. Measure the DOM or don't claim
 it. Committed and pushed.
+
+## [2026-10-11] brand | Correcting the dark lockup: only the background and the lettering swap
+
+Rick corrected a real error: **the crest is also an overalls pocket**, so turning its field cream destroys the
+association, and its **leaf is cream** — my inversion made it navy, a blue leaf, which is not a leaf colour. The
+instruction named two elements (background, logotype) and I inverted the whole composition instead.
+
+Rebuilt so the crest keeps its own palette — denim pocket, cream leaf, green/tan rows, gold stitch — and only
+the lettering reverses. Also served the file whose absence is why one comparison panel showed nothing.
+
+**Measured the liked composite** (`logo-dark-bg.gif`) on a 14x10 median-colour grid: the shield field is
+`#051b32`/`#072137` — navy, essentially the same as its background — over a woven ground of many near-identical
+navies. So the pocket reads on its stitched border, rivets and interior motifs, **not** on field-versus-background
+contrast. The app's masthead weave is that same ground. Do not "fix" the merge.
+
+**Lesson:** a swap names its targets. Exchange those two and leave the rest alone; an image-wide inversion is a
+different operation and it destroys meaning on a mark whose colours carry it. Committed and pushed.
