@@ -1,7 +1,7 @@
 ---
 title: RCCA App — Venture Assessment (Teledyne Brown friend's idea)
 created: 2026-10-11
-updated: 2026-10-11
+updated: 2026-10-12
 type: concept
 tags: [venture, app, defense, quality, rcca, income, side-hustle, product, partnership]
 sources: [local prototype ~/code/rcca, user direct input 2026-10-11 (partnership + on-spec), DoW CIO 2026-07-13, DFARS 252.204-7012, ASQ / Duke Okes 2009, Curtiss-Wright supplier guideline]
@@ -111,6 +111,24 @@ resolved together, deliberately, rather than one surprising the other. Selling t
 while employed by them is a conflict-of-interest question **for the friend**, and it is his to clear
 (disclosure, a side-letter, or simply not selling to TBE at all and going to small AS9100 suppliers
 instead — which is the larger market anyway).
+
+### Distribution: closed source, and that is a deliberate contrast (2026-10-12)
+
+Rick's call, recorded so a later session does not re-propose it: **RCCA is not an open-source project and will
+not be given away.** It is a different venture with a different buyer from the agricultural track — and the
+buyer is the reason. Defence and aerospace suppliers are the *worst* possible audience for a copyleft licence:
+what they procure is a **closed, contractually accountable product** with a vendor behind it, licence terms
+their own flow-downs accept, and an SBOM their software-assurance review can pass. AGPL is banned outright at
+many large companies (Google's policy is explicit and long-standing), so publishing under it would forfeit the
+only sale this product has.
+
+**The ownership gate therefore changes shape rather than disappearing.** With no repository going public, the
+split with his partner — and the friend's employment position — must be settled in writing **before the code
+is shared with anyone outside the two of them**: an investor, a pilot customer, a subcontractor, an employee.
+The employer question still comes first, because it is the one that can void the whole thing.
+
+Contrast with the ag product, where opening the code buys distribution and trust:
+[[concepts/open-source-business-model]].
 
 ---
 

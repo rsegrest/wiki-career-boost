@@ -879,3 +879,21 @@ first outside contribution. The one irreversible mistake named explicitly: contr
 (6 entities + 13 concepts + 4 kanban + 1 comparison + 4 queries). Also unregistered and left alone pending a
 decision: `concepts/agent-memory-browser-spec.md`, `concepts/agent-cron-monitor-spec.md` and
 `entities/rick-segrest-resume-v2026.md` exist but appear in no index section.
+
+## [2026-10-12] business | Correction: RCCA stays closed source
+
+Rick corrected a premise the open-source page had rested on: **RCCA is a different venture aimed at the defence
+industry, and he sees no reason to open-source it or give it away.** The derived claim died with it. The page is
+now scoped to the agricultural track alone, its gate is rewritten, and the row is added to its ruled-out table
+with the reason: defence and aerospace suppliers buy a closed, contractually accountable product, AGPL is
+banned outright at many large companies, and copyleft would forfeit the only sale this product has.
+
+Recorded on the venture's own page (`concepts/rcca-app-venture.md`, new "Distribution: closed source" section
+under §3) where the detail lives. The important part: **the ownership gate changes shape rather than
+disappearing.** With no repository going public, the split with his partner and the friend's employment
+position must still be settled in writing before the code is shown to anyone outside the two of them - an
+investor, a pilot customer, a subcontractor, an employee - and the employer question still comes first because
+it can void the whole thing.
+
+The two tracks now hold deliberately opposite licence postures, which is coherent: for the ag product openness
+buys distribution and trust, for RCCA it would forfeit the customer.

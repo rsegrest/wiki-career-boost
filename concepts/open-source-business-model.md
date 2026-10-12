@@ -14,6 +14,9 @@ confidence: medium
 > sustains the work — given that AI has collapsed the cost of recreating software, and that the obvious shape
 > (open the code, sell implementation and hosting, accept donations) might force him into a nonprofit. It does
 > not. This page records the reasoning, the verified costs, and the options deliberately ruled out.
+>
+> **Scope:** the **agricultural product track only**. RCCA is a separate venture with a different
+> buyer and a deliberate **closed-source** posture — see [[concepts/rcca-app-venture]].
 
 ## The decision, as it stands on 2026-10-12
 
@@ -139,17 +142,20 @@ for-profit can receive grants from many funders, though some restrict them to no
 | Permissive licence (MIT/Apache) for the application | Gives away the only thing that keeps a hosted competitor honest; fine for the *format*, wrong for the app |
 | Donations as the primary income | Does not clear the household gap, does not scale with hours worked, and makes the mission hostage to donor mood |
 | Self-hosting customers as a threat | They were never buyers. They are the reason the "no lock-in" promise is credible |
+| **Open-sourcing RCCA as well** | A different venture with a different buyer. Defence and aerospace suppliers buy a closed, accountable product, and copyleft terms would forfeit that sale. Ruled out by Rick 2026-10-12 |
 
 ## Gates before anything publishes
 
 1. **The CLA must exist** before any public push.
-2. **RCCA's ownership must be settled in writing** with his partner before that repo goes public — those
-   requirements came from someone else, and the v0.3 document carries employer-context material.
+2. **RCCA is out of scope by decision** (2026-10-12) — it stays closed source. The equivalent gate there is
+   the ownership split and the friend's employment position in writing **before the code is shared with
+   anyone outside the two partners**. Detail: [[concepts/rcca-app-venture]].
 3. A customer with an AGPL ban is a **dual-licensing** conversation, not a redesign.
 
 ## Related
 
-- [[concepts/rcca-app-venture]] — the venture whose code this decision governs
+- [[concepts/rcca-app-venture]] — the **closed-source counterpart**: a different venture, a different
+  buyer, and a licence decision made the opposite way on purpose
 - [[concepts/demand-test-playbook]] — test demand before building; the same discipline applies to publishing code
 - [[concepts/side-income-map]] — where this thread sits in the money map
 - [[concepts/freelance-portfolio-strategy]] — the "I open-sourced X, I can build custom Y" pattern
