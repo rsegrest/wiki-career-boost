@@ -677,3 +677,21 @@ attention, 151 acres, watermelon-flagged cells, cane totals row, export locked o
 $79 tier. Committed and pushed. **Directory, repo and systemd unit keep the old `sprayproof` slug
 deliberately** — that rename touches the unit path, the remote and the other machine's clone, so it waits for
 an explicit go.
+
+## [2026-10-11] design | Brand page created; five logo marks drawn and rendered
+
+Rick wants a **logo** that communicates software/tech, and plans to generate an initial version with an image
+model. Advisory given and recorded: **never ask an image model for the company name** (letterforms mangle) —
+generate the mark only and set the wordmark in Bitter. And the tech signal belongs in typography, the
+descriptor line and the product's speed, not in circuit-board iconography, which reads to a farmer as
+"something that will break".
+
+Built a local design page (`static/design/logo-options.html`, viewable at `/static/design/logo-options.html`)
+with **five hand-coded SVG marks** rendered at 96/48/24/16px plus a one-colour version, and three lockups with
+the name set in type. Marks: A ruled page with one flagged row; B field rows rising like a chart; C a check
+mark in a denim square; D page with folded corner; E JS monogram. Recommended B or C for the masthead —
+B carries farm plus data, C is unbeatable at 16px and prints like a stamp. All verified rendering
+(28 marks, none below 8px, palette-locked). Mounted `/static` on the app so the favicon and design pages have a
+home. Created `concepts/john-d-stokes-brand.md` as the single source of truth for the brand, registered in the
+index. Production path recorded: pick the winner at 16px, then redraw it as a hand-coded SVG with a one-colour
+and favicon version.

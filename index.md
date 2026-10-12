@@ -28,6 +28,7 @@
 - [[concepts/side-income-map]] — **Start here for the money thread**: every income/venture thread, where its detail lives, time to first dollar, and the ideas already ruled out with reasons
 - [[concepts/ag-market-intelligence]] — **Where ag conversations happen and what they say**: AgTalk/Reddit map, verbatim farmer complaints about records software, and the positioning consequences
 - [[concepts/demand-test-playbook]] — **Test demand before building**: splash page + interactive demo, what to measure (behaviour beats emails), the module ranking, and why spray records are the place to start
+- [[concepts/john-d-stokes-brand]] — **The brand**: John D. Stokes — Agricultural Records. Name and story, the Stokes farm palette with each colour's meaning, type, five logo marks rendered at real sizes, and the no-text-in-generated-marks rule
 - [[concepts/services-page-copy]] — **The sales asset**: publication-ready copy for a business page on ricksegrest.com that shows applications and outcomes for non-technical buyers (six scenarios, pricing, safety answers, build notes)
 
 ## Kanban Boards
