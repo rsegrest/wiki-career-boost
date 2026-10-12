@@ -748,3 +748,20 @@ outline, so the cream-badge version won as the primary dark treatment.
 Wired into the app: reversed crest in the navy masthead above the live-type wordmark, descriptor updated to the
 brand's line, favicon serving as valid SVG, print swapping to the light crest. App re-verified: artwork loads,
 14 tests still pass, sample still returns 6 applications / 2 needing attention.
+
+## [2026-10-11] brand | Rick's separated logo pieces composed into the production set
+
+Rick delivered the artwork split properly — `logotype.svg` (wordmark outlines) and `overall-pocket-logo.svg`
+(crest), both Letter-sized and **class-coloured** via a `<style>` block. Built from them: tightened versions of
+each piece (ink bounds measured from the rasterised alpha channel), light and reversed variants, the composed
+lockup, and a favicon from the shield and stitch.
+
+**Caught a real bug by counting style classes:** both files use `cls-1`…`.cls-4`, so composing them let the
+wordmark's bright gold override the crest's deepened gold — resurrecting the gold-on-cream stitch defect
+(1.78:1) already fixed once. Namespaced the classes per source (`mk-cls-*` / `wd-cls-*`) and verified
+numerically: crest golds now measure #907020 (deep), wordmark rules #d0b050 (bright), each correct on its own
+ground. Also rounded 6-decimal path coordinates to two decimals (roughly halved the files) and gave the SVGs
+intrinsic width/height.
+
+The masthead now shows Rick's actual lockup with a visually-hidden h1 for search and screen readers, printing
+swaps to the light version, and the crest remains available alone for app icons. Committed and pushed.

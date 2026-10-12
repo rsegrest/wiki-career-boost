@@ -187,3 +187,37 @@ descriptor now reads the brand's own line (*Agricultural Software & Technology*)
 shield and stitch at tab size — the full crest is too dense at 16px, so only the two elements that survive are
 in it — and the print stylesheet swaps to the light crest. Verified in the browser: the artwork loads, serves
 200 as valid SVG, the light variant is hidden on screen and shown in print, and the app still works.
+
+---
+
+## Separated assets and the composed lockup (2026-10-11)
+
+Rick separated the artwork into production pieces, Letter-sized (612×792): **`logotype.svg`** (the wordmark as
+outlines, 58 paths) and **`overall-pocket-logo.svg`** (the crest, 29 paths). Both are **class-coloured** — the
+palette lives in a `<style>` block (`cls-1`…`cls-8`), not in inline fills — which is the right way to ship a
+logo: a variant is a stylesheet edit, not a shape edit.
+
+**What was built from them** (all in `brand/`, mirrored into `static/brand/`):
+
+| File | What |
+|---|---|
+| `wordmark-light/dark.svg`, `mark-tight-light/dark.svg` | each piece tightened to its ink bounds (measured from the rasterised alpha channel, not guessed from path data) and recoloured for its ground |
+| `lockup-light.svg`, `lockup-on-navy.svg` | the composed lockup: crest above wordmark, proportions taken from Rick's original single-file logo |
+| `static/favicon.svg` | navy tile + the shield silhouette + the stitch — the full crest is too dense at 16 px |
+
+**Two traps worth recording:**
+
+1. **Two SVG files with `cls-1`…`cls-4` will silently overwrite each other's palette when composed.** Both of
+   Rick's files use the same class names, so dropping them into one document made his wordmark's *bright* gold
+   rule apply to the *crest* as well — resurrecting the exact gold-on-cream stitch defect (1.78:1) that had
+   already been fixed. The fix is to namespace the classes per source (`mk-cls-*`, `wd-cls-*`) and rewrite both
+   the selectors and the `class` attributes. **Verified numerically afterwards**: in the composed lockup the
+   crest's golds measure `#907020` (deep) while the wordmark's rules measure `#d0b050` (bright) — two values,
+   each on the ground it was chosen for.
+2. **Letter-sized artboards carry 6-decimal coordinates.** Rounding path data to two decimals cut the files by
+   roughly half with no visible change, and the artwork now declares intrinsic width/height so browsers and
+   link previews size it correctly.
+
+**In the app:** the masthead now shows the real lockup — crest, wordmark, *AgTech*, gold rules and the tagline,
+all from the artwork — with a visually-hidden `<h1>` carrying the words for search engines and screen readers,
+and the print stylesheet swapping to the light lockup. The crest alone stays available for app icons.
