@@ -841,3 +841,16 @@ at product size, in rendered pixels — not in the source file's coordinates.
 Also folded the whole variant build into `brand/build-variants.py`: regenerates every crest and lockup from the
 source art, with OUTLINE_WIDTH / PAD / the colour table at the top and both traps documented in its comments.
 Committed and pushed.
+
+## [2026-10-11] brand | Rivets given a recessed centre
+
+Rick suggested a small darker dot inside each brass rivet so it reads as a rivet rather than a dot. Added as
+`cls-9` (#a97c4b, the darker brass from the composite) at 40% of the rivet radius, concentric with each cls-6
+rivet. Verified on rendered pixels: centres read #a97c4b inside #d2a54d rings. At masthead size a rivet is ~13 px
+and the dot ~5 px, so it reads there and above; the favicon is parked by Rick's own call. Folded into
+build-variants.py so every variant carries it.
+
+**Process lesson recorded:** the first edit silently did nothing because it targeted a double-quoted line that
+was actually single-quoted — the stylesheet gained a rule nothing used and the build still reported success. The
+tell was counting the emitted elements (0, expected 2). Assert anchors before replacing, and check the artefact
+contains what you meant to add. Committed and pushed.

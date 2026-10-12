@@ -391,3 +391,25 @@ the pixels, and check the colour is actually there.
 carries the two traps in its own comments — namespace `cls-N` exactly once (twice yields selectors that match
 nothing and the fills fall back to black), and pad the viewBox for any element that extends past the ink
 (`PAD = 6`).
+
+---
+
+## The brass rivets get a recessed centre (2026-10-11)
+
+Rick's suggestion: a smaller darker dot inside each brass rivet reads as a rivet rather than a dot. Correct —
+a flat disc of gold is a dot; a snap fastener shows a ring of brass with a darker recessed centre.
+
+Built as **`cls-9`**, a new class in the crest's own stylesheet: `fill:#a97c4b` (the darker brass measured off the
+composite), a circle at **40% of the rivet radius**, concentric with each `cls-6` rivet and drawn after it. Two
+dots, r = 6.13 against a rivet radius of 15.3. Verified on rendered pixels rather than assumed: rivet centres
+read **`#a97c4b`** inside rings of **`#d2a54d`**.
+
+At the 430 px the masthead renders, a rivet is ~13 px across and the dot ~5 px — so it reads at masthead size and
+above, which is what Rick asked for; he has explicitly parked the favicon, where a line or dot of this size is
+sub-pixel anyway. It lives in `build-variants.py`, so every variant gets it.
+
+**One process lesson: a string replacement that does not match fails silently.** The first attempt to add the
+dots targeted a double-quoted line that was in fact single-quoted, so the edit did nothing — the stylesheet
+gained a `cls-9` rule that no element used, and the build kept reporting success. The tell was a count
+(circles emitted: 0, expected 2). Assert the anchor exists before replacing, and verify the artefact contains
+what you meant to add — a build that says "done" is not evidence.
