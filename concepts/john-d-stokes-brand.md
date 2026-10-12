@@ -360,3 +360,34 @@ Result: the masthead is now **187 px** tall instead of 266 — the horizontal lo
 side effect. Print uses the horizontal light lockup with the outline deepened to `#9a7328` so it carries on
 cream. Files: `lockup-horizontal-{gold,tan,peanut}.svg`, `lockup-horizontal-light.svg`,
 `crest-outline-{gold,tan,peanut,light}.svg`.
+
+---
+
+## Locked: pocket left, peanut tan rule (2026-10-11)
+
+Rick's choice for the masthead: **horizontal lockup, pocket to the left, peanut tan `#988c72` outline.** Now in
+`lockup-horizontal-peanut.svg` (the app masthead) with a print companion in the same colour
+(`lockup-horizontal-light.svg`, on cream). The gold and `#c99e5b` variants stay on the design page for other
+applications.
+
+Measured: the rule holds **4.93:1** on the navy band and **3.10:1** on cream — over the 3:1 bar for a graphic,
+consistent with the palette rule that peanut tan is for rules and borders and never for text.
+
+### A line weight is a production decision, not a detail
+
+The first version drew the rule at **3.2 units** on a 446-unit pocket — 0.7% of the crest's width, which is
+**1.4 px** at the 430 px the masthead actually renders. Sampled, its pixels came back as antialiased blends
+(`#867e6a`, `#2b3a44`, `#4d5655`) rather than the tan: a grey smudge, not a line. At **5.0 units** it becomes a
+crisp ~2 px rule (4–5 device px on a retina display) with solid `#988c72` pixels present.
+
+**The lesson: judge a stroke at the size it will be rendered, never in the source file's own units.** A rule
+that looks correct in the SVG's coordinate space can be invisible in the product. Render at product size, sample
+the pixels, and check the colour is actually there.
+
+### The variant build is now a script
+
+`brand/build-variants.py` regenerates every crest and lockup from the source artwork: `OUTLINE_WIDTH`,
+`PAD`, `CREST_RATIO`, `GAP_RATIO` and the `OUTLINES` colour table at the top, everything else derived. It
+carries the two traps in its own comments — namespace `cls-N` exactly once (twice yields selectors that match
+nothing and the fills fall back to black), and pad the viewBox for any element that extends past the ink
+(`PAD = 6`).

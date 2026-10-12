@@ -827,3 +827,17 @@ matched no rule — the wordmark rendered **black on navy**. Fixed, and verified
 **The horizontal lockup:** pocket left, centred on the name + AgTech block (the wordmark's ink splits at rows
 2-208 and 215-229, so the descriptor is its own block below). Masthead height dropped 266 -> 187 px as a side
 effect. Committed and pushed.
+
+## [2026-10-11] brand | Masthead locked: pocket left, peanut tan rule
+
+Rick picked the horizontal layout with the peanut tan (#988c72) outline. Now live in the masthead with a print
+companion on cream; the gold and #c99e5b variants stay on the design page for other uses. Rule measures 4.93:1 on
+the band and 3.10:1 on cream, over the 3:1 graphic bar.
+
+**A real fix along the way:** at 3.2 units the rule was only 1.4 px at the 430 px the masthead renders, and
+sampled as antialiased grey blends rather than tan. At 5.0 units it is a crisp ~2 px line. Lesson: judge a stroke
+at product size, in rendered pixels — not in the source file's coordinates.
+
+Also folded the whole variant build into `brand/build-variants.py`: regenerates every crest and lockup from the
+source art, with OUTLINE_WIDTH / PAD / the colour table at the top and both traps documented in its comments.
+Committed and pushed.
