@@ -253,3 +253,27 @@ still needs a face for headings, descriptors, tables, email signatures and invoi
 
 Also tightened the space under the section rules. Verified: the lockup loads, Vollkorn is live on headings and
 buttons while body text stays Source Serif, and the app still returns 6 applications / 2 flagged.
+
+---
+
+## Reviewing your own work with a model's eyes — and knowing when to disbelieve it (2026-10-11)
+
+A screenshot of the app was read back against the design brief. It produced three findings; **one was real and
+two were wrong**, which is the useful lesson.
+
+**Wrong #1 — the drop cap "isn't wrapping".** Reported twice, so rather than take it on faith the paragraph was
+measured: the x-position of the first word on every rendered line. Line 1 starts at **197** (the paragraph's own
+left edge, with the `P` *being* the drop cap), lines 2 and 3 indent to **261** and **231** to clear it, and lines
+4 and 5 return **flush at 197**. A correct two-line wrap. The reviewer had mistaken the paragraph's own left
+margin for an indent and described a "hanging indent" that does not exist.
+
+**Wrong #2 — "AgTech green is a contrast failure."** It measures **5.13:1** on the navy: it passes AA, and it is
+simply the *least* contrasty element, which is a different thing from failing.
+
+**Right — the file input was raw browser chrome.** A "Choose File / No file chosen" native control sat next to a
+designed button. It now reads as a pair: a Vollkorn **"Open a spreadsheet…"** button, an "or", and a filename
+readout. Verified end-to-end by feeding a real CSV through the control (3 rows → 3 applications, 0 flagged).
+
+**The rule:** a vision model is worth consulting for *composition and hierarchy*, where it is genuinely useful,
+and not for *measurements* — spacing, contrast ratios, line wrapping — where it will state a number-shaped
+opinion with total confidence. Measure the DOM, or don't claim it.

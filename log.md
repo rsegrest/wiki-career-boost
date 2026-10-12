@@ -779,3 +779,18 @@ if the wordmark is ever needed as live text.
 A screenshot review of the app caught two genuine defects: the drop cap's float box was only one line tall (the
 second line ran to the margin) — fixed at 52.7px against a 27px line so it spans two lines; and the masthead was
 too tall — lockup 330→252px with reduced band padding. Committed and pushed.
+
+## [2026-10-11] brand | Design review of the app: one real fix, two invented defects
+
+Read a screenshot of the app back against the brief. It flagged three things; **one was real**. The drop cap was
+reported "not wrapping" (twice) — measuring the x-position of the first word on every line proved otherwise:
+lines 1, 4 and 5 start flush at 197 while lines 2–3 indent to clear the cap, a correct two-line wrap. The
+reviewer had mistaken the paragraph's own left margin for an indent. It also called the green *AgTech* a
+contrast failure; it measures 5.13:1 and passes AA.
+
+The real finding: the file input was native browser chrome sitting beside a designed button. Now a Vollkorn
+"Open a spreadsheet…" button with an "or" and a filename readout — verified end-to-end by pushing a real CSV
+through the control in the DOM (3 rows imported, 3 applications, 0 flagged).
+
+**Lesson:** vision is useful for composition and hierarchy, not for measurements. Measure the DOM or don't claim
+it. Committed and pushed.
