@@ -44,7 +44,7 @@ Amentum is Rick's **staffing contractor**, not his direct customer. Rick is curr
 ## Post-Jacobs Merger HR & Payroll Friction (Aug–Oct 2026)
 
 - Following the Jacobs CMS merger, Amentum's migrated HR/benefits and payroll systems have exhibited significant bureaucratic friction ^[raw/articles/gemini-career-outlook-2026-10-16.md]
-- **August 1, 2026 Benefits Overcharge (~$2,000):** When wife's insurance ended July 31, 2026, Rick enrolled the family in Amentum benefits effective August 1, 2026. Because he initiated the paperwork ahead of time on **June 23, 2026**, Amentum's payroll system erroneously backdated coverage to June 23 – August 1 and shorted his paycheck by **nearly $2,000**, promising a refund in "one or two cycles" without a firm date ^[raw/articles/gemini-career-outlook-2026-10-16.md]
+- **August 1, 2026 Benefits Overcharge (~$2,000):** When wife's insurance ended July 31, 2026, Rick enrolled the family in Amentum benefits effective August 1, 2026. Because he initiated the paperwork ahead of time on **June 23, 2026**, Amentum's payroll system erroneously backdated coverage to June 23 – August 1 and shorted his paycheck by **nearly $2,000**, promising a refund in "one or two cycles" without a firm date (as of 2026-10-16, hoping it lands on the **Thursday, October 22, 2026** paycheck) ^[raw/articles/gemini-career-outlook-2026-10-16.md]
 
 ## Relevance to Career
 

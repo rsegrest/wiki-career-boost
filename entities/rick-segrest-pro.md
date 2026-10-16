@@ -10,7 +10,7 @@ sources: [raw/articles/linkedin-ricksegrest-2026.md, raw/articles/gemini-career-
 # Rick Segrest — Professional Profile
 
 **Title:** Full-Stack Web Application Developer  
-**Location:** Huntsville, AL (planning to stay through daughters' May 2030 graduation; open to remote or Space Coast/Florida if needed for son's schooling)  
+**Location:** Huntsville, AL (planning to stay through daughters' May 2030 graduation; open to remote or domestic relocation to Florida — Space Coast, Panhandle, or The Villages)  
 **Education:** M.S. Modeling & Simulation  
 **Core Stack:** React, TypeScript, Node.js, Python, C/C++  
 **Emerging Focus:** AI, Agentic Development, LLM Orchestration, High-Density Telemetry & GUI Architecture
