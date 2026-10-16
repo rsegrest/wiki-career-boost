@@ -897,3 +897,8 @@ it can void the whole thing.
 
 The two tracks now hold deliberately opposite licence postures, which is coherent: for the ag product openness
 buys distribution and trust, for RCCA it would forfeit the customer.
+
+## [2026-10-16] update | Index sub-grouping and registration of remaining 3 unindexed pages
+- Organized `index.md` `## Concepts` into three thematic subsections: `Freelance & Side-Income Strategy`, `Ventures: John D. Stokes Agricultural Records & RCCA App`, and `Portfolio Catalog & Implementation Specs`.
+- Registered the three previously unindexed pages in `index.md` (`entities/rick-segrest-resume-v2026.md`, `concepts/agent-cron-monitor-spec.md`, `concepts/agent-memory-browser-spec.md`) and added YAML frontmatter + cross-links to the two Mission Control implementation specs. Total catalogued pages: 28 → 31.
+

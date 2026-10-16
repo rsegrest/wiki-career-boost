@@ -124,7 +124,7 @@ Sabrina identifies specific skills that separate winners from losers in the AI e
 
 ## Cross-References
 
-- Sabrina's technical tutorials are in the wiki-tech vault: `wiki-tech/concepts/sabrina-ramonov-ai-tools-videos.md`
+- Sabrina's technical tutorials are in the wiki-tech vault: `wiki-tech-knowledge/concepts/sabrina-ramonov-ai-tools-videos.md`
 - Career decision analysis: [[comparisons/career-move-vs-side-hustle-vs-maximize-current]]
 - Salary positioning: [[queries/react-ai-job-market-salary-2026]]
 - Freelance strategy: [[concepts/freelance-portfolio-strategy]]
@@ -133,7 +133,7 @@ Sabrina identifies specific skills that separate winners from losers in the AI e
 ## Provenance
 
 Content synthesized from 41 career/business-focused videos on the @sabrina_ramonov channel, Dec 2025 – Jun 2026.
-Full video index: `wiki-tech/raw/articles/sabrina-ramonov-videos.md`
+Full video index: `wiki-tech-knowledge/raw/articles/sabrina-ramonov-videos.md`
 
 ## Related Pages
 

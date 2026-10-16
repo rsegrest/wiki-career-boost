@@ -1,4 +1,15 @@
+---
+title: Agent Cron Timeline & Health Monitor — Implementation Spec
+created: 2026-07-12
+updated: 2026-10-16
+type: concept
+tags: [full-stack, react, nextjs, agent-orchestration, architecture-doc]
+sources: []
+---
+
 # Agent Cron Timeline & Health Monitor — Implementation Spec
+
+> **Related:** [[concepts/portfolio-project-ideas]] · [[concepts/agent-memory-browser-spec]]
 
 ## Overview
 

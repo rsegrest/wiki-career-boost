@@ -2,12 +2,13 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-10-12 | Catalogued pages: 28 (6 entities + 13 concepts + 4 kanban + 1 comparison + 4 queries)
+> Last updated: 2026-10-16 | Catalogued pages: 31 (7 entities + 15 concepts + 4 kanban + 1 comparison + 4 queries)
 
 ## Entities
 
-### People
+### People & Artifacts
 - [[entities/rick-segrest-pro]] — Rick Segrest, Full-Stack Web Developer (React, UX, AI, M&S)
+- [[entities/rick-segrest-resume-v2026]] — Full v2026 resume artifact for Rick Segrest (Senior Software Engineer & SME)
 - [[entities/wife-slp-profile]] — Rick's wife, CCC-SLP at Restore Therapy Services (Madison, AL)
 
 ### Organizations
@@ -18,19 +19,26 @@
 
 ## Concepts
 
-- [[concepts/portfolio-project-ideas]] — Portfolio project ideas for career networking (React + M&S + AI); includes active build status & models used (Personal Site, Mission Control, …)
-- [[concepts/project-tracker]] — Full project tracker: all projects, statuses, models used, and last-worked dates
+### Freelance & Side-Income Strategy
+- [[concepts/side-income-map]] — **Start here for the money thread**: every income/venture thread, where its detail lives, time to first dollar, and the ideas already ruled out with reasons
+- [[concepts/freelance-outreach-targets]] — **Who to actually contact** for the first paid hour: 10 targets ordered by conversion x rate, verified local contacts, and the platform-rate reality ($27-30/hr medians vs the $120+ direct band)
 - [[concepts/freelance-portfolio-strategy]] — Freelance acquisition playbook, UX positioning, portfolio build plan
+- [[concepts/services-page-copy]] — **The sales asset**: publication-ready copy for a business page on ricksegrest.com that shows applications and outcomes for non-technical buyers (six scenarios, pricing, safety answers, build notes)
 - [[concepts/sabrina-ramonov-ai-business-videos]] — 41 AI business/career videos from Sabrina Ramonov: income streams, personal branding, AI skills, career strategy in AI era
 - [[../wiki-personal/concepts/goals-pay-debt-house-remote-abroad|../../wiki-personal/concepts/goals-pay-debt-house-remote-abroad]] — **Top-level goals (personal vault)** — why the portfolio/freelance work exists: debt payoff → location-independent income → move abroad (~2030). The bridge page between this vault's portfolio work and the personal vault's plans
-- [[concepts/rcca-app-venture]] — **RCCA app venture assessment** — a Teledyne Brown friend's Root Cause Corrective Action idea, prototyped by Rick. Public methodology (DO IT²/ASQ), the CMMC/DFARS no-CUI posture, four monetization paths ranked by time-to-first-dollar, and the document-ownership question that gates the whole thing
-- [[concepts/freelance-outreach-targets]] — **Who to actually contact** for the first paid hour: 10 targets ordered by conversion x rate, verified local contacts, and the platform-rate reality ($27-30/hr medians vs the $120+ direct band)
-- [[concepts/side-income-map]] — **Start here for the money thread**: every income/venture thread, where its detail lives, time to first dollar, and the ideas already ruled out with reasons
+
+### Ventures: John D. Stokes Agricultural Records & RCCA App
 - [[concepts/ag-market-intelligence]] — **Where ag conversations happen and what they say**: AgTalk/Reddit map, verbatim farmer complaints about records software, and the positioning consequences
 - [[concepts/demand-test-playbook]] — **Test demand before building**: splash page + interactive demo, what to measure (behaviour beats emails), the module ranking, and why spray records are the place to start
 - [[concepts/john-d-stokes-brand]] — **The brand**: John D. Stokes — Agricultural Records. Name and story, the Stokes farm palette with each colour's meaning, type, five logo marks rendered at real sizes, and the no-text-in-generated-marks rule
-- [[concepts/services-page-copy]] — **The sales asset**: publication-ready copy for a business page on ricksegrest.com that shows applications and outcomes for non-technical buyers (six scenarios, pricing, safety answers, build notes)
 - [[concepts/open-source-business-model]] — **Open the code, sell the service**: AGPL-3.0 + a CLA for the app, Apache-2.0 for the record format, fiscal-host donations instead of a nonprofit, the verified 501(c)(3) costs, and why the licence decision is safe to defer
+- [[concepts/rcca-app-venture]] — **RCCA app venture assessment** — a Teledyne Brown friend's Root Cause Corrective Action idea, prototyped by Rick. Public methodology (DO IT²/ASQ), the CMMC/DFARS no-CUI posture, four monetization paths ranked by time-to-first-dollar, and the document-ownership question that gates the whole thing
+
+### Portfolio Catalog & Implementation Specs
+- [[concepts/portfolio-project-ideas]] — Portfolio project ideas for career networking (React + M&S + AI); includes active build status & models used (Personal Site, Mission Control, …)
+- [[concepts/project-tracker]] — Pointer stub to `wiki-personal/concepts/project-tracker.md`
+- [[concepts/agent-cron-monitor-spec]] — Implementation spec for the Agent Cron Timeline & Health Monitor (merged into Mission Control)
+- [[concepts/agent-memory-browser-spec]] — Implementation spec for the Agent Memory Browser (merged into Mission Control)
 
 ## Kanban Boards
 
