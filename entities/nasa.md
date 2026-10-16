@@ -1,10 +1,10 @@
 ---
 title: NASA
 created: 2026-05-30
-updated: 2026-05-30
+updated: 2026-10-16
 type: entity
 tags: [organization, employer, space, government, engineering, simulation]
-sources: [raw/articles/linkedin-ricksegrest-2026.md]
+sources: [raw/articles/linkedin-ricksegrest-2026.md, raw/articles/gemini-career-outlook-2026-10-16.md]
 ---
 
 # NASA
@@ -17,38 +17,36 @@ National Aeronautics and Space Administration. Primary US government agency resp
 
 ## Rick's Role
 
-- **Employer:** [[entities/nasa]] (direct employment)
-- **Contractor support:** [[entities/amentum]] provides staffing/contracting services
-- **Tenure:** 7+ years
+- **Site / Center:** Marshall Space Flight Center (MSFC), Huntsville, AL
+- **Contractor support:** [[entities/amentum]] provides staffing/contracting services under the ESSCA contract
+- **Tenure:** 7.5+ years (since March 2019) ^[raw/articles/gemini-career-outlook-2026-10-16.md]
 - **Title:** Full-stack Cloud-based Web Application Architect
-- **Clearance:** Previously held Secret (not renewed — no active need at NASA)
+- **Clearance:** Held Secret clearance on prior job before March 2019; dormant/inactive since NASA work has been unclassified, but remains in DISS/NBIS and eligible for accelerated reactivation/sponsorship ^[raw/articles/gemini-career-outlook-2026-10-16.md]
 
 ## Relevance to Career
 
 - **Space/defense pedigree** — NASA on resume carries weight across tech and aerospace
-- **Simulation background** — M&S Master's applied to space mission planning, training systems, or operations support
-- **Legacy modernization** — "Breathing new life into legacy" likely refers to modernizing NASA's aging web/internal tools
+- **Simulation & Human Factors background** — M.S. in Modeling & Simulation applied to space mission planning, telemetry visualization, ergonomic UI design, and standalone engineering tools ^[raw/articles/gemini-career-outlook-2026-10-16.md]
+- **Legacy modernization** — "Breathing new life into legacy" refers to modernizing NASA's aging web/internal engineering tools
 - **AI opportunity** — NASA increasingly interested in AI for mission planning, data analysis, autonomy; internal advocate potential
 - **Huntsville connection** — Marshall Space Flight Center is a major NASA facility
 
-## Tech Stack at NASA
+## Tech Stack & Team Transfer (April 2026)
 
-Varies by team and developer preference:
-- Some teams: React, TypeScript, cloud-native stacks
-- Rick's new team: Microsoft PowerApps (low-code/no-code)
-- Likely mix of legacy systems + modern cloud migration
+- **October 2025 Shutdown / Hospice Incident (Previous Group):** Right after the October 2025 government shutdown began, Rick's mother entered hospice. A key NASA customer/stakeholder callously told Rick he should have *"planned ahead"* and *"coordinated with the other team members"* to finish his project while civil servants were at home not working. Rick took **short-term disability** to recover from the burnout/grief and requested a team transfer ^[raw/articles/gemini-career-outlook-2026-10-16.md].
+- **April 2026 Lateral Transfer (Current Group):** Moved to a much calmer, more professional team in April 2026. While the group's default stack includes Microsoft PowerApps/Dataverse (which Rick dislikes and refuses to be pigeonholed into), he architected the current proposal/budget app using **Electron + React + TypeScript** interfacing with Dataverse ^[raw/articles/gemini-career-outlook-2026-10-16.md].
 
 ## Insourcing Initiative
 
-NASA is pushing an **insourcing initiative** to convert contractor positions to direct government hires. Key implications:
+NASA is actively executing a **workforce insourcing directive** to convert low-margin, cost-plus contractor positions to direct civil service hires (causing [[entities/amentum]] to project a 3% / ~$400M–$420M revenue headwind in FY2027) ^[raw/articles/gemini-career-outlook-2026-10-16.md]. Key implications:
 
-- Rick does NOT want to work for NASA/government directly — believes it would be a bad career move (GS pay scale, less flexibility, slower advancement)
-- If NASA insources Rick's role, he could face pressure to convert or be displaced
-- This adds urgency to career planning — the current arrangement may not be stable long-term
+- Rick **strongly opposes** working for NASA/government directly — both because of rigid federal bureaucracy/cold customer culture and because his $170K salary already hits the **2026 Huntsville GS-14 Step 10 ceiling ($170,207)**, where mandatory 4.4% FERS-FRAE deductions would cut his take-home pay (see [[queries/nasa-civil-service-gs-pay]]) ^[raw/articles/gemini-career-outlook-2026-10-16.md]
+- Specialized software/GUI architects are harder for NASA to insource than generic administrative/staffing roles because the GS pay scale cannot compete with private defense rates ($185K+)
+- **Remote work restriction:** Per **NPR 3600.2B § 6.1.6**, NASA prohibits remote work or telework from outside the United States and its territories (confirmed 2026-10-15)
 
 ## Current Project (2026)
 
-Rick's new group is building a **proposal and budget planning app** that:
+Rick's new group (since April 2026) is building a **proposal and budget planning app** that:
 - Centralizes proposal and budget data in one system
 - Prevents errors from multiple spreadsheet versions circulating
 - Eliminates duplicate entries that inaccurately exaggerate costs
@@ -60,16 +58,11 @@ Rick's new group is building a **proposal and budget planning app** that:
 
 ## Future Questions
 
-- What specific NASA center? (Marshall Space Flight Center — Huntsville?)
-- What directorate or division?
-- What systems has Rick worked on previously?
-- What "legacy" systems has he modernized?
-- Any AI/ML initiatives at NASA he could pivot toward?
-- Internal mobility — can he move to an AI-forward team?
-- How does the insourcing initiative affect ESSCA contract renewal?
-- Timeline for insourcing decisions?
+- How does the FY2027 insourcing wave affect Rick's specific division under ESSCA II (~May 2027 start)?
+- What is the outcome of the ~November 2026 annual raise cycle?
 
 ## Sources
 
 - LinkedIn profile data ^[raw/articles/linkedin-ricksegrest-2026.md]
 - User direct input | 2026-05-30
+- Gemini Career Outlook export & user input | 2026-10-16 ^[raw/articles/gemini-career-outlook-2026-10-16.md]

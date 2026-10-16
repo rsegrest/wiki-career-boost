@@ -1,26 +1,23 @@
 ---
 title: "Career Move vs Side-Hustle vs Maximize Current Position"
 created: 2026-06-22
-updated: 2026-10-11
+updated: 2026-10-16
 type: comparison
 tags: [job-search, pivot, freelance, consulting, promotion, remote, salary-negotiation, side-project]
-sources: [entities/rick-segrest-pro.md, entities/nasa.md, entities/amentum.md, concepts/portfolio-project-ideas.md]
+sources: [entities/rick-segrest-pro.md, entities/nasa.md, entities/amentum.md, concepts/portfolio-project-ideas.md, raw/articles/gemini-career-outlook-2026-10-16.md]
 confidence: medium
 ---
 
 # Career Move vs Side-Hustle vs Maximize Current Position
 
-> ⚠️ **Revised 2026-10-11 — the ESSCA II timetable this page is built around has moved.**
-> Rick's information (2026-10-11): **the contract's performance start is delayed to ~May 2027, and
-> ESSCA I has been extended to fill the gap.** The "Sept 30, 2026 award" used throughout this page was
-> the RFP's *expected* award date, not a confirmed one, and the phase-in it anchors moves with the new
-> start. Read every date below as **superseded**; the strategy (A+C hybrid with B ready) is unaffected,
-> but its *timing* is: the rate-adjustment moment is now ~May 2027, and the displacement risk from the
-> re-compete is pushed out a further ~8 months rather than being imminent.
+> ⚠️ **Revised 2026-10-11 & 2026-10-16 — key assumptions updated:**
+> 1. **ESSCA II timetable:** Performance start is delayed to **~May 2027**, with ESSCA I extended to fill the gap (2026-10-11). Meanwhile, Rick expects an ordinary **annual raise cycle bump in ~November 2026** ^[raw/articles/gemini-career-outlook-2026-10-16.md].
+> 2. **Health insurance is NO LONGER portable via wife's plan:** Wife's coverage ended July 31, 2026; family health insurance moved onto **Amentum's plan effective August 1, 2026** (~$693/mo employee share, plus a ~$2,000 backdated payroll deduction glitch). Leaving Amentum for a new W-2 requires switching to the new employer's plan; going 100% solo 1099 requires ACA/private coverage ^[raw/articles/gemini-career-outlook-2026-10-16.md].
+> 3. **Path B refined — Local Huntsville Mid-Tiers vs. Global Remote Burnout:** Cold-applying to global remote tech roles has caused interview burnout with low ROI. A high-leverage middle ground for Path B is targeting **flatter Huntsville defense/aerospace mid-tiers (IRTC, COLSA, Dynetics, ASRC Federal)** at **$185K+ base** with **local-remote/hybrid flexibility** and **dormant Secret clearance reactivation** during the 2026–2030 runway ^[raw/articles/gemini-career-outlook-2026-10-16.md].
 
 ## The Decision
 
-Rick is at a crossroads. 7 years at [[entities/nasa]] via [[entities/amentum]] on the ESSCA contract. $170K salary that hasn't kept pace with inflation. New group is better but it was a lateral move. ESSCA II contract award expected **30 September 2026** — Amentum likely to retain. NASA insourcing initiative is a background risk. The question: stay and maximize, leave for a new role, or build a side income while keeping the day job.
+Rick is at a crossroads. 7.5 years at [[entities/nasa]] via [[entities/amentum]] on the ESSCA contract. $170K salary (with annual raise due ~Nov 2026) that hasn't kept pace with inflation. New group (since April 2026) is much calmer, but it was a lateral move. ESSCA II contract start is delayed to **~May 2027** — Amentum likely to retain, though Amentum also guided for a **3% FY2027 revenue headwind (~$400M–$420M)** from NASA's workforce insourcing directive ^[raw/articles/gemini-career-outlook-2026-10-16.md]. The question: stay and maximize, leave for a new role (remote or flatter Huntsville mid-tier), or build a side LLC/consulting income while keeping the day job.
 
 ---
 
@@ -28,17 +25,17 @@ Rick is at a crossroads. 7 years at [[entities/nasa]] via [[entities/amentum]] o
 
 | Dimension | A: Maximize Current | B: Career Move | C: Side-Hustle |
 |---|---|---|---|
-| **Annual Income (est.)** | $170K + $5.1K 401k + $200 bonus | $180K–$220K (target) | $170K + $20K–$80K side |
+| **Annual Income (est.)** | $170K (+ ~Nov 2026 raise) + $5.1K 401k + $200 bonus | $185K–$220K (target) | $170K + $20K–$80K side |
 | **Risk Level** | Low (near-term) | Medium-High | Medium |
-| **Time Horizon** | Immediate | 3–6 months transition | 1–6 months ramp |
-| **Remote Work** | ~50% (current) | Negotiable (target 100%) | 100% (on your time) |
+| **Time Horizon** | Immediate (~Nov 2026 raise; ~May 2027 ESSCA II) | 3–6 months transition | 1–6 months ramp |
+| **Remote Work** | ~50% (current) | Negotiable (local-remote hybrid or 100% remote) | 100% (on your time) |
 | **Skill Building** | Moderate (React+Dataverse) | High (new stack/team) | High (client variety) |
 | **Portfolio Impact** | One case study (current app) | Full immersion | Gradual, self-directed |
 | **Stability** | High if Amentum retains ESSCA II | Unknown | Day job intact |
 | **Growth Ceiling** | Low at Amentum | High at right company | Uncapped (self-limited) |
-| **Health Insurance** | Wife's plan (portable) | Wife's plan (portable) | Wife's plan (portable) |
+| **Health Insurance** | **On Amentum plan (since Aug 1, 2026)** | **Must transition to new employer plan** | **Keep Amentum plan while W-2** |
 | **401(k) Match** | $5,100/yr (keep if stay) | Lose match, keep balance | Keep match + balance |
-| **Burnout Risk** | Low (new group is OK) | Medium (new job stress) | High (two jobs) |
+| **Burnout Risk** | Low (April 2026 group is calm) | Medium (new job / interview loops) | High (two jobs) |
 
 ---
 
@@ -46,46 +43,47 @@ Rick is at a crossroads. 7 years at [[entities/nasa]] via [[entities/amentum]] o
 
 ### The Play
 
-Stay at Amentum/NASA, ship the proposal/budget planning app, and leverage the ESSCA II re-bid for a rate adjustment. Use the app's "six-figure impact" as a negotiation lever and portfolio centerpiece.
+Stay at Amentum/NASA, collect the ~November 2026 annual raise, ship the proposal/budget planning app, and leverage the ESSCA II re-bid (~May 2027) for a structural rate adjustment. Use the app's "six-figure impact" as a negotiation lever and portfolio centerpiece.
 
 ### What You Keep
 
-- $170K salary, $5,100 401k match, 172 hours leave
-- ~50% remote work (non-negotiable for family)
-- Stability through ESSCA II (Amentum likely retains; **start delayed to ~May 2027, ESSCA I extended to bridge** — Sept 30, 2026 was an *expected* award date, not confirmed)
-- Current group is professional and accommodating
+- $170K salary (plus ~Nov 2026 annual raise), $5,100 401k match, 172 hours leave, family health insurance (~$693/mo)
+- ~50% remote work (non-negotiable for family and son's IEP advocacy)
+- Stability through ESSCA II (Amentum likely retains; **start delayed to ~May 2027, ESSCA I extended to bridge**)
+- Current group (joined April 2026) is professional and accommodating
 - Building transferable skills (Electron + React + TypeScript + Dataverse via pacx)
 
 ### What You Gain
 
 - **Case study with real ROI**: "Built budget planning app that saved NASA six figures by eliminating spreadsheet errors and duplicate cost entries" — this is gold for future interviews
 - **Rate bump**: ESSCA II re-bid may adjust contractor rates closer to inflation. If Amentum wins (likely), push for a raise as part of the new contract
-- **Institutional leverage**: 7 years at NASA = deep relationships, domain expertise, credibility
-- **Low-stress runway**: New group is calmer — mental bandwidth to build portfolio, post on LinkedIn, or start open-source work on evenings/weekends
+- **Institutional leverage**: 7.5 years at NASA = deep relationships, domain expertise, credibility
+- **Low-stress runway**: April 2026 group is calmer — mental bandwidth to build portfolio, establish an LLC sandbox, or start consulting work on evenings/weekends
 
 ### What You Risk
 
-- **NASA insourcing**: General initiative, not targeted at Rick yet — but if it accelerates, contractor positions could face pressure
-- **Amentum growth ceiling**: No clear path to principal/staff. You're at the top of the technical track for a contractor on this contract
-- **Salary stagnation continues**: If ESSCA II rates don't improve meaningfully, you're stuck at ~$170K with below-inflation raises
-- **Opportunity cost**: Every month at $170K with weak raises is a month not at $200K+ elsewhere
-- **Skills narrow over time**: Dataverse/PowerApps ecosystem is niche; React+TypeScript skills need active practice outside work
+- **NASA insourcing**: Amentum projected a **3% FY2027 revenue headwind (~$400M–$420M)** from NASA insourcing low-margin contractor seats ^[raw/articles/gemini-career-outlook-2026-10-16.md]
+- **Amentum growth ceiling & payroll friction**: No clear path to principal/staff, plus post-Jacobs merger HR/payroll glitches (~$2,000 backdated benefits overcharge in Aug 2026)
+- **Salary stagnation continues**: If the Nov 2026 raise and May 2027 ESSCA II rates don't improve meaningfully, you're stuck near ~$170K with below-inflation raises
+- **Opportunity cost**: Every month at $170K with weak raises is a month not at $185K–$200K+ elsewhere
+- **Skills narrow over time**: Dataverse/PowerApps ecosystem is niche; must actively avoid being pigeonholed into low-code
 
 ### Key Actions (If You Choose This Path)
 
 1. **Ship the app and document everything** — architecture decisions, tech choices, user impact metrics, before/after cost savings. This is your portfolio's crown jewel.
-2. **Push for rate adjustment at the ESSCA II start** (~May 2027, after the delay) — come with inflation data, market comp data, and your app's impact. Ask for $180K–$185K minimum. *(Confirm the ES-8 labor classification first: at ES-7 the ERI gap argument disappears.)*
-3. **Use evenings/weekends for portfolio + LinkedIn** — the calm group gives you mental bandwidth. Post 2–3x/week. Build the [[concepts/portfolio-project-ideas|portfolio projects]] from the wiki.
-4. **Monitor insourcing closely** — if NASA announces position conversions, be ready to pivot to Path B quickly
-5. **Set a deadline**: If no rate improvement within ~3 months of the new contract start (~Aug 2027), activate Path B
+2. **Track the ~November 2026 annual raise AND push for rate adjustment at the ESSCA II start** (~May 2027) — come with inflation data, market comp data, and your app's impact. Ask for $180K–$185K minimum. *(Confirm the ES-8 labor classification first: at ES-7 the ERI gap argument disappears.)*
+3. **Ensure the ~$2,000 August 2026 benefits payroll overcharge is refunded** by Amentum HR/payroll.
+4. **Use evenings/weekends for portfolio + LLC sandbox** — the calm group gives you mental bandwidth. Build the [[concepts/portfolio-project-ideas|portfolio projects]] from the wiki.
+5. **Monitor insourcing closely** — if NASA announces position conversions, be ready to pivot to Path B quickly
+6. **Set a deadline**: If no meaningful rate improvement by the ESSCA II start (~May–Aug 2027), activate Path B
 
 ### Best Case Outcome
 
-ESSCA II brings a raise to $185K–$195K. App ships successfully with documented six-figure savings. LinkedIn presence grows. Portfolio has 2–3 shipped projects. You're positioned to either stay comfortable OR leave from strength in 2027.
+Nov 2026 raise + ESSCA II bring compensation to $185K–$195K. App ships successfully with documented six-figure savings. LinkedIn presence grows. Portfolio has 2–3 shipped projects. You're positioned to either stay comfortable OR leave from strength in 2027.
 
 ### Worst Case Outcome
 
-ESSCA II rates stay flat. Insourcing pressure increases. You're still at $170K in 2027 with the same growth ceiling and a narrowing skills window. You've burned another year.
+Raises stay flat. Insourcing pressure increases. You're still near $170K in 2027 with the same growth ceiling and a narrowing skills window. You've burned another year.
 
 ---
 
@@ -93,44 +91,47 @@ ESSCA II rates stay flat. Insourcing pressure increases. You're still at $170K i
 
 ### The Play
 
-Leave Amentum/NASA for a role at the intersection of React + AI — targeting AI-native startups, remote-first companies, or UX-forward agencies. Use the NASA tenure and the budget app as credibility anchors.
+Leave Amentum/NASA for either:
+1. **Selective Local Huntsville Mid-Tier Defense/Aerospace Firms ($185K+ base, flatter engineering culture, local-remote/hybrid)** — leveraging NASA pedigree and reactivating dormant Secret clearance (2–4 week Interim Secret) to bypass global remote applicant filters ^[raw/articles/gemini-career-outlook-2026-10-16.md].
+2. **Remote-First Space/Civil Contractors or AI-Native Startups** — targeting firms like **ASRC Federal** (remote NASA/space telemetry contracts, including Florida Space Coast footprint) or UX-forward AI companies.
 
 ### Target Roles
 
-Based on market research in [[queries/react-ai-job-market-salary-2026]]:
+Based on market research in [[queries/react-ai-job-market-salary-2026]] and Oct 2026 Huntsville landscape ^[raw/articles/gemini-career-outlook-2026-10-16.md]:
 
 | Role Type | Market Base Salary | Total Comp | Remote | Companies |
 |---|---|---|---|---|
+| Huntsville Mid-Tier Senior GUI / Telemetry / TAK Architect | $180K–$195K+ | $190K–$215K (+ sign-on) | Local-Remote / Hybrid | **IRTC**, **COLSA**, **Dynetics (Leidos)** |
+| Remote Space/Civil Front-End Architect | $175K–$200K | $185K–$215K | Remote (US) | **ASRC Federal**, **DCS Corp** |
 | Senior Full-Stack (React + AI) | $180K-$220K | $220K-$300K | Remote-first | AI startups, mid-size SaaS |
 | AI Engineer (full-stack skills) | $200K-$250K | $250K-$400K | Remote-first | AI-native companies, ML platforms |
 | Staff Engineer (React + AI) | $210K-$280K | $280K-$450K | Remote or hybrid | Series B-D startups, mid-size tech |
 | Full-Stack Consultant (1099) | $100-$175/hr | — | 100% remote | Multiple clients, flexible |
 
-**"AI Engineer" title carries a 15-25% premium** over "Senior Full-Stack" — negotiate for this title.
+**"AI Engineer" title carries a 15-25% premium** over "Senior Full-Stack" in commercial tech, while **"Senior Software Engineer & HCI/Telemetry GUI SME" + "Secret Clearance (Inactive — Eligible for Immediate Reactivation)"** is the high-leverage positioning for Huntsville mid-tiers ^[raw/articles/gemini-career-outlook-2026-10-16.md].
 
-**Rick is underpaid by $20K-$50K** at $170K vs market for his skill intersection.
+**Rick is underpaid by $15K-$50K** at $170K vs market for his skill intersection.
 
 ### What You Keep
 
-- Health insurance (wife's plan — portable)
 - 401(k) balance (vested, keep it)
-- React + TypeScript + AI/agentic skills (market-relevant)
-- 7 years NASA pedigree (impressive on resume, especially for defense/space tech)
+- React + TypeScript + AI/agentic + C++/Python skills (market-relevant)
+- 7.5 years NASA pedigree + dormant Secret clearance record in DISS/NBIS (huge advantage for Huntsville/Space Coast defense & aerospace primes)
 
 ### What You Gain
 
-- **Salary jump**: $180K–$220K target = $10K–$50K raise, potentially more with equity
-- **Growth trajectory**: Real engineering ladder (senior → staff → principal), not contractor ceiling
-- **Modern stack**: React production work, not just Dataverse/PowerApps
-- **AI immersion**: Work alongside AI engineers, ship LLM features in production
-- **Network expansion**: Startup/tech connections vs. gov-contractor bubble
-- **Agency over direction**: Choose company, team, tech stack, product mission
+- **Salary jump + sign-on bonus**: $185K–$220K target = $15K–$50K raise, plus potential sign-on bonus to offset missed Amentum bonuses/raises
+- **Clearance reactivation**: Moving to IRTC, COLSA, or Dynetics reactivates Rick's Secret clearance, providing a valuable consulting fallback credential ^[raw/articles/gemini-career-outlook-2026-10-16.md]
+- **Growth trajectory**: Real engineering ladder and flatter reporting structure vs. Amentum staffing ceiling
+- **Modern stack**: React/TypeScript/Python/C++ production telemetry & UI work, completely escaping PowerApps/Dataverse
+- **Bypassing global remote interview burnout**: Local Huntsville primes know MSFC's footprint and often grant "local-remote" flexibility to senior ICs without 5-stage global tech filter loops ^[raw/articles/gemini-career-outlook-2026-10-16.md]
 
 ### What You Risk
 
-- **Leaving stability**: $170K guaranteed → unknown. First 6 months at new job is always a gamble.
-- **Losing 401(k) match**: $5,100/yr gone (but salary increase should more than cover)
-- **Remote uncertainty**: Must negotiate hard for remote-first. Some "remote" jobs drift hybrid.
+- **Leaving stability**: $170K guaranteed + calm April 2026 team → unknown. First 6 months at a new job is always a gamble.
+- **Health insurance transition**: Since August 1, 2026, family health insurance is on Amentum's plan (no longer on wife's plan) — must transition to the new employer's benefits and reset deductibles.
+- **Losing 401(k) match**: $5,100/yr gone unless matched by new employer.
+- **Remote / SCIF constraints**: Must verify during interviews that a defense role offers hybrid/local-remote flexibility rather than 100% locked inside a SCIF (which would conflict with advocating for John Isaac's school/IEP needs).
 - **Resume gap narrative**: If it doesn't work out, explaining "left NASA contractor for startup that didn't pan out" is harder than "left NASA for a better opportunity"
 - **Timing risk**: the ESSCA II start is now **~May 2027** (delayed; ESSCA I extended). Leaving before it forgoes any rate adjustment, but the delay also pushes the displacement risk out — the near-term risk is *stagnation*, not losing the seat.
 - **Current app unfinished**: If you leave before the budget app ships, you lose the case study and the "six-figure impact" metric
@@ -175,9 +176,9 @@ Keep the $170K day job. Use evenings, weekends, and the ~50% remote days to buil
 
 ### What You Keep
 
-- Everything from Path A: $170K, 401k match, leave, stability, health insurance
-- Low burnout risk from day job (new group is calm)
-- ESSCA II rate bump potential (if it comes)
+- Everything from Path A: $170K (+ ~Nov 2026 raise), 401k match, leave, stability, Amentum health insurance (while remaining W-2)
+- Low burnout risk from day job (April 2026 group is calm)
+- ESSCA II rate bump potential (~May 2027)
 
 ### What You Gain
 
@@ -243,8 +244,8 @@ Start SMALL. One client, 5 hrs/week. If that's sustainable for 60 days, scale to
 | **Income drops** | Low | Medium (new job risk) | Very Low |
 | **Burnout** | Low | Medium (new job stress) | High |
 | **Skills stagnate** | Medium | Very Low | Low |
-| **Lose 401k match** | No | Yes ($5,100) | No |
-| **Lose health insurance** | No | No (wife's plan) | No |
+| **Lose 401k match** | No | Yes ($5,100, unless new employer matches) | No |
+| **Lose health insurance** | No (on Amentum plan since Aug 1, 2026) | Must switch to new employer's plan | No (while keeping W-2 day job) |
 | **Remote work disrupted** | Low | Medium (must negotiate) | N/A (side work is remote) |
 | **ESSCA II disruption** | Medium (if Amentum loses) | Low (already gone) | Low (day job may shift but side income buffers) |
 | **NASA insourcing pressure** | Medium | Very Low | Low |
@@ -372,3 +373,4 @@ This strategy preserves optionality at every branch. You never foreclose a path 
 - [[concepts/rcca-app-venture]] — the RCCA app as a **Path C asset** (vs. selling hours): public methodology, compliance posture, monetization ranked by time-to-first-dollar
 - [[../../wiki-personal/concepts/near-term-income-plan]] — the personal-vault money math this path feeds: gaps, hours/week, the ESSCA II raise window
 - User direct input | 2026-06-22
+- Gemini Career Outlook export & user input | 2026-10-16 ^[raw/articles/gemini-career-outlook-2026-10-16.md]

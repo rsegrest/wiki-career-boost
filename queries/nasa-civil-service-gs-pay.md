@@ -1,29 +1,38 @@
 ---
 title: "NASA Civil Service — GS Pay, Benefits, and Comparison"
 created: 2026-06-23
-updated: 2026-06-23
+updated: 2026-10-16
 type: query
 tags: [nasa, civil-service, gs-pay, salary, benefits, pension, fers, tsp, curiosity]
-sources: [OPM.gov, NASA HR]
+sources: [OPM.gov, NASA HR, raw/articles/gemini-career-outlook-2026-10-16.md]
 confidence: medium
 ---
 
 # NASA Civil Service — GS Pay, Benefits, and Comparison
 
-> Curiosity query — Rick is NOT interested in civil service employment. This page exists for reference and to document why the GS system doesn't match his market value.
+> Curiosity query — Rick is NOT interested in civil service employment. This page exists for reference and to document why the GS system doesn't match his market value, especially in light of NASA's FY2026–2027 workforce insourcing directive.
 
 ## Entry Level for Rick's Credentials
 
-- M.S. in Modeling & Simulation + 7+ years specialized NASA engineering experience
-- Likely entry: **GS-13 (Step 5-10)** or **GS-14 (Step 1-3)**
-- NASA has Superior Qualifications authority to set pay above Step 1
+- M.S. in Modeling & Simulation + 7.5+ years specialized NASA engineering experience
+- Likely entry: **GS-13 (Step 5-10)** or **GS-14 (Step 1-10)**
+- NASA has Superior Qualifications authority to set pay above Step 1 (by showing current $170K pay stubs)
 - NASA engineering positions at MSFC typically run GS-13 through GS-15
 
-## GS Pay Table — RUS Locality (Huntsville, AL)
+## GS Pay Table — Huntsville vs. RUS Locality
+
+> **2026 Huntsville Locality Update (`2026-10-16`):** Under the 2026 OPM Huntsville-Decatur-Albertville locality pay table (**+21.91% locality adjustment**), **GS-13 runs $112,265 (Step 1) to $145,947 (Step 10)**, and **GS-14 runs $132,663 (Step 1) to $170,207 (Step 10 ceiling)** ^[raw/articles/gemini-career-outlook-2026-10-16.md]. Even if NASA granted Superior Qualifications at the absolute ceiling of GS-14 (Step 10: **$170,207**), Rick's base pay would be completely capped at his current $170,000 salary, and the mandatory **4.4% FERS-FRAE pension deduction (~$7,489/yr)** would immediately reduce his net take-home pay ^[raw/articles/gemini-career-outlook-2026-10-16.md].
+
+### 2026 Huntsville-Decatur-Albertville Locality (+21.91%) ^[raw/articles/gemini-career-outlook-2026-10-16.md]
+
+| Grade | Step 1 | Step 10 (Ceiling) | vs. Rick's $170K Base |
+|---|---|---|---|
+| **GS-13** | $112,265 | $145,947 | -$24,053 to -$57,735 |
+| **GS-14** | $132,663 | **$170,207** | -$37,337 to **+$207** (before -4.4% FERS cut) |
+
+### Earlier 2025 RUS / 2026 Projected Reference Figures
 
 RUS locality pay percentage: **16.82%** (2025 confirmed)
-
-### 2025 Confirmed
 
 | Grade | Step 1 | Step 5 | Step 10 |
 |---|---|---|---|
@@ -31,17 +40,6 @@ RUS locality pay percentage: **16.82%** (2025 confirmed)
 | GS-13 | $117,766 | ~$136,800 | $153,081 |
 | GS-14 | $139,357 | ~$155,000 | $181,161 |
 | GS-15 | $162,936 | ~$182,000 | $211,786 (capped) |
-
-### 2026 Projected (~4.5% raise assumed)
-
-| Grade | Step 1 | Step 10 |
-|---|---|---|
-| GS-12 | ~$103,450 | ~$134,480 |
-| GS-13 | ~$123,065 | ~$160,040 |
-| GS-14 | ~$145,650 | ~$189,290 |
-| GS-15 | ~$170,267 | ~$221,300 (capped) |
-
-**2026 figures are projections — OPM has not published final 2026 tables yet.**
 
 ## GS Pay Cap
 
@@ -52,16 +50,13 @@ RUS locality pay percentage: **16.82%** (2025 confirmed)
 
 ## vs. Rick's Current $170K (Amentum contractor)
 
-| Scenario | Annual Salary | Delta vs. $170K |
+| Scenario | Annual Salary (2026 HSV Table) | Delta vs. $170K |
 |---|---|---|
-| GS-13 Step 10 | $153,081 | -$16,919 |
-| GS-14 Step 1 | $139,357 | -$30,643 |
-| GS-14 Step 5 | ~$155,000 | -$15,000 |
-| GS-14 Step 10 | $181,161 | +$11,161 |
-| GS-15 Step 1 | $162,936 | -$7,064 |
-| GS-15 Step 10 (capped) | $183,500 | +$13,500 |
+| GS-13 Step 10 | $145,947 | -$24,053 |
+| GS-14 Step 1 | $132,663 | -$37,337 |
+| GS-14 Step 10 (max) | $170,207 | +$207 gross (-$7,282 after 4.4% FERS-FRAE) |
 
-**Realistic outcome: $15K-$30K pay cut initially**, with 10+ years of step increases to approach current salary at GS-14.
+**Realistic outcome:** Even in the best-case Superior Qualifications match (GS-14 Step 10 at $170,207), Rick hits an immediate statutory ceiling with zero room for step increases and takes a net take-home pay cut due to the mandatory 4.4% FERS-FRAE deduction ^[raw/articles/gemini-career-outlook-2026-10-16.md].
 
 ## FERS Pension (The Big Advantage)
 

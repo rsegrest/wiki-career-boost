@@ -902,3 +902,21 @@ buys distribution and trust, for RCCA it would forfeit the customer.
 - Organized `index.md` `## Concepts` into three thematic subsections: `Freelance & Side-Income Strategy`, `Ventures: John D. Stokes Agricultural Records & RCCA App`, and `Portfolio Catalog & Implementation Specs`.
 - Registered the three previously unindexed pages in `index.md` (`entities/rick-segrest-resume-v2026.md`, `concepts/agent-cron-monitor-spec.md`, `concepts/agent-memory-browser-spec.md`) and added YAML frontmatter + cross-links to the two Mission Control implementation specs. Total catalogued pages: 28 → 31.
 
+
+
+## [2026-10-16] ingest | Google Gemini Career Outlook Export (`CareerOutlook_2026_10_16.md`)
+- Saved immutable raw source to `raw/articles/gemini-career-outlook-2026-10-16.md` (with `ingested: 2026-10-16` and `sha256` frontmatter; stripped trailing base64 icon data URIs).
+- Updated `entities/amentum.md`:
+  - Added Q3 FY2026 earnings guidance of a **3% FY2027 revenue headwind (~$400M–$420M)** due to NASA's workforce insourcing directive, alongside `NYSE: AMTM` stock drop (~30%–33% YTD) and $48.2B backlog.
+  - Corrected starting salary to **$130,000 + $5,000 signing bonus** (March 2019), added ~November 2026 annual raise cycle timing, 2023–2025 total earnings history (earned less every year since 2023 due to heavy 2023 overtime followed by caregiving for dying parents in 2024–2025), and documented the **August 1, 2026 family health insurance enrollment** + **~$2,000 backdated payroll deduction glitch** (backdated to June 23, 2026 paperwork initiation date).
+- Updated `entities/nasa.md`:
+  - Documented the exact **October 2025 government shutdown / mother's hospice incident** (NASA customer told Rick he should have "planned ahead" and "coordinated with the other team members" while civil servants were home during the shutdown), subsequent **short-term disability**, and **April 2026 lateral team transfer**.
+- Updated `entities/rick-segrest-pro.md`:
+  - Corrected Health Insurance status (moved from wife's plan onto Amentum's plan effective August 1, 2026; no longer portable via wife's job).
+  - Updated Secret Clearance details (dormant since March 2019, >24 months, but persists in DISS/NBIS and is eligible for accelerated re-investigation / 2–4 week Interim Secret sponsorship).
+  - Added **Huntsville Mid-Tier Aerospace/Defense Innovators** (**IRTC**, **COLSA**, **Dynetics/Leidos**, **ASRC Federal**, **DCS Corp**) targeting **$185,000+ base** with local-remote/hybrid flexibility as an antidote to global remote tech interview burnout.
+- Updated `comparisons/career-move-vs-side-hustle-vs-maximize-current.md`:
+  - Updated health insurance portability across Path A, Path B, Path C, Quick-Reference Snapshot, and Risk Matrix.
+  - Added Huntsville mid-tier local-remote/hybrid roles ($185K+) and clearance reactivation to Path B.
+- Updated `queries/nasa-civil-service-gs-pay.md`:
+  - Added **2026 OPM Huntsville-Decatur-Albertville locality pay table (+21.91%)** figures: **GS-13 ($112,265–$145,947)** and **GS-14 ($132,663–$170,207 Step 10 ceiling)**, showing that even a GS-14 Step 10 match caps Rick at his current $170K base while the mandatory **4.4% FERS-FRAE** deduction cuts his net take-home pay.
