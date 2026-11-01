@@ -1,7 +1,7 @@
 ---
 title: "Career Move vs Side-Hustle vs Maximize Current Position"
 created: 2026-06-22
-updated: 2026-10-16
+updated: 2026-11-01
 type: comparison
 tags: [job-search, pivot, freelance, consulting, promotion, remote, salary-negotiation, side-project]
 sources: [entities/rick-segrest-pro.md, entities/nasa.md, entities/amentum.md, concepts/portfolio-project-ideas.md, raw/articles/gemini-career-outlook-2026-10-16.md]
@@ -14,6 +14,13 @@ confidence: medium
 > 1. **ESSCA II timetable:** Performance start is delayed to **~May 2027**, with ESSCA I extended to fill the gap (2026-10-11). Meanwhile, Rick expects an ordinary **annual raise cycle bump in ~November 2026** ^[raw/articles/gemini-career-outlook-2026-10-16.md].
 > 2. **Health insurance is NO LONGER portable via wife's plan:** Wife's coverage ended July 31, 2026; family health insurance moved onto **Amentum's plan effective August 1, 2026** (~$693/mo employee share, plus a ~$2,000 backdated payroll deduction glitch). Leaving Amentum for a new W-2 requires switching to the new employer's plan; going 100% solo 1099 requires ACA/private coverage ^[raw/articles/gemini-career-outlook-2026-10-16.md].
 > 3. **Path B refined — Local Huntsville Mid-Tiers vs. Global Remote Burnout:** Cold-applying to global remote tech roles has caused interview burnout with low ROI. A high-leverage middle ground for Path B is targeting **flatter Huntsville defense/aerospace mid-tiers (IRTC, COLSA, Dynetics, ASRC Federal)** at **$185K+ base** with **local-remote/hybrid flexibility** and **dormant Secret clearance reactivation** during the 2026–2030 runway ^[raw/articles/gemini-career-outlook-2026-10-16.md].
+> 4. **⚠️ The annual "raise" has been a pay cut in real terms for eight years — measured 2026-11-01.**
+> BLS CPI-U ran **+35.0%** from March 2018 (249.554) to September 2026 (336.940). $130,000 of 2018 pay
+> is **$175,522** today, so salary alone has lagged **$5,122/yr (−2.9%)**; counting the **$5,000 signing
+> bonus** in the opening package, the lag is **$11,873/yr (−6.5%)**. Salary CAGR **3.21%/yr against
+> 3.60%/yr CPI**, and the adjustment due ~Thanksgiving 2026 **has always landed below CPI and COLA**.
+> **Any projection on this page that assumes raises is assuming something that has not happened** — see
+> "What the raises have actually been worth" under Path A.
 
 ## The Decision
 
@@ -25,7 +32,7 @@ Rick is at a crossroads. 7.5 years at [[entities/nasa]] via [[entities/amentum]]
 
 | Dimension | A: Maximize Current | B: Career Move | C: Side-Hustle |
 |---|---|---|---|
-| **Annual Income (est.)** | $170K (+ ~Nov 2026 raise) + $5.1K 401k + $200 bonus | $185K–$220K (target) | $170K + $20K–$80K side |
+| **Annual Income (est.)** | $170K (+ ~Nov 2026 raise) + $5.1K 401k + $400 bonus | $185K–$220K (target) | $170K + $20K–$80K side |
 | **Risk Level** | Low (near-term) | Medium-High | Medium |
 | **Time Horizon** | Immediate (~Nov 2026 raise; ~May 2027 ESSCA II) | 3–6 months transition | 1–6 months ramp |
 | **Remote Work** | ~50% (current) | Negotiable (local-remote hybrid or 100% remote) | 100% (on your time) |
@@ -67,6 +74,33 @@ Stay at Amentum/NASA, collect the ~November 2026 annual raise, ship the proposal
 - **Salary stagnation continues**: If the Nov 2026 raise and May 2027 ESSCA II rates don't improve meaningfully, you're stuck near ~$170K with below-inflation raises
 - **Opportunity cost**: Every month at $170K with weak raises is a month not at $185K–$200K+ elsewhere
 - **Skills narrow over time**: Dataverse/PowerApps ecosystem is niche; must actively avoid being pigeonholed into low-code
+
+### What the raises have actually been worth — measured, not asserted
+
+**Derived 2026-11-01 from BLS CPI-U** (249.554 Mar 2018 → 336.940 Sep 2026, **+35.0%** over 8.5 years):
+
+| Baseline | In Sep-2026 dollars | Actual today | Lag |
+|---|---|---|---|
+| $130,000 salary (Mar 2018) | $175,522 | $170,400 | **−$5,122/yr (−2.9%)** |
+| $135,000 incl. the $5,000 signing bonus | $182,273 | $170,400 | **−$11,873/yr (−6.5%)** |
+
+- **Salary CAGR 3.21%/yr against 3.60%/yr CPI.** Eight years of quietly losing ground, and the
+  adjustment due **~Thanksgiving 2026** has **always come in under CPI and COLA**, so the streak is
+  expected to continue. Whatever percentage is announced, the only test that matters is whether it
+  clears CPI at all.
+- **The bonus is the sharper lesson, and it belongs in every future negotiation.** Rick's account: this
+  employer has been the **stingiest on bonuses of any he has worked for** — **no year-end bonus, no real
+  performance-bonus mechanism, never more than ~$200–300/yr, and $400 in 2026**. The **$5,000 signing
+  bonus implied a bonus culture that does not exist**, and that implication was part of what made the
+  $130K offer look better than it was. **A signing bonus is a signal, not a schedule: verify the actual
+  bonus structure — target percentage, payout history, eligibility threshold — before signing.**
+- **Also outside every figure above:** ~5 months off in 2026 on short-term disability at ~⅔ pay, worth
+  **~$23,000–$30,000** of take-home (see `~/wiki-personal/concepts/household-budget.md`).
+- **The conclusion this forces:** the **$185K–$195K** projection cannot be reached through the raise
+  cycle — arithmetic rules that out. It requires the **ESSCA II rate adjustment (~May 2027)** or an
+  external move. That does not make Path A wrong. It makes **the ESSCA II negotiation, not the annual
+  adjustment, the thing that decides this path** — which is also why May 2027 matters more than
+  November 2026.
 
 ### Key Actions (If You Choose This Path)
 

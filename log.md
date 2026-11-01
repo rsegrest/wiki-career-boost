@@ -920,3 +920,29 @@ buys distribution and trust, for RCCA it would forfeit the customer.
   - Added Huntsville mid-tier local-remote/hybrid roles ($185K+) and clearance reactivation to Path B.
 - Updated `queries/nasa-civil-service-gs-pay.md`:
   - Added **2026 OPM Huntsville-Decatur-Albertville locality pay table (+21.91%)** figures: **GS-13 ($112,265–$145,947)** and **GS-14 ($132,663–$170,207 Step 10 ceiling)**, showing that even a GS-14 Step 10 match caps Rick at his current $170K base while the mandatory **4.4% FERS-FRAE** deduction cuts his net take-home pay.
+
+## [2026-11-01] update | Path A: raises measured against CPI, bonus culture recorded as a negotiation lesson
+
+Rick asked for the long-deferred characterisation of Path A's income projection. Added — additively, no
+deletions and no change to the recommendation.
+
+- **New header assumption (point 4) and a new Path A subsection, "What the raises have actually been
+  worth — measured, not asserted."** BLS CPI-U **249.554 (Mar 2018) → 336.940 (Sep 2026) = +35.0%** over
+  8.5 years. $130,000 of 2018 pay = **$175,522** today, so salary has lagged **$5,122/yr (−2.9%)**;
+  counting the **$5,000 signing bonus** in the opening package, the lag is **$11,873/yr (−6.5%)**.
+  Salary CAGR **3.21%/yr vs 3.60%/yr CPI**.
+- **Consequence recorded:** the **$185K–$195K** projection cannot be reached through the raise cycle.
+  It needs the **ESSCA II rate adjustment (~May 2027)** or an external move — so **May 2027, not
+  November 2026, is the date that decides Path A.**
+- **Bonus culture recorded as a durable negotiation lesson (Rick's correction to my framing).** I had
+  suggested treating the $5,000 signing bonus as a one-time payment that doesn't belong in an annual
+  baseline. Rick's counter is stronger and is now on the page: the signing bonus **implied a bonus
+  culture that does not exist** — **no year-end bonus, no performance-bonus mechanism, never more than
+  ~$200–300/yr, $400 in 2026**, the stingiest of any employer he has worked for. That implication was
+  part of what made the $130K offer look better than it was, **so the $11,873 figure is the honest
+  measure of what he thought he was signing for.** Standing rule added: **a signing bonus is a signal,
+  not a schedule — verify target percentage, payout history and eligibility threshold before signing.**
+- Snapshot bonus figure corrected **$200 → $400**.
+- Deliberately **did not** rewrite the ~14 other "~Nov 2026 raise" mentions: the date is still accurate
+  (Thanksgiving is late November) and the raise is expected, just sub-CPI. The characterisation, not the
+  date, was the missing piece.
