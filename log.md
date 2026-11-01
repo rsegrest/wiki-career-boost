@@ -946,3 +946,37 @@ deletions and no change to the recommendation.
 - Deliberately **did not** rewrite the ~14 other "~Nov 2026 raise" mentions: the date is still accurate
   (Thanksgiving is late November) and the raise is expected, just sub-CPI. The characterisation, not the
   date, was the missing piece.
+
+## [2026-11-01] new | Precision Delivery Federal — part-time contract lead, VERIFIED against USAspending
+
+Rick forwarded a cold email from **Bo Peng, Founder & CTO of Precision Federal** (2026-10-23, via "Christian
+Tech Jobs"): Principal Full-Stack Engineer *and* Principal Simulation/Digital Twin Engineer, **$90/hr,
+remote, part-time, 5–20 hr/wk**, evenings/weekends fine. Rick's scope: **short-term reward that could become
+ongoing** — an income thread, not the long-term pursuit. Created `concepts/precision-federal-opportunity.md`.
+
+**Verification (the company is real — this was checked, not assumed):** every PIID in their FAQ was run
+through the USAspending.gov API. Legal entity is **PRECISION DELIVERY FEDERAL LLC**, and all three awards are
+genuine — **BOP Community Reentry Network $621,612** (15BNAS26F00000263, 2026-09-28), **CDC West Nile vaccine
+market forecast $296,250** (75D30126P21398, 2026-09-30), **FHWA LIDAR/smartphone traffic data $141,370**
+(693JJ326P000024, 2026-09-04). **$1,059,232 visible.** Nothing invented; not a scam.
+
+**The finding that matters:** all three awards are from **September 2026 — two months before the email**, so
+this is not purely a bench for future bids. There are **three live contracts needing staff now**, which the
+email's "nothing starts until a proposal wins" framing may understate. The single highest-value question is
+whether billable work exists on those awards today.
+
+**Economics derived:** at $90/hr, **3.8 hr/wk (1099) or 3.0 hr/wk (W-2) nets the $900/mo treatment
+cost-share**; their 5 hr/wk floor yields ~$1,197/mo net with ~$300 spare. It fits inside Rick's 4–8 hr/wk
+ceiling. **But their 20 hr/wk ceiling is half a second full-time job**, and he took five months of stress
+leave in 2026 — the usable band is **5–8 hr/wk**.
+
+**Objections recorded, hardest first:** (1) the email asks him to **sign a welcome agreement before any
+conversation** — backwards, and the clearest process problem; (2) **Amentum/NASA conflict of interest is the
+real case** that the "manager approval, no COI" moonlighting rule exists for — written approval is a
+prerequisite; (3) "kept on proposals" implies **unpaid proposal labour** and puts his resume in bids;
+(4) **1099 vs W-2 unstated** (worth ~$470/mo at 5 hr/wk); (5) IP/exclusivity/non-solicit unseen, and he has an
+in-flight venture; (6) the work is federal — the buyer he ruled out for AI work — and he likely **cannot use
+the AI tooling that makes him fast**; (7) the SignWell link is a raw doc URL in an email and must be verified.
+Also flagged the **lookalike** `precisefederal.com` (Precise Federal Consulting, an unrelated 8(a) JV).
+
+Added as **thread 14** on [[concepts/side-income-map]] and registered in `index.md` (31 → 32 pages).

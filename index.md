@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-10-16 | Catalogued pages: 31 (7 entities + 15 concepts + 4 kanban + 1 comparison + 4 queries)
+> Last updated: 2026-11-01 | Catalogued pages: 32 (7 entities + 16 concepts + 4 kanban + 1 comparison + 4 queries)
 
 ## Entities
 
@@ -26,6 +26,7 @@
 - [[concepts/services-page-copy]] — **The sales asset**: publication-ready copy for a business page on ricksegrest.com that shows applications and outcomes for non-technical buyers (six scenarios, pricing, safety answers, build notes)
 - [[concepts/sabrina-ramonov-ai-business-videos]] — 41 AI business/career videos from Sabrina Ramonov: income streams, personal branding, AI skills, career strategy in AI era
 - [[../wiki-personal/concepts/goals-pay-debt-house-remote-abroad|../../wiki-personal/concepts/goals-pay-debt-house-remote-abroad]] — **Top-level goals (personal vault)** — why the portfolio/freelance work exists: debt payoff → location-independent income → move abroad (~2030). The bridge page between this vault's portfolio work and the personal vault's plans
+- [[concepts/precision-federal-opportunity]] — **Verified part-time contract lead**: Bo Peng / Precision Delivery Federal LLC, $90/hr remote 5–20 hr/wk, three real Sept-2026 federal awards ($1.06M visible, USAspending-checked), and the sign-before-you-talk process problem
 
 ### Ventures: John D. Stokes Agricultural Records & RCCA App
 - [[concepts/ag-market-intelligence]] — **Where ag conversations happen and what they say**: AgTalk/Reddit map, verbatim farmer complaints about records software, and the positioning consequences
